@@ -3,7 +3,7 @@ title: "R Markdown Basics"
 output: html_document
 ---
 Example modeled after http://rmarkdown.rstudio.com/authoring_basics.html  
-The [R source](R-Markown-Basics.Rmd) that made this document.
+The [R source](R-Markdown-Basics.Rmd) that made this document.
 
 ###Emphasis
 ```
