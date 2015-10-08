@@ -14,11 +14,21 @@ First enter the 49 data values.  Be careful to check what you've entered in your
 superBowlDifferences <- c(25, 19, 9, 16, 3, 21, 7, 17, 10, 4, 18, 17,4,12,17,5,10,29,22,36,19,32,4,45,1,13,35,17,23,10,14,7,15,7,27,3,27,3,3,11,12,3,4,14,6,4,3,35,4)
 ```
 
+```{r}
+sort(superBowlDifferences)
+```
+
 Now, calculate the summary statistics and plot a histogram
 ```{r}
 summary(superBowlDifferences)
 
-hist(superBowlDifferences)
+iq.range <- quantile(superBowlDifferences, probs=c(0.25, 0.75))
+iq.range 
+lower.bound <- iq.range[1] - 1.5*diff(iq.range)
+upper.bound <- iq.range[2] + 1.5*diff(iq.range)
+
+lower.bound
+upper.bound
 ```
 
 ### 1a
@@ -29,3 +39,11 @@ The IQR is (20 - 4) = 16
 
 ### 1b
 The Histogram plot of the difference in points shows two scores over 36 points.  And there is at least 12 scores greater than the Q3 of 20 points.
+
+```{r}
+hist(superBowlDifferences)
+
+plot(superBowlDifferences)
+
+plot(sort(superBowlDifferences))
+```
