@@ -1,0 +1,55 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link type="text/css" rel="stylesheet" href="resources/sheet.css" >
+<div id='embed_1317020400' class='waffle-embedded-object-overlay' style='width: 100%; height: 100%; display: block;'></div>
+<script type='text/javascript'>
+function posObj(sheet, id, row, col, x, y) {
+  var rtl = false;
+  var sheetElement = document.getElementById(sheet);
+  if (!sheetElement) {
+    sheetElement = document.getElementById(sheet + '-grid-container');
+  }
+  if (sheetElement) {
+    rtl = sheetElement.getAttribute('dir') == 'rtl';
+  }
+  var r = document.getElementById(sheet+'R'+row);
+  var c = document.getElementById(sheet+'C'+col);
+  if (r && c) {
+    var objElement = document.getElementById(id);
+    var s = objElement.style;
+    var t = y;
+    while (r) {
+      t += r.offsetTop;
+      r = r.offsetParent;
+    }
+    var offsetX = x;
+    while (c) {
+      offsetX += c.offsetLeft;
+      c = c.offsetParent;
+    }
+    if (rtl) {
+      offsetX -= objElement.offsetWidth;
+    }
+    s.left = offsetX + 'px';
+    s.top = t + 'px';
+    s.display = 'block';
+    s.border = '1px solid #000000';
+  }
+};
+function posObjs() {
+posObj('1941750362', 'embed_1317020400', 0, 0, 0, 0);};
+posObjs();</script>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script><script type='text/javascript' src='/static/spreadsheets2/client/js/296055865-ritz_corechart_full.js'></script>
+<script type='text/javascript' src='/static/spreadsheets2/41dfa6d578/ritz_charts_linked/ritz_charts_linked.nocache.js'></script>
+<script type='text/javascript'>
+function onNumberFormatApiLoad() {
+  var ritzRenderNumber = function(v,p) {
+    return ritz_numberformat_api.NumberFormatApi.renderNumber(v, p, 'en_US');
+  };
+  google.visualization.NumberFormat.overrideFormatValue(ritzRenderNumber);
+  google.visualization.DateFormat.overrideFormatValue(function(v, p) {
+    var millis = v.getTime() - v.getTimezoneOffset() * 60000;
+    var excelTime = 25569 + millis / 86400000;
+    return ritzRenderNumber(excelTime, p);
+  });
+new google.visualization.ChartWrapper({"options":{"hasHiddenData":false,"treatLabelsAsText":true,"vAxes":[{"useFormatFromData":true,"minValue":null,"maxValue":null,"title":"Count of Gxx","viewWindow":{"min":null,"max":null}},{"useFormatFromData":true,"minValue":null,"maxValue":null,"viewWindow":{"min":null,"max":null}}],"annotations":{"domain":{"style":"line"}},"legacyScatterChartLabels":true,"title":"Count of Gxx","titleTextStyle":{"fontSize":16},"hAxis":{"useFormatFromData":true,"title":"Gxx","viewWindow":{}},"useFirstColumnAsDomain":true,"width":600,"legacyContinuousAxisRemoved":true,"booleanRole":"certainty","height":371},"state":{},"view":{"columns":[0,{"sourceColumn":1,"properties":{"role":"annotation"},"label":"Gxx"},2]},"isDefaultVisualization":true,"chartType":"Table","chartName":"Chart 1","dataTable":{"cols":[{"id":"A","label":"Pxx","type":"string"},{"id":"B","label":"Gxx","type":"string"},{"id":"C","label":"Sxx Date","type":"date","pattern":"mmmm\" \"yyyy"}],"rows":[{"c":[{"v":"a"},{"v":"I"},{"v":"Date(1999,8,1)","f":"September 1999"}]},{"c":[{"v":"b"},{"v":"L"},{"v":"Date(1999,7,4)","f":"August 1999"}]},{"c":[{"v":"c"},{"v":"I"},{"v":"Date(1999,6,3)","f":"July 1999"}]},{"c":[{"v":"d"},{"v":"L"},{"v":"Date(1999,5,1)","f":"June 1999"}]},{"c":[{"v":"e"},{"v":"J"},{"v":"Date(1999,4,5)","f":"May 1999"}]}]},"containerId":"embed_1317020400"}).draw();
+}
+</script>
