@@ -11,13 +11,18 @@ layout: default
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
+        <h4>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+
+            {% if post.description %}
+              <span class="body">{{ post.description | markdownify }}</span>
+            {% endif %}
+            {% if post.photo_url %}
+              <img alt="alt" src="{{ post.photo_url }}">
+            {% endif %}
+        </h4>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
