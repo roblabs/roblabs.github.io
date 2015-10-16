@@ -1,0 +1,30 @@
+---
+title: "Sampling Study Guide"
+author: "Bandit"
+date: "October 13, 2015"
+output: html_document
+---
+
+# Sampling
+Imagine you have some data on the weight of 1000 golden retriever dogs.  The weight of the dogs follows a normal distribution with a mean of 55, and a standard deviation of 10.
+
+The histogram of looks like this.  Note where the mean is, and the Y-axis or frequency of the histogram.
+```{r}
+hist( dogs <- rnorm(1000, 55, 10))
+
+summary(dogs)
+```
+
+Now you can use a subsample of the dogs data set.  Say you want a sample of 30 dogs, to check their mean weight.
+
+```{r}
+d30 <- sample(dogs, 30)
+```
+
+And then get a histogram of the sample size of 30.  Note the difference in mean, min and max between the data set for dogs and d30.
+
+```{r}
+summary(d30)
+hist(d30)
+
+```
