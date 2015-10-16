@@ -152,30 +152,33 @@ compute the sum of two numbers.
 ###LaTeX Equations
 Inline equation:
 ```
-$y=x^2/2$
+This is the best equation ever $y=x^2/2$.  But this one isn't too shabby either, $\sum_{i=1}^n X_i$.  Don't forget to escape the `sqrt`, $\sqrt{b^2 - 4ac}$
 ```
-$y=x^2/2$
+This is the best equation ever $y=x^2/2$.  But this one isn't too shabby either, $\sum_{i=1}^n X_i$.  Don't forget to escape the `sqrt`, $\sqrt{b^2 - 4ac}$
 
-Display equation:
+Display equation:  
+This is a decent equation, too.
 ```
-$$ (-b + sqrt(b^2 - 4ac)) / 2 $$
+$\sum_{i=1}^n X_i$
 ```
-$$ (-b + sqrt(b^2 - 4ac)) / 2 $$
+$\sum_{i=1}^n X_i$
 
 ***
 
 ###Tables
 ```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-Reference Style Links and Images
+|Header |Column 1 | Column 2 | Column 3  |
+|:--- |:---- |:----:| ----:|
+|1. Row| is | is | is  |
+|2. Row| left | nicely | right  |
+|3. Row| aligned | centered | aligned  |  
 ```
-First Header  | Second Header
-------------  | ------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+|Header |Column 1 | Column 2 | Column 3  |
+|:--- |:---- |:----:| ----:|
+|1. Row| is | is | is  |
+|2. Row| left | nicely | right  |
+|3. Row| aligned | centered | aligned  |  
+
 Reference Style Links and Images
 
 ***

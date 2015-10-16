@@ -192,21 +192,51 @@ compute the sum of two numbers.</code></pre>
 <div id="latex-equations" class="section level3">
 <h3>LaTeX Equations</h3>
 <p>Inline equation:</p>
-<pre><code>$y=x^2/2$</code></pre>
-<p><span class="math">\(y=x^2/2\)</span></p>
-<p>Display equation:</p>
-<pre><code>$$ (-b + sqrt(b^2 - 4ac)) / 2 $$</code></pre>
-<p><span class="math">\[ (-b + sqrt(b^2 - 4ac)) / 2 \]</span></p>
+<pre><code>This is the best equation ever $y=x^2/2$.  But this one isn't too shabby either, $\sum_{i=1}^n X_i$.  Don't forget to escape the `sqrt`, $\sqrt{b^2 - 4ac}$</code></pre>
+<p>This is the best equation ever <span class="math">\(y=x^2/2\)</span>. But this one isn’t too shabby either, <span class="math">\(\sum_{i=1}^n X_i\)</span>. Don’t forget to escape the <code>sqrt</code>, <span class="math">\(\sqrt{b^2 - 4ac}\)</span></p>
+<p>Display equation:<br />This is a decent equation, too.</p>
+<pre><code>$\sum_{i=1}^n X_i$</code></pre>
+<p><span class="math">\(\sum_{i=1}^n X_i\)</span></p>
 <hr />
 </div>
 <div id="tables" class="section level3">
 <h3>Tables</h3>
-<pre><code>First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-Reference Style Links and Images</code></pre>
-<p>First Header | Second Header ———— | ———— Content Cell | Content Cell Content Cell | Content Cell Reference Style Links and Images</p>
+<pre><code>|Header |Column 1 | Column 2 | Column 3  |
+|:--- |:---- |:----:| ----:|
+|1. Row| is | is | is  |
+|2. Row| left | nicely | right  |
+|3. Row| aligned | centered | aligned  |  </code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Header</th>
+<th align="left">Column 1</th>
+<th align="center">Column 2</th>
+<th align="right">Column 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1. Row</td>
+<td align="left">is</td>
+<td align="center">is</td>
+<td align="right">is</td>
+</tr>
+<tr class="even">
+<td align="left">2. Row</td>
+<td align="left">left</td>
+<td align="center">nicely</td>
+<td align="right">right</td>
+</tr>
+<tr class="odd">
+<td align="left">3. Row</td>
+<td align="left">aligned</td>
+<td align="center">centered</td>
+<td align="right">aligned</td>
+</tr>
+</tbody>
+</table>
+<p>Reference Style Links and Images</p>
 <hr />
 </div>
 <div id="links-1" class="section level3">
