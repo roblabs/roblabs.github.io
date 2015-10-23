@@ -118,9 +118,10 @@ http://example.com
 ###Images
 Images on the web or local files in the same directory:
 ```
-![alt text](http://example.com/logo.png)
+![alt text](http://www.iana.org/_img/2013.1/iana-logo-header.svg)
 
 ```
+![alt text](http://www.iana.org/_img/2013.1/iana-logo-header.svg)
 
 ***
 
