@@ -23,6 +23,8 @@
 
 $(function () {
   $.get('cars.json', function(json) {
+    $.get('cars-lowess.json', function(lowessJson) {
+
     $('#container').highcharts({
         chart: {
             type: 'scatter',
@@ -86,12 +88,16 @@ $(function () {
             name: 'cars',
             color: 'rgba(223, 83, 83, .5)',
             data: json
-
-        },
-      ]
+        }, {
+            name: 'cars lowess',
+            type: 'line',
+            color: 'rgba(0, 0, 0, 0.5)',
+            data: lowessJson
+        }]
     });
-  });
-});
+    }); // get
+  }); // get
+}); $()
 
 
 //]]>
