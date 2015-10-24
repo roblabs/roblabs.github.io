@@ -36,7 +36,7 @@ lines(lowess(cars$speed, cars$dist, f = 2/3, iter = 3), col = "red")
 
 ***
 
-Now the same chart using highcharts.com
+Now the same chart using [Highcharts](/highcharts/cars.html)
 ![alt text](images/cars.png)
 
 
