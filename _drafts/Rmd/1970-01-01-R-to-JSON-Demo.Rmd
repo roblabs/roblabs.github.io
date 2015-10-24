@@ -40,4 +40,19 @@ Now the same chart using [Highcharts](/highcharts/cars.html)
 ![alt text](images/cars.png)
 
 
+***
+
+R is fairly rich in algorithms, so lets use `lowess` from R to compute a smooth curve.
+
+```{r}
+# Scatter Plot Smoothing
+low <-lowess(cars$speed, cars$dist, f = 2/3, iter = 3)
+
+# convert to a data.frame, so the JSON works better with Javascript.
+lowDf <- data.frame(low)
+
+library(jsonlite)
+toJSON(lowDf, dataframe=c("values"))
+```
+
 The [R source](./1970-01-01-R-to-JSON-Demo.Rmd) that made this document.
