@@ -10,7 +10,7 @@ photo_url: https://avatars0.githubusercontent.com/u/118112?v=3&s=460
 ### Options
 
 * `Mystery + Cho` option - 8-10 days roundtrip.  Start and finish at [Happy Isles Trailhead][happyIsles]
-* `Mystery - Cho` option - 8-10 days, one way.  Start at [Happy Isles Trailhead][happyIsles], exit at [Reds Meadow][redsMeadow]
+* `Mystery - Cho` option - 14-16 days, one way.  Start at [Happy Isles Trailhead][happyIsles], exit at [Reds Meadow][redsMeadow], or exit at Whitney Portal.
 
 ## Dates
 * `date 1` - June 12-22, 2016
