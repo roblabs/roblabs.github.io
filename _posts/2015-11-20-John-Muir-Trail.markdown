@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "John Muir Trail"
+date:   2015-11-20 09:35:11
+categories: jmt 
+description: "Planning for the JMT."
+photo_url: https://avatars0.githubusercontent.com/u/118112?v=3&s=460
+---
+
+# Dates
+
+* June 12-22, 2016
+* Mid-july, 2016
+
+## Links
+
+http://johnmuirtrail.org/permits.html  
+http://www.nps.gov/yose/planyourvisit/jmt.htm  
+http://www.pcta.org/discover-the-trail/john-muir-trail/jmt-permits/  
