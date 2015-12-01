@@ -3,7 +3,7 @@
   "sources": {
     "simple-tiles": {
       "type": "raster",
-      "url": "mapbox://mapbox.streets",
+      "url": "mapbox://roblabs.6d67f097",
       "tileSize": 256
     }
   },
