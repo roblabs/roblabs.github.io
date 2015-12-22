@@ -10,6 +10,12 @@ photo_url: http://jekyllrb.com/img/logo-2x.png
 permalink: /jekyll/
 ---
 
+```
+gem install jekyll  
+jekyll new my-awesome-site  
+cd my-awesome-site
+jekyll serve
+```
 
 For more information see [Jekyll][j] so you can learn how to transform markdown to a static web site.
 
