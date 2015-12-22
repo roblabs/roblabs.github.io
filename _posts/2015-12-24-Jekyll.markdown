@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Jekyll Web Service"
+date:   2015-12-24T11:13:14-08:00
+author: roblabs
+categories: [jekyll]
+tags: [jekyll]
+description: "Setting up a Jekyll Web Service"
+photo_url: http://jekyllrb.com/img/logo-2x.png
+permalink: /jekyll/
+---
+
+
+For more information see [Jekyll][j] so you can learn how to transform markdown to a static web site.
+
+[j]:   http://jekyllrb.com
