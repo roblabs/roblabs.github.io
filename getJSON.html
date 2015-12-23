@@ -12,7 +12,7 @@
 		<script type="text/javascript">
 		$(document).ready(function() {
 
-      var weatherData = "http://forecast.weather.gov/MapClick.php?FcstType=json&lat=33.817&lon=-116.6807";
+      var weatherData = "http://forecast.weather.gov/MapClick.php?FcstType=json&lat=33.817&lon=-116.6807&callback=?";
       // var weatherData = "weather.json";
 
       $.getJSON(weatherData, function(result){
