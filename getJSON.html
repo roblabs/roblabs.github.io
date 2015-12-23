@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+
+		<!-- 1. Add these JavaScript inclusions in the head of your page -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<!-- 2. Add the JavaScript to initialize the chart on document ready -->
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+      var weatherData = "http://forecast.weather.gov/MapClick.php?FcstType=json&lat=33.817&lon=-116.6807";
+      // var weatherData = "weather.json";
+
+      $.getJSON(weatherData, function(result){
+				// $.each(result, function(i, field){
+				// 	$("div").append(field + " ");
+				// 	console.log (field);
+				// });
+
+        console.log(result.creationDateLocal);
+        console.log(result.location.latitude);
+				console.log(result.location.longitude);
+				console.log(result.location.areaDescription);
+				console.log(result.location.elevation);
+
+        console.log(result.time.startPeriodName[0] + " -— " + result.data.text[0]);
+        console.log(result.time.startPeriodName[1] + " -— " + result.data.text[1]);
+
+        console.log("current temp = " + result.currentobservation.Temp);
+
+			}); // getJSON
+		});  // $(document)
+
+		</script>
+
+	</head>
+	<body>
+
+		<!-- 3. Add the container -->
+		<div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
