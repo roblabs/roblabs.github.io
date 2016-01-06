@@ -13,40 +13,25 @@
 </head>
 <body>
 
-  <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
-  <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
-  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js'></script>
-  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.mapbox.css' rel='stylesheet' />
-  <!--[if lt IE 9]>
-  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.ie.css' rel='stylesheet' />
-  <![endif]-->
-  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/css/font-awesome.min.css' rel='stylesheet' />
-
-
 <div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw';
 var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/roblabs/ciipm0fpt00a88ulx7ahm3how', //stylesheet location
+    // style: 'https://www.mapbox.com/mapbox-gl-styles/styles/mapbox-streets-v7.json'
     center: [-117.1205, 32.9819], // starting position
                                                           //  N:33.01331; E:-117.083976; S:32.953801; W:-117.176398
                                                           // West South East North
                                                           // W-117.176398 S32.953801 E-117.083976 N33.01331
                                                           // -117.176398 32.953801 -117.083976 33.01331
-    zoom: 14, // starting zoom
-    minZoom: 14,
+    zoom: 9, // starting zoom
+    minZoom: 9,
     maxZoom: 16.9
 });
 
 // // Add zoom and rotation controls to the map.
-// map.addControl(new mapboxgl.Navigation());
-//
-// L.mapbox.accessToken = 'pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw';
-//
-//     var map = L.mapbox.map('map', 'roblabs.bwj1vj4d');
-//     L.control.locate().addTo(map);
-
+map.addControl(new mapboxgl.Navigation());
 </script>
 
 </body>
