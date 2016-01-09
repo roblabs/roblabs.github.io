@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>blackmountaintrailmap</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.mapbox.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/css/font-awesome.min.css' rel='stylesheet' />
+
+    <style>
+      html, body, #map {width:100%; height:100%; margin:0; padding:0;}
+      .leaflet-container {background-color: #ddd;}
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script>
+      var tilejson = {
+        'name':'blackmountaintrailmap',
+        'version':'1.0.0',
+        'description':'Black Mountain Open Space Park is owned and managed by the City of San Diego and is made up of a series of chaparral and sage covered hills, ridges, and canyons. The park is currently 2,352 acres.',
+        'type':'overlay',
+        'format':'png',
+        'minzoom':9,
+        'maxzoom':17,
+        'bounds':[-117.176398,32.95378261,-117.08397581,33.01331],
+        'scale':'1',
+        'profile':'mercator',
+        'index':'null',
+        'tilejson':'null',
+        'basename':'blackmountaintrailmap',
+        'center':[-117.130187,32.983546,13],
+        'tiles':["http://roblabs.github.io/blackmountain-leaflet/{z}/{x}/{y}.png"] //'tiles':["{z}/{x}/{y}.png"]
+      };
+// http://www.googledrive.com/host/0Bz03QjAuY_6CRU1JWnF2b1F3LWs/
+var map = L.mapbox.map('map').setView([32.983546,-117.130187], 11);
+L.mapbox.accessToken = 'pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw';
+L.mapbox.tileLayer('mapbox.light').addTo(map);
+L.mapbox.tileLayer(tilejson).addTo(map);
+
+// UI controls
+L.control.scale().addTo(map);
+L.control.locate().addTo(map);
+
+var info = L.mapbox.infoControl();
+map.addControl(info);
+    </script>
+  </body>
+</html>
