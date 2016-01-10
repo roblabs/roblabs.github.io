@@ -11,12 +11,11 @@ photo_url: https://lh3.googleusercontent.com/xWbbah2r1D-lkW4o9nLmGRZaKhldpz3Ykxe
 permalink: /Black-Mountain/
 ---
 
-## Paper Maps for Black Mountain is a mobile app for making offline hiking maps for Black Mountain Open Preserve.
+## Paper Maps for Black Mountain.  Mobile app.
 
 ### Beta testing
 Please fill out the web form and let us know
-if you would like to test on Android or iOS.  For iOS will receive an email from Apple.  
-For Android will just use a link give on the form.
+if you would like to test on Android or iOS.  For iOS will receive an email from Apple.  For Android you see the link.
 
 * [Signup for the beta for iOS or Android][beta].  
 
