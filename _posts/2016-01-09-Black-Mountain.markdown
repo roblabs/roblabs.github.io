@@ -1,19 +1,33 @@
 ---
 layout: post
-title:  "Black Mountain Open Preserve"
+title:  "Paper Maps for Black Mountain"
+description: ""
 date:   2016-01-09T14:45:03-08:00
 author: roblabs
 categories: [Mapbox, Paper Maps, LeafletJS]
 tags: [Mapbox, Paper Maps, LeafletJS]
-description: ""
+
 photo_url: https://lh3.googleusercontent.com/xWbbah2r1D-lkW4o9nLmGRZaKhldpz3YkxeINIaeatrmlgnZlNXIyTZPSNl3sLdPLA=h80
 permalink: /Black-Mountain/
 ---
 
+## Paper Maps for Black Mountain is a mobile app for making offline hiking maps for Black Mountain Open Preserve.
+
+### Beta testing
+Please fill out the web form and let us know
+if you would like to test on Android or iOS.  For iOS will receive an email from Apple.  
+For Android will just use a link give on the form.
+
+* [Signup for the beta for iOS or Android][beta].  
+
+
+### Prototypes
+The way to have a good idea is to ___have many ideas___.  Here are some mobile web browser prototypes.  
+
 * [Mapbox.js][Mapbox] — servers from Mapbox
 * [Mapbox-gl.js][mapbox-gl-js] — Vector maps with a raster-to-vector overlay.
 * [Mapbox.js + local path rasters][tilejson-local-server-github] — Similar to Mapbox.js, but raster tiles are served from a local relative path.
-* [Signup for the beta for iOS or Android][beta]
+
 
 
 
