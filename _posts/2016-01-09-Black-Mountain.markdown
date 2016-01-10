@@ -15,7 +15,7 @@ permalink: /Black-Mountain/
 
 ### Beta testing
 Please fill out the web form and let us know
-if you would like to test on Android or iOS.  For iOS will receive an email from Apple.  For Android you see the link.
+if you would like to test on Android or iOS.  For iOS will receive an email from Apple.  For Android you will see a link.
 
 * [Signup for the beta for iOS or Android][beta].  
 
