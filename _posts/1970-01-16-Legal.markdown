@@ -9,7 +9,7 @@ tags: [Mapbox, Paper Maps]
 permalink: /Legal/
 ---
 
-## Paper Maps for Black Mountain powered by ePi
+## Paper Maps for Black Mountain powered by eπ
 Copyright © 2015-2016 ePi Rational, Inc.  
 Publisher assumes no liability for safety or condition of roads or trails.
 
