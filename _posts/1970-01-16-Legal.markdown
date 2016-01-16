@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Legal"
+description: ""
+date:   2016-01-16T12:20:46-08:00
+author: ePi Rational, Inc.
+categories: [Mapbox, Paper Maps,]
+tags: [Mapbox, Paper Maps]
+permalink: /Legal/
+---
+
+## Paper Maps for Black Mountain powered by ePi
+Copyright © 2015-2016 ePi Rational, Inc.  
+Publisher assumes no liability for safety or condition of roads or trails.
+
+### Our Privacy Policy
+* We do not collect or store any personal information about you,
+except what you voluntarily provide through RobLabs.com or other direct contact.
+* Our providers have their own Privacy Policy which we make available to you.
+  * [Mapbox Privacy]
+
+### Data providers:
+* Mapbox [© Mapbox][Mapbox]
+* OpenStreetMap [© OpenStreetMap contributors][OpenStreetMap]
+* Black Mountain Open Preserve [© City of San Diego][SanDiego]
+
+[Mapbox]: https://www.mapbox.com/about/maps/
+[Mapbox Privacy]:  https://www.mapbox.com/privacy
+[OpenStreetMap]: http://www.openstreetmap.org/copyright/
+[SanDiego]: http://www.sandiego.gov/
+[tsg]:  http://www.timestampgenerator.com
