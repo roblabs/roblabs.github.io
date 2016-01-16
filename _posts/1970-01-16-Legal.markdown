@@ -28,4 +28,5 @@ except what you voluntarily provide through RobLabs.com or other direct contact.
 [Mapbox Privacy]:  https://www.mapbox.com/privacy
 [OpenStreetMap]: http://www.openstreetmap.org/copyright/
 [SanDiego]: http://www.sandiego.gov/
+[Apple Maps]: http://gspe21.ls.apple.com/html/attribution-12.html
 [tsg]:  http://www.timestampgenerator.com
