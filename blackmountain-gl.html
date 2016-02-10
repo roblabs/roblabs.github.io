@@ -4,8 +4,8 @@
     <meta charset='utf-8' />
     <title>Mapbox-gl.js — Black Mountain Open Preserve</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -18,13 +18,10 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw';
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/roblabs/ciipm0fpt00a88ulx7ahm3how', //stylesheet location
+    style: 'mapbox://styles/roblabs/cikgigs06003gapm5otm8mj58',
+    // stylesheet location
     // style: 'https://www.mapbox.com/mapbox-gl-styles/styles/mapbox-streets-v7.json'
     center: [-117.1205, 32.9819], // starting position
-                                                          //  N:33.01331; E:-117.083976; S:32.953801; W:-117.176398
-                                                          // West South East North
-                                                          // W-117.176398 S32.953801 E-117.083976 N33.01331
-                                                          // -117.176398 32.953801 -117.083976 33.01331
     zoom: 9, // starting zoom
     minZoom: 9,
     maxZoom: 16.9
