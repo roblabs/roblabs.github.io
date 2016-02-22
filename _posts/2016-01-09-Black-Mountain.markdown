@@ -2,7 +2,7 @@
 layout: post
 title:  "Paper Maps for Black Mountain"
 description: ""
-date:   2016-01-09T14:45:03-08:00
+date:   2016-02-22T13:02:05-08:00
 author: roblabs
 categories: [Mapbox, Paper Maps, LeafletJS]
 tags: [Mapbox, Paper Maps, LeafletJS]
@@ -13,14 +13,13 @@ permalink: /Black-Mountain/
 
 ## Paper Maps for Black Mountain.  Mobile app.
 
-### Beta testing
-Please fill out the web form and let us know
-if you would like to test on Android or iOS.  For iOS will receive an email from Apple.  For Android you will see a link.
+### Available on Apple App Store and Google Play Store
 
-* [Signup for the beta for iOS or Android][beta].  
+* [Apple App Store][ios]  
+* [Google Play Store][android]
 
 
-### Prototypes
+###### Prototypes
 The way to have a good idea is to ___have many ideas___.  Here are some mobile web browser prototypes.  
 
 * [Mapbox.js][Mapbox] — servers from Mapbox
@@ -35,3 +34,5 @@ The way to have a good idea is to ___have many ideas___.  Here are some mobile w
 [tilejson-local-server-github]:  http://roblabs.github.io/blackmountain-leaflet/
 [beta]: http://goo.gl/forms/x3G8w5mTSE
 [tsg]:  http://www.timestampgenerator.com
+[ios]:  http://appstore.com/SanDiegoHikes
+[android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.sandiego
