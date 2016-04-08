@@ -19,14 +19,7 @@ permalink: /Black-Mountain/
 * [Google Play Store][android]
 
 
-###### Prototypes
-The way to have a good idea is to ___have many ideas___.  Here are some mobile web browser prototypes.  
-
-* [Mapbox.js][Mapbox] — servers from Mapbox
-* [Mapbox-gl.js][mapbox-gl-js] — Vector maps with a raster-to-vector overlay.
-* [Mapbox.js + local path rasters][tilejson-local-server-github] — Similar to Mapbox.js, but raster tiles are served from a local relative path.
-
-
+![black Mountain](https://lh3.googleusercontent.com/tvtBD_DM9G6zjaypULH1uGMYv-JuO2bsNPsGJB6wDJlxjWWmOpfJJ_-W-SYPwqIN3Ill=w300)
 
 
 [Mapbox]:   http://roblabs.github.io/blackmountain.html
