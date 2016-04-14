@@ -2,7 +2,7 @@
 layout: post
 title:  "Paper Maps for Black Mountain"
 description: ""
-date:   2016-02-22T13:02:05-08:00
+date:   2016-04-13T13:02:05-08:00
 author: roblabs
 categories: [Mapbox, Paper Maps, LeafletJS]
 tags: [Mapbox, Paper Maps, LeafletJS]
