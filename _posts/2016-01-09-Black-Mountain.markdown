@@ -11,9 +11,9 @@ photo_url: https://lh3.googleusercontent.com/xWbbah2r1D-lkW4o9nLmGRZaKhldpz3Ykxe
 permalink: /Black-Mountain/
 ---
 
-## Paper Maps for Black Mountain.  Mobile app.
+## Paper Maps for San Diego Hikes.  Mobile app.
 
-### Available on Apple App Store and Google Play Store
+### San Diego Hikes is available on the Apple App Store and Google Play Store
 
 * [Apple App Store][ios]  
 * [Google Play Store][android]
