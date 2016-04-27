@@ -9,7 +9,7 @@ tags: [Mapbox, Paper Maps]
 permalink: /Legal/
 ---
 
-## Paper Maps for Black Mountain powered by eπ
+## Paper Maps for Mobile powered by eπ
 Copyright © 2015-2016 ePi Rational, Inc.  
 Publisher assumes no liability for safety or condition of roads or trails.
 
@@ -22,7 +22,8 @@ except what you voluntarily provide through RobLabs.com or other direct contact.
 ### Data providers:
 * Mapbox [© Mapbox][Mapbox]
 * OpenStreetMap [© OpenStreetMap contributors][OpenStreetMap]
-* Black Mountain Open Preserve [© City of San Diego][SanDiego]
+* Black Mountain Open Preserve, Mission Trails [© City of San Diego][SanDiego]
+* San Diego Surf © ePiRational, Inc.
 
 [Mapbox]: https://www.mapbox.com/about/maps/
 [Mapbox Privacy]:  https://www.mapbox.com/privacy
