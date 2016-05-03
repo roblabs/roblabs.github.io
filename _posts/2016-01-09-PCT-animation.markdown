@@ -20,6 +20,6 @@ Since the video is about 45 seconds, the GIF files are fairly large.  So for bet
 
 ![](https://github.com/roblabs/roblabs.github.com/raw/master/images/pct-animation-480-medium.gif)  
 
-* [Larger version (40 MB)](https://drive.google.com/file/d/0Bz03QjAuY_6CNkF6MFBmODZ6cE0/view?pref=2&pli=1)
+* [Larger version (40 MB)](https://drive.google.com/file/d/0Bz03QjAuY_6CNkF6MFBmODZ6cE0/view?pref=2&pli=1){:target="_blank"}
 
 [tsg]:  http://www.timestampgenerator.com
