@@ -1,10 +1,10 @@
 ---
+layout: post
 title: 'Firebase-test'
 date: 2016-06-07 22:04:39 -0800
-author: roblabs
-version: 3.0.1
-categories: Firebase
-tags:
+author: ePi Rational, Inc.
+categories: [Firebase]
+tags: [Firebase]
 permalink: /Firebase-test/
 ---
 
