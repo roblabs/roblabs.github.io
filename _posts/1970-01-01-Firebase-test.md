@@ -1,5 +1,4 @@
 ---
-layout: news_item
 title: 'Firebase-test'
 date: 2016-06-07 22:04:39 -0800
 author: roblabs
