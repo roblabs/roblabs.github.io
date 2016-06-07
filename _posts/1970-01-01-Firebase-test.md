@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Firebase-test'
-date: 2016-06-07 22:04:39 -0800
+date: 2016-06-06 22:04:39 -0800
 author: ePi Rational, Inc.
 categories: [Firebase]
 tags: [Firebase]
