@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>A simple map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+
+
+<!-- OUTDOORS -->
+<div id="mapbox-outdoors" class='fill-light pad4y'>
+  <div class="limiter clearfix">
+     <h1 class="pad4y">Mapbox Outdoors</h1>
+      <div class="clearfix space-bottom4">
+        <p class="prose-big col9"> Mapbox Outdoors is a terrain map with detailed elevation and landcover data. The map features hillshades to orient runners, topography lines to help hikers judge ascents, and roads designed for overlaying GPS tracks.
+        </p>
+      </div>
+   </div>
+
+
+    <div class='contain bleed-section fill-light map-container'>
+      <a href='#next' class='button icon refresh fill-midnight js-next ' id='next'>Rothrock State Forest, Pennsylvania</a>
+      <div class='dark col12' id='map'></div>
+    </div>
+
+</div>
+
+
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ';
+
+var mapLocations = [{
+        lat: 40.7084,
+        lon: -77.7324,
+        z: 12,
+        description: 'Rothrock State Forest, Pennsylvania'
+    }, {
+        lat: 60.0184,
+        lon: -353.6520,
+        z: 11,
+        description: 'Folgefonna, Norway'
+    }, {
+        lat: 46.1963,
+        lon: -482.1879,
+        z: 13,
+        description: 'Mount St Helens, Washington'
+    }, {
+        lat: 51.2060,
+        lon: -117.5242,
+        z: 12,
+        description: 'Glacier National Park, Canada'
+    }, {
+        lat: -38.2329,
+        lon: 176.5084,
+        z: 12,
+        description: 'Mount Tarawera, New Zealand'
+    }];
+
+var map = L.mapbox.map('map', 'mapbox.outdoors')
+    .setView([mapLocations[0].lat,mapLocations[0].lon],mapLocations[0].z);
+
+    map.zoomControl.setPosition('topright');
+
+    var i = 1;
+$('.js-next').on('click', function() {
+  if (i === mapLocations.length) i = 0;
+  map.setView([mapLocations[i].lat,mapLocations[i].lon],mapLocations[i].z);
+  $(this).text(mapLocations[i].description);
+  i++;
+  return false;
+});
+</script>
+</body>
+</html>
