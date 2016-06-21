@@ -1,28 +1,108 @@
 ---
-layout: default
+layout: home
+title: Maps for Mobile
+description: Mobile apps.
+permalink: /
 ---
 
-<div class="home">
+<!-- Octicon names can be found here  -->
+<!-- https://octicons.github.com -->
 
-  <h1 class="page-heading">Posts</h1>
+<div id="built" class="mini-section">
+<div class="section container features">
+  <div class="row">
+    <div class="col-md-6 feature">
+      <span class="mega-octicon octicon-mirror"></span>
+      <h3>Built for the outdoors</h3>
+      <p>eπ Maps are built for hikers, bikers, surfers, equestrian, off roaders and anyone else that needs good offline maps.  We have many
+        <a href="https://twitter.com/e_pi_rational" target="_blank"> innovations</a> that we like to share with the world.</p>
+    </div>
+    <div class="col-md-6 feature">
+      <span class="mega-octicon octicon-graph"></span>
+      <h3>Built with data</h3>
+      <p>Our maps are carefully poured over using the latest data tools to ensure high quality mobile maps.</p>
+    </div>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <!-- Row two -->
+  <div class="row">
+    <div class="col-md-6 feature">
+      <span class="mega-octicon octicon-milestone"></span>
+      <h3>Built for iOS</h3>
+        <p>The <a href="https://itunes.apple.com/us/developer/epi-rational-inc./id416401310" target="_blank">iOS suite of apps</a> are built with Swift, a little C++ and the latest <a href="https://www.mapbox.com/mobile/" target="_blank">Mapbox iOS SDks</a>.</p>
+    </div>
 
-        <h4>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <div class="col-md-6 feature">
+      <span class="mega-octicon octicon-location"></span>
+      <h3>Built for Android</h3>
+      <p>The <a href="https://play.google.com/store/search?q=com.roblabs.papermaps&c=apps" target="_blank">Android suite of apps</a> are built with Java, a little C++ and the latest <a href="https://www.mapbox.com/mobile/" target="_blank">Mapbox Android SDks</a>.</p>
+    </div>
+  </div>
 
-            {% if post.description %}
-              <span class="body">{{ post.description | markdownify }}</span>
-            {% endif %}
-            {% if post.photo_url %}
-              <img alt="alt" src="{{ post.photo_url }}">
-            {% endif %}
-        </h4>
-      </li>
-    {% endfor %}
-  </ul>
 
+  <div class="row">
+    <div class="col-md-6 feature">
+      <span class="mega-octicon octicon-globe"></span>
+      <h3>The World delivered</h3>
+      <p>We use data from <a href="https://www.openstreetmap.org/#map=10/32.8317/-117.0992" target="_blank">OpenStreetMap</a>; a map of the world.</p>
+    </div>
+    <div class="col-md-6 feature">
+      <span class="mega-octicon octicon-terminal"></span>
+      <h3>Belief in Open Source</h3>
+      <p>We believe in Open Source and
+        <a href="https://github.com/roblabs" target="_blank"                               >contribute</a>
+        <a href="https://github.com/roblabs?tab=activity" target="_blank"                  >any</a>
+        <a href="https://github.com/roblabs?tab=repositories" target="_blank"              >way</a>
+        <a href="http://stackoverflow.com/users/388210/roblabs?tab=profile" target="_blank">we</a>
+        <a href="https://github.com/roblabs/mapbox-gl-native" target="_blank"              >can</a>.
+      </p>
+    </div>
+
+
+  </div>
+
+</div>
+</div>
+
+<div class="mini-section more-than">
+  <div class="container">
+    <h1 id="more-than-just-code">Maps for Mobile</h1>
+    <h3 class="lead-graf">Android and iOS</a>.</h3>
+
+    <div class="row section source-data-code">
+      <div class="col-md-4 animate-out">
+        <h3>San Diego Hikes</h3>
+        <p><a href="https://gn7vb.app.goo.gl/3xzT" target="_blank">
+          <img src="assets/img/sd-hikes.png" alt="San Diego Hikes app"/></a>
+        </p>
+        <small>Moble app for iOS and Android for great front country hikes in San Diego County.<br>Check out classic hikes like Torrey Pines State Natural Reserve or Mission Trails Regional Park.</small>
+      </div>
+
+      <div class="col-md-4 animate-out">
+        <h3>San Diego Surf</h3>
+        <p><a href="https://itunes.apple.com/us/app/san-diego-surf/id1090997398?mt=8" target="_blank">
+          <img src="assets/img/sd-surf.png" alt="San Diego Surf app"/></a>
+        </p>
+        <small>Working with Mellow Kat Productions to take their La Jolla Surf paper map and move to mobile.<br>We did this by georeferencing and rastering for iOS.</small>
+      </div>
+
+      <div class="col-md-4 animate-out">
+        <h3>Mount Whitney</h3>
+        <p><a href="https://play.google.com/store/apps/details?id=com.roblabs.papermaps.whitney" target="_blank">
+          <img src="assets/img/mt-whitney.png" alt="Mt Whitney app"/></a>
+        </p>
+        <small>One of the premier hikes in the Eastern Sierra.  Is it on your `peak bag` list?</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div id="contact-a-human" class="full-width human">
+  <div class="container mini-section">
+    <span class="mega-octicon octicon-person"></span>
+    <h3>Talk to a human</h3>
+    <p>Fill out this <a href="https://docs.google.com/a/roblabs.com/forms/d/1orObDJ-n_duWkJfQNa4dE1xtlGhVLHqPvb3ccetKMbQ/edit"  target="_blank">form</a> and someone will reply back to you shortly. <br>We are based in San Diego, California.</p>
+  </div>
 </div>
