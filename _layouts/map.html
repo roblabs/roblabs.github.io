@@ -1,0 +1,21 @@
+---
+layout: map
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include mapbox-gl-js.js %}
+
+    {{ content }}
+
+    {% include analytics.html %}
+
+    {% include footer.html %}
+
+  </body>
+</html>
