@@ -19,7 +19,7 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/roblabs/ciqk2376r000lb9m98hmyzwr7',
     zoom: 11,
     minZoom: 11,
-    maxZoom: 16,
+    maxZoom: 14.9,
     center: [-116.4481389909246,32.800675247049625, 11]
 });
 
