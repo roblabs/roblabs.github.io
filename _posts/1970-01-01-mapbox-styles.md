@@ -10,18 +10,9 @@ permalink: /Mapbox/
 ---
 
 
-<style>
-body { margin:0; padding:0; }
-#map { position:absolute; top:0; bottom:0; width:100%; }
-#menu {
-    position: relative;
-    background: #fff;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-</style>
 
 <div id='map'></div>
+<div id='zoom-level'>Zoom, Lat, Lng</div>
 <div id='menu'>
     <input id='ciqk2376r000lb9m98hmyzwr7' type='radio' name='rtoggle' value='ciqk2376r000lb9m98hmyzwr7' checked='checked'>
       <label for='basic'>US Forest Service Trails</label>
@@ -43,6 +34,23 @@ var map = new mapboxgl.Map({
     zoom: 9,
     center: [-116.641194, 33.199951]
 });
+
+map.on('zoomend', function(){
+  ZoomOrDragEnd();
+});
+
+map.on('moveend', function(){
+  ZoomOrDragEnd();
+});
+
+function ZoomOrDragEnd(){
+  var zoom = map.getZoom();
+  var center = map.getCenter().toArray();
+
+  var zoomOutput = parseFloat(zoom).toFixed(2);
+  var centerOutput = parseFloat(center[1]).toFixed(4) + ', ' + parseFloat(center[0]).toFixed(4);
+  document.getElementById('zoom-level').innerHTML = 'Zoom, Lat, Lng:  ' + zoomOutput + ', ' + centerOutput;
+}
 
 var layerList = document.getElementById('menu');
 var inputs = layerList.getElementsByTagName('input');
