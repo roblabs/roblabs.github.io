@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "San Diego Hikes"
+description: ""
+date:   2016-08-01T00:20:46-08:00
+author: ePi Rational, Inc.
+categories: [Mapbox, Paper Maps,]
+tags: [Mapbox, Paper Maps]
+permalink: /San-Diego-Hikes/
+---
+
+## San Diego Hikes — eπ Maps
+
+### Join our Beta Program:
+* You can join our Beta program by launching this link in Chrome on your  [Android device][beta]
+* There you can see the details of the Beta program including options on how to opt out
+* As always, our [legal terms][legal] apply.  In general, we do not share your information with any one.
+
+![img](../assets/img/epi-beta.png)
+
+[beta]: https://play.google.com/apps/testing/com.roblabs.papermaps.sandiego
+[legal]:  https://www.mapbox.com/privacy
+[OpenStreetMap]: http://www.openstreetmap.org/copyright/
+[SanDiego]: http://www.sandiego.gov/
+[Apple Maps]: http://gspe21.ls.apple.com/html/attribution-12.html
+[tsg]:  http://www.timestampgenerator.com
