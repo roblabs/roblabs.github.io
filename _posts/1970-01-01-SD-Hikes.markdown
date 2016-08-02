@@ -38,7 +38,7 @@ permalink: /San-Diego-Hikes/
 ![screen shot](../assets/img/goodan-los.png)
 
 [beta]: https://play.google.com/apps/testing/com.roblabs.papermaps.sandiego
-[legal]:  https://RobLabs.com/Legal
+[legal]:  http://RobLabs.com/Legal
 [OpenStreetMap]: http://www.openstreetmap.org/copyright/
 [SanDiego]: http://www.sandiego.gov/
 [Apple Maps]: http://gspe21.ls.apple.com/html/attribution-12.html
