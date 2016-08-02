@@ -11,17 +11,31 @@ permalink: /San-Diego-Hikes/
 
 ## San Diego Hikes — eπ Maps
 
-### Join our Beta Program:
+### Join our Beta Program for San Diego Hikes
+* As always, our [legal terms][legal] apply.  In general, we do not share your information with any one.  
+
+#### iOS
+* Apple uses TestFlight, so to join the Beta program for iPhones and iPads, you will need to provide your email address.  Please send it to _paperMaps *AT* roblabs dot com_
+* Then you will receive an email from Apple.com instructing how to install and opt out if you choose to in the future.
+
+#### Android
 * You can join our Beta program by launching this link in Chrome on your  [Android device][beta]
 * There you can see the details of the Beta program including options on how to opt out
-* As always, our [legal terms][legal] apply.  In general, we do not share your information with any one.
 
 -----
 
-![img](../assets/img/epi-beta.png)
+#### iOS
+
+![epi-beta-ios](../assets/img/epi-beta-ios.png)
+
 -----
 
-![img](../assets/img/goodan-los.png)
+#### Android
+
+![epi-beta-android](../assets/img/epi-beta.png)
+-----
+
+![screen shot](../assets/img/goodan-los.png)
 
 [beta]: https://play.google.com/apps/testing/com.roblabs.papermaps.sandiego
 [legal]:  https://www.mapbox.com/privacy
