@@ -16,7 +16,12 @@ permalink: /San-Diego-Hikes/
 * There you can see the details of the Beta program including options on how to opt out
 * As always, our [legal terms][legal] apply.  In general, we do not share your information with any one.
 
+-----
+
 ![img](../assets/img/epi-beta.png)
+-----
+
+![img](../assets/img/goodan-los.png)
 
 [beta]: https://play.google.com/apps/testing/com.roblabs.papermaps.sandiego
 [legal]:  https://www.mapbox.com/privacy
