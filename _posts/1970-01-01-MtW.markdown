@@ -24,9 +24,9 @@ Mount Whitney Zone is available on the Apple App Store and Google Play Store
 * [Mount Whitney Zone in the Apple App Store][ios]  
 * [Mount Whitney Zone in the Google Play Store][android]
 
-
-![Mt W](https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9SdfN41hSjL2Brz0rXDXh-tkmRcSvRDifFjA=h150)
-
+<iframe width = "600" height = "400" src="https://api.mapbox.com/styles/v1/roblabs/ciomh54ic000kbolza4305pev.html?title=false&access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw#13/36.57376772735431/-118.28936228492913/0">
+  <p>Your browser does not support iframes.</p>
+</iframe>
 
 [ios]:  https://itunes.apple.com/us/app/mt-whitney-ep-maps/id1133292347?mt=8
 [android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.whitney
