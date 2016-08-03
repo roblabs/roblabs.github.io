@@ -23,7 +23,7 @@ except what you voluntarily provide through RobLabs.com or other direct contact.
 * Mapbox [© Mapbox][Mapbox]
 * OpenStreetMap [© OpenStreetMap contributors][OpenStreetMap]
 * Black Mountain Open Preserve, Mission Trails [© City of San Diego][SanDiego]
-* San Diego Surf © ePiRational, Inc.
+* San Diego Surf © ePi Rational, Inc.
 
 [Mapbox]: https://www.mapbox.com/about/maps/
 [Mapbox Privacy]:  https://www.mapbox.com/privacy
