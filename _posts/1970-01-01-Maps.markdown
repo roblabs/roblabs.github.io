@@ -16,6 +16,12 @@ photo_url: https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9Sdf
 
 Anyone going to the back country needs a decent map.  Most outdoor stores sell 7.5 minute topographic maps (maps with contours).  But there are great online resources to download and buy topo maps.
 
+
+#### CalTopo.com
+[CalTopo.com][caltopo] is a great resource for generating Geospatial PDFs.  You can center the map at your particular latitude/longitude instead of trying to span multiple quadrangles.  Then you get a URL that you can use to download your PDF for printing.
+
+-----
+
 #### United States Forest Service
 
 The [USFS][usfs] has a site for downloading PDFs of their format called "FSTopo GeoPDFs".  These maps can be viewed any usual PDF reader and printed out.
@@ -43,15 +49,17 @@ The USGS Topos have a different features set
 * If you wish to print with out the satellite, then you have to use a GeoPDF plugin to disable the image layer.
 
 ![usgs-topo.png](../assets/img/usgs-topo.png)
+
 -----
 
 #### Live Online map of the Mount Whitney Zone
-<iframe width = "500" height = "300" src="https://api.mapbox.com/styles/v1/roblabs/ciomh54ic000kbolza4305pev.html?title=false&access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw#13/36.57376772735431/-118.28936228492913/0">
+<iframe width = "100%" height = "300" src="https://api.mapbox.com/styles/v1/roblabs/ciomh54ic000kbolza4305pev.html?title=false&access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw#13/36.57376772735431/-118.28936228492913/0">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
 [usgs]: http://store.usgs.gov/b2c_usgs/usgs/maplocator/(ctype=areaDetails&xcm=r3standardpitrex_prd&carea=%24ROOT&layout=6_1_61_48&uiarea=2)/.do
 [usfs]:  http://data.fs.usda.gov/geodata/rastergateway/states-regions/grid_zoom.php?stateID=ca&gridSrc=32116
+[caltopo]: http://caltopo.com/map.html#ll=36.5785,-118.29075&z=15&b=t
 [ios]:  https://itunes.apple.com/us/app/mt-whitney-ep-maps/id1133292347?mt=8
 [android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.whitney
 
