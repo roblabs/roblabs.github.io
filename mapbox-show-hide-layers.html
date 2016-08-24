@@ -14,14 +14,14 @@
 <body>
 
 <div id='map'>
-   <input id='slider' type='range' min='0' max='2' step='1' value='0' />
-   <div id='menu'>
-    <input id='7zxu41yf' type='radio' name='rtoggle' value='7zxu41yf' checked='checked'>
-      <label for='7zxu41yf'>54 MB PNG, 512 px, GDAL</label>
-    <input id='cejiypsd' type='radio' name='rtoggle' value='cejiypsd'>
-      <label for='cejiypsd'>37 MB PNG, 256 px, MapTiler</label>
-    <input id='3jz0zo7h' type='radio' name='rtoggle' value='3jz0zo7h'>
-      <label for='3jz0zo7h'>15 MB WEBP, 256 px, Studio</label>
+   <!-- <input id='slider' type='range' min='0' max='2' step='1' value='0' /> -->
+   <!-- <div id='menu'> -->
+    <!-- <input id='7zxu41yf' type='radio' name='rtoggle' value='7zxu41yf' checked='checked'> -->
+      <!-- <label for='7zxu41yf'>54 MB PNG, 512 px, GDAL</label> -->
+    <!-- <input id='cejiypsd' type='radio' name='rtoggle' value='cejiypsd'> -->
+      <!-- <label for='cejiypsd'>37 MB PNG, 256 px, MapTiler</label> -->
+    <!-- <input id='3jz0zo7h' type='radio' name='rtoggle' value='3jz0zo7h'> -->
+      <!-- <label for='3jz0zo7h'>15 MB WEBP, 256 px, Studio</label> -->
 
 </div>
 </div>
@@ -38,6 +38,7 @@ var rootSourceUrlLayerId = { "rootSourceUrl": "mapbox://roblabs.",  "rootLayerId
 
 // Populate this list from those on Mapbox.com
 var tilesNASAGeoTiffsLayerIds = [
+  '24mkqt5e',
   '7zxu41yf',
   'cejiypsd',
   '0ec3onax'
@@ -46,7 +47,7 @@ var tilesNASAGeoTiffsLayerIds = [
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
+    style: 'mapbox://styles/mapbox/satellite-v9',
     zoom: 3,
     center: [-122.447303, 37.753574]
 });
