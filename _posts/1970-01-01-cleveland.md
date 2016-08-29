@@ -14,13 +14,19 @@ permalink: /Cleveland/
 
 <script>
 
+var bounds = [     // WSEN
+    [-116.9,32.6], // Southwest coordinates
+    [-116.4,33.0]  // Northeast coordinates
+];
+
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/roblabs/ciqk2376r000lb9m98hmyzwr7',
     zoom: 11,
     minZoom: 7,
     maxZoom: 14.9,
-    center: [-116.4481389909246,32.800675247049625, 11]
+    center: [-116.4481389909246,32.800675247049625, 11],
+    maxBounds: bounds
 });
 
 map.on('zoomend', function(){
