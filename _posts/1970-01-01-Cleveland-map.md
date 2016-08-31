@@ -1,12 +1,12 @@
 ---
 layout: map
-title:  "Mount Whitney"
-description: ""
+title:  "Cleveland National Forest"
+description: "Mapbox map of Cleveland National Forest Trails"
 date:   2016-07-12T12:20:46-08:00
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
-permalink: /MtW/map/
+permalink: /Cleveland/map/
 ---
 
 <div id='map'></div>
@@ -15,17 +15,17 @@ permalink: /MtW/map/
 <script>
 
 var bounds = [     // WSEN
-    [-118.4,36.5], // Southwest coordinates
-    [-118.1,36.6]  // Northeast coordinates
+    [-116.9,32.6], // Southwest coordinates
+    [-116.4,33.0]  // Northeast coordinates
 ];
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/roblabs/ciomh54ic000kbolza4305pev',
+    style: 'mapbox://styles/roblabs/ciqk2376r000lb9m98hmyzwr7',
     zoom: 13,
-    minZoom: 11,
+    minZoom: 7,
     maxZoom: 14.9,
-    center: [-118.2896, 36.5631, 13],
+    center: [-116.4317, 32.8611, 11],
     maxBounds: bounds
 });
 

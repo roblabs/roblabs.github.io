@@ -1,48 +1,32 @@
 ---
-layout: map
+layout: post
 title:  "Cleveland National Forest"
 description: "Mapbox map of Cleveland National Forest Trails"
-date:   2016-07-12T12:20:46-08:00
+date:   2016-08-30T12:20:46-08:00
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
 permalink: /Cleveland/
 ---
 
-<div id='map'></div>
-<div id='zoom-level'>Zoom, Lat, Lng</div>
+## Cleveland National Forest — eπ Maps
 
-<script>
+#### Features
+* Topographic & trail map of Mt Laguna, Cuyamaca Peak, Descanso, Monument Peak and several other quadrangles in the Cleveland National Forest.
+* The map is based on US Forest Service 7.5 quadrangles for the Cleveland NF. These USFS topo quads were updated in January 2016, so you have the latest maps possible.
+* Use your GPS to see your location on the trail
+* Topographic & trail map of Mt Laguna, Cuyamaca Peak, Descanso in Cleveland National Forest
 
-var bounds = [     // WSEN
-    [-116.9,32.6], // Southwest coordinates
-    [-116.4,33.0]  // Northeast coordinates
-];
+Available in your devices app store
 
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/roblabs/ciqk2376r000lb9m98hmyzwr7',
-    zoom: 11,
-    minZoom: 7,
-    maxZoom: 14.9,
-    center: [-116.4481389909246,32.800675247049625, 11],
-    maxBounds: bounds
-});
+<!-- * [Cleveland National Forest in the Apple App Store][ios]   -->
+* [Cleveland National Forest in the Google Play Store][android]
 
-map.on('zoomend', function(){
-  ZoomOrDragEnd();
-});
+<iframe width = "100%" height = "400" src="/Cleveland/map">
+  <p>Your browser does not support iframes.</p>
+</iframe>
 
-map.on('moveend', function(){
-  ZoomOrDragEnd();
-});
+[ios]:  https://itunes.apple.com/us/app/mt-whitney-ep-maps/id1133292347?mt=8
+[android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.usfs.cleveland
 
-function ZoomOrDragEnd(){
-  var zoom = map.getZoom();
-  var center = map.getCenter().toArray();
-
-  var zoomOutput = parseFloat(zoom).toFixed(2);
-  var centerOutput = parseFloat(center[1]).toFixed(4) + ', ' + parseFloat(center[0]).toFixed(4);
-  document.getElementById('zoom-level').innerHTML = 'Zoom, Lat, Lng:  ' + zoomOutput + ', ' + centerOutput;
-}
-</script>
+[tsg]:  http://www.timestampgenerator.com
