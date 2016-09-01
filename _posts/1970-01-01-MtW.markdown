@@ -28,9 +28,11 @@ Mount Whitney Zone is available on the Apple App Store and Google Play Store
   <p>Your browser does not support iframes.</p>
 </iframe>
 
+* [Mount Whitney PDF][FSTopo]
+
 [ios]:  https://itunes.apple.com/us/app/mt-whitney-ep-maps/id1133292347?mt=8
 [android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.whitney
 
 [tsg]:  http://www.timestampgenerator.com
 
-[tilejson-local-server-github]:  http://roblabs.github.io/blackmountain-leaflet/
+[FSTopo]:  http://data.fs.usda.gov/geodata/rastergateway/data/36118/fstopo/363011815_Mount_Whitney_FSTopo.pdf
