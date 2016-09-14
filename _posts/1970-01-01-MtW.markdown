@@ -13,16 +13,17 @@ photo_url: https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9Sdf
 ## Mount Whitney — eπ Maps
 
 #### Features
+* Use the same map — either on mobile, paper or browser
 * Topographic trail map of Mt Whitney, Whitney Portal and Lone Pine.
 * The map is based on US Forest Service 7.5 quadrangles for Mt Whitney and Mt Langley. These USFS topo quads were updated in January 2016, so you have the latest maps possible.
 * Use your GPS to see your location on the trail
 * Topo/contour maps of Mt Whitney, JMT Junction, Trail Crest, Trail Camp, Outpost Camp
 * Contours in Imperial units (feet instead of meters)
 
-Mount Whitney Zone is available on the Apple App Store and Google Play Store
+Mount Whitney is available on the Apple App Store and Google Play Store
 
-* [Mount Whitney Zone in the Apple App Store][ios]  
-* [Mount Whitney Zone in the Google Play Store][android]
+* [Mount Whitney in the Apple App Store][ios]  
+* [Mount Whitney in the Google Play Store][android]
 
 <iframe width = "100%" height = "400" src="/MtW/map">
   <p>Your browser does not support iframes.</p>
