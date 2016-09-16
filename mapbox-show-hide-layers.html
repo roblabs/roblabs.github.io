@@ -75,11 +75,16 @@ function switchLayer(layer) {
     /*
       Update sources and layers
     */
-    currentSource = rootSourceUrlLayerId.rootSourceUrl + layerId;
-    map.addSource(currentSource, {
-          "url": currentSource,
-          "type": "raster"
-        });
+
+    try {
+      currentSource = rootSourceUrlLayerId.rootSourceUrl + layerId;
+      map.addSource(currentSource, {
+            "url": currentSource,
+            "type": "raster"
+          });
+    } catch(err) {
+      console.log(err.message);
+    }
 
     currentLayer = rootSourceUrlLayerId.rootLayerId + layerId;
     map.addLayer({
@@ -93,24 +98,17 @@ function switchLayer(layer) {
     });
 
     /*
-      Clean up older sources and layers
+      Clean up older layers
     */
 
+    // Remove older layer
     try {
-      // Remove older source
-      map.removeSource(previousSource);
-      previousSource = currentSource;
-
-      // Remove older layer
       map.removeLayer(previousLayer);
-      previousLayer = currentLayer;
-
-    }
-    catch(err) {
+    } catch(err) {
       console.log(err.message);
+    } finally {
+      previousLayer = currentLayer;
     }
-
-
 
 }
 
