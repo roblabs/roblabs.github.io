@@ -15,6 +15,7 @@
 
 <div id='map'>
 
+   <!-- The Slider -->
    <label for="chlorophyll-data">CHLOROPHYLL CONCENTRATION (1 MONTH - AQUA/MODIS)</label>
    <input type="range" min="0" step="1" max="6" value="0" id="chlorophyll-data"
        oninput="outputUpdate(value)">
@@ -31,9 +32,10 @@ var previousLayer = "";
 var layerId = "";
 
 // convenience for source and for layer names
+// TODO - change to your Mapbox account name from roblabs
 var rootSourceUrlLayerId = {
   "rootSourceUrl": "mapbox://roblabs.",
-  "rootLayerId"  : "mapbox-roblabs-"
+  "rootLayerId"  : "uniqueId-"
 };
 
 // Populate this list from those on Mapbox.com
@@ -47,42 +49,24 @@ var tilesNASAGeoTiffsLayerIds = [
   'MY1DMM_CHLORA_2016-07'
 ];
 
-
+/**
+ * Initialize a new map
+ */
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-v9',
     zoom: 0,
-    center: [-122.447303, 37.753574]
+    center: [0,0]
 });
 
-
+/**
+ * load -
+ * Fired immediately after all necessary resources have been downloaded
+ * and the first visually complete rendering of the map has occurred.
+ */
 map.on('load', function () {
-
- layerId = tilesNASAGeoTiffsLayerIds[0];
- document.querySelector('#volume').value = layerId;
-
-  currentSource = rootSourceUrlLayerId.rootSourceUrl + layerId;
-  previousSource = currentSource;
-
-  currentLayer = rootSourceUrlLayerId.rootLayerId + layerId;
-  previousLayer = currentLayer;
-
-  map.addSource(currentSource, {
-        "url": currentSource,
-        "type": "raster"
-      });
-
-  map.addLayer({
-      "id": currentLayer,
-      "type": "raster",
-      "source": currentSource,
-      "interactive": true,
-      "layout": {
-          "visibility": "visible"
-      }
-  });
+  switchLayer(0);
 });
-
 
 function switchLayer(layer) {
     layerId = tilesNASAGeoTiffsLayerIds[layer];
@@ -112,13 +96,21 @@ function switchLayer(layer) {
       Clean up older sources and layers
     */
 
-    // Remove current source, and add  new one
-    map.removeSource(previousSource);
-    previousSource = currentSource;
+    try {
+      // Remove older source
+      map.removeSource(previousSource);
+      previousSource = currentSource;
 
-    // Remove current layer, and add  new one
-    map.removeLayer(previousLayer);
-    previousLayer = currentLayer;
+      // Remove older layer
+      map.removeLayer(previousLayer);
+      previousLayer = currentLayer;
+
+    }
+    catch(err) {
+      console.log(err.message);
+    }
+
+
 
 }
 
