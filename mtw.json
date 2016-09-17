@@ -1,0 +1,38 @@
+{
+  "version": 8,
+  "name": "flag",
+  "metadata": {
+    "mapbox:autocomposite": true,
+    "mapbox:type": "template"
+  },
+  "sources": {
+    "whitney_FSTopo": {
+      "url": "mapbox://roblabs.7eq7j4t3",
+      "type": "raster"
+    }
+  },
+  "sprite": "mapbox://sprites/roblabs/ciqk2376r000lb9m98hmyzwr7",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "mapbox-roblabs-7eq7j4t3",
+      "type": "raster",
+      "source": "whitney_FSTopo",
+      "minzoom": 11,
+      "interactive": true,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1,
+        "raster-brightness-min": 0,
+        "raster-brightness-max": 1
+      }
+    }
+  ],
+  "created": "2016-09-13T01:32:04.720Z",
+  "id": "cit0szft400002xpnu5fupb5v",
+  "modified": "2016-09-13T01:32:04.720Z",
+  "owner": "roblabs",
+  "draft": false
+}
