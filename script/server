@@ -2,6 +2,6 @@
 
 set -e
 
-script/branding
+# script/branding
 
-bundle exec jekyll serve -w
+bundle exec jekyll serve --watch
