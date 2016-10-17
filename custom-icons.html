@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<style>
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+</style>
+
+<div id='map'></div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW5uYXdhdGVyIiwiYSI6ImNpbmdhcnI3MjFnazJ2ZmtxMTR2YjZtNW4ifQ.xSK1jYS3UUFbhzqbpycOMw';
+var geojson = {
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "properties": {
+                "title": "Long Beach Terminal",
+                "popupContent": "1607 W Pier D Street, Long Beach CA 90802 <br>PHONE: <a href=\"tel://562-901-0365\"> 562-901-0365 </a> <br>FAX: <a href=\"tel://+562.901.1955\">562.901.1955 </a><br> <a href=\"http://sause.com/wp/locations/long-beach/\">More Details</a>",
+                "icon": {
+                    iconUrl: 'http://sause.com/wp/wp-content/themes/sauseone/img/marker-15.svg'
+                }
+            },
+
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-118.2186198234558,
+                    33.766429793179796
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Portland",
+                "popupContent": "3710 NW Front Avenue, Portland OR 97210  <br>PHONE: <a href=\"tel://503-222-1811\"> 503-222-1811 </a> <br>FAX: <a href=\"tel:+503.222.2010\"> 503-222-2010 </a><br> <a href=\"http://sause.com/wp/locations/portland/\">More Details</a>"
+            },
+
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.706025,
+                    45.549731
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Rainier",
+                "popupContent": "29191 Dike Road, Rainier OR 97048  <br>PHONE: <a href=\"tel://503-556-1248\"> 503-556-1248 </a> <br>Toll-Free: <a href=\"tel://800-488-4167\"> 800-488-4167 </a> <br>FAX: <a href=\"tel:+866.594.8922\"> 866-594-8922 <br> <a href=\"http://sause.com/wp/locations/rainier/\">More Details</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.96308279037474,
+                    46.09963209128729
+                ]
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "title": "Coos Bay",
+                "popupContent": "155 E Market Avenue, Coos Bay OR 97420 <br>PHONE: <a href=\"tel://541-556-1248\"> 541-269-5841 </a> <br>Fax: <a href=\"tel://+541.269.5866\">541-269-5866 </a><br> <a href=\"http://sause.com/wp/locations/coos-bay/\">More Details</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-124.21372175216675,
+                    43.37113126667131
+                ]
+            }
+        },
+
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Kalaeloa Sause Bros. Terminal",
+                "popupContent": "91-550 B Malakole Street, Kapolei HI 96707 <br>PHONE: <a href=\"tel://808-682-1082\">808-682-1082 </a> <br>FAX: <a href=\"tel://+808.682.1082\"> 808-682-1084 </a> <br> <a href=\"http://sause.com/wp/locations/kalaeloa/\">More Details</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-158.07128906249997,
+                    21.334152680460594
+                ]
+            }
+        }, {
+            "type": "Feature",
+            "properties": {
+                "title": "Honolulu Terminal",
+                "popupContent": "705 N Nimitz Hwy, Honolulu HI 96817 <br>PHONE: <a href=\"tel://808-521-5082\">  808-521-5082 </a> <br>Toll Free: <a href=\"tel://1-800-925-0340\"> 1-800-925-0340 </a> <br>FAX: <a href=\"tel://+808.533.4109\"><a>808-533-4109 </a><br> <a href=\"http://sause.com/wp/locations/honolulu/\">More Details</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-157.8529357910156,
+                    21.307287323905406
+                ]
+            }
+        }
+
+    ]
+};
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [-116.457, 32],
+    zoom: 2
+});
+
+// add markers to map
+geojson.features.forEach(function(marker) {
+    // create a DOM element for the marker
+    var el = document.createElement('div');
+    el.className = 'marker';
+    el.style.backgroundImage = 'url(http://sause.com/wp/wp-content/themes/sauseone/img/ferry-15.svg)';
+    el.style.width = '20px';
+    el.style.height = '20px';
+
+    var popup = new mapboxgl.Popup()
+    .setHTML(marker.properties.popupContent);
+
+
+    // add marker to map
+    new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(popup)
+        .addTo(map);
+
+});
+</script>
+
+</body>
+</html>
