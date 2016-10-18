@@ -51,7 +51,7 @@
 
         <label for="chlorophyll-data">1 Month Chlorophyll Concentration (mg/m^3)</label>
         <!-- TODO - Max value is hardcoded -->
-        <input type="range" min="0" step="1" max="169" value="0" id="chlorophyll-data"
+        <input type="range" min="0" step="1" max="167" value="0" id="chlorophyll-data"
             oninput="outputUpdate(value)">
         <output for="chlorophyll-data" id="volume"></output>
         <hr>
@@ -110,7 +110,7 @@ for (year = 0; year < years.length; year++) {
     for (month = 0; month < months.length; month++) {
 
       // special case for 2002 & 16
-      if (years[year] == 2016 && months[month] > 8) {
+      if (years[year] == 2016 && months[month] > 7) {
         // do nothing
       } else if (years[year] == 2002 && months[month] < 8) {
         // do nothing
