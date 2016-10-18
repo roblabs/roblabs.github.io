@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title></title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src="https://cdn.plot.ly/plotly-1.8.0.min.js"></script>
+</head>
+<body>
+  <div id="graph"></div>
+</body>
+
+<script>
+var rawDataURL = '8-day.csv';
+var xField = 'date';
+var yField = 'threshold_none';
+
+var selectorOptions = {
+    buttons: [
+      {
+        step: 'all',
+    }],
+};
+
+Plotly.d3.csv(rawDataURL, function(err, rawData) {
+    if(err) throw err;
+
+    var data = prepData(rawData);
+    var layout = {
+        title: '8 Day Chlorophyll Concentration (mg/m^3)',
+        xaxis: {
+            rangeselector: selectorOptions,
+            rangeslider: {}
+        },
+        yaxis: {
+            fixedrange: true
+        }
+    };
+
+    Plotly.plot('graph', data, layout);
+});
+
+function prepData(rawData) {
+    var x = [];
+    var y = [];
+
+    console.log(rawData.length)
+
+    rawData.forEach(function(datum, i) {
+
+        x.push(new Date(datum[xField]));
+        y.push(datum[yField]);
+
+    });
+
+    return [{
+        mode: 'lines',
+        x: x,
+        y: y
+    }];
+}
+</script>
+
+
+</body>
+</html>
