@@ -1,3 +1,7 @@
+<!-- Based on sample from
+https://plot.ly/javascript/click-events/
+https://plot.ly/javascript/range-slider/
+-->
 
 <!DOCTYPE html>
 <html>
@@ -19,6 +23,24 @@ var yField = 'threshold_none';
 
 var selectorOptions = {
     buttons: [
+        {
+          step: 'year',
+          stepmode: 'backward',
+          count: 10,
+          label: '10y'
+        },
+        {
+          step: 'year',
+          stepmode: 'backward',
+          count: 2,
+          label: '2y'
+        },
+        {
+          step: 'year',
+          stepmode: 'backward',
+          count: 1,
+          label: '1y'
+      },
       {
         step: 'all',
     }],
