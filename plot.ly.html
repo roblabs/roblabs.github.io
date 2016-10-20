@@ -60,25 +60,15 @@ Plotly.d3.csv(rawDataURL, function(err, rawData) {
     myPlot.on('plotly_click', function(data){
     var pts = '';
     for(var i=0; i < data.points.length; i++){
-      console.log(data.points[i].x);
-      console.log(data.points[i].y);
 
-
-      // Plot.ly is returning a bad value for the date
-      // For some reason, they are returning
-      // 2007-11-08 16
-      // But we need to infer the month and year.  So do an extra d
       var plotLyDate = data.points[i].x;
-      console.log(plotLyDate);
-      var splitDate = plotLyDate.split(" ");
-      console.log(splitDate);
-
-      var dateClicked = new Date(splitDate[0]);
+      console.log(plotLyDate + " " + data.points[i].y);
+      var dateClicked = new Date(plotLyDate);
 
       var y = dateClicked.toLocaleString("en-us", { year: "numeric" });
       var m = dateClicked.toLocaleString("en-us", { month: "2-digit" });
 
-      pts = "You clicked on the 8-day data set " + splitDate[0] + "\nMapbox map data is by month.\nUpdating Map to MY1DMM_CHLORA_" + y + "-" + m;
+      pts = "Attention — this alert will not be in the final map (debug only)\n\n* You clicked on the 8-day data set " + plotLyDate + "\n* Mapbox map data is by month.\n* Updating Map to MY1DMM_CHLORA_" + y + "-" + m;
     }
 
     alert(pts);
@@ -94,7 +84,9 @@ function prepData(rawData) {
 
     rawData.forEach(function(datum, i) {
 
-        x.push(new Date(datum[xField]));
+        var date = new Date(datum[xField]);
+        // console.log(datum[xField]);
+        x.push(datum[xField]);
         y.push(datum[yField]);
 
     });
