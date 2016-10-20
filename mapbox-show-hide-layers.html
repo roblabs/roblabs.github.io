@@ -4,8 +4,9 @@
     <meta charset='utf-8' />
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -13,7 +14,7 @@
         .map-overlay {
             font:bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
             position: absolute;
-            width: 25%;
+            width: 33%;
             top: 0;
             left: 0;
             padding: 10px;
@@ -49,20 +50,23 @@
   <div class='map-overlay top'>
       <div class='map-overlay-inner'>
 
-        <label for="chlorophyll-data">1 Month Chlorophyll Concentration (mg/m^3)</label>
-        <!-- TODO - Max value is hardcoded -->
-        <input type="range" min="0" step="1" max="167" value="0" id="chlorophyll-data"
-            oninput="outputUpdate(value)">
-        <output for="chlorophyll-data" id="volume"></output>
+        <div id="plotly"></div>
         <hr>
+
+        <!-- <label for="chlorophyll-data">1 Month Chlorophyll Concentration (mg/m^3)</label> -->
+
+        <!-- <input type="range" min="0" step="1" max="167" value="0" id="chlorophyll-data"
+            oninput="outputUpdate(value)"> -->
+        <!-- <output for="chlorophyll-data" id="dataSet"></output> -->
+
+
 
         <!-- Kindlemann legend -->
         <!-- <img src="https://cloud.githubusercontent.com/assets/118112/19320115/d7545d80-9064-11e6-933e-1a508a56c770.png" width="300" height="60"> -->
 
         <!-- Original NEO Legend -->
+        <div id="dataSet"></div>
         <img src="https://camo.githubusercontent.com/f2dc5e217bb442e7e57d416e0d66802247fc961f/687474703a2f2f6e656f2e7363692e677366632e6e6173612e676f762f70616c65747465732f6d6f6469735f63686c6f722e706e67" width="200" height="35">
-      </div>
-      <div>
 
       </div>
   </div>
@@ -144,7 +148,8 @@ map.on('load', function () {
 
 function switchLayer(layer) {
     layerId = tilesNASAGeoTiffsLayerIds[layer];
-    document.querySelector('#volume').value = layerId;
+    // document.querySelector('#dataSet').value = layerId;
+    document.getElementById("dataSet").innerHTML = layerId;
 
     /*
       Update sources and layers
@@ -190,9 +195,121 @@ function switchLayer(layer) {
 
 
 function outputUpdate(sliderIndex) {
-  document.querySelector('#volume').value = tilesNASAGeoTiffsLayerIds[sliderIndex];
+  document.querySelector('#dataSet').value = tilesNASAGeoTiffsLayerIds[sliderIndex];
   console.log(tilesNASAGeoTiffsLayerIds[sliderIndex]);
   switchLayer(sliderIndex);
+}
+
+/// Plot.ly
+
+var rawDataURL = '8-day.csv';
+var xField = 'date';
+var yField = 'threshold_none';
+
+var selectorOptions = {
+    buttons: [
+        {
+          step: 'year',
+          stepmode: 'backward',
+          count: 10,
+          label: '10y'
+        },
+        {
+          step: 'year',
+          stepmode: 'backward',
+          count: 2,
+          label: '2y'
+        },
+        {
+          step: 'year',
+          stepmode: 'backward',
+          count: 1,
+          label: '1y'
+      },
+      {
+        step: 'all',
+    }],
+};
+
+
+
+Plotly.d3.csv(rawDataURL, function(err, rawData) {
+    if(err) throw err;
+
+    var myPlot = document.getElementById('plotly'),
+        d3 = Plotly.d3,
+        N = 16,
+        x = d3.range(N),
+        y = d3.range(N).map( d3.random.normal() ),
+        data = [ { x:x, y:y, type:'scatter',
+                mode:'markers', marker:{size:16} } ],
+        layout = {
+            hovermode:'closest',
+            title:'Click on Points'
+         };
+
+
+    var data = prepData(rawData);
+    var layout = {
+        title: '8 Day Chlorophyll Concentration (mg/m^3)',
+        height: 400,
+        xaxis: {
+            rangeselector: selectorOptions,
+            rangeslider: {},
+            titlefont: {size : 8},
+        },
+        yaxis: {
+            fixedrange: false
+        }
+    };
+
+    Plotly.newPlot('plotly', data, layout);
+
+    myPlot.on('plotly_click', function(data){
+    var pts = '';
+    for(var i=0; i < data.points.length; i++){
+
+      var plotLyDate = data.points[i].x;
+      console.log(plotLyDate + " " + data.points[i].y);
+      var dateClicked = new Date(plotLyDate);
+
+      var y = dateClicked.toLocaleString("en-us", { year: "numeric" });
+      var m = dateClicked.toLocaleString("en-us", { month: "2-digit" });
+
+      var layer = "MY1DMM_CHLORA_" + y + "-" + m;
+
+      pts = plotLyDate + ", Updating Map to " + layer;
+    }
+
+    console.log(pts);
+    var indexClicked = tilesNASAGeoTiffsLayerIds.indexOf(layer);
+    console.log(indexClicked);
+
+    switchLayer(indexClicked);
+
+  });
+});
+
+function prepData(rawData) {
+    var x = [];
+    var y = [];
+
+    console.log(rawData.length)
+
+    rawData.forEach(function(datum, i) {
+
+        var date = new Date(datum[xField]);
+        // console.log(datum[xField]);
+        x.push(datum[xField]);
+        y.push(datum[yField]);
+
+    });
+
+    return [{
+        mode: 'lines',
+        x: x,
+        y: y
+    }];
 }
 
 </script>
