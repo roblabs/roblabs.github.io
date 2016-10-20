@@ -5,10 +5,11 @@
   <meta charset='utf-8' />
   <title></title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <script src="https://cdn.plot.ly/plotly-1.8.0.min.js"></script>
+  <!-- <script src="https://cdn.plot.ly/plotly-1.8.0.min.js"></script> -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
-  <div id="graph"></div>
+  <div id="myDiv"></div>
 </body>
 
 <script>
@@ -23,8 +24,23 @@ var selectorOptions = {
     }],
 };
 
+
+
 Plotly.d3.csv(rawDataURL, function(err, rawData) {
     if(err) throw err;
+
+    var myPlot = document.getElementById('myDiv'),
+        d3 = Plotly.d3,
+        N = 16,
+        x = d3.range(N),
+        y = d3.range(N).map( d3.random.normal() ),
+        data = [ { x:x, y:y, type:'scatter',
+                mode:'markers', marker:{size:16} } ],
+        layout = {
+            hovermode:'closest',
+            title:'Click on Points'
+         };
+
 
     var data = prepData(rawData);
     var layout = {
@@ -34,11 +50,40 @@ Plotly.d3.csv(rawDataURL, function(err, rawData) {
             rangeslider: {}
         },
         yaxis: {
-            fixedrange: true
+            fixedrange: false
         }
     };
 
-    Plotly.plot('graph', data, layout);
+    Plotly.newPlot('myDiv', data, layout);
+    // Plotly.plot('graph', data, layout);
+
+    myPlot.on('plotly_click', function(data){
+    var pts = '';
+    for(var i=0; i < data.points.length; i++){
+      console.log(data.points[i].x);
+      console.log(data.points[i].y);
+
+
+      // Plot.ly is returning a bad value for the date
+      // For some reason, they are returning
+      // 2007-11-08 16
+      // But we need to infer the month and year.  So do an extra d
+      var plotLyDate = data.points[i].x;
+      console.log(plotLyDate);
+      var splitDate = plotLyDate.split(" ");
+      console.log(splitDate);
+
+      var dateClicked = new Date(splitDate[0]);
+
+      var y = dateClicked.toLocaleString("en-us", { year: "numeric" });
+      var m = dateClicked.toLocaleString("en-us", { month: "2-digit" });
+
+      pts = "You clicked on the 8-day data set " + splitDate[0] + "\nMapbox map data is by month.\nUpdating Map to MY1DMM_CHLORA_" + y + "-" + m;
+    }
+
+    alert(pts);
+
+  });
 });
 
 function prepData(rawData) {
