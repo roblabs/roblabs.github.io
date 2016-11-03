@@ -18,8 +18,30 @@ photo_url:
 
 ### Outdoor Ethics at BSA
 * [http://www.outdoorethics-bsa.org](http://www.outdoorethics-bsa.org)
+* [OutdoorEthics Cub Action 2015](http://outdoorethics-bsa.org/awards/CubAction2015.php)
 * [http://sdicbsa.org/Programs/OutdoorEthics/](http://sdicbsa.org/Programs/OutdoorEthics/)
 * [http://www.scouting.org/Home/OutdoorProgram/OutdoorEthics/Awards/CubScout.aspx](http://www.scouting.org/Home/OutdoorProgram/OutdoorEthics/Awards/CubScout.aspx)
+
+
+### Outdoor Ethics for Cub Scouts
+
+* Know Before You Go
+* Choose The Right Path
+* Trash Your Trash
+* Leave What You Find
+* Be Careful With Fire
+* Respect Wildlife
+* Be Kind To Other Visitors
+
+#### Scout Resources
+
+* [http://outdoorethics-bsa.org/awards/CubAction2015.php](http://outdoorethics-bsa.org/awards/CubAction2015.php)
+* [http://sdicbsa.org/Programs/OutdoorEthics/](http://sdicbsa.org/Programs/OutdoorEthics/)
+
+* [Pack 709, Caughdenoy, New York](https://www.youtube.com/watch?v=UDPhlQqANng)
+* [Bigfoot builds a fire](https://www.youtube.com/watch?v=-dWpjvW0Ecc)
+* [Eco Spray](https://www.youtube.com/watch?v=QKBorb2jU3E)
+* [Bigfoot visits the Grand Tetons](https://www.youtube.com/watch?v=ZLB2o1ZtuBg)
 
 -----
 
