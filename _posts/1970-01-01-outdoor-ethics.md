@@ -18,9 +18,8 @@ photo_url:
 
 ### Outdoor Ethics at BSA
 * [http://www.outdoorethics-bsa.org](http://www.outdoorethics-bsa.org)
-* [OutdoorEthics Cub Action 2015](http://outdoorethics-bsa.org/awards/CubAction2015.php)
 * [http://sdicbsa.org/Programs/OutdoorEthics/](http://sdicbsa.org/Programs/OutdoorEthics/)
-* [http://www.scouting.org/Home/OutdoorProgram/OutdoorEthics/Awards/CubScout.aspx](http://www.scouting.org/Home/OutdoorProgram/OutdoorEthics/Awards/CubScout.aspx)
+* [http://outdoorethics-bsa.org/awards/CubAction2015.php](http://outdoorethics-bsa.org/awards/CubAction2015.php)
 
 
 ### Outdoor Ethics for Cub Scouts
@@ -33,10 +32,7 @@ photo_url:
 * Respect Wildlife
 * Be Kind To Other Visitors
 
-#### Scout Resources
-
-* [http://outdoorethics-bsa.org/awards/CubAction2015.php](http://outdoorethics-bsa.org/awards/CubAction2015.php)
-* [http://sdicbsa.org/Programs/OutdoorEthics/](http://sdicbsa.org/Programs/OutdoorEthics/)
+#### Videos
 
 * [Pack 709, Caughdenoy, New York](https://www.youtube.com/watch?v=UDPhlQqANng)
 * [Bigfoot builds a fire](https://www.youtube.com/watch?v=-dWpjvW0Ecc)
