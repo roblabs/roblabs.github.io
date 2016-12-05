@@ -7,6 +7,7 @@ author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
 permalink: /Legal/
+excerpt: "Our terms found at /Legal"
 ---
 
 ## Paper Maps for Mobile powered by eπ

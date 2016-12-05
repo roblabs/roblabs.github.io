@@ -7,6 +7,7 @@ author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
 permalink: /Cleveland/
+excerpt: "Mobile and Desktop map of the Cleveland National Forest"
 ---
 
 ## Cleveland National Forest — eπ Maps

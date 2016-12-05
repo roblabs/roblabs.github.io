@@ -7,6 +7,8 @@ author: roblabs
 categories: [Mapbox, Paper Maps, LeafletJS, animation]
 tags: [Mapbox, Paper Maps, LeafletJS, animation]
 
+excerpt: "How to use the Mapbox data set editor"
+
 photo_url:
 permalink: /Mapbox-datasets/
 ---
