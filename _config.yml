@@ -5,10 +5,12 @@ github_username:  roblabs
 # global settings
 title: "RobLabs.com"
 description: "Creating Innovations in Maps for Android and iOS"
-permalink: "/stories/:title"
 url: http://RobLabs.com
 relative_permalinks: false
 analytics_account: "UA-12401212-2"
+
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 # build settings
 exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json"]
@@ -19,6 +21,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-coffeescript
   - jekyll-sitemap
+  - jekyll-paginate
 
 sass:
   style: :compressed
