@@ -7,8 +7,8 @@ author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
 permalink: /San-Diego-Hikes/
-photo_url: https://lh3.googleusercontent.com/xWbbah2r1D-lkW4o9nLmGRZaKhldpz3YkxeINIaeatrmlgnZlNXIyTZPSNl3sLdPLA=h80
-
+excerpt: "Mobile map of hikes around San Diego"
+excerpt_img: "sd-hikes.png"
 ---
 ## San Diego Hikes — eπ Maps
 

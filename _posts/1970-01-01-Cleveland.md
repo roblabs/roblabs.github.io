@@ -8,6 +8,7 @@ categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
 permalink: /Cleveland/
 excerpt: "Mobile and Desktop map of the Cleveland National Forest"
+excerpt_img: "Cleveland.png"
 ---
 
 ## Cleveland National Forest — eπ Maps
