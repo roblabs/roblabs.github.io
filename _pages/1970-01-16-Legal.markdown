@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Legal"
 description: ""
 date:   2016-08-30T12:20:46-08:00
