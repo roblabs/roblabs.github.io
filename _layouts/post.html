@@ -12,4 +12,15 @@ layout: default
     {{ content }}
   </article>
 
+  <hr>
+
+  {% if page.youtube %}
+    <iframe id="youtube-iframe"
+            width="640" height="360"
+            src="https://www.youtube.com/embed/{{ page.youtube }}?enablejsapi=1&origin=http://roblabs.com"
+            frameborder="0"
+            style="border: solid 4px #3399ff"
+    ></iframe>
+  {% endif %}
+
 </div>
