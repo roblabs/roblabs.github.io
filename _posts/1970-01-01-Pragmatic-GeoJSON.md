@@ -8,7 +8,7 @@ categories: [geojson]
 tags: [geojson]
 
 excerpt: "Learn GeoJSON by visualizing your data."
-
+youtube: NYqCUVDlq9E
 excerpt_img: "Mapbox-datasets.gif"
 ---
 
@@ -53,7 +53,7 @@ Things to try
 
 ### Generate Random GeoJSON
 
-Generating random geodata can be useful as it gives you way to correctly generate and use the tools.
+Generating random geodata can be useful as it gives you a way to correctly generate and use the tools.
 
 ```
 # Install with node.js
