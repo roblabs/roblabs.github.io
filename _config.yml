@@ -6,6 +6,7 @@ github_username:  roblabs
 title: "RobLabs.com"
 description: "Creating Innovations in Maps for Android and iOS"
 url: http://RobLabs.com
+permalink: pretty
 relative_permalinks: false
 analytics_account: "UA-12401212-2"
 
