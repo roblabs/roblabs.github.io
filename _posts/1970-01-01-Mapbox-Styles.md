@@ -17,7 +17,6 @@ excerpt_img_comment: "gifify Mapbox-Styles.mov -o Mapbox-Styles-480.gif --resize
 Mapbox delivers smooth, fast maps via vectors.  Their design and architecture allows you to adjust the map, fonts and icons to your style or branding.
 
 
-
 ### Mapbox Studio
 
 [Mapbox.com/studio](http://Mapbox.com/studio) is a tool to design custom maps.  The maps can fit your color or branding guidelines and are [mobile](https://www.mapbox.com/mobile/) ready when you have your look and feel all set and are ready for iOS and Android.  
