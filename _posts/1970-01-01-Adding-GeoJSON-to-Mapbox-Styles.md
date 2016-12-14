@@ -8,9 +8,9 @@ categories: [mapbox]
 tags: [mapbox]
 
 excerpt: "Add your own geo data to your Mapbox Style"
-#youtube: jA6tlDn3Fpo
-#excerpt_img: "Mapbox-Styles-480.gif"
-#excerpt_img_comment: "gifify Mapbox-Styles.mov -o Mapbox-Styles-480.gif --resize 480:-1 --speed 2"
+youtube: 98qZUAeaMmc
+excerpt_img: "GeoJSON-to-Mapbox-Styles-480.gif"
+#excerpt_img_comment: "gifify Adding\ GeoJSON\ to\ a\ Mapbox\ Style.mov -o GeoJSON-to-Mapbox-Styles-480.gif --from 482 --to 505 --resize 480:-1 --speed 2"
 ---
 
 ## Add your own Geo Data
@@ -44,6 +44,9 @@ Steps to add this GeoJSON into [Mapbox.com/studio](http://Mapbox.com/studio) and
 * You can drag your GeoJSON directly into studio
 * Navigate to Datasets and drag your GeoJSON directly into the Datasets view
 * Once its uploaded, click on `Start editing`
+* Look around the Datasets view and add any Points, LinesStrings or Polygons you want
+* Save and export to a Tileset
+* View the Tileset and click on `Add to Style`
 * Choose an existing or new style
 
 
@@ -60,3 +63,5 @@ See how it looks in
 * Streets Mapbox Style
 * Satellite + Streets Mapbox Style
 * Outdoors Mapbox Style
+
+![GeoJSON-to-Mapbox-Styles-480.gif](/assets/img/GeoJSON-to-Mapbox-Styles-480.gif)
