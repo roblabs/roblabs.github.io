@@ -9,13 +9,13 @@ tags: [gdal]
 
 excerpt: "Learn Geospatial data formats with GDAL"
 file_under: "command line cartography"
-#youtube: NYqCUVDlq9E
-#excerpt_img: "Pragmatic-GeoJSON-10sec-480.gif"
-#excerpt_img_comment: "gifify Pragmatic-GeoJSON.mov -o Pragmatic-GeoJSON-10sec-480.gif --from 76 --to 86 --resize 480:-1 --speed 2"
+youtube: uM8RQIJmfOk
+excerpt_img: "Pragmatic-GDAL-1080.gif"
+#excerpt_img_comment: "gifify Pragmatic-GDAL-1080.mov -o Pragmatic-GDAL-1080.gif --from 128 --to 136 --resize 480:-1 --speed 2"
 ---
 
 ## GDAL
-[GDAL](http://www.gdal.org) is a _translator library for raster and vector geospatial data formats_.  There are API documentation for [C and C++](http://www.gdal.org/#index_devdocs_api).  There are [Node.js bindings](https://github.com/naturalatlas/node-gdal) and [Python bindings](https://pypi.python.org/pypi/GDAL/) and a [Python cookbook](https://pcjericks.github.io/py-gdalogr-cookbook/)
+[GDAL](http://www.gdal.org) is a _translator library for raster and vector geospatial data formats_.  There are API documentation for [C and C++](http://www.gdal.org/#index_devdocs_api).  There are [Node.js bindings](https://github.com/naturalatlas/node-gdal) and [Python bindings](https://pypi.python.org/pypi/GDAL/) and a [Python cookbook](https://pcjericks.github.io/py-gdalogr-cookbook/).
 
 There are several great tools for the command line and API's that you can use to wrangle your geodata.  The example that we will be discussing is raster GeoTIFFs from the US Forest Service [FSTopo Raster Gateway](http://data.fs.usda.gov/geodata/rastergateway/states-regions/states.php).
 
@@ -71,7 +71,6 @@ gdal_translate -of JPEG 363011815_Mount_Whitney_FSTopo.tif 363011815_Mount_Whitn
 gdal_translate -of JPEG -expand rgb 363011815_Mount_Whitney_FSTopo.tif 363011815_Mount_Whitney_FSTopo.jpg
 
 # or translate to WEBP
-gdal_translate -of WEBP 363011815_Mount_Whitney_FSTopo.tif 363011815_Mount_Whitney_FSTopo.webp
 gdal_translate -of WEBP -expand rgb 363011815_Mount_Whitney_FSTopo.tif 363011815_Mount_Whitney_FSTopo.webp
 
 # or translate to uncompressed TIFF
