@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "Legal"
 description: ""
 date:   2016-08-30T12:20:46-08:00
@@ -19,10 +19,12 @@ Publisher assumes no liability for safety or condition of roads or trails.
 except what you voluntarily provide through RobLabs.com or other direct contact.
 * Our providers have their own Privacy Policy which we make available to you.
   * [Mapbox Privacy]
+  * [Open Street Map Privacy]
 
 ### Our Data providers
-* Mapbox [© Mapbox][Mapbox]
-* OpenStreetMap [© OpenStreetMap contributors][OpenStreetMap]
+* [© Mapbox][Mapbox]
+* [© OpenMapTiles][OpenMapTiles]
+* [© OpenStreetMap contributors][OpenStreetMap]
 * Black Mountain Open Preserve, Mission Trails [© City of San Diego][SanDiego]
 * San Diego Surf © ePi Rational, Inc.
 
@@ -37,6 +39,8 @@ except what you voluntarily provide through RobLabs.com or other direct contact.
 [Mapbox]: https://www.mapbox.com/about/maps/
 [Mapbox Privacy]:  https://www.mapbox.com/privacy
 [OpenStreetMap]: http://www.openstreetmap.org/copyright/
+[Open Street Map Privacy]: http://wiki.osmfoundation.org/wiki/Privacy_Policy
+[OpenMapTiles]: http://openmaptiles.org/terms/
 [SanDiego]: http://www.sandiego.gov/
 [Apple Maps]: http://gspe21.ls.apple.com/html/attribution-12.html
 [tsg]:  http://www.timestampgenerator.com
