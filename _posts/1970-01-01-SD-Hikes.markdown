@@ -14,42 +14,43 @@ excerpt_img: "sd-hikes.png"
 
 ### Paper Maps for Biking & Hiking in San Diego.  Mobile app.
 
+
+Description
+Paper Maps — Hike & Bike in San Diego's premier open space parks. A Paper Map is needed for every trail.
+
+Use your GPS to see your location on the trail.
+
+### Features
+
+* Topo maps and contour maps of San Diego Bike and Hike trails
+* Contours in Imperial units (feet instead of meters)
+
+#### Hikes
+
+* Torrey Pines State Natural Reserve
+* Black Mountain Open Space Preserve
+* Mission Trails Regional Park
+* Mount Woodson
+* Iron Mountain
+
 San Diego Hikes is available on the Apple App Store and Google Play Store
 
 * [San Diego Hikes in the Apple App Store][ios]  
 * [San Diego Hikes in the Google Play Store][android]
 
 
+With over 7,000 acres, Mission Trails is one of the largest urban parks in the country, providing opportunities for recreation as well as native flora and fauna viewing. Mission Trails is home to Cowles Mountain, East Fortuna Staging Area (Equestrian Staging Area), Kumeyaay Lake and Campground, Old Mission Dam Historic Site, Kwaay Paay Peak, and many additional areas to hike, bike, observe and explore.
+
+Black Mountain Open Space Park is owned and managed by the City of San Diego and is made up of a series of chaparral and sage covered hills, ridges, and canyons. The park is currently 2,352 acres.
+
+Mount Woodson and Iron Mountain are located in Poway.
+
+
+
 ![black Mountain](https://lh3.googleusercontent.com/tvtBD_DM9G6zjaypULH1uGMYv-JuO2bsNPsGJB6wDJlxjWWmOpfJJ_-W-SYPwqIN3Ill=w200)
 
 
-
-
-### Join our Beta Program for San Diego Hikes
-* As always, our [legal terms][legal] apply.  In general, we do not share your information with any one.  
-
-#### iOS
-* Apple uses TestFlight, so to join the Beta program for iPhones and iPads, you will need to provide your email address.  Please send it to _paperMaps *AT* roblabs dot com_
-* Then you will receive an email from Apple.com instructing how to install and opt out if you choose to in the future.
-
-#### Android
-* You can join our Beta program by launching this link in Chrome on your  [Android device][beta]
-* There you can see the details of the Beta program including options on how to opt out
-
 -----
-
-#### iOS
-
-![epi-beta-ios](../assets/img/epi-beta-ios.png)
-
------
-
-#### Android
-
-![epi-beta-android](../assets/img/epi-beta.png)
------
-
-![screen shot](../assets/img/goodan-los.png)
 
 [beta]: https://play.google.com/apps/testing/com.roblabs.papermaps.sandiego
 [legal]:  http://RobLabs.com/Legal
@@ -65,5 +66,5 @@ San Diego Hikes is available on the Apple App Store and Google Play Store
 [tilejson-local-server-github]:  http://roblabs.github.io/blackmountain-leaflet/
 [beta]: http://goo.gl/forms/x3G8w5mTSE
 [tsg]:  http://www.timestampgenerator.com
-[ios]:  http://appstore.com/SanDiegoHikes
+[ios]:  https://itunes.apple.com/us/developer/epi-rational-inc./id416401310
 [android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.sandiego
