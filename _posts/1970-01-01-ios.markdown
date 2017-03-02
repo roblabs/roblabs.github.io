@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "San Diego Hikes"
+description: ""
+date:   2016-08-01T00:20:46-08:00
+author: ePi Rational, Inc.
+categories: [Mapbox, Paper Maps,]
+tags: [Mapbox, Paper Maps]
+permalink: /ios/
+excerpt: "Mobile map of hikes around San Diego"
+excerpt_img: "sd-hikes.png"
+---
+## San Diego Hikes — eπ Maps
+
+### Paper Maps for Biking & Hiking in San Diego.  Mobile app.
+
+
+Description
+Paper Maps — Hike & Bike in San Diego's premier open space parks. A Paper Map is needed for every trail.
+
+Use your GPS to see your location on the trail.
+
+### Features
+
+* Topo maps and contour maps of San Diego Bike and Hike trails
+* Contours in Imperial units (feet instead of meters)
+
+#### Hikes
+
+* Torrey Pines State Natural Reserve
+* Black Mountain Open Space Preserve
+* Mission Trails Regional Park
+* Mount Woodson
+* Iron Mountain
+
+San Diego Hikes is available on the Apple App Store and Google Play Store
+
+* [San Diego Hikes in the Apple App Store][ios]  
+* [San Diego Hikes in the Google Play Store][android]
+
+
+With over 7,000 acres, Mission Trails is one of the largest urban parks in the country, providing opportunities for recreation as well as native flora and fauna viewing. Mission Trails is home to Cowles Mountain, East Fortuna Staging Area (Equestrian Staging Area), Kumeyaay Lake and Campground, Old Mission Dam Historic Site, Kwaay Paay Peak, and many additional areas to hike, bike, observe and explore.
+
+Black Mountain Open Space Park is owned and managed by the City of San Diego and is made up of a series of chaparral and sage covered hills, ridges, and canyons. The park is currently 2,352 acres.
+
+Mount Woodson and Iron Mountain are located in Poway.
+
+
+
+![black Mountain](https://lh3.googleusercontent.com/tvtBD_DM9G6zjaypULH1uGMYv-JuO2bsNPsGJB6wDJlxjWWmOpfJJ_-W-SYPwqIN3Ill=w200)
+
+
+## iOS
+
+![ios-black-mountain.jpg](/assets/img/ios-black-mountain.jpg)
+
+-----
+
+[beta]: https://play.google.com/apps/testing/com.roblabs.papermaps.sandiego
+[legal]:  http://RobLabs.com/Legal
+[OpenStreetMap]: http://www.openstreetmap.org/copyright/
+[SanDiego]: http://www.sandiego.gov/
+[Apple Maps]: http://gspe21.ls.apple.com/html/attribution-12.html
+[tsg]:  http://www.timestampgenerator.com
+
+
+
+[Mapbox]:   http://roblabs.github.io/blackmountain.html
+[mapbox-gl-js]:  http://roblabs.github.io/blackmountain-gl.html
+[tilejson-local-server-github]:  http://roblabs.github.io/blackmountain-leaflet/
+[beta]: http://goo.gl/forms/x3G8w5mTSE
+[tsg]:  http://www.timestampgenerator.com
+[ios]:  https://itunes.apple.com/us/developer/epi-rational-inc./id416401310
+[android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.sandiego
