@@ -2,7 +2,7 @@
 layout: post
 title:  "Legal"
 description: ""
-date:   2016-08-30T12:20:46-08:00
+date:   2017-01-01T12:20:46-08:00
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
@@ -11,7 +11,7 @@ excerpt: "Our terms found at /Legal"
 ---
 
 ## Paper Maps for Mobile powered by eπ
-Copyright © 2015-2016 ePi Rational, Inc.  
+Copyright © 2015 - {{ site.time | date: '%Y' }}  ePi Rational, Inc.  
 Publisher assumes no liability for safety or condition of roads or trails.
 
 ### Our Privacy Policy
