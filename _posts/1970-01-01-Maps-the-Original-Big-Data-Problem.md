@@ -7,7 +7,7 @@ author: RobLabs
 categories: [talk, android]
 tags: [talk, android]
 excerpt: "Talk presented for the San Diego Android Meetup"
-#excerpt_img: "yose.png"
+excerpt_img: "Architecture-for-Mobile-Maps.png"
 permalink: /talk/Jan-17-2017-SD-Android
 ---
 
