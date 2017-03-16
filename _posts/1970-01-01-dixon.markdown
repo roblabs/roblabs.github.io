@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Dixon Lake — eπ Maps"
+title:  "New Scout Campout 2017 — Dixon Lake"
 description: ""
-date:   2016-07-15T00:20:46-08:00
-author: ePi Rational, Inc.
+date:   2017-03-15T00:20:46-08:00
+author: Troop 685
 categories: [Mapbox, Paper Maps]
 tags: [Mapbox, Paper Maps]
 permalink: /dixon/
@@ -11,12 +11,19 @@ excerpt: "Dixon Lake, Escondido"
 #photo_url: https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9SdfN41hSjL2Brz0rXDXh-tkmRcSvRDifFjA=h150
 ---
 
-### City of Escondido
+#### 1700 N La Honda Dr
 
+#### Escondido, CA 92027
+
+* Take ramp onto I-15 N (Escondido Fwy), for 7.7 miles.   Take exit 32 onto CA-78 E., 1.3 miles
+* Turn left onto N Broadway., 0.5 mi
+* Turn right onto E El Norte Pkwy., 2.1 mi
+* Turn left onto La Honda Dr.  At the top of the hill will be the park entrance
+* After entering the park, follow past the Ranger Station, up to the Group Sites (25-29).  GPS `(33.157930, -117.050100)`
 
 -----
 
-<iframe allowfullscreen="true" width = "100%" height = "500" src="/dixon/map">
+<iframe allowfullscreen="true" width = "100%" height = "800" src="/dixon/map">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
