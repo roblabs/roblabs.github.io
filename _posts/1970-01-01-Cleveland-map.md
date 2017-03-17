@@ -29,6 +29,9 @@ var map = new mapboxgl.Map({
     maxBounds: bounds
 });
 
+map.addControl(new mapboxgl.FullscreenControl());
+map.addControl(new mapboxgl.NavigationControl());
+
 map.on('zoomend', function(){
   ZoomOrDragEnd();
 });

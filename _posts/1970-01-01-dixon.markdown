@@ -2,7 +2,7 @@
 layout: post
 title:  "New Scout Campout 2017 — Dixon Lake"
 description: ""
-date:   2017-03-15T00:20:46-08:00
+date:   2017-03-17T00:00:01-00:00
 author: Troop 685
 categories: [Mapbox, Paper Maps]
 tags: [Mapbox, Paper Maps]
@@ -15,11 +15,11 @@ excerpt: "Dixon Lake, Escondido"
 
 #### Escondido, CA 92027
 
-* Take ramp onto I-15 N (Escondido Fwy), for 7.7 miles.   Take exit 32 onto CA-78 E., 1.3 miles
-* Turn left onto N Broadway., 0.5 mi
-* Turn right onto E El Norte Pkwy., 2.1 mi
-* Turn left onto La Honda Dr.  At the top of the hill will be the park entrance
-* After entering the park, follow past the Ranger Station, up to the Group Sites (25-29).  GPS `(33.157930, -117.050100)`
+* Take ramp onto **I-15 North**, for 7.7 miles.   Take exit 32 onto **CA-78 East**, 1.3 miles
+* Turn left onto **N Broadway**, 0.5 miles
+* Turn right onto **E El Norte Pkwy**, 2.1 miles
+* Turn left onto **La Honda Dr**  At the top of the hill turn right into the park entrance
+* After entering the park, proceed to the Troop 685 Group Site.  GPS `(33.157930, -117.050100)`
 
 -----
 
