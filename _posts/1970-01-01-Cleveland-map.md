@@ -9,14 +9,38 @@ tags: [Mapbox, Paper Maps]
 permalink: /Cleveland/map/
 ---
 
-<div id='map'></div>
-<div id='zoom-level'>Zoom, Lat, Lng</div>
+<style>
+#mapsmall {
+  width:0px;
+  height:0px;
+  margin-left:0px;
+  margin-top:0px;
+  border:0px;
+}
+
+@media only screen and (min-width: 800px) {
+    /* CSS for devices with size > min-width */
+    #mapsmall {
+      width:300px;
+      height:300px;
+      margin-left:10px;
+      margin-top:10px;
+      border:10px solid gray;
+    }
+}
+</style>
+
+<div id="map" class="map"></div>
+<div id="mapsmall" ></div>
+
+
+<!-- <div id='zoom-level'>Zoom, Lat, Lng</div> -->
 
 <script>
 
 var bounds = [     // WSEN
-    [-116.9,32.6], // Southwest coordinates
-    [-116.4,33.0]  // Northeast coordinates
+    [-117.3,32.55], // Southwest coordinates
+    [-116.3,33.1]  // Northeast coordinates
 ];
 
 var map = new mapboxgl.Map({
@@ -31,6 +55,48 @@ var map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.FullscreenControl());
 map.addControl(new mapboxgl.NavigationControl());
+
+var mapsmall = new mapboxgl.Map({
+    container: "mapsmall",
+    style: "mapbox://styles/mapbox/streets-v9",
+    zoom: 9,
+    maxZoom: 9,
+    center: [-116.4317, 32.8611],
+    maxBounds: bounds,
+    attributionControl: false
+});
+
+/* ******************** */
+// Small map moves
+// when either map finishes moving, trigger an update on the other one.
+<!-- map.on('moveend', follow).on('zoomend', follow); -->
+mapsmall.on('moveend', follow).on('zoomend', follow);
+
+// quiet is a cheap and dirty way of avoiding a problem in which one map
+// syncing to another leads to the other map syncing to it, and so on
+// ad infinitum. this says that while we are calling sync, do not try to
+// loop again and sync other maps
+var quiet = false;
+function follow(e) {
+    if (quiet) return;
+    quiet = true;
+    if (e.target === map) sync(mapsmall, e);
+    if (e.target === mapsmall) sync(map, e);
+    quiet = false;
+}
+
+// sync simply steals the settings from the moved map (e.target)
+// and applies them to the other map.
+function sync(mapToSync, e) {
+
+  mapToSync.easeTo({
+    center: e.target.getCenter()
+    });
+}
+
+
+/* ******************** */
+// map move to update Lat/Long
 
 map.on('zoomend', function(){
   ZoomOrDragEnd();
