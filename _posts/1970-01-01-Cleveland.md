@@ -27,7 +27,7 @@ Available in your devices app store
 * Coming soon [Cleveland National Forest in the Apple App Store][ios]
 * Available now — [Cleveland National Forest in the Google Play Store][android]
 
-<iframe allowfullscreen="true" width = "100%" height = "400" src="/Cleveland/map">
+<iframe allowfullscreen="true" width = "100%" height = "800" src="/Cleveland/map">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
