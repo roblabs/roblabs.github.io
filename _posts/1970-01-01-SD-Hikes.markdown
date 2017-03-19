@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "San Diego Hikes"
+title:  "San Diego Hikes — eπ Maps"
 description: ""
 date:   2016-08-01T00:20:46-08:00
 author: ePi Rational, Inc.
@@ -15,7 +15,6 @@ redirect_from:
 excerpt: "Mobile map of hikes around San Diego"
 excerpt_img: "sd-hikes.png"
 ---
-## San Diego Hikes — eπ Maps
 
 ### Paper Maps for Biking & Hiking in San Diego.  Mobile app.
 

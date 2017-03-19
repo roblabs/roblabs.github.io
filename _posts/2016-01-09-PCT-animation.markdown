@@ -9,6 +9,8 @@ tags: [Mapbox, Paper Maps, LeafletJS, animation]
 
 photo_url:
 permalink: /pct-animation/
+redirect_from:
+  - /pct
 ---
 
 This GIF animation traces the path of the [Pacific Crest Trail](http://www.pcta.org), from the Mexican border near San Diego, to the Washington/British Columbia, Canada border.
