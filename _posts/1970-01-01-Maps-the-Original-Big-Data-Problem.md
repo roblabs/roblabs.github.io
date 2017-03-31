@@ -64,7 +64,6 @@ This talk is about the power of maps for mobile.  Rob will discuss the data wran
 
 ##### Command Line Cartography
 
-* [Demo](/assets/img/Mtw-Demo-Android-talk.gif)
 
 ``` bash
 # fetch
@@ -82,6 +81,12 @@ gdal2tilesp.py -z 7-15 -p mercator -f WEBP MtW.3857.vrt MtW
 # store in MBTiles
 mb-util MtW MtW.mbtiles
 ```
+
+-----
+
+#### Live Demo
+![Demo](/assets/img/Mtw-Demo-Android-talk.gif)
+
 -----
 
 ##### Big data (in megabytes)
