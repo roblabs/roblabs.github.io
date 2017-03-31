@@ -1,12 +1,12 @@
 ---
 layout: map
-title:  "Escondido Creek"
+title:  ""
 description: ""
 date:   2017-01-01T12:20:46-08:00
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
-permalink: /escondido-creek/map/
+permalink: /san-diego-river/map/
 ---
 
 
@@ -23,11 +23,11 @@ var bounds = [     // WSEN
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/roblabs/cj0tpuej9009l2rnt8j77qx5n',
-    zoom: 10,
+    style: 'mapbox://styles/roblabs/cj0x6x1ig00el2rqrp6ep4agm',
+    zoom: 9.5,
     minZoom: 9,
     maxZoom: 13.1,
-    center: [-117.048,33.111],
+    center: [-116.868, 32.879],
     maxBounds: bounds
 });
 
