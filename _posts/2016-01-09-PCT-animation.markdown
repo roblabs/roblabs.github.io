@@ -6,7 +6,7 @@ date:   2016-05-02T16:58:50-08:00
 author: roblabs
 categories: [Mapbox, Paper Maps, LeafletJS, animation]
 tags: [Mapbox, Paper Maps, LeafletJS, animation]
-
+excerpt: "Visualization of the PCT"
 photo_url:
 permalink: /pct-animation/
 redirect_from:
