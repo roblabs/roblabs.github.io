@@ -12,8 +12,8 @@ title: Blog
             <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
             <p>
               <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-                &mdash;
-              {{ post.excerpt }}
+                {% if post.excerpt %}  &mdash;  {{ post.excerpt }}
+                {% endif %}
             </p>
             {% if post.excerpt_img %}
               <a href="{{ post.url }}" rel="prefetch">
