@@ -85,7 +85,7 @@ mapsmall.on('load', function () {
 
 // when either map finishes moving, trigger an update on the other one.
 <!-- map.on('moveend', follow).on('zoomend', follow); -->
-mapsmall.on('moveend', follow).on('zoomend', follow);
+<!-- mapsmall.on('moveend', follow).on('zoomend', follow); -->
 
 // quiet is a cheap and dirty way of avoiding a problem in which one map
 // syncing to another leads to the other map syncing to it, and so on
