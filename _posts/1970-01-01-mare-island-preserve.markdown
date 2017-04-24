@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MareIslandPreserve.org"
+title:  "Mare Island Shoreline Heritage Preserve"
 description: ""
 date:   2017-03-17T00:00:01-00:00
 author: Myrna Hayes, Volunteer Preserve Manager
@@ -35,7 +35,7 @@ Donations help fund Mare Island Heritage Trust support of the creation of the pa
 To subscribe to our e-newsletter, [email](myrnahayes@mac.com) or call 707-249-9633.
 
 Mare Island Heritage Trust 816 Branciforte St. Vallejo, CA 94590 Fed Tax ID 27-1493661
-www.mareislandpreserve.org
+[www.mareislandpreserve.org](http://www.mareislandpreserve.org)
 
 
 
