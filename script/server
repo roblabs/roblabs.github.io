@@ -4,4 +4,4 @@ set -e
 
 # script/branding
 
-bundle exec jekyll serve --watch --profile
+bundle exec jekyll serve --trace --watch --profile
