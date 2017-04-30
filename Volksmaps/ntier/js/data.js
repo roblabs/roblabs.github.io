@@ -10,7 +10,7 @@ var style = {
     zoom: 16.50,
     minZoom: 7,
     maxZoom: 18,
-    center: [-91.4937, 47.9894]
+    center: [-91.494917,47.989479]
 };
 
 /*
