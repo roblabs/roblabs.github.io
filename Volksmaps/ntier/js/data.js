@@ -7,10 +7,24 @@
 var style = {
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-streets-v10',
-    zoom: 16.50,
+    zoom: 7,
     minZoom: 7,
     maxZoom: 18,
     center: [-91.494917,47.989479]
+};
+
+var textSize = {
+    "base": 1,
+    "stops": [
+        [
+            7,
+            11.5
+        ],
+        [
+            14,
+            16
+        ]
+    ]
 };
 
 /*
@@ -40,7 +54,8 @@ iata,title,city,state,country,latitude,longitude
 
 var csvString = `\
 name,longitude,latitude
-Charles L. Sommers High Adventure Base,-91.494917,47.989479
+Charles L. Sommers Canoe Base,-91.494917,47.989479
+Donald Rogert Canoe Base,-91.841214,48.740965
 Prairie Portage,-91.438309,48.050557
 Kawishiwi Ranger District & Customs,-91.830583,47.906825
 `;

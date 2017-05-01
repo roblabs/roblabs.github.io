@@ -8,6 +8,11 @@ var retVal = csv2GeoJSON.csv2geojson(csvString, function(err, data) {
 // New Mapbox map
 var map = new mapboxgl.Map( style );
 
+// Add controls
+map.addControl(new mapboxgl.FullscreenControl());
+map.addControl(new mapboxgl.NavigationControl());
+
+
 // Create a popup, but don't add it to the map yet.
 var popup = new mapboxgl.Popup({
   closeButton: false
@@ -25,19 +30,7 @@ map.on("load", function() {
               "data": points
           },
           "layout": {
-              "text-size": {
-                  "base": 1,
-                  "stops": [
-                      [
-                          7,
-                          11.5
-                      ],
-                      [
-                          14,
-                          16
-                      ]
-                  ]
-              },
+              "text-size": textSize,
               "icon-image": "{icon}-15",
               "text-field": "{name}",
               "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
