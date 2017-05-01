@@ -56,6 +56,7 @@ var csvString = `\
 name,longitude,latitude
 Charles L. Sommers Canoe Base,-91.494917,47.989479
 Donald Rogert Canoe Base,-91.841214,48.740965
+Northern Expeditions Canoe Base,-95.674334,51.026774
 Prairie Portage,-91.438309,48.050557
 Kawishiwi Ranger District & Customs,-91.830583,47.906825
 `;
