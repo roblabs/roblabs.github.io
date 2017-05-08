@@ -54,6 +54,7 @@ map.on("load", function() {
 
     // Remove things if no feature was found.
     if (!features.length) {
+      popup.remove();
       return;
     }
 
@@ -89,7 +90,7 @@ map.on("load", function() {
     var html = setHTML(feature);
 
     new mapboxgl.Popup()
-                .setLngLat(feature.geometry.coordinates)
+                .setLngLat(e.lngLat)
                 .setHTML(html)
                 .addTo(map);
   });

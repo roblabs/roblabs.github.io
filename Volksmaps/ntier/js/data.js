@@ -7,8 +7,8 @@
 var style = {
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-streets-v10',
-    zoom: 7,
-    minZoom: 7,
+    zoom: 6,
+    minZoom: 6,
     maxZoom: 18,
     center: [-91.494917,47.989479]
 };
@@ -31,11 +31,26 @@ var textSize = {
  * Create full HTML for 'mousever' and 'click' events
  */
 function setHTML(feature) {
-  var html = feature.properties.name;
-      html += "<br><hr>";
-      html += feature.geometry.coordinates[1].toFixed(4) + ", " + feature.geometry.coordinates[0].toFixed(4);
+  var html = "";
 
-    return html;
+  if(feature.properties.url != undefined) {
+    html = "<a target=\"_blank\" href=" + feature.properties.url + ">" + feature.properties.name + "</a>";
+  }
+  else {
+    html = feature.properties.name;
+  }
+
+  html += "<br><hr>";
+  html += feature.geometry.coordinates[1].toFixed(4) + ", " + feature.geometry.coordinates[0].toFixed(4);
+
+  if(feature.properties.address != "") {
+    html += "<br><hr>";
+    html += feature.properties.address;
+    html += "<br>";
+    html += feature.properties.city + ", " + feature.properties.state_zip;
+  }
+
+  return html;
 }
 
 /*
@@ -53,10 +68,13 @@ iata,title,city,state,country,latitude,longitude
 */
 
 var csvString = `\
-name,longitude,latitude
-Charles L. Sommers Canoe Base,-91.494917,47.989479
-Donald Rogert Canoe Base,-91.841214,48.740965
-Northern Expeditions Canoe Base,-95.674334,51.026774
-Prairie Portage,-91.438309,48.050557
-Kawishiwi Ranger District & Customs,-91.830583,47.906825
+name,longitude,latitude,address,city,state_zip,description,url
+Charles L. Sommers Canoe Base,-91.494917,47.989479,14790 Moose Lake Rd,Ely,MN 55731,,http://www.ntier.org
+Donald Rogert Canoe Base,-91.841214,48.740965,,,,,http://www.ntier.org
+Northern Expeditions Canoe Base,-95.674334,51.026774,,,,,http://www.ntier.org
+Prairie Portage Ranger Station,-91.436710,48.051227,,,,,https://www.ontarioparks.com/park/quetico
+Cache Bay Ranger Station,-91.0117,48.2119,,,,,https://www.ontarioparks.com/park/quetico
+Lac La Croix Ranger Station,-92.132965,48.371639,,,,,https://www.ontarioparks.com/park/quetico
+Beaverhouse Ranger Station,-92.049847,48.539178,,,,,https://www.ontarioparks.com/park/quetico
+Kawishiwi Ranger District & Customs,-91.829717,47.906841,1393 MN-169,Ely,MN 55731,,https://www.fs.usda.gov/recarea/superior/recreation/recarea?recid=37021&actid=31
 `;
