@@ -27,6 +27,12 @@ var textSize = {
     ]
 };
 
+
+/*
+ * textField is used for the title of the point of interest
+ */
+textField = "{name}";
+
 /*
  * Create full HTML for 'mousever' and 'click' events
  */
