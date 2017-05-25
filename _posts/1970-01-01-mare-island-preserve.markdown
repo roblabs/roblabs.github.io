@@ -44,7 +44,7 @@ Mare Island Heritage Trust 816 Branciforte St. Vallejo, CA 94590 Fed Tax ID 27-1
 
 -----
 
-<iframe allowfullscreen="true" width = "100%" height = "1200" src="/mare-island-preserve/map">
+<iframe allowfullscreen="true" width = "100%" height = "1200" src="/Volksmaps/mip/">
   <p>Your browser does not support iframes.</p>
 </iframe>
 

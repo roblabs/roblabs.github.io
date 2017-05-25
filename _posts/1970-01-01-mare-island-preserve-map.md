@@ -56,7 +56,7 @@ map.addControl(new mapboxgl.NavigationControl());
 
 var mapsmall = new mapboxgl.Map({
     container: "mapsmall",
-    style: "mapbox://styles/roblabs/ciomh54ic000kbolza4305pev",
+    style: "mapbox://styles/mapbox/streets-v10",
     zoom: 9,
     maxZoom: 9,
     center: [-122.2546, 38.0767],

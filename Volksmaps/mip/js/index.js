@@ -5,6 +5,11 @@ var retVal = csv2GeoJSON.csv2geojson(csvString, function(err, data) {
     points = data;
 });
 
+//
+// Small inset map
+//
+var mapsmall = new mapboxgl.Map( smallMapStyle );
+
 // New Mapbox map
 var map = new mapboxgl.Map( style );
 

@@ -7,10 +7,19 @@
 var style = {
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-streets-v10',
-    zoom: 16,
+    zoom: 15,
     minZoom: 7,
     maxZoom: 18,
     center: [-122.2546, 38.0767]
+};
+
+var smallMapStyle = {
+    container: "mapsmall",
+    style: "mapbox://styles/mapbox/streets-v10",
+    zoom: 9,
+    maxZoom: 9,
+    center: [-122.2546, 38.0767],
+    attributionControl: false
 };
 
 var textSize = {
@@ -67,8 +76,8 @@ var csvString = `\
 latitude,longitude,name,description
 38.08137,-122.257134,Visitor Center,Our Visitors Center is in a former bomb storage magazine
 38.075805,-122.254399,Spirit Ship,An Art Tribute dedicated to the workers of Mare Island Naval Shipyard marking the closure of the Shipyard in 1996.<br>The sculpture has a “dog tag” for many of the ships built and repaired on Mare Island.
-38.077095,-122.251197,6
-38.075389,-122.254128,8
+38.077095,-122.251197,Sign 6
+38.075389,-122.254128,Sign 8
 38.079581,-122.252989,Mare Island Naval Cemetery,The Mare Island Naval Cemetery is a National Historic Landmark
 38.076672,-122.255028,U.S. Coast & Geodetic Survey Station,Est 1852
 `;
