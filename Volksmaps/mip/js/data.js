@@ -17,7 +17,8 @@ var smallMapStyle = {
     container: "mapsmall",
     style: "mapbox://styles/mapbox/streets-v10",
     zoom: 9,
-    maxZoom: 9,
+    minZoom: 7,
+    maxZoom: 12,
     center: [-122.2546, 38.0767],
     attributionControl: false
 };
