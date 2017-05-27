@@ -5,6 +5,11 @@ var retVal = csv2GeoJSON.csv2geojson(csvString, function(err, data) {
     points = data;
 });
 
+//
+// Small inset map
+//
+var mapsmall = new mapboxgl.Map( smallMapStyle );
+
 // New Mapbox map
 var map = new mapboxgl.Map( style );
 
@@ -22,11 +27,8 @@ var popupMouseMove = new mapboxgl.Popup({
   closeButton: false
 });
 
-map.on("load", function() {
-  // Add the source to query. In this example we're using
-  // county polygons uploaded as vector tiles
-
-  map.addLayer({
+mapsmall.on("load", function() {
+  mapsmall.addLayer({
           "id": "points",
           "type": "symbol",
           "source": {
@@ -43,6 +45,30 @@ map.on("load", function() {
           },
           "paint": {
               "text-halo-color": "hsl(0, 0%, 100%)",
+              "text-halo-width": 1.25
+          }
+      });
+});
+
+map.on("load", function() {
+  map.addLayer({
+          "id": "points",
+          "type": "symbol",
+          "source": {
+              "type": "geojson",
+              "data": points
+          },
+          "layout": {
+              "text-size": textSize,
+              "icon-image": "{icon}-15",
+              "text-field": textField,
+              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+              "text-offset": [0, 0.6],
+              "text-anchor": "top"
+          },
+          "paint": {
+              "text-color": "white",
+              "text-halo-color": "black",
               "text-halo-width": 1.25
           }
       });
@@ -108,5 +134,23 @@ map.on("load", function() {
                 .setHTML(html)
                 .addTo(map);
   });
+
+  map.on('moveend', function(){
+    ZoomOrDragEnd(map);
+  });
+
+  mapsmall.on('moveend', function(){
+    ZoomOrDragEnd(mapsmall);
+  });
+
+  function ZoomOrDragEnd(mapDiv){
+    var zoom = mapDiv.getZoom();
+    var center = mapDiv.getCenter().toArray();
+
+    var zoomOutput = "zoom:  " + parseFloat(zoom).toFixed(2);
+    var centerOutput = "center: [" + parseFloat(center[0]).toFixed(6) + ", " + parseFloat(center[1]).toFixed(6) + "],";
+    console.log(document.activeElement.offsetParent.attributes[0]);
+    console.log(zoomOutput + ", " + centerOutput);
+  }
 
 });

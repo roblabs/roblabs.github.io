@@ -7,10 +7,20 @@
 var style = {
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-streets-v10',
-    zoom: 6,
+    zoom: 7,
     minZoom: 6,
     maxZoom: 18,
     center: [-91.494917,47.989479]
+};
+
+var smallMapStyle = {
+    container: "mapsmall",
+    style: "mapbox://styles/mapbox/streets-v10",
+    minZoom: 4,
+    maxZoom: 15,
+    zoom:  4.45,
+    center: [-92.647016, 47.726081],
+    attributionControl: false
 };
 
 var textSize = {
@@ -79,6 +89,7 @@ Charles L. Sommers Canoe Base,-91.494917,47.989479,14790 Moose Lake Rd,Ely,MN 55
 Donald Rogert Canoe Base,-91.841214,48.740965,,,,,http://www.ntier.org
 Northern Expeditions Canoe Base,-95.674334,51.026774,,,,,http://www.ntier.org
 Prairie Portage Ranger Station,-91.436710,48.051227,,,,,https://www.ontarioparks.com/park/quetico
+Louisa Falls,-91.3654,48.1311,,,,,
 Cache Bay Ranger Station,-91.0117,48.2119,,,,,https://www.ontarioparks.com/park/quetico
 Lac La Croix Ranger Station,-92.132965,48.371639,,,,,https://www.ontarioparks.com/park/quetico
 Beaverhouse Ranger Station,-92.049847,48.539178,,,,,https://www.ontarioparks.com/park/quetico
