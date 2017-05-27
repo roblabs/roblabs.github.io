@@ -75,7 +75,8 @@ iata,title,city,state,country,latitude,longitude
 // The Mare Island Shoreline Heritage Preserve<br>is a 215-acre park located at<br>the south end of Mare Island.
 var csvString = `\
 latitude,longitude,name,description
-38.08137,-122.257134,Visitor Center,Our Visitors Center is in a former bomb storage magazine
+38.079357,-122.254847,Mare Island Shoreline Heritage Preserve,
+38.081370,-122.257134,Visitor Center,Our Visitor Center is in a former bomb storage magazine
 38.075805,-122.254399,Spirit Ship,An Art Tribute dedicated to the workers of Mare Island Naval Shipyard marking the closure of the Shipyard in 1996.<br>The sculpture has a “dog tag” for many of the ships built and repaired on Mare Island.
 38.077095,-122.251197,Sign 6
 38.075389,-122.254128,Sign 8
