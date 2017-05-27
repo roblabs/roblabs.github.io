@@ -10,16 +10,16 @@ var style = {
     zoom: 15,
     minZoom: 7,
     maxZoom: 18,
-    center: [-122.2546, 38.0767]
+    center: [-122.257389, 38.078558]
 };
 
 var smallMapStyle = {
     container: "mapsmall",
     style: "mapbox://styles/mapbox/streets-v10",
-    zoom: 9,
+    zoom: 8.35,
     minZoom: 7,
-    maxZoom: 12,
-    center: [-122.2546, 38.0767],
+    maxZoom: 15,
+    center: [-122.220578, 37.930041],
     attributionControl: false
 };
 

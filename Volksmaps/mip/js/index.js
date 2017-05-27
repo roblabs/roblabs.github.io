@@ -135,4 +135,22 @@ map.on("load", function() {
                 .addTo(map);
   });
 
+  map.on('moveend', function(){
+    ZoomOrDragEnd(map);
+  });
+
+  mapsmall.on('moveend', function(){
+    ZoomOrDragEnd(mapsmall);
+  });
+
+  function ZoomOrDragEnd(mapDiv){
+    var zoom = mapDiv.getZoom();
+    var center = mapDiv.getCenter().toArray();
+
+    var zoomOutput = parseFloat(zoom).toFixed(2);
+    var centerOutput = "[" + parseFloat(center[0]).toFixed(6) + ", " + parseFloat(center[1]).toFixed(6) + "]";
+    console.log(document.activeElement.offsetParent.attributes[0]);
+    console.log("Zoom, Lat, Lng:  " + zoomOutput + ", " + centerOutput);
+  }
+
 });
