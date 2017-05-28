@@ -39,7 +39,6 @@ mapsmall.on("load", function() {
               "text-size": textSize,
               "icon-image": "{icon}-15",
               "text-field": textField,
-              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
               "text-offset": [0, 0.6],
               "text-anchor": "top"
           },
@@ -62,7 +61,6 @@ map.on("load", function() {
               "text-size": textSize,
               "icon-image": "{icon}-15",
               "text-field": textField,
-              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
               "text-offset": [0, 0.6],
               "text-anchor": "top"
           },
@@ -149,7 +147,7 @@ map.on("load", function() {
 
     var zoomOutput = "zoom:  " + parseFloat(zoom).toFixed(2);
     var centerOutput = "center: [" + parseFloat(center[0]).toFixed(6) + ", " + parseFloat(center[1]).toFixed(6) + "],";
-    console.log(document.activeElement.offsetParent.attributes[0]);
+
     console.log(zoomOutput + ", " + centerOutput);
   }
 
