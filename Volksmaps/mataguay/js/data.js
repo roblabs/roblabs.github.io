@@ -7,16 +7,16 @@ var style = {
     style: 'mapbox://styles/mapbox/satellite-streets-v10',
     zoom:  12.00,
     center: [-116.663832, 33.192188],
-    minZoom: 0,
+    minZoom: 8,
     maxZoom: 20
 };
 
 var smallMapStyle = {
     container: "mapsmall",
     style: "mapbox://styles/mapbox/streets-v10",
-    zoom:  8.00,
+    zoom:  8.0,
     center: [-116.899732, 32.920702],
-    minZoom: 0,
+    minZoom: 6,
     maxZoom: 12,
     attributionControl: false
 };
@@ -26,11 +26,11 @@ var textSize = {
     "stops": [
         [
             7,
-            11.5
+            16
         ],
         [
             14,
-            16
+            20
         ]
     ]
 };
@@ -80,30 +80,31 @@ latitude,longitude,name
 33.206093,-116.654353,Indian Rock
 33.204476,-116.653577,Indian Rock Parking Lot
 33.207486,-116.659606,Cub Land
-33.204016,-116.655258,⛺️Owl
-33.203732,-116.655,⛺️Bat
-33.203757,-116.653106,⛺️Turkey
-33.203321,-116.65367,⛺️Jack Rabbit
-33.202932,-116.65274,⛺️Squirrel
-33.200915,-116.652387,⛺️Hawk
-33.19894,-116.650763,⛺️Bullfrog
-33.198965,-116.650035,⛺️Kangaroo Rat
-33.199487,-116.648731,⛺️Mountain Lion
-33.198473,-116.65029,⛺️Bluegill
-33.198237,-116.649358,⛺️Quail
-33.199088,-116.648562,⛺️Bobcat
-33.198054,-116.64998,⛺️Catfish
-33.198376,-116.648327,⛺️Coyote
-33.197938,-116.647228,⛺️Cheyenne
-33.197632,-116.646731,⛺️Pawnee
-33.196426,-116.648835,⛺️Kumeyaay
+33.204016,-116.655258,⛺️ Owl
+33.203732,-116.655,⛺️ Bat
+33.203757,-116.653106,⛺️ Turkey
+33.203321,-116.65367,⛺️ Jack Rabbit
+33.202932,-116.65274,⛺️ Squirrel
+33.200915,-116.652387,⛺️ Hawk
+33.19894,-116.650763,⛺️ Bullfrog
+33.198965,-116.650035,⛺️ Kangaroo Rat
+33.199487,-116.648731,⛺️ Mountain Lion
+33.198473,-116.65029,⛺️ Bluegill
+33.198237,-116.649358,⛺️ Quail
+33.199088,-116.648562,⛺️ Bobcat
+33.198054,-116.64998,⛺️ Catfish
+33.197724, -116.649693,⛺️ Beaver
+33.198376,-116.648327,⛺️ Coyote
+33.197938,-116.647228,⛺️ Cheyenne
+33.197632,-116.646731,⛺️ Pawnee
+33.196426,-116.648835,⛺️ Kumeyaay
 33.196329,-116.648248,Blackfoot Fort
 33.192645,-116.646401,Mountain Man Meadow
 33.20046,-116.649101,Parker Dining Hall
 33.200526,-116.652419,Climbing Center
-33.197825,-116.648111,⛺️Sioux
+33.197825,-116.648111,⛺️ Sioux
 33.200087,-116.65147,Crafts
-33.197535,-116.647876,⛺️Mohawk
+33.197535,-116.647876,⛺️ Mohawk
 33.200587,-116.650614,Trading Post
 33.207317,-116.657775,On My Honor Flag Plaza
 33.187872,-116.640309,1094,Point,C.O.P.E.

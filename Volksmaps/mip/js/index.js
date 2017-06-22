@@ -59,6 +59,7 @@ map.on("load", function() {
           },
           "layout": {
               "text-size": textSize,
+              "text-allow-overlap": true,
               "icon-image": "{icon}-15",
               "text-field": textField,
               "text-offset": [0, 0.6],
