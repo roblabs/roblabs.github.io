@@ -65,8 +65,8 @@ map.on("load", function() {
               "text-anchor": "top"
           },
           "paint": {
-              "text-color": "black",
-              "text-halo-color": "white",
+              "text-color": "white",
+              "text-halo-color": "black",
               "text-halo-width": 1.25
           }
       });
