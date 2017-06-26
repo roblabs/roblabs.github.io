@@ -68,6 +68,7 @@ iata,title,city,state,country,latitude,longitude
 var csvString = `\
 latitude,longitude,name
 33.232534,-116.695919,Mataguay Scout Ranch
+33.273559,-116.644672,CAL FIRE Warner Springs
 33.207016,-116.657327,A Frame
 33.207317,-116.657775,On My Honor Flag Plaza
 33.213749,-116.584673,MCT / PCT Jct
@@ -80,11 +81,12 @@ latitude,longitude,name
 33.206093,-116.654353,Indian Rock
 33.204476,-116.653577,Indian Rock Parking Lot
 33.207486,-116.659606,Cub Land
-33.204016,-116.655258,⛺️ Owl
-33.203732,-116.655,⛺️ Bat
-33.203757,-116.653106,⛺️ Turkey
-33.203321,-116.65367,⛺️ Jack Rabbit
-33.202932,-116.65274,⛺️ Squirrel
+33.201836,-116.653533,⛺️ Owl
+33.201572,-116.653275,⛺️ Bat
+33.201435,-116.652461,⛺️ Jack Rabbit
+33.200858,-116.651711,⛺️ Squirrel
+33.201916,-116.652752,⛺️ Turkey
+33.202734,-116.653836,Parking
 33.200915,-116.652387,⛺️ Hawk
 33.19894,-116.650763,⛺️ Bullfrog
 33.198965,-116.650035,⛺️ Kangaroo Rat
