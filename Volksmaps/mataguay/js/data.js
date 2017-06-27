@@ -104,6 +104,8 @@ latitude,longitude,name
 33.196329,-116.648248,Blackfoot Fort
 33.192645,-116.646401,Mountain Man Meadow
 33.20046,-116.649101,Parker Dining Hall
+33.200457,-116.65156,Parker Pool
+33.199516,-116.650977,Bike Shack
 33.200526,-116.652419,Climbing Center
 33.197825,-116.648111,⛺️ Sioux
 33.200087,-116.65147,Crafts
@@ -128,7 +130,6 @@ latitude,longitude,name
 33.191623,-116.64434,Hog Barn Science Center
 33.20012,-116.652882,The Dan Henry Lake
 33.200716,-116.651112,Hogan
-33.200457,-116.65156,Parker Pool
 33.208806,-116.658315,Front Gate
 33.194963,-116.644685,3 Mile Loop Kiosk
 33.189605,-116.635709,Well 1
