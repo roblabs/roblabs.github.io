@@ -6,7 +6,7 @@ var style = {
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-streets-v10',
     zoom:  12.00,
-    center: [-116.663832, 33.192188],
+    center: [-116.661317, 33.211863],
     minZoom: 8,
     maxZoom: 20
 };
@@ -74,6 +74,7 @@ latitude,longitude,name
 33.213749,-116.584673,MCT / PCT Jct
 33.201011,-116.650763,Silva Lodge
 33.20046,-116.649101,Parker Dining Hall
+33.202342,-116.649978,Silva / Campsite Parking
 33.200587,-116.650614,Trading Post
 33.200025,-116.650812,Medical Lodge
 33.190945,-116.64198,Nature trail Jct
@@ -89,7 +90,7 @@ latitude,longitude,name
 33.202734,-116.653836,Parking
 33.200915,-116.652387,⛺️ Hawk
 33.19894,-116.650763,⛺️ Bullfrog
-33.198965,-116.650035,⛺️ Kangaroo Rat
+33.199121,-116.649613,⛺️ Kangaroo Rat
 33.199487,-116.648731,⛺️ Mountain Lion
 33.198473,-116.65029,⛺️ Bluegill
 33.198237,-116.649358,⛺️ Quail
