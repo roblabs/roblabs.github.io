@@ -5,8 +5,8 @@
 var style = {
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-streets-v10',
-    zoom:  12.00,
-    center: [-116.661317, 33.211863],
+    zoom:  12.00, center: [-116.691186, 33.205065],  // map
+    // zoom:  16.23, center: [-116.651738, 33.199058],  // print
     minZoom: 8,
     maxZoom: 20
 };
