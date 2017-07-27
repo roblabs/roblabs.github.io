@@ -6,12 +6,16 @@
 // https://www.mapbox.com/mapbox-gl-js/style-spec/
 var style = {
     container: 'map',
-    style: 'mapbox://styles/mapbox/satellite-streets-v10',
+    style: 'mapbox://styles/roblabs/cj5lp8s022pmt2ssa2er1uaff',
     zoom: 7,
     minZoom: 6,
     maxZoom: 18,
     center: [-91.494917,47.989479]
 };
+
+var southWestCorner = new mapboxgl.LngLat(-91.625, 47.875);
+var northEastCorner = new mapboxgl.LngLat(-91.375, 48.125);
+var LngLatBounds = new mapboxgl.LngLatBounds(southWestCorner, northEastCorner);
 
 var smallMapStyle = {
     container: "mapsmall",

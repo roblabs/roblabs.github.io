@@ -50,6 +50,9 @@ mapsmall.on("load", function() {
 });
 
 map.on("load", function() {
+
+  map.setMaxBounds(LngLatBounds);
+
   map.addLayer({
           "id": "points",
           "type": "symbol",
@@ -65,8 +68,8 @@ map.on("load", function() {
               "text-anchor": "top"
           },
           "paint": {
-              "text-color": "white",
-              "text-halo-color": "black",
+              "text-color": "black",
+              "text-halo-color": "white",
               "text-halo-width": 1.25
           }
       });
