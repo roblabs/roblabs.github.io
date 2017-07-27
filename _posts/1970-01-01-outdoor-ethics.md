@@ -6,7 +6,10 @@ date:   2016-07-15T00:20:46-08:00
 author: BSA
 categories: [lnt, tread]
 tags: [lnt, tread]
+excerpt: ""
 permalink: /outdoor-ethics/
+redirect_from:
+  - /oe
 photo_url:
 
 ---
@@ -19,7 +22,6 @@ photo_url:
 ### Outdoor Ethics at BSA
 * [http://www.outdoorethics-bsa.org](http://www.outdoorethics-bsa.org)
 * [http://sdicbsa.org/Programs/OutdoorEthics/](http://sdicbsa.org/Programs/OutdoorEthics/)
-* [http://outdoorethics-bsa.org/awards/CubAction2015.php](http://outdoorethics-bsa.org/awards/CubAction2015.php)
 
 
 ### Outdoor Ethics for Cub Scouts
@@ -34,10 +36,10 @@ photo_url:
 
 #### Videos
 
-* [Pack 709, Caughdenoy, New York](https://www.youtube.com/watch?v=UDPhlQqANng)
-* [Bigfoot builds a fire](https://www.youtube.com/watch?v=-dWpjvW0Ecc)
-* [Eco Spray](https://www.youtube.com/watch?v=QKBorb2jU3E)
-* [Bigfoot visits the Grand Tetons](https://www.youtube.com/watch?v=ZLB2o1ZtuBg)
+* Pack 709, Caughdenoy, New York - [youtu.be/UDPhlQqANng](https://youtu.be/UDPhlQqANng)
+* Bigfoot builds a fire - [youtu.be/-dWpjvW0Ecc](https://youtu.be/-dWpjvW0Ecc)
+* Eco Spray - [youtu.be/QKBorb2jU3E](https://youtu.be/QKBorb2jU3E)
+* Bigfoot visits the Grand Tetons - [youtu.be/ZLB2o1ZtuBg](https://youtu.be/ZLB2o1ZtuBg)
 
 -----
 
