@@ -28,13 +28,15 @@ var bounds = [     // WSEN
 var map = new mapboxgl.Map({
     container: 'map',
     style: "mapbox://styles/roblabs/cj5sy8efq452b2sr1ekqm0jpn",
-    center: [ -89.962133, 35.018770],
-    zoom: 11.1
+    center: [-89.8490, 35.0927],
+    zoom: 10.01
 });
 
 map.addControl(new mapboxgl.FullscreenControl(), 'top-left');
 map.addControl(new mapboxgl.NavigationControl(), 'top-left');
 
+// Call once
+ZoomOrDragEnd();
 
 // map move to update Lat/Long
 
