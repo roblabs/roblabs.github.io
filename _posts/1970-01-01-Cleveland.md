@@ -24,15 +24,14 @@ excerpt_img: "Cleveland.png"
 
 Available in your devices app store
 
-* Coming soon [Cleveland National Forest in the Apple App Store][ios]
+* Available now [Cleveland National Forest in the Apple App Store][ios]
 * Available now — [Cleveland National Forest in the Google Play Store][android]
 
 <iframe allowfullscreen="true" width = "100%" height = "800" src="/Cleveland/map">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
-<!--[ios]:  https://itunes.apple.com/us/app/mt-whitney-ep-maps/id1133292347?mt=8-->
-[ios]:      https://itunes.apple.com/us/developer/epi-rational-inc./id416401310
+[ios]:      https://itunes.apple.com/us/app/cleveland-national-forest-eπ-maps/id1255405263?mt=8
 [android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.usfs.cleveland
 
 [tsg]:  http://www.timestampgenerator.com
