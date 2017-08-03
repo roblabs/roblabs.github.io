@@ -28,7 +28,7 @@ var bounds = [     // WSEN
 var map = new mapboxgl.Map({
     container: 'map',
     style: "mapbox://styles/roblabs/cj5sy8efq452b2sr1ekqm0jpn",
-    center: [-89.8490, 35.0927],
+    center: [-89.8593, 35.0788],
     zoom: 10.01
 });
 

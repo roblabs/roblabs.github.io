@@ -8,7 +8,7 @@ categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
 permalink: /memphis/
 excerpt: "Millington to Hernando"
-excerpt_img: "Cleveland.png"
+excerpt_img: "README-I-269-Desoto-Marshall-Counties.png"
 ---
 
 ## Memphis
