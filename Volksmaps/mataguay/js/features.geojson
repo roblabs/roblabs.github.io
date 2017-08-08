@@ -1,0 +1,1510 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MCT / PCT Junction"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.584673,
+          33.213749
+        ],
+        "type": "Point"
+      },
+      "id": "02f87ef57fe290244eb3453abfc18025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quail"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.6498,
+          33.199396
+        ],
+        "type": "Point"
+      },
+      "id": "06b5c2d8d49f21761dbae53edb82861f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Putting Green Pond"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.649547,
+          33.197213
+        ],
+        "type": "Point"
+      },
+      "id": "09a743ee3e487b846d059c8cdbe89d01"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Silva Lodge"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.650763,
+          33.201011
+        ],
+        "type": "Point"
+      },
+      "id": "111"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nature trail Jct"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.64198,
+          33.190945,
+          1061
+        ],
+        "type": "Point"
+      },
+      "id": "178ae55ad86c82285c9a4fbc2c8ad517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Conference Center"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.640408,
+          33.188425
+        ],
+        "type": "Point"
+      },
+      "id": "1952fc0a53ea8a3c37abc95f7fcb37a7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barn"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.643061,
+          33.190658
+        ],
+        "type": "Point"
+      },
+      "id": "1d43d23b63f9ddb1f27af24c89f6d819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fishing Shack"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.653065,
+          33.200651
+        ],
+        "type": "Point"
+      },
+      "id": "1eee0f98925c8697cf3fde289af9c2f5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Observatory Parking"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.653835,
+          33.202734
+        ],
+        "type": "Point"
+      },
+      "id": "24da56910f64599eeee0e5704bd2adcb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mataguay Range"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.651906,
+          33.19861
+        ],
+        "type": "Point"
+      },
+      "id": "2567dc885f7dbd0a9f17ec850dd6f984"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mataguay Chapel"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.647827,
+          33.195278
+        ],
+        "type": "Point"
+      },
+      "id": "271acb42239829112a88144a0201bc42"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.651544,
+          33.20126
+        ],
+        "type": "Point"
+      },
+      "id": "28980b59c6a2bb904a5862bacfde6ef6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blackfoot Pool"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.646704,
+          33.195283
+        ],
+        "type": "Point"
+      },
+      "id": "2bf4b2480a6331455b39454fdc7ef8b1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mountain Man Meadow"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.646401,
+          33.192645
+        ],
+        "type": "Point"
+      },
+      "id": "3804ed4c6600dfcf0af40b7a0663b510"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Upper Lake"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.637318,
+          33.187354
+        ],
+        "type": "Point"
+      },
+      "id": "3ab1ff279feb093df41048e5814ee868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kumeyaay"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.649286,
+          33.19673
+        ],
+        "type": "Point"
+      },
+      "id": "3b295ec61ae76ee9d130578ff5a70a8a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mountain Lion"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.648826,
+          33.199299
+        ],
+        "type": "Point"
+      },
+      "id": "40cf3c1e5287c7df5e0711f21b28a134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Conference Center Campfire"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.640513,
+          33.189826
+        ],
+        "type": "Point"
+      },
+      "id": "442b0c13a38f6212e5c68f7029bb6257"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bat"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.653275,
+          33.201572
+        ],
+        "type": "Point"
+      },
+      "id": "46552858dabd283175188f6f7ad19d2d"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -116.653533,
+          33.201836
+        ],
+        "type": "Point"
+      },
+      "id": "4831dfbb0af4c7d6a53b35bcf6f8843f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horse Bridge"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.64206,
+          33.190764,
+          1061
+        ],
+        "type": "Point"
+      },
+      "id": "49776d65d0a45e65bbad679cd33af306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Casitia No. 2"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.64012,
+          33.187979
+        ],
+        "type": "Point"
+      },
+      "id": "4ea9be95ecf995b1a09dd2b23d5cf34e"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            -116.64897,
+            33.200389
+          ],
+          [
+            -116.648835,
+            33.200196
+          ],
+          [
+            -116.6488,
+            33.20005
+          ],
+          [
+            -116.648799,
+            33.199978
+          ],
+          [
+            -116.648846,
+            33.199817
+          ],
+          [
+            -116.648826,
+            33.199765
+          ],
+          [
+            -116.648684,
+            33.199591
+          ],
+          [
+            -116.648554,
+            33.199408
+          ],
+          [
+            -116.648479,
+            33.199305
+          ],
+          [
+            -116.648396,
+            33.199231
+          ],
+          [
+            -116.64835,
+            33.199201
+          ],
+          [
+            -116.648313,
+            33.199171
+          ],
+          [
+            -116.64831,
+            33.199107
+          ],
+          [
+            -116.648291,
+            33.198991
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "4ee2e699a27a9c552042747ed529fb50"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shop"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.657145,
+          33.20853
+        ],
+        "type": "Point"
+      },
+      "id": "4efaec6240a27ed811115c875e2d3c6a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "O/A Fire Ring"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.648856,
+          33.195812
+        ],
+        "type": "Point"
+      },
+      "id": "52067c83d7ee6611fe962eedf101fcb1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ranger's House"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.66105,
+          33.208493
+        ],
+        "type": "Point"
+      },
+      "id": "5256277867b69d0278e169df33fe8075"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indian Rock"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.654715,
+          33.205577
+        ],
+        "type": "Point"
+      },
+      "id": "5299b04fbf5324ca21ca18f90c871871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Treanor's Grave"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.635025,
+          33.188136,
+          1134
+        ],
+        "type": "Point"
+      },
+      "id": "534187531b4c8c71ed94abd63fbe45c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bobcat"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.648827,
+          33.19912
+        ],
+        "type": "Point"
+      },
+      "id": "53fd4cf7a4411bfb2f16735edca6866f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ADA Cabin"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.651958,
+          33.200746
+        ],
+        "type": "Point"
+      },
+      "id": "581e3075c17302ff059db093038bc10f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Caretaker's Cabin"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.641716,
+          33.189648
+        ],
+        "type": "Point"
+      },
+      "id": "59012e168bac08ccd619c5b1b1ce7c28"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ComSci"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.643688,
+          33.191373
+        ],
+        "type": "Point"
+      },
+      "id": "59daf2720dbf93f20f584ca03cbf22a0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Campmasters Cabin"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.654629,
+          33.20624
+        ],
+        "type": "Point"
+      },
+      "id": "5a355fa00a48c9c776dae273cd5927a9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nature Den"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.646286,
+          33.195811,
+          1050
+        ],
+        "type": "Point"
+      },
+      "id": "600c05b0e4e1a40765344e818e8d4b6b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Funhouse"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.651757,
+          33.195114
+        ],
+        "type": "Point"
+      },
+      "id": "60c3b365c70198b0ae093d52ecd6dae1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indian Rock Campfire Circle"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.656145,
+          33.203671
+        ],
+        "type": "Point"
+      },
+      "id": "68fd1819749ce92fdddff151bc47bedd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Casitia No. 3"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.639926,
+          33.188144
+        ],
+        "type": "Point"
+      },
+      "id": "6d4cf95380d5b9317bdef1fe0b51f966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baden Powell Fire Ring"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.649165,
+          33.200061
+        ],
+        "type": "Point"
+      },
+      "id": "71e59a82d898ae4446bc7a8cff1292aa"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jack Rabbit"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.652101,
+          33.201327
+        ],
+        "type": "Point"
+      },
+      "id": "789f3beaec86a47553b45ee92092a1a0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ranch House"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.64018,
+          33.189079
+        ],
+        "type": "Point"
+      },
+      "id": "79425bc009bb3bb6ff33ac409470407e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Back Gate"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.630822,
+          33.190396
+        ],
+        "type": "Point"
+      },
+      "id": "7adbc0475e6a172d6232d8172b151a37"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camporee Field"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.662854,
+          33.210957
+        ],
+        "type": "Point"
+      },
+      "id": "7b24d2991a8555a81e39d1099fbba845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blackfoot Reservoir"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.64591,
+          33.194555
+        ],
+        "type": "Point"
+      },
+      "id": "7f8091e2df904a0bc35bc146a1c01115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bluegill"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.650489,
+          33.198697
+        ],
+        "type": "Point"
+      },
+      "id": "7ff7bb0efcc17ab9044afd9c11c84d28"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pawnee"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.646446,
+          33.198043
+        ],
+        "type": "Point"
+      },
+      "id": "80458a0a0be38154a009aee073c975db"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tent Barn"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.64487,
+          33.191316
+        ],
+        "type": "Point"
+      },
+      "id": "817fa4c015cefb4d8113a853260c2f0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Assistant Ranger's House"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.657818,
+          33.208753
+        ],
+        "type": "Point"
+      },
+      "id": "85bc509beac16bb95d8fd7dec269896f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staff Lounge"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.649693,
+          33.201029
+        ],
+        "type": "Point"
+      },
+      "id": "86c3790b836c7ec5c53a9e3b408eeec4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cheyenne"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.64733,
+          33.197614
+        ],
+        "type": "Point"
+      },
+      "id": "87fb0bb6e9d8486d3b01e7a3da00c7c7"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            -116.648284,
+            33.198973
+          ],
+          [
+            -116.648257,
+            33.198902
+          ],
+          [
+            -116.648196,
+            33.198781
+          ],
+          [
+            -116.648125,
+            33.198648
+          ],
+          [
+            -116.648064,
+            33.198541
+          ],
+          [
+            -116.647997,
+            33.198451
+          ],
+          [
+            -116.64792,
+            33.198354
+          ],
+          [
+            -116.647795,
+            33.198254
+          ],
+          [
+            -116.647666,
+            33.198157
+          ],
+          [
+            -116.647477,
+            33.198049
+          ],
+          [
+            -116.647272,
+            33.197962
+          ],
+          [
+            -116.647076,
+            33.197896
+          ],
+          [
+            -116.646933,
+            33.197718
+          ],
+          [
+            -116.646729,
+            33.197613
+          ],
+          [
+            -116.646616,
+            33.197332
+          ],
+          [
+            -116.646727,
+            33.197133
+          ],
+          [
+            -116.646779,
+            33.196966
+          ],
+          [
+            -116.646779,
+            33.196853
+          ],
+          [
+            -116.646746,
+            33.196742
+          ],
+          [
+            -116.64666,
+            33.196658
+          ],
+          [
+            -116.646588,
+            33.196566
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "89928cd40fa2118e47b0ce7e6d4c0958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deer Meadow"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.649305,
+          33.198106
+        ],
+        "type": "Point"
+      },
+      "id": "8b056fa1ffbf54855be6eea1442c580b"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            -116.646589,
+            33.196563
+          ],
+          [
+            -116.646591,
+            33.196568
+          ],
+          [
+            -116.646533,
+            33.196491
+          ],
+          [
+            -116.646413,
+            33.19642
+          ],
+          [
+            -116.646185,
+            33.196337
+          ],
+          [
+            -116.646287,
+            33.196029
+          ],
+          [
+            -116.646293,
+            33.195832
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": "8c6e4b12e3af093d852ff2a6b7237947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "s"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.637572,
+          33.190758
+        ],
+        "type": "Point"
+      },
+      "id": "8cbb42ea35afc2a7309014f13ec7e7a6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staff Cabin Parking"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.649977,
+          33.20234
+        ],
+        "type": "Point"
+      },
+      "id": "8d6572e8bc8cc636f30ddb8a67ef1c5f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indian Rock Headquarters"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.653961,
+          33.203865
+        ],
+        "type": "Point"
+      },
+      "id": "8de64adfc961e08e71e34138a1da79d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indian Rock Parking Lot"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.653577,
+          33.204476
+        ],
+        "type": "Point"
+      },
+      "id": "91e76764da694177ec8697a17f9ed5de"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cub Land"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.633699,
+          33.190102,
+          1125
+        ],
+        "type": "Point"
+      },
+      "id": "962cfffb605055e8e0a4292f1f8a103e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bullfrog"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.650758,
+          33.198981
+        ],
+        "type": "Point"
+      },
+      "id": "9ea123e8595d702a97ddf980d207742b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Catfish"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.650229,
+          33.198386
+        ],
+        "type": "Point"
+      },
+      "id": "9f79ae6a61e5b80e9ddd92d9f1972333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blackfoot Fort"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.648248,
+          33.196329
+        ],
+        "type": "Point"
+      },
+      "id": "a0a83880ea9ac0241fc02db15d2e0785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dining Hall"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.640984,
+          33.188491
+        ],
+        "type": "Point"
+      },
+      "id": "a166628d8035bb005242b949cc468ada"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cabin 2"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.656005,
+          33.207629
+        ],
+        "type": "Point"
+      },
+      "id": "a2a5cf3bd618cbfc111a086a49717b9d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Turkey"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.650813,
+          33.201779
+        ],
+        "type": "Point"
+      },
+      "id": "a384cd827c51a14df74e2c45240edf1e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beaver"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.64993,
+          33.198038
+        ],
+        "type": "Point"
+      },
+      "id": "a6e9b2b62c1103f8929effbbdfbd58c2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Medivac Site"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.656095,
+          33.206719
+        ],
+        "type": "Point"
+      },
+      "id": "a9f208a524c08c1312c1433ac3947dc9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Workshop"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.643996,
+          33.191563
+        ],
+        "type": "Point"
+      },
+      "id": "aaed6337f988269512f5f3de88e16e97"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Dan Henry Lake"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.652882,
+          33.20012
+        ],
+        "type": "Point"
+      },
+      "id": "ac4bd6b16b09c01c5cae0dd03f4c96bf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Medical Lodge"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.650812,
+          33.200025
+        ],
+        "type": "Point"
+      },
+      "id": "af5326e97817674cfa4746f8931013bb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "OA Hogan"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.651126,
+          33.200729
+        ],
+        "type": "Point"
+      },
+      "id": "b0fe6acfe43acdc9c1f98391cbed5668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A Frame"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.657327,
+          33.207016
+        ],
+        "type": "Point"
+      },
+      "id": "b1c1d0e8b59cbb24cab75e9e74c6a717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Casitia No. 1"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.64041,
+          33.188196
+        ],
+        "type": "Point"
+      },
+      "id": "b283135b0cd87c10201bc0cbd3259e5c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parker Pool"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.651724,
+          33.200429
+        ],
+        "type": "Point"
+      },
+      "id": "b66c017fef3c1bb2a84aac08b960b97f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Front Gate"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.658315,
+          33.208806
+        ],
+        "type": "Point"
+      },
+      "id": "b7c3954822e057a42ebd78ad3d9af7de"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "3ml Kiosk"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.644685,
+          33.194963,
+          1058
+        ],
+        "type": "Point"
+      },
+      "id": "bb0c7cf182898eb82cbdd0f9c8f07cd4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indian Graveyard"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.6627,
+          33.209192
+        ],
+        "type": "Point"
+      },
+      "id": "bb757a9432822d20f95510f371342488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cub Land"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.659606,
+          33.207486
+        ],
+        "type": "Point"
+      },
+      "id": "bb981c4c63631ee8db1a28be75c6f16e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parker Dining Hall"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.649101,
+          33.20046
+        ],
+        "type": "Point"
+      },
+      "id": "bd34c4ddd36d012608c826df0fe80fe0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Climbing Tower"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.652419,
+          33.200526
+        ],
+        "type": "Point"
+      },
+      "id": "c1a3a705fff65b721f3dc29f5f25ecbd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coyote"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.6492,
+          33.198958
+        ],
+        "type": "Point"
+      },
+      "id": "c5e6404a94aefcb8224e61f607afa8da"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Well 1"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.635678,
+          33.18961
+        ],
+        "type": "Point"
+      },
+      "id": "c71dc14a6fc6a6fc92e90201aac18fe9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pepper Bridge"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.651383,
+          33.198855
+        ],
+        "type": "Point"
+      },
+      "id": "c92b03dd1498370f2f87ddb3b497872a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hawk"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.652387,
+          33.200915
+        ],
+        "type": "Point"
+      },
+      "id": "cb0461ed4647dd3aec13fa6f338b1372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trail Tool Shed"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.643771,
+          33.191577
+        ],
+        "type": "Point"
+      },
+      "id": "cf875aa804c8fef2e9b5a7680890fb9a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sioux"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.648111,
+          33.197825
+        ],
+        "type": "Point"
+      },
+      "id": "d623642c8820687c8efe39ed92e54c1c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bike Shack"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.651182,
+          33.199703
+        ],
+        "type": "Point"
+      },
+      "id": "d6fbef5d1680bd5e5a4c912bbd425c70"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mohawk"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.647876,
+          33.197535
+        ],
+        "type": "Point"
+      },
+      "id": "d9cabe22176af78966554075761b49eb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hidden Valley"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.666748,
+          33.199752
+        ],
+        "type": "Point"
+      },
+      "id": "de33f24c4b4cba9f6ac9e26831e7db5b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Casitia No. 4"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.639976,
+          33.188342
+        ],
+        "type": "Point"
+      },
+      "id": "df3c454fce43836653ae630aaa8563a4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cabin 1"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.655197,
+          33.207284
+        ],
+        "type": "Point"
+      },
+      "id": "e0ffb573be622a85efeffe70344b23b9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trading Post"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.650614,
+          33.200587
+        ],
+        "type": "Point"
+      },
+      "id": "e20e11a10de7548ffd329a90ac1ea51a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "On My Honor Flag Plaza"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.657775,
+          33.207317
+        ],
+        "type": "Point"
+      },
+      "id": "e262d98a618410b94805f3274a724e9d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Conference Center Chapel"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.639997,
+          33.188621
+        ],
+        "type": "Point"
+      },
+      "id": "e6d93d68ccd45521338af5a9f1980b87"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Treanor's Water Tank"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.634996,
+          33.189072
+        ],
+        "type": "Point"
+      },
+      "id": "ea1782cedfdeb2e6d494074a09d576a8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staff Cabins"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.65018,
+          33.201888
+        ],
+        "type": "Point"
+      },
+      "id": "edc4f4d22bc6996048d1f929bb1abbc5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kangaroo Rat"
+      },
+      "geometry": {
+        "coordinates": [
+          -116.650309,
+          33.199605
+        ],
+        "type": "Point"
+      },
+      "id": "f186c42b32371d11972d43676f9e07a1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "C.O.P.E."
+      },
+      "geometry": {
+        "coordinates": [
+          -116.640309,
+          33.187872,
+          1094
+        ],
+        "type": "Point"
+      },
+      "id": "f81811500cde5dcd03d2f5a9d1f87bc4"
+    }
+  ],
+  "type": "FeatureCollection"
+}
