@@ -18,7 +18,7 @@ excerpt_img: "Cleveland.png"
 #### Features
 * Use the same map — either on mobile, paper or browser
 * Topographic & trail map of Mt Laguna, Cuyamaca Peak, Descanso, Monument Peak and several other quadrangles in the Cleveland National Forest.
-* The map is based on US Forest Service 7.5 quadrangles for the Cleveland NF. These USFS topo quads were updated in January 2016, so you have the latest maps possible.
+* The map is based on US Forest Service 7.5 quadrangles for the Cleveland NF. 
 * Use your GPS to see your location on the trail
 * Topographic & trail map of Mt Laguna, Cuyamaca Peak, Descanso in Cleveland National Forest
 
