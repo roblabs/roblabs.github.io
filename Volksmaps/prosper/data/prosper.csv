@@ -1,0 +1,4 @@
+latitude,longitude,icon,address,city,state,zip,bedrooms,bathrooms,sqft,soldDate,soldPrice,url,image
+38.078591, -119.253698,Prosper_map_icon5,119 All Values St,San Jose,CA,94590,4,2,10812,"Jan 1, 1970",1234567,http://prospermoves.com/7950-soll,http://prospermoves.com/wp-content/uploads/2017/07/IMG_3505_HDR-300x225.jpg
+38.078591, -118.253698,Prosper_map_icon5,118 No URL Drive,San Jose,CA,94590,4,2.5,812,"Jan 1, 1970",91234,,http://prospermoves.com/wp-content/uploads/2017/07/IMG_3505_HDR-300x225.jpg
+38.078591, -117.253698,Prosper_map_icon5,117 Sans Image-URL Way,San Jose,CA,94590,4,2,1812,"Jan 1, 1970",912345,,
