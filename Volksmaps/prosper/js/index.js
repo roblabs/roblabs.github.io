@@ -2,7 +2,7 @@
 var points = "";
 var csv2GeoJSON = require("csv2geojson");
 
-$.get('/data/prosper.csv',function(data){
+$.get('data/prosper.csv',function(data){
 
   console.log(data);
 
