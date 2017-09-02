@@ -16,7 +16,7 @@ paginate_path: "/blog/page:num/"
 # build settings
 exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json"]
 markdown: kramdown
-gems:
+plugins:
   - jekyll-avatar
   - jekyll-redirect-from
   - jekyll-seo-tag

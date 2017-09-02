@@ -46,7 +46,7 @@ var bounds = [
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/roblabs/cj5lp8s022pmt2ssa2er1uaff',
+    style: 'mapbox://styles/roblabs/ciqk2376r000lb9m98hmyzwr7',
     minZoom: 7,
     zoom: 11,
     maxZoom: 15.9,

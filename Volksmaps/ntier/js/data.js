@@ -6,7 +6,7 @@
 // https://www.mapbox.com/mapbox-gl-js/style-spec/
 var style = {
     container: 'map',
-    style: 'mapbox://styles/roblabs/cj5lp8s022pmt2ssa2er1uaff',
+    style: 'mapbox://styles/roblabs/ciqk2376r000lb9m98hmyzwr7',
     zoom: 7,
     minZoom: 6,
     maxZoom: 18,
