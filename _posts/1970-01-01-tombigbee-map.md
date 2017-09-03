@@ -36,7 +36,7 @@ redirect_from:
 <div id="mapsmall" ></div>
 
 <script>
-var wsen = [-89.25,33.125,-88.875,33.375];
+var wsen = [-89.25,33.125,-87.7,34.1];
 var center = [-89.028, 33.240];
 
 var bounds = [
@@ -48,7 +48,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/roblabs/ciqk2376r000lb9m98hmyzwr7',
     minZoom: 7,
-    zoom: 11,
+    zoom: 7,
     maxZoom: 15.9,
     center: center,
     maxBounds: bounds
