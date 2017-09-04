@@ -1,24 +1,24 @@
 ---
 layout: post
-title:  "Cleveland National Forest"
-description: "Mapbox map of Cleveland National Forest Trails"
+title:  "Cleveland National Forest — eπ Maps"
+author: eπ Maps
+description: ""
+excerpt: "Use the same map — either on mobile, paper or desktop browser"
 date:   2016-08-30T12:20:46-08:00
-author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
 permalink: /Cleveland/
 redirect_from:
   - /cleveland
-excerpt: "Mobile and Desktop map of the Cleveland National Forest"
 excerpt_img: "Cleveland.png"
 ---
 
 ## Cleveland National Forest — eπ Maps
 
 #### Features
-* Use the same map — either on mobile, paper or browser
+* Use the same map — either on mobile, paper or desktop browser
 * Topographic & trail map of Mt Laguna, Cuyamaca Peak, Descanso, Monument Peak and several other quadrangles in the Cleveland National Forest.
-* The map is based on US Forest Service 7.5 quadrangles for the Cleveland NF. 
+* The map is based on US Forest Service 7.5 quadrangles for the Cleveland NF.
 * Use your GPS to see your location on the trail
 * Topographic & trail map of Mt Laguna, Cuyamaca Peak, Descanso in Cleveland National Forest
 
@@ -27,7 +27,7 @@ Available in your devices app store
 * Available now [Cleveland National Forest in the Apple App Store][ios]
 * Available now — [Cleveland National Forest in the Google Play Store][android]
 
-<iframe allowfullscreen="true" width = "100%" height = "800" src="/Cleveland/map">
+<iframe allowfullscreen="true" width = "100%" height = "800" src="/Mapbox/usfs-ciqk2376r000lb9m98hmyzwr7.html#9/32.8611/-116.4317">
   <p>Your browser does not support iframes.</p>
 </iframe>
 

@@ -1,25 +1,25 @@
 ---
 layout: post
 title:  "Tombigbee National Forest — eπ Maps"
+author: eπ Maps
 description: ""
+excerpt: "Use the same map — either on mobile, paper or desktop browser"
 date:   2017-08-26T00:20:46-08:00
-author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps]
 tags: [Mapbox, Paper Maps]
 permalink: /tombigbee/
 redirect_from:
   - /tombigbee
-excerpt: "National Forests in Mississippi"
 # photo_url:
 ---
 
 #### Features
-* Use the same map — either on mobile, paper or browser
-* The map is based on US Forest Service 7.5 quadrangles from FSTopo. These USFS topo quads are the latest maps possible.
+* Use the same map — either on mobile, paper or desktop browser
+* The map is based on US Forest Service 7.5 quadrangles from FSTopo.
 * Use your GPS to see your location on the trail
 
 
-<iframe allowfullscreen="true" width = "100%" height = "800" src="/tombigbee/map">
+<iframe allowfullscreen="true" width = "100%" height = "800" src="/Mapbox/usfs-ciqk2376r000lb9m98hmyzwr7.html#8/33.611/-88.927">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
