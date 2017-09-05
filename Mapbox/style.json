@@ -12421,7 +12421,7 @@
       }
     },
     {
-      "id": "green-mountain-features-ranger-district",
+      "id": "green-mountain-features-national-forest",
       "type": "line",
       "metadata": {
         "mapbox:group": "1fa8ccba49cbf08874ded63cc760b8f6"
@@ -12431,7 +12431,7 @@
       "minzoom": 6,
       "filter": [
         "has",
-        "RANGERDIST"
+        "ADMINFORES"
       ],
       "layout": {
         "visibility": "none"
