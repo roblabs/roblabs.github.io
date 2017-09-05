@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "USFS + Outdoors",
+  "name": "ePi Rational",
   "metadata": {
     "mapbox:autocomposite": true,
     "mapbox:type": "default",
@@ -81,24 +81,29 @@
     }
   },
   "center": [
-    -79.06249534530002,
-    41.62499454310003
+    -79.062495,
+    41.624994
   ],
   "zoom": 7,
   "bearing": 0,
   "pitch": 0,
   "sources": {
-    "mapbox://roblabs.allegheny-WEBP-png-7-15": {
-      "url": "mapbox://roblabs.allegheny-WEBP-png-7-15,roblabs.greenMountain-WEBP-png-7-15",
+    "allegheny-WEBP-png-7-15": {
+      "url": "mapbox://roblabs.allegheny-1-WEBP-png-7-15,roblabs.allegheny-2-WEBP-png-7-15,roblabs.allegheny-4-WEBP-png-7-15,roblabs.allegheny-5-WEBP-png-7-15",
       "type": "raster",
       "tileSize": 512
     },
-    "mapbox://roblabs.tombigbee-WEBP-png-7-15": {
+    "greenMountain-WEBP-png-7-15": {
+      "url": "mapbox://roblabs.greenMountain-WEBP-png-7-15",
+      "type": "raster",
+      "tileSize": 512
+    },
+    "tombigbee-WEBP-png-7-15": {
       "url": "mapbox://roblabs.tombigbee-WEBP-png-7-15,roblabs.tombigbeeNorth-WEBP-png-7-15",
       "type": "raster",
       "tileSize": 512
     },
-    "mapbox://roblabs.32116-WEBP-png-7-15": {
+    "32116-WEBP-png-7-15": {
       "url": "mapbox://roblabs.32116-WEBP-png-7-15",
       "type": "raster",
       "tileSize": 512
@@ -107,12 +112,12 @@
       "url": "mapbox://roblabs.a1y3pwgy",
       "type": "raster"
     },
-    "mapbox://roblabs.bwcaw-WEBP-png-7-15": {
+    "bwcaw-WEBP-png-7-15": {
       "url": "mapbox://roblabs.bwcaw-WEBP-png-7-15",
       "type": "raster",
       "tileSize": 512
     },
-    "mapbox://roblabs.whitney-WEBP-png-7-15": {
+    "whitney-WEBP-png-7-15": {
       "url": "mapbox://roblabs.whitney-WEBP-png-7-15",
       "type": "raster",
       "tileSize": 512
@@ -803,7 +808,7 @@
       "metadata": {
         "mapbox:group": "0fa64cb23a3a2ce5842cc6ab8891028c"
       },
-      "source": "mapbox://roblabs.whitney-WEBP-png-7-15",
+      "source": "whitney-WEBP-png-7-15",
       "minzoom": 7,
       "layout": {
         "visibility": "visible"
@@ -816,7 +821,7 @@
       "metadata": {
         "mapbox:group": "0fa64cb23a3a2ce5842cc6ab8891028c"
       },
-      "source": "mapbox://roblabs.32116-WEBP-png-7-15",
+      "source": "32116-WEBP-png-7-15",
       "minzoom": 7,
       "layout": {
         "visibility": "visible"
@@ -855,7 +860,7 @@
       "metadata": {
         "mapbox:group": "0fa64cb23a3a2ce5842cc6ab8891028c"
       },
-      "source": "mapbox://roblabs.bwcaw-WEBP-png-7-15",
+      "source": "bwcaw-WEBP-png-7-15",
       "minzoom": 7,
       "layout": {
         "visibility": "visible"
@@ -868,7 +873,7 @@
       "metadata": {
         "mapbox:group": "0fa64cb23a3a2ce5842cc6ab8891028c"
       },
-      "source": "mapbox://roblabs.tombigbee-WEBP-png-7-15",
+      "source": "tombigbee-WEBP-png-7-15",
       "minzoom": 7,
       "layout": {
         "visibility": "visible"
@@ -876,12 +881,25 @@
       "paint": {}
     },
     {
-      "id": "roblabs.allegheny-WEBP-png-7-15",
+      "id": "greenMountain-WEBP-png-7-15",
       "type": "raster",
       "metadata": {
         "mapbox:group": "0fa64cb23a3a2ce5842cc6ab8891028c"
       },
-      "source": "mapbox://roblabs.allegheny-WEBP-png-7-15",
+      "source": "greenMountain-WEBP-png-7-15",
+      "minzoom": 7,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {}
+    },
+    {
+      "id": "allegheny-WEBP-png-7-15",
+      "type": "raster",
+      "metadata": {
+        "mapbox:group": "0fa64cb23a3a2ce5842cc6ab8891028c"
+      },
+      "source": "allegheny-WEBP-png-7-15",
       "minzoom": 7,
       "layout": {
         "visibility": "visible"
@@ -916,7 +934,19 @@
           ]
         },
         "fill-translate-anchor": "viewport",
-        "fill-opacity": 1
+        "fill-opacity": {
+            "base": 1,
+            "stops": [
+                [
+                    9,
+                    1
+                ],
+                [
+                    15,
+                    0
+                ]
+            ]
+        }
       }
     },
     {
@@ -926,7 +956,20 @@
       "source-layer": "water",
       "layout": {},
       "paint": {
-        "fill-color": "hsl(196, 80%, 70%)"
+        "fill-color": "hsl(196, 80%, 70%)",
+        "fill-opacity": {
+            "base": 1,
+            "stops": [
+                [
+                    9,
+                    1
+                ],
+                [
+                    15,
+                    0
+                ]
+            ]
+        }
       }
     },
     {
