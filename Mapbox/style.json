@@ -12353,9 +12353,8 @@
       "source-layer": "green-mountain",
       "minzoom": 6,
       "filter": [
-        "==",
-        "$type",
-        "LineString"
+        "has",
+        "TRAIL_NO"
       ],
       "layout": {
         "visibility": "visible"
@@ -12368,6 +12367,79 @@
           10,
           5
         ]
+      }
+    },
+    {
+      "id": "green-mountain-features-wilderness-red",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1fa8ccba49cbf08874ded63cc760b8f6"
+      },
+      "source": "composite",
+      "source-layer": "green-mountain",
+      "minzoom": 6,
+      "filter": [
+        "has",
+        "WILDERNESS"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#f00",
+        "line-opacity": 0.6,
+        "line-width": 2
+      }
+    },
+    {
+      "id": "green-mountain-features-wilderness",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1fa8ccba49cbf08874ded63cc760b8f6"
+      },
+      "source": "composite",
+      "source-layer": "green-mountain",
+      "minzoom": 6,
+      "filter": [
+        "has",
+        "WILDERNESS"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#000",
+        "line-width": 2,
+        "line-opacity": 0.6,
+        "line-gap-width": 0,
+        "line-dasharray": [
+            18,
+            4,
+            2,
+            4
+        ]
+      }
+    },
+    {
+      "id": "green-mountain-features-ranger-district",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1fa8ccba49cbf08874ded63cc760b8f6"
+      },
+      "source": "composite",
+      "source-layer": "green-mountain",
+      "minzoom": 6,
+      "filter": [
+        "has",
+        "RANGERDIST"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": "#000",
+        "line-opacity": 0.5,
+        "line-width": 2
       }
     },
 
