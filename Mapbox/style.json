@@ -12302,7 +12302,33 @@
 
 
 
-
+    {
+      "id": "Allegheny-features-trails",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "1fa8ccba49cbf08874ded63cc760b8f6"
+      },
+      "source": "composite",
+      "source-layer": "Allegheny",
+      "minzoom": 6,
+      "filter": [
+        "==",
+        "$type",
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "hsl(0, 100%, 50%)",
+        "line-width": 2,
+        "line-gap-width": 0,
+        "line-dasharray": [
+          10,
+          5
+        ]
+      }
+    },
 
 
     {
