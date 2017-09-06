@@ -32,10 +32,8 @@ var popupMouseMove = new mapboxgl.Popup({
 
 map.on("load", function() {
 
-  console.log("load");
-
-  console.log("showCollisionBoxes");
-  map.showCollisionBoxes = true;
+  // console.log("showCollisionBoxes");
+  // map.showCollisionBoxes = true;
 
   map.addLayer({
           "id": "points",
