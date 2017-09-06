@@ -5,9 +5,9 @@
 var style = {
     container: 'map',
     style: 'mapbox://styles/thinkcreatelive/cj6a98p4p34e82smkx5bgdefe',
-    zoom:  5.0,
+    zoom:  11.69,
     pitch: 60,
-    center: [-122.828418, 38.597517],
+    center: [-122.714521, 38.400318],
     minZoom: 0,
     maxZoom: 15
 };
