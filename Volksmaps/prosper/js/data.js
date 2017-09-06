@@ -68,8 +68,8 @@ function setHTML(feature) {
     html += " sq ft";
     html += "<br><br><b>Sold Date: </b>";
     html += feature.properties.soldDate;
-    html += "<br><b>Sold Price: </b>";
-    html += priceFormatter.format(feature.properties.soldPrice);
+    html += "<br><b>Sold Price: $</b>";
+    html += feature.properties.soldPrice;
 
     if(feature.properties.url) {
       html += "<br><br><a target=\"_blank\" style=\"color:#F6863A; text-decoration:none;\" href=\"";
