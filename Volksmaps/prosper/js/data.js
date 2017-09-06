@@ -4,8 +4,9 @@
 // https://www.mapbox.com/mapbox-gl-js/style-spec/
 var style = {
     container: 'map',
-    style: 'mapbox://styles/thinkcreatelive/ciyt9p9pd000l2so6g8vkvbfr',
+    style: 'mapbox://styles/thinkcreatelive/cj6a98p4p34e82smkx5bgdefe',
     zoom:  5.0,
+    pitch: 60,
     center: [-122.828418, 38.597517],
     minZoom: 0,
     maxZoom: 15
