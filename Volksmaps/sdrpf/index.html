@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Volksmap • People's Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="big-small-map">
+    <div id="map" class="map"></div>
+  </div>
+
+
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+
+  <script src='/mapboxgl.accessToken.js'></script>
+
+    <!--
+      browserify -r csv2geojson > csv2geojson.js
+      // Usage within Javascript
+      // var csv2GeoJSON = require("csv2geojson");
+    -->
+    <script src="js/csv2geojson.js"></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+</html>
