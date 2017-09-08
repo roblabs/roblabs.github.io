@@ -40,11 +40,12 @@ To convert a newline-delimited JSON stream of values to a JSON array, the invers
 This command line operation
 * calls `ndjson-reduce`
 * reads the file `hikes.ndjson`
+* pipe, `|`, the results to `ndjson-map` and *decorate* with a base GeoJSON structure
 * writes the file `hikes2.geojson`
 
 
 ```bash
-ndjson-reduce < hikes.ndjson > hikes2.geojson
+ndjson-reduce < hikes.ndjson | ndjson-map '{type: "FeatureCollection", features: d}' > hikes2.geojson
 ```
 
 ## Example
