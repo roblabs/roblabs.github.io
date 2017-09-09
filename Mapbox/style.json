@@ -118,12 +118,12 @@
       "type": "raster",
       "tileSize": 512
         },
-    "mapbox://roblabs.tombigbee-WEBP-png-7-15": {
+        "mapbox://roblabs.tombigbee-WEBP-png-7-15": {
       "url": "mapbox://roblabs.tombigbee-WEBP-png-7-15,roblabs.tombigbeeNorth-WEBP-png-7-15",
             "type": "raster",
             "tileSize": 512
         },
-    "mapbox://roblabs.32116-WEBP-png-7-15": {
+        "mapbox://roblabs.32116-WEBP-png-7-15": {
             "url": "mapbox://roblabs.32116-WEBP-png-7-15",
             "type": "raster",
             "tileSize": 512
@@ -13228,59 +13228,6 @@
             }
         },
         {
-            "id": "usfs-cleveland-features",
-            "type": "symbol",
-            "metadata": {
-                "mapbox:group": "1fa8ccba49cbf08874ded63cc760b8f6"
-            },
-            "source": "composite",
-            "source-layer": "USFS-Cleveland",
-            "minzoom": 6,
-            "filter": [
-                "==",
-                "$type",
-                "Point"
-            ],
-            "layout": {
-                "visibility": "visible",
-                "text-field": "{name}",
-                "text-size": {
-                    "base": 1,
-                    "stops": [
-                        [
-                            12,
-                            11.5
-                        ],
-                        [
-                            14,
-                            16
-                        ],
-                        [
-                            15,
-                            0
-                        ]
-                    ]
-                },
-                "icon-image": "{icon}",
-                "icon-offset": [
-                    0,
-                    -15
-                ],
-                "text-offset": [
-                    0,
-                    0.65
-                ]
-            },
-            "paint": {
-                "text-halo-color": "hsl(0, 0%, 100%)",
-                "text-halo-width": 1.25,
-                "icon-translate": [
-                    0,
-                    0
-                ]
-            }
-        },
-        {
             "id": "usfs-cleveland-features-trails",
             "type": "line",
             "metadata": {
@@ -13351,6 +13298,59 @@
             }
         },
         {
+            "id": "usfs-cleveland-features",
+            "type": "symbol",
+            "metadata": {
+                "mapbox:group": "1fa8ccba49cbf08874ded63cc760b8f6"
+            },
+            "source": "composite",
+            "source-layer": "USFS-Cleveland",
+            "minzoom": 6,
+            "filter": [
+                "==",
+                "$type",
+                "Point"
+            ],
+            "layout": {
+                "visibility": "visible",
+                "text-field": "{name}",
+                "text-size": {
+                    "base": 1,
+                    "stops": [
+                        [
+                            12,
+                            11.5
+                        ],
+                        [
+                            14,
+                            16
+                        ],
+                        [
+                            15,
+                            0
+                        ]
+                    ]
+                },
+                "icon-image": "{icon}",
+                "icon-offset": [
+                    0,
+                    -15
+                ],
+                "text-offset": [
+                    0,
+                    0.65
+                ]
+            },
+            "paint": {
+                "text-halo-color": "hsl(0, 0%, 100%)",
+                "text-halo-width": 1.25,
+                "icon-translate": [
+                    0,
+                    0
+                ]
+            }
+        },
+        {
             "id": "usfs-flagstaff-features",
             "type": "symbol",
             "metadata": {
@@ -13383,7 +13383,11 @@
                         ]
                     ]
                 },
-                "icon-image": "{icon}"
+                "icon-image": "{icon}",
+                "icon-offset": [
+                    0,
+                    20
+                ]
             },
             "paint": {
                 "text-halo-color": "hsl(0, 0%, 100%)",
@@ -14758,7 +14762,7 @@
     ],
     "created": "2016-07-12T22:55:26.864Z",
     "id": "ciqk2376r000lb9m98hmyzwr7",
-    "modified": "2017-09-09T16:38:19.157Z",
+    "modified": "2017-09-09T17:23:02.352Z",
     "owner": "roblabs",
     "visibility": "private",
     "draft": false
