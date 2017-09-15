@@ -50,6 +50,47 @@ mapsmall.on("load", function() {
 });
 
 map.on("load", function() {
+
+  // mataguay-trails
+  map.addSource('mataguay-trails', {
+    type: 'vector',
+    url: 'mapbox://roblabs.cj62wd7t31cby2qo3iiavkla3-9vvxl'
+});
+
+  // Alternate way to add geojson
+    // 'source': {
+    //     'type': 'geojson',
+    //     'data': './js/mataguay-trails.geojson'
+    // },
+  map.addLayer({
+    "id": "mataguay-trails",
+    "type": "line",
+    'source': 'mataguay-trails',
+    'source-layer': 'mataguay-trails',
+    "layout": {
+        "visibility": "visible"
+    },
+    "paint": {
+        "line-opacity": {
+            "base": 1,
+            "stops": [
+                [
+                    7,
+                    1
+                ],
+                [
+                    18,
+                    0.25
+                ]
+            ]
+        },
+        "line-dasharray": [
+            5
+        ],
+        "line-color": "#f00"
+    }
+  }, 'water');
+
   map.addLayer({
           "id": "points",
           "type": "symbol",

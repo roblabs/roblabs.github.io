@@ -160,4 +160,5 @@ latitude,longitude,altitude,geometry,coordinates,name
 33.201888,-116.65018,Staff Cabins
 33.199605,-116.650309,Kangaroo Rat
 33.187872,-116.640309,C.O.P.E.
+33.19965,-116.627643,Lunch Oak
 `;
