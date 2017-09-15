@@ -5,7 +5,7 @@
 var style = {
     container: "map",
     style: "mapbox://styles/roblabs/cj7lax9g387z02rqmtz5m8vs8",
-    zoom:  5,
+    zoom:  4,
     center: [-149.43052459999998, 61.586757899999995],
     minZoom: 2,
     maxZoom: 15
@@ -60,6 +60,8 @@ function setHTML(feature) {
     html += " ";
     html += feature.properties.zip;
     html += "<br><br>";
+    html += "Contact — Rob<br>";
+    html += "Unit — Birds<br>";
     html += "<a href=\"tel:" + feature.properties.phone +  "\">";
 
     html += "</div>";
