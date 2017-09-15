@@ -67,9 +67,8 @@ iata,title,city,state,country,latitude,longitude
 
 var csvString = `\
 latitude,longitude,name
-latitude,longitude,altitude,geometry,coordinates,name
 33.213749,-116.584673,MCT / PCT Junction
-33.199396,-116.6498,Quail
+33.199396,-116.6498,⛺️ Quail
 33.197213,-116.649547,Putting Green Pond
 33.201011,-116.650763,Silva Lodge
 33.190945,-116.64198,Nature trail Jct
@@ -79,14 +78,14 @@ latitude,longitude,altitude,geometry,coordinates,name
 33.202734,-116.653835,Observatory Parking
 33.19861,-116.651906,Mataguay Range
 33.195278,-116.647827,Mataguay Chapel
-33.20126,-116.651544,Squirrel
+33.20126,-116.651544,⛺️ Squirrel
 33.195283,-116.646704,Blackfoot Pool
 33.192645,-116.646401,Mountain Man Meadow
 33.187354,-116.637318,Upper Lake
-33.19673,-116.649286,Kumeyaay
-33.199299,-116.648826,Mountain Lion
+33.19673,-116.649286,⛺️ Kumeyaay
+33.199299,-116.648826,⛺️ Mountain Lion
 33.189826,-116.640513,Conference Center Campfire
-33.201572,-116.653275,Bat
+33.201572,-116.653275,⛺️ Bat
 33.201836,-116.653533,
 33.190764,-116.64206,Horse Bridge
 33.187979,-116.64012,Casitia No. 2
@@ -95,7 +94,7 @@ latitude,longitude,altitude,geometry,coordinates,name
 33.208493,-116.66105,Ranger's House
 33.205577,-116.654715,Indian Rock
 33.188136,-116.635025,Treanor's Grave
-33.19912,-116.648827,Bobcat
+33.19912,-116.648827,⛺️ Bobcat
 33.200746,-116.651958,ADA Cabin
 33.189648,-116.641716,Caretaker's Cabin
 33.191373,-116.643688,ComSci
@@ -105,29 +104,29 @@ latitude,longitude,altitude,geometry,coordinates,name
 33.203671,-116.656145,Indian Rock Campfire Circle
 33.188144,-116.639926,Casitia No. 3
 33.200061,-116.649165,Baden Powell Fire Ring
-33.201327,-116.652101,Jack Rabbit
+33.201327,-116.652101,⛺️ Jack Rabbit
 33.189079,-116.64018,Ranch House
 33.190396,-116.630822,Back Gate
 33.210957,-116.662854,Camporee Field
 33.194555,-116.64591,Blackfoot Reservoir
-33.198697,-116.650489,Bluegill
-33.198043,-116.646446,Pawnee
+33.198697,-116.650489,⛺️ Bluegill
+33.198043,-116.646446,⛺️ Pawnee
 33.191316,-116.64487,Tent Barn
 33.208753,-116.657818,Assistant Ranger's House
 33.201029,-116.649693,Staff Lounge
-33.197614,-116.64733,Cheyenne
+33.197614,-116.64733,⛺️ Cheyenne
 33.198106,-116.649305,Deer Meadow
 33.20234,-116.649977,Staff Cabin Parking
 33.203865,-116.653961,Indian Rock Headquarters
 33.204476,-116.653577,Indian Rock Parking Lot
 33.190102,-116.633699,Cub Land
-33.198981,-116.650758,Bullfrog
-33.198386,-116.650229,Catfish
+33.198981,-116.650758,⛺️ Bullfrog
+33.198386,-116.650229,⛺️ Catfish
 33.196329,-116.648248,Blackfoot Fort
 33.188491,-116.640984,Dining Hall
 33.207629,-116.656005,Cabin 2
-33.201779,-116.650813,Turkey
-33.198038,-116.64993,Beaver
+33.201779,-116.650813,⛺️ Turkey
+33.198038,-116.64993,⛺️ Beaver
 33.206719,-116.656095,Medivac Site
 33.191563,-116.643996,Workshop
 33.20012,-116.652882,The Dan Henry Lake
@@ -142,14 +141,14 @@ latitude,longitude,altitude,geometry,coordinates,name
 33.207486,-116.659606,Cub Land
 33.20046,-116.649101,Parker Dining Hall
 33.200526,-116.652419,Climbing Tower
-33.198958,-116.6492,Coyote
+33.198958,-116.6492,⛺️ Coyote
 33.18961,-116.635678,Well 1
 33.198855,-116.651383,Pepper Bridge
-33.200915,-116.652387,Hawk
+33.200915,-116.652387,⛺️ Hawk
 33.191577,-116.643771,Trail Tool Shed
-33.197825,-116.648111,Sioux
+33.197825,-116.648111,⛺️ Sioux
 33.199703,-116.651182,Bike Shack
-33.197535,-116.647876,Mohawk
+33.197535,-116.647876,⛺️ Mohawk
 33.199752,-116.666748,Hidden Valley
 33.188342,-116.639976,Casitia No. 4
 33.207284,-116.655197,Cabin 1
@@ -158,7 +157,7 @@ latitude,longitude,altitude,geometry,coordinates,name
 33.188621,-116.639997,Conference Center Chapel
 33.189072,-116.634996,Treanor's Water Tank
 33.201888,-116.65018,Staff Cabins
-33.199605,-116.650309,Kangaroo Rat
+33.199605,-116.650309,⛺️ Kangaroo Rat
 33.187872,-116.640309,C.O.P.E.
 33.19965,-116.627643,Lunch Oak
 `;
