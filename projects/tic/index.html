@@ -61,18 +61,15 @@ function setHTML(feature) {
     }
 
     if(feature.properties.zoneName) {
-      html += "name<br>";
       html += feature.properties.zoneName;
       html += "<br><hr>";
     }
 
     if(feature.properties.circulation) {
-      html += "description<br>";
       html += "Average Age: " + feature.properties.averageAge + "<br>";
       html += "Average Income: " + feature.properties.averageIncome + "<br>";
       html += "Average Home Value: " + feature.properties.averageHomeValue + "<br>";
       html += "Zip Codes: " + feature.properties.zipCodes + "<br>";
-      html += "Average Age: " + feature.properties.averageAge + "<br>";
       html += "Circulation: " + feature.properties.circulation + "<br>";
     }
 
@@ -127,7 +124,7 @@ function updatePopup(e) {
 };
 
 map.on("mousemove", function(e) {
-  updatePopup(e);
+  // updatePopup(e);
 });
 
 map.on("click", function(e) {
