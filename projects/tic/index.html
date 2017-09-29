@@ -73,11 +73,17 @@ function setHTML(feature) {
       html += "Circulation: " + feature.properties.circulation + "<br>";
     }
 
-    if(feature.properties.url) {
-      html += "<br><br><a target=\"_blank\" style=\"color:#F6863A; text-decoration:none;\" href=\"";
-      html += feature.properties.url;
+    if(feature.properties.urlCurrentBook) {
+      html += "<a target=\"_blank\" style=\"color:#ff0000; text-decoration:none;\" href=\"";
+      html += feature.properties.urlCurrentBook;
       html += "\">";
-      html += "<i>Click here for more details</i></a>";
+      html += "<i>Current Coupon Book</i></a><br>";
+
+      html += "<a target=\"_blank\" style=\"color:#ff0000; text-decoration:none;\" href=\"";
+      html += feature.properties.urlAdvertise;
+      html += "\">";
+      html += "<i>Advertise</i></a><br>";
+
     }
 
     html += "</div>";
