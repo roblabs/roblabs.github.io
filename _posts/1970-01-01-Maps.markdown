@@ -7,9 +7,10 @@ excerpt: "Use the same map — either on mobile, paper or desktop browser"
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps]
 tags: [Mapbox, Paper Maps]
-permalink: /Maps/
+permalink: /usgs/
 redirect_from:
   - /7.5/
+  - /Maps/
 photo_url: https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9SdfN41hSjL2Brz0rXDXh-tkmRcSvRDifFjA=h150
 
 ---
@@ -56,6 +57,7 @@ The [USGS][usgs] has a site that is a map locator and download site.  You can do
 
 The USGS Topos have a different features set
 
+* [US-Topo-Map-Symbols](../assets/pdf/US-Topo-Map-Symbols.pdf)
 * A satellite image is included in the GeoPDF, making the file slightly larger
 * If you wish to print with out the satellite, then you have to use a GeoPDF plugin to disable the image layer.
 
@@ -63,8 +65,8 @@ The USGS Topos have a different features set
 
 -----
 
-#### Live Online map of the Mount Whitney Zone
-<iframe width = "100%" height = "300" src="https://api.mapbox.com/styles/v1/roblabs/ciomh54ic000kbolza4305pev.html?title=false&access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw#13/36.57376772735431/-118.28936228492913/0">
+#### Live Online map of select USGS Maps
+<iframe allowfullscreen="true" width = "100%" height = "800" src="https://api.mapbox.com/styles/v1/roblabs/cj83mpdcgauwa2rp408j9px42.html?fresh=true&title=false&access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw#9.92/33.2028/-116.6595">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
