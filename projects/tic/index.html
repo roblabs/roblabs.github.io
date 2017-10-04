@@ -52,6 +52,10 @@ function setHTML(feature) {
     html += feature.properties.name;
     html += "</span>";
 
+    if(feature.properties["fill-color"] == "lightGrayDevelopment" || feature.properties["fill-color"] == "darkGrayDevelopment") {
+      html += "<br><i>Currently under development</i>";
+    }
+
     if(feature.properties.image) {
       html += "<br><img width=\"340 px\" src=\"images/";
       html += feature.properties.image;
