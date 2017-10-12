@@ -67,6 +67,7 @@ iata,title,city,state,country,latitude,longitude
 
 var csvString = `\
 latitude,longitude,name
+33.232295,-116.696152,MSR
 33.213749,-116.584673,MCT / PCT Junction
 33.199396,-116.6498,⛺️ Quail
 33.197213,-116.649547,Putting Green Pond
