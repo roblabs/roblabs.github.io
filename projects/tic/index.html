@@ -46,20 +46,24 @@ function setHTML(feature) {
       return;
     }
 
-    // Propser formatting
-    html = "<div style=\"font-family: 'Open Sans',sans-serif; display:block; width: 340px; font-size:13px;\">";
+    // formatting
+    html = "<div style=\"font-family: 'Open Sans Regular',sans-serif; display:block; width: 280px; font-size:14px;\">";
 
-    html += "<span style=\"font-size:19px;\">";
+    html += "<span style=\"font-size:14px;\">";
+    html += feature.properties.zoneState;
+    html += feature.properties.zoneCity;
+    html += "</span>";
 
-    html += feature.properties.name;
+    html += "<span style=\"font-size:20px;\">";
+    html += feature.properties.zoneNumber;
     html += "</span>";
 
     if(feature.properties["fill-color"] == "lightGrayDevelopment" || feature.properties["fill-color"] == "darkGrayDevelopment") {
-      html += "<br><i>Currently under development</i>";
+      html += "<br><b>UNDER DEVELOPMENT</b>";
     }
 
     if(feature.properties.image) {
-      html += "<br><img width=\"340 px\" src=\"images/";
+      html += "<br><img width=\"280 px\" src=\"images/";
       html += feature.properties.image;
       html += "\">";
     } else {
@@ -72,23 +76,23 @@ function setHTML(feature) {
     }
 
     if(feature.properties.circulation) {
-      html += "Average Age: " + feature.properties.averageAge + "<br>";
-      html += "Average Income: " + feature.properties.averageIncome + "<br>";
-      html += "Average Home Value: " + feature.properties.averageHomeValue + "<br>";
-      html += "Zip Codes: " + feature.properties.zipCodes + "<br>";
-      html += "Circulation: " + feature.properties.circulation + "<br>";
+      html += "<b>Average Age: </b>" + feature.properties.averageAge + "<br>";
+      html += "<b>Average Income: </b>" + feature.properties.averageIncome + "<br>";
+      html += "<b>Average Home Value: </b>" + feature.properties.averageHomeValue + "<br>";
+      html += "<b>Zip Codes: </b>" + feature.properties.zipCodes + "<br>";
+      html += "<b>Approximate Circulation: </b>" + feature.properties.circulation + "<br>";
     }
 
     if(feature.properties.urlCurrentBook) {
       html += "<a target=\"_blank\" style=\"color:#ff0000; text-decoration:none;\" href=\"";
       html += feature.properties.urlCurrentBook;
       html += "\">";
-      html += "<i>Current Coupon Book</i></a><br>";
+      html += "<b>View Current Coupon Book</b></a><br>";
 
       html += "<a target=\"_blank\" style=\"color:#ff0000; text-decoration:none;\" href=\"";
       html += feature.properties.urlAdvertise;
       html += "\">";
-      html += "<i>Advertise</i></a><br>";
+      html += "<b>Click to Place an Advertisement</b></a><br>";
 
     }
 
