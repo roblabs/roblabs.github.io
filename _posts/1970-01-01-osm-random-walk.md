@@ -11,7 +11,19 @@ excerpt: "A Random Walk with OpenStreetMap"
 #excerpt_img:
 ---
 
-# A Random Walk with OpenStreetMap
+# A Random Walk with Mobile OpenStreetMap
+
+## Uses
+
+* Mobile
+  * Humanitarian and Health
+  * Tourism
+  * Field Research
+* No or low bandwidth
+  * Backcountry Hiking or Equestrian
+  * Museums
+  * Kiosks
+  * Meetings and Conferences
 
 ## Random
 
