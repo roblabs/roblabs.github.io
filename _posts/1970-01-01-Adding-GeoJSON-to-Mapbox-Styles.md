@@ -9,7 +9,7 @@ tags: [mapbox]
 
 excerpt: "Add your own geo data to your Mapbox Style"
 youtube: 98qZUAeaMmc
-excerpt_img: "GeoJSON-to-Mapbox-Styles-480.gif"
+excerpt_img: "/assets/img/GeoJSON-to-Mapbox-Styles-480.gif"
 #excerpt_img_comment: "gifify Adding\ GeoJSON\ to\ a\ Mapbox\ Style.mov -o GeoJSON-to-Mapbox-Styles-480.gif --from 482 --to 505 --resize 480:-1 --speed 2"
 ---
 

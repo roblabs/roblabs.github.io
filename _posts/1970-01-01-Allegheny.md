@@ -4,13 +4,13 @@ title:  "Allegheny National Forest — eπ Maps"
 author: eπ Maps
 description: ""
 excerpt: "Use the same map — either on mobile, paper or desktop browser"
-date:   2017-09-01T00:20:46-08:00
+date:   2016-09-01T00:20:46-08:00
 categories: [Mapbox, Paper Maps]
 tags: [Mapbox, Paper Maps]
 permalink: /Allegheny/
 redirect_from:
   - /allegheny
-# photo_url: https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9SdfN41hSjL2Brz0rXDXh-tkmRcSvRDifFjA=h150
+# excerpt_img: https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9SdfN41hSjL2Brz0rXDXh-tkmRcSvRDifFjA=h150
 
 ---
 

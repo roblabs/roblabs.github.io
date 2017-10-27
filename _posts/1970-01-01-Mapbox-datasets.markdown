@@ -9,7 +9,7 @@ tags: [Mapbox, Paper Maps, LeafletJS, animation]
 
 excerpt: "How to use the Mapbox data set editor"
 
-excerpt_img: "Mapbox-datasets.gif"
+excerpt_img: "/assets/img/Mapbox-datasets.gif"
 photo_url:
 permalink: /Mapbox-datasets/
 ---

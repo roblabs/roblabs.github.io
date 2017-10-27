@@ -10,7 +10,7 @@ tags: [gdal]
 excerpt: "Learn Geospatial data formats with GDAL"
 file_under: "command line cartography"
 youtube: uM8RQIJmfOk
-excerpt_img: "Pragmatic-GDAL-1080.gif"
+excerpt_img: "/assets/img/Pragmatic-GDAL-1080.gif"
 #excerpt_img_comment: "gifify Pragmatic-GDAL-1080.mov -o Pragmatic-GDAL-1080.gif --from 128 --to 136 --resize 480:-1 --speed 2"
 ---
 

@@ -13,7 +13,7 @@ redirect_from:
   - /android
   - /sd
 excerpt: "Mobile map of hikes around San Diego"
-excerpt_img: "sd-hikes.png"
+excerpt_img: "/assets/img/sd-hikes.png"
 ---
 
 ### Paper Maps for Biking & Hiking in San Diego.  Mobile app.

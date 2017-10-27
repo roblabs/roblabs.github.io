@@ -10,7 +10,7 @@ tags: [Mapbox, Paper Maps]
 permalink: /Cleveland/
 redirect_from:
   - /cleveland
-excerpt_img: "Cleveland.png"
+excerpt_img: "/assets/img/Cleveland.png"
 ---
 
 ## Cleveland National Forest — eπ Maps

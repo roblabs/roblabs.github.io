@@ -9,7 +9,7 @@ tags: [mapbox]
 
 excerpt: "An introduction to the Mapbox styles — Outdoors, Light & Dark, Streets and Satellite."
 youtube: jA6tlDn3Fpo
-excerpt_img: "Mapbox-Styles-480.gif"
+excerpt_img: "/assets/img/Mapbox-Styles-480.gif"
 excerpt_img_comment: "gifify Mapbox-Styles.mov -o Mapbox-Styles-480.gif --resize 480:-1 --speed 2"
 ---
 

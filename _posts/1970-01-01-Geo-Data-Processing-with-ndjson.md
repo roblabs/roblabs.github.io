@@ -8,7 +8,7 @@ author: ePi Rational, Inc.
 categories: [ndjson]
 permalink: /ndjson/
 excerpt: "Geo data from the command line"
-excerpt_img: "1970-01-01-Geo-Data-Processing-with-ndjson-GeoJSON-ndjson.png"
+excerpt_img: "/assets/img/1970-01-01-Geo-Data-Processing-with-ndjson-GeoJSON-ndjson.png"
 ---
 
 ## Geo Data Processing with `ndjson`
