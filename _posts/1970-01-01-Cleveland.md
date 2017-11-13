@@ -1,24 +1,24 @@
 ---
 layout: post
-title:  "Cleveland National Forest — eπ Maps"
+title:  "Pacific Crest Trail — eπ Maps"
 author: eπ Maps
 description: ""
 excerpt: "Use the same map — either on mobile, paper or desktop browser"
-date:   2016-08-30T12:20:46-08:00
+date:   2017-11-11T12:20:46-08:00
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
-permalink: /Cleveland/
+permalink: /pct/
 redirect_from:
   - /cleveland
+  - /Cleveland
 excerpt_img: "/assets/img/Cleveland.png"
 ---
 
-## Cleveland National Forest — eπ Maps
+## Pacific Crest Trail — eπ Maps
 
 #### Features
 * Use the same map — either on mobile, paper or desktop browser
-* Topographic & trail map of Mt Laguna, Cuyamaca Peak, Descanso, Monument Peak and several other quadrangles in the Cleveland National Forest.
-* The map is based on US Forest Service 7.5 quadrangles for the Cleveland NF.
+* Topographic & trail map of the Pacific Crest Trail.
 * Use your GPS to see your location on the trail
 * Topographic & trail map of Mt Laguna, Cuyamaca Peak, Descanso in Cleveland National Forest
 

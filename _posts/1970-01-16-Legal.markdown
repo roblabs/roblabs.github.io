@@ -26,6 +26,11 @@ except what you voluntarily provide through RobLabs.com or other direct contact.
 * [© OpenMapTiles][OpenMapTiles]
 * [© OpenStreetMap contributors][OpenStreetMap]
 * Black Mountain Open Preserve, Mission Trails [© City of San Diego][SanDiego]
+* © OpenMapTiles for Vector Tile processing
+* © OpenStreetMap contributors
+* © Open DEM, Open Database License (OdBL), for Contours in metric.
+* © USGS, for Hill Shaded Relief and 40 foot contours.  Contours derived from the National Elevation Dataset.
+
 * San Diego Surf © ePi Rational, Inc.
 
 ### License and Terms of Use
