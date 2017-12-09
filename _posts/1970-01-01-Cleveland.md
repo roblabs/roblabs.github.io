@@ -24,10 +24,10 @@ excerpt_img: "/assets/img/Cleveland.png"
 
 Available in your devices app store
 
-* Available now [Cleveland National Forest in the Apple App Store][ios]
-* Available now — [Cleveland National Forest in the Google Play Store][android]
+* Available now — [Pacific Crest Trail in the Apple App Store][ios]
+* Available now — [Pacific Crest Trail in the Google Play Store][android]
 
-<iframe allowfullscreen="true" width = "100%" height = "800" src="/Mapbox/usfs-ciqk2376r000lb9m98hmyzwr7.html#9/32.8611/-116.4317">
+<iframe allowfullscreen="true" width = "100%" height = "800" src="/Mapbox/epi-maps.html#9/32.8611/-116.4317">
   <p>Your browser does not support iframes.</p>
 </iframe>
 
