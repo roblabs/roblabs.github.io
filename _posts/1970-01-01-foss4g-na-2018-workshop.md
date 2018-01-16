@@ -13,17 +13,7 @@ permalink: /mobile1st/
 ## Talk for the National Trails System GIS Network
 
 *  Tuesday, January 16th, 2018 (12 pm PST / 1 pm MT / 3 pm ET)
-```
--------------------------------------------------------
-To join the call and online meeting (Now from mobile devices!)
--------------------------------------------------------
-1. Call the Conference Call # 1-877-346-9853; Enter Participant Code 3128645#
-2. Go to https://mmancusa.webex.com/mmancusa/j.php?MTID=m83f87ea2700a4a9298a1be5777301782
-2. Enter your first and last name, organization or trail affiliation and email address.
-3. If a password is required, enter the meeting password: NtsNts11!!
-4. Click "Join".
-------------------------------------------------------
-```
+
 * For more information, please see the [National Trails System GIS Network](http://pnts.org/new/national-trails-system-gis-network/)
 
 ##  Abstract and Description
@@ -35,6 +25,31 @@ To join the call and online meeting (Now from mobile devices!)
 We build our maps using Authoritative Trails data from the US Forest Service and US Geologic Survey.  We take care to use shaded relief and 40 foot contours from the USGS.  We also adhere to the National Park Service iconography for a consistent experience.
 
 We use FOSS4G software such as GDAL, QGIS, and several command line tools from Mapbox, such as `tippecanoe`.  We will discuss our map pipeline of the raster and vector tiles that we hand build.  We will also discuss some of the image compression and data reduction techniques that we use to fit the entire map into a mobile app.
+
+### Presentation
+
+* Link to [slides with animations](/projects/Rob-Chohan-RobLabs.com-mobile1st)
+* Link to [PDF with no animations](https://drive.google.com/file/d/1NgIaqi-aC6QBAuFVc-iOlidIilrSOMw9/view?usp=sharing)
+
+#### Links
+
+* Search `epi offline maps`
+  * iOS — [https://itunes.apple.com/us/developer/epi-rational-inc./id416401310](https://itunes.apple.com/us/developer/epi-rational-inc./id416401310)
+  * Android — [https://play.google.com/store/search?q=com.roblabs.papermaps&c=apps](https://play.google.com/store/search?q=com.roblabs.papermaps&c=apps)
+* Open Map Tiles
+  * open source mapping made for self hosting — [http://openMapTiles.org](http://openMapTiles.org)
+* Mapbox
+  * WebP compression changes for the Mapbox iOS SDK for rendering raster & vector map data — [https://github.com/roblabs/mapbox-gl-native](https://github.com/roblabs/mapbox-gl-native)
+  * Tippecanoe, converting to Mapbox Vector Tiles — [https://github.com/mapbox/tippecanoe](https://github.com/mapbox/tippecanoe)
+* USGS
+  * US Topo & The National Map — [http://nationalmap.gov](http://nationalmap.gov)
+* Forest Service
+  * [https://data.fs.usda.gov/geodata/edw/datasets.php](https://data.fs.usda.gov/geodata/edw/datasets.php)
+  * [https://data.fs.usda.gov/geodata/](https://data.fs.usda.gov/geodata/)
+* NPS
+  * [https://public-nps.opendata.arcgis.com](https://public-nps.opendata.arcgis.com)
+  * [https://www.nps.gov/maps/tools/symbol-library/](https://www.nps.gov/maps/tools/symbol-library/)
+
 
 ---
 
