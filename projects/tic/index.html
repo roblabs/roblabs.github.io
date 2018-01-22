@@ -58,7 +58,8 @@ function setHTML(feature) {
     html += feature.properties.zoneNumber;
     html += "</span>";
 
-    if(feature.properties["fill-color"] == "lightGrayDevelopment" || feature.properties["fill-color"] == "darkGrayDevelopment") {
+    // Check for ANY and ALL cases where the Zone is under development
+    if( feature.properties["fill-color"].toLowerCase().includes("development")) {
       html += "<br><b>UNDER DEVELOPMENT</b>";
     }
 
