@@ -13,6 +13,16 @@ redirect_from:
 photo_url:
 
 ---
+
+## 2018 Outdoor Ethics Slides
+
+* Presented to the San Diego North Country Wilderness Basics Course, [January 2018, `PPT`](https://drive.google.com/file/d/12XnvONMdqeM8THxc4AXGJBFVxlCLMxhV/view?usp=sharing)
+
+
+<img alt="1970-01-01-outdoor-ethics-Outdoor-Ethics-Leave-No-Trace.11.png" src="/assets/img/1970-01-01-outdoor-ethics-Outdoor-Ethics-Leave-No-Trace.11.png" width="" height="75%" >
+
+<hr>
+
 ## Outdoor Ethics Orientation for Cub Scout Leaders
 
 ### BSA Outdoor code
@@ -65,7 +75,7 @@ The Seven Principles
 #### Tread Lightly  
 [http://TreadLightly.org](http://TreadLightly.org)
 
-![Tread Lightly](http://www.treadlightly.org/wp-content/themes/treadlightly/images/TL-logo.png)
+![Tread Lightly](https://www.treadlightly.org/wp-content/uploads/2017/05/TreadLightly-logo-340x156.png)
 
 * __T__ravel Responsibly
 * __R__espect the Rights of Others
