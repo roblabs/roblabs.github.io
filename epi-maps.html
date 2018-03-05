@@ -76,13 +76,13 @@
         <div class='space-right8 pad2y space-left2'>
 
             <h3>epi offline maps</h3>
-            <a href='https://itunes.apple.com/us/developer/epi-rational-inc./id416401310'>
+            <a href='https://itunes.apple.com/us/developer/epi-rational-inc./id416401310' target="_blank">
                 <div class='clearfix small' style="float: left; height: 20px; width: 20px;">
                   iOS
                 </div>
             </a>
 
-            <a href='https://play.google.com/store/search?q=com.roblabs.papermaps&c=apps'>
+            <a href='https://play.google.com/store/search?q=com.roblabs.papermaps&c=apps' target="_blank">
               <div class='clearfix small' style="float: right; height: 20px; width: 50px;">
                   Android
               </div>
@@ -145,6 +145,8 @@
                 maxBounds: [sw, ne],
                 style: OMT
             }).addControl(new mapboxgl.NavigationControl(), 'top-left');
+
+            map.addControl(new mapboxgl.FullscreenControl(), 'top-left');
         }
 
         function renderMapboxJS() {
