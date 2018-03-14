@@ -1,0 +1,494 @@
+{
+  "version": 8,
+  "name": "sanj",
+  "metadata": {
+    "mapbox:autocomposite": true,
+    "mapbox:type": "template"
+  },
+  "center": [
+    -116.64792014913564,
+    33.799441808454645
+  ],
+  "zoom": 11.567715315930027,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "composite": {
+      "url": "mapbox://roblabs.composite-sanj",
+      "type": "vector"
+    },
+    "mapbox://roblabs.0db0yck2": {
+      "url": "mapbox://roblabs.0db0yck2",
+      "type": "raster",
+      "tileSize": 256
+    }
+  },
+  "sprite": "mapbox://sprites/roblabs/cjerfoi2f0icq2rpgc8dlcj26",
+  "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "roblabs-0db0yck2",
+      "type": "raster",
+      "metadata": {},
+      "source": "mapbox://roblabs.0db0yck2",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {}
+    },
+    {
+      "id": "wilderness-salmon",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "wilderness",
+      "minzoom": 7,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(253,202,182, 1)",
+        "line-width": {
+          "stops": [
+            [
+              6,
+              2
+            ],
+            [
+              10,
+              5
+            ]
+          ]
+        },
+        "line-offset": {
+          "stops": [
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "parkboundary-salmon",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "parkboundary",
+      "minzoom": 7,
+      "maxzoom": 24,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(253,202,182, 1)",
+        "line-width": {
+          "stops": [
+            [
+              6,
+              2
+            ],
+            [
+              10,
+              5
+            ]
+          ]
+        },
+        "line-offset": {
+          "stops": [
+            [
+              9,
+              2
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "wilderness",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "wilderness",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-width": 2,
+        "line-color": "rgba(0, 0, 0, 1)"
+      }
+    },
+    {
+      "id": "parkboundary-black",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "parkboundary",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-width": 2,
+        "line-color": "rgba(0, 0, 0, 1)"
+      }
+    },
+    {
+      "id": "utm",
+      "type": "line",
+      "source": "composite",
+      "source-layer": "UTM",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "paint": {
+        "line-color": "rgba(253,179,56, 1)",
+        "line-opacity": {
+          "stops": [
+            [
+              10,
+              0.05
+            ],
+            [
+              14,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "utm-label",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "UTM",
+      "minzoom": 12,
+      "maxzoom": 24,
+      "layout": {
+        "text-optional": false,
+        "text-size": {
+          "base": 1.4,
+          "stops": [
+            [
+              7,
+              8
+            ],
+            [
+              15,
+              16
+            ]
+          ]
+        },
+        "text-allow-overlap": false,
+        "symbol-avoid-edges": true,
+        "text-ignore-placement": false,
+        "text-max-angle": 45,
+        "symbol-spacing": 300,
+        "text-font": [
+          "Roboto Medium"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{UTM}",
+        "text-letter-spacing": 0.1
+      },
+      "paint": {
+        "text-color": "rgba(0,0,0, 1)",
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-width": 2,
+        "text-opacity": {
+          "stops": [
+            [
+              10,
+              0.05
+            ],
+            [
+              14,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "parkboundary-label",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "parkboundary",
+      "layout": {
+        "text-optional": false,
+        "text-size": {
+          "base": 1.4,
+          "stops": [
+            [
+              7,
+              10
+            ],
+            [
+              15,
+              18
+            ]
+          ]
+        },
+        "text-allow-overlap": false,
+        "symbol-avoid-edges": true,
+        "text-ignore-placement": false,
+        "text-max-angle": 95,
+        "symbol-spacing": 100,
+        "text-font": [
+          "Roboto Medium"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{NAME}{UNITNAME}",
+        "text-letter-spacing": 0.1
+      },
+      "paint": {
+        "text-color": "#000",
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "wilderness-label",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "wilderness",
+      "minzoom": 9,
+      "maxzoom": 24,
+      "layout": {
+        "text-optional": false,
+        "text-size": {
+          "base": 1.4,
+          "stops": [
+            [
+              7,
+              10
+            ],
+            [
+              15,
+              18
+            ]
+          ]
+        },
+        "text-allow-overlap": false,
+        "symbol-avoid-edges": true,
+        "text-ignore-placement": false,
+        "text-max-angle": 95,
+        "symbol-spacing": 100,
+        "text-font": [
+          "Roboto Medium"
+        ],
+        "symbol-placement": "line",
+        "text-padding": 0,
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{NAME}",
+        "text-letter-spacing": 0.1
+      },
+      "paint": {
+        "text-color": "#000",
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "tnmderivednames",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "TNMDerivedNames",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "!=",
+          "ATUR",
+          "Census"
+        ],
+        [
+          "!=",
+          "GAZ_FEATUR",
+          "Populated Place"
+        ],
+        [
+          "!=",
+          "GAZ_NAME",
+          "Sierra Nevada"
+        ],
+        [
+          "!=",
+          "GAZ_NAME",
+          "Tamarack Valley"
+        ],
+        [
+          "!in",
+          "GAZ_NAME",
+          "",
+          "Round Valley"
+        ]
+      ],
+      "layout": {
+        "text-field": "{GAZ_NAME}",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              7,
+              10
+            ],
+            [
+              14,
+              16
+            ]
+          ]
+        },
+        "text-font": [
+          "Roboto Condensed Italic"
+        ],
+        "visibility": "visible",
+        "symbol-spacing": 250
+      },
+      "paint": {
+        "text-color": "hsl(0, 0%, 0%)",
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-width": 1.25
+      }
+    },
+    {
+      "id": "Summit-tnmderivednames",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "TNMDerivedNames",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "!=",
+          "GAZ_FEATUR",
+          "Census"
+        ],
+        [
+          "!=",
+          "GAZ_FEATUR",
+          "Populated Place"
+        ],
+        [
+          "!=",
+          "GAZ_NAME",
+          "Sierra Nevada"
+        ],
+        [
+          "==",
+          "GAZ_FEATUR",
+          "Summit"
+        ]
+      ],
+      "layout": {
+        "text-field": "{GAZ_NAME}",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              7,
+              10
+            ],
+            [
+              14,
+              16
+            ]
+          ]
+        },
+        "text-font": [
+          "Roboto Condensed Italic"
+        ],
+        "visibility": "visible",
+        "symbol-spacing": 250
+      },
+      "paint": {
+        "text-color": "hsl(0, 0%, 0%)",
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-width": 1.25
+      }
+    },
+    {
+      "id": "Gap-tnmderivednames",
+      "type": "symbol",
+      "source": "composite",
+      "source-layer": "TNMDerivedNames",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "!=",
+          "GAZ_FEATUR",
+          "Census"
+        ],
+        [
+          "!=",
+          "GAZ_FEATUR",
+          "Populated Place"
+        ],
+        [
+          "!=",
+          "GAZ_NAME",
+          "Sierra Nevada"
+        ],
+        [
+          "==",
+          "GAZ_FEATUR",
+          "Gap"
+        ]
+      ],
+      "layout": {
+        "text-field": "{GAZ_NAME}",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              7,
+              10
+            ],
+            [
+              14,
+              16
+            ]
+          ]
+        },
+        "text-font": [
+          "Roboto Condensed Italic"
+        ],
+        "visibility": "visible",
+        "symbol-spacing": 250
+      },
+      "paint": {
+        "text-color": "hsl(0, 0%, 0%)",
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-width": 1.25
+      }
+    }
+  ],
+  "created": "2018-03-14T18:43:15.255Z",
+  "id": "cjerfoi2f0icq2rpgc8dlcj26",
+  "modified": "2018-03-14T21:53:20.267Z",
+  "owner": "roblabs",
+  "visibility": "private",
+  "draft": false
+}
