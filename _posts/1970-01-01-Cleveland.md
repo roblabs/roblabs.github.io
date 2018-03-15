@@ -14,8 +14,6 @@ redirect_from:
 excerpt_img: "/assets/img/Cleveland.png"
 ---
 
-## Pacific Crest Trail — eπ Maps
-
 #### Features
 * Use the same map — either on mobile, paper or desktop browser
 * Topographic & trail map of the Pacific Crest Trail.
@@ -27,9 +25,12 @@ Available in your devices app store
 * Available now — [Pacific Crest Trail in the Apple App Store][ios]
 * Available now — [Pacific Crest Trail in the Google Play Store][android]
 
-<iframe allowfullscreen="true" width = "100%" height = "800" src="/Mapbox/epi-maps.html#9/32.8611/-116.4317">
+<iframe allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+  style="height: 75vh; width: 95vw;"
+  src="/epi-maps.html?t=Cleveland&Z=14.9&style=omt-cje6px7vc06l22rpeiph7d85s&w=-116.894531&s=32.546813&e=-116.367188&n=33.302986&authkey=278314/#12/32.84249/-116.50334">
   <p>Your browser does not support iframes.</p>
 </iframe>
+
 
 [ios]:      https://itunes.apple.com/us/app/cleveland-national-forest-eπ-maps/id1255405263?mt=8
 [android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.usfs.cleveland
