@@ -2,7 +2,6 @@
   "version": 8,
   "name": "Cleveland",
   "metadata": {
-    "url": "mapbox://roblabs.composite-cleveland-descanso,roblabs.composite-cleveland-palomar,roblabs.composite-cleveland-trabuco,roblabs.elevcontour-cleveland-descanso,roblabs.elevcontour-cleveland-palomar,roblabs.elevcontour-cleveland-trabuco",
     "mapbox:autocomposite": true,
     "mapbox:type": "template"
   },
@@ -20,7 +19,7 @@
       "tileSize": 256
     },
     "composite": {
-      "url": "mapbox://roblabs.composite-pct-a",
+      "url": "mapbox://roblabs.composite-cleveland-descanso,roblabs.composite-cleveland-palomar,roblabs.composite-cleveland-trabuco,roblabs.elevcontour-cleveland-descanso,roblabs.elevcontour-cleveland-palomar,roblabs.elevcontour-cleveland-trabuco",
       "type": "vector"
     }
   },
