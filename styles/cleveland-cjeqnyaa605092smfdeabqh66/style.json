@@ -335,11 +335,11 @@
           "stops": [
             [
               11,
-              0.3
+              0.5
             ],
             [
               14,
-              0.6
+              0.8
             ]
           ]
         }
@@ -5296,6 +5296,11 @@
         [
           "!=",
           "GAZ_FEATUR",
+          "Census"
+        ],
+        [
+          "!=",
+          "GAZ_FEATUR",
           "Populated Place"
         ],
         [
@@ -5507,7 +5512,7 @@
   ],
   "created": "2018-03-14T05:47:02.616Z",
   "id": "cjeqnyaa605092smfdeabqh66",
-  "modified": "2018-03-21T17:59:14.714Z",
+  "modified": "2018-03-21T18:18:54.849Z",
   "owner": "roblabs",
   "visibility": "private",
   "draft": false
