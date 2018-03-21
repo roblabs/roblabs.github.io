@@ -10,11 +10,9 @@ tags: [foss4g]
 permalink: /mobile1st/
 ---
 
-## Talk for the National Trails System GIS Network
+## Presented at FOSS4G North America, St Louis, MO — May 14-16, 2018
 
-*  Tuesday, January 16th, 2018 (12 pm PST / 1 pm MT / 3 pm ET)
-
-* For more information, please see the [National Trails System GIS Network](http://pnts.org/new/national-trails-system-gis-network/)
+![FOSS4G](/assets/img/1970-01-01-foss4g-na-2018-workshop-foss4gna.jpeg)
 
 ##  Abstract and Description
 
@@ -49,6 +47,13 @@ We use FOSS4G software such as GDAL, QGIS, and several command line tools from M
 * NPS
   * [https://public-nps.opendata.arcgis.com](https://public-nps.opendata.arcgis.com)
   * [https://www.nps.gov/maps/tools/symbol-library/](https://www.nps.gov/maps/tools/symbol-library/)
+
+
+## Talk for the National Trails System GIS Network
+
+*  Tuesday, January 16th, 2018 (12 pm PST / 1 pm MT / 3 pm ET)
+
+* For more information, please see the [National Trails System GIS Network](http://pnts.org/new/national-trails-system-gis-network/)
 
 
 ---
