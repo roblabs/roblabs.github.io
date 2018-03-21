@@ -329,7 +329,21 @@
       "layout": {
         "visibility": "visible"
       },
-      "paint": {}
+      "paint": {
+        "raster-opacity": {
+          "base": 1,
+          "stops": [
+            [
+              11,
+              0.3
+            ],
+            [
+              14,
+              0.6
+            ]
+          ]
+        }
+      }
     },
     {
       "id": "waterway-other",
@@ -5493,7 +5507,7 @@
   ],
   "created": "2018-03-14T05:47:02.616Z",
   "id": "cjeqnyaa605092smfdeabqh66",
-  "modified": "2018-03-14T06:24:03.223Z",
+  "modified": "2018-03-21T17:59:14.714Z",
   "owner": "roblabs",
   "visibility": "private",
   "draft": false
