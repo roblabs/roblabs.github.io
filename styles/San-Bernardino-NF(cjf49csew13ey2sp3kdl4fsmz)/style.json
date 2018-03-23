@@ -1,33 +1,33 @@
 {
   "version": 8,
-  "name": "Cleveland",
+  "name": "San Bernardino NF",
   "metadata": {
     "mapbox:autocomposite": true,
     "mapbox:type": "template"
   },
   "center": [
-    -116.48755385194443,
-    32.80674550150292
+    -116.660480,
+    33.772398
   ],
   "zoom": 10,
   "bearing": 0,
   "pitch": 0,
   "sources": {
     "composite": {
-      "url": "mapbox://roblabs.composite-cleveland-descanso,roblabs.composite-cleveland-palomar,roblabs.composite-cleveland-trabuco",
+      "url": "mapbox://roblabs.composite-san-bernardino-nf",
       "type": "vector"
     },
     "terrain": {
-      "url": "mapbox://roblabs.elevcontour-cleveland-descanso,roblabs.elevcontour-cleveland-palomar,roblabs.elevcontour-cleveland-trabuco",
+      "url": "mapbox://roblabs.terrain-san-bernardino-nf",
       "type": "vector"
     },
     "fstopo": {
-      "url": "mapbox://roblabs.fstopo-cleveland-descanso,roblabs.fstopo-cleveland-palomar,roblabs.fstopo-cleveland-trabuco",
+      "url": "mapbox://roblabs.fstopo-san-bernardino-nf",
       "type": "raster",
       "tileSize": 512
     },
     "hillshade": {
-      "url": "mapbox://roblabs.hillshade-cleveland",
+      "url": "mapbox://roblabs.hillshade-pct-b",
       "type": "raster",
       "tileSize": 512
     }
