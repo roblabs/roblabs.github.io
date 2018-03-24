@@ -27,7 +27,7 @@
       "tileSize": 512
     },
     "hillshade": {
-      "url": "mapbox://roblabs.hillshade-pct-b",
+      "url": "mapbox://roblabs.hillshade-san-bernardino-nf",
       "type": "raster",
       "tileSize": 512
     }
