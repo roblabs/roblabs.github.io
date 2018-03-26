@@ -3,7 +3,12 @@
   "name": "San Bernardino NF",
   "metadata": {
     "mapbox:autocomposite": true,
-    "mapbox:type": "template"
+    "mapbox:type": "template",
+    "mapbox:groups": {
+      "8ba98ceb30566121319426628d215811": {
+        "name": "Group-label-nhdflowline"
+      }
+    }
   },
   "center": [
     -116.660480,
@@ -3964,94 +3969,6 @@
       }
     },
     {
-      "id": "390-label-nhdflowline",
-      "type": "symbol",
-      "source": "composite",
-      "source-layer": "NHDWaterbody",
-      "filter": [
-        "==",
-        "FTYPE",
-        390
-      ],
-      "layout": {
-        "text-size": 16,
-        "symbol-spacing": 600,
-        "text-font": [
-          "Roboto Condensed Italic"
-        ],
-        "symbol-placement": "line",
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-field": "{GNIS_NAME}",
-        "text-letter-spacing": 0.2,
-        "text-max-width": 5
-      },
-      "paint": {
-        "text-color": "#000",
-        "text-halo-width": 1.5,
-        "text-halo-color": "rgba(255,255,255,0.7)"
-      }
-    },
-    {
-      "id": "460-label-nhdflowline-copy",
-      "type": "symbol",
-      "source": "composite",
-      "source-layer": "NHDFlowline",
-      "minzoom": 12,
-      "maxzoom": 24,
-      "filter": [
-        "==",
-        "FTYPE",
-        460
-      ],
-      "layout": {
-        "text-font": [
-          "Roboto Condensed Italic"
-        ],
-        "text-size": 16,
-        "text-field": "{GNIS_NAME}",
-        "text-max-width": 5,
-        "text-rotation-alignment": "map",
-        "symbol-placement": "line",
-        "symbol-spacing": 250,
-        "text-letter-spacing": 0.2
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-width": 1.5,
-        "text-halo-color": "rgba(255,255,255,0.7)"
-      }
-    },
-    {
-      "id": "558-label-nhdflowline",
-      "type": "symbol",
-      "source": "composite",
-      "source-layer": "NHDFlowline",
-      "filter": [
-        "==",
-        "FTYPE",
-        558
-      ],
-      "layout": {
-        "text-size": 16,
-        "symbol-spacing": 350,
-        "text-font": [
-          "Roboto Condensed Italic"
-        ],
-        "symbol-placement": "line",
-        "visibility": "visible",
-        "text-rotation-alignment": "map",
-        "text-field": "{GNIS_NAME}",
-        "text-letter-spacing": 0.2,
-        "text-max-width": 5
-      },
-      "paint": {
-        "text-color": "#74aee9",
-        "text-halo-width": 1.5,
-        "text-halo-color": "rgba(255,255,255,0.7)"
-      }
-    },
-    {
       "id": "poi-level-3",
       "type": "symbol",
       "source": "composite",
@@ -5201,6 +5118,103 @@
       }
     },
     {
+      "id": "390-label-nhdflowline",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "8ba98ceb30566121319426628d215811"
+      },
+      "source": "composite",
+      "source-layer": "NHDWaterbody",
+      "filter": [
+        "==",
+        "FTYPE",
+        390
+      ],
+      "layout": {
+        "text-size": 16,
+        "symbol-spacing": 600,
+        "text-font": [
+          "Roboto Condensed Italic"
+        ],
+        "symbol-placement": "line",
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{GNIS_NAME}",
+        "text-letter-spacing": 0.2,
+        "text-max-width": 5
+      },
+      "paint": {
+        "text-color": "#000",
+        "text-halo-width": 1.5,
+        "text-halo-color": "rgba(255,255,255,0.7)"
+      }
+    },
+    {
+      "id": "460-label-nhdflowline",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "8ba98ceb30566121319426628d215811"
+      },
+      "source": "composite",
+      "source-layer": "NHDFlowline",
+      "minzoom": 12,
+      "maxzoom": 24,
+      "filter": [
+        "==",
+        "FTYPE",
+        460
+      ],
+      "layout": {
+        "text-font": [
+          "Roboto Condensed Italic"
+        ],
+        "text-size": 16,
+        "text-field": "{GNIS_NAME}",
+        "text-max-width": 5,
+        "text-rotation-alignment": "map",
+        "symbol-placement": "line",
+        "symbol-spacing": 250,
+        "text-letter-spacing": 0.2
+      },
+      "paint": {
+        "text-color": "#000",
+        "text-halo-width": 1.5,
+        "text-halo-color": "rgba(255,255,255,0.7)"
+      }
+    },
+    {
+      "id": "558-label-nhdflowline",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "8ba98ceb30566121319426628d215811"
+      },
+      "source": "composite",
+      "source-layer": "NHDFlowline",
+      "filter": [
+        "==",
+        "FTYPE",
+        558
+      ],
+      "layout": {
+        "text-size": 16,
+        "symbol-spacing": 350,
+        "text-font": [
+          "Roboto Condensed Italic"
+        ],
+        "symbol-placement": "line",
+        "visibility": "visible",
+        "text-rotation-alignment": "map",
+        "text-field": "{GNIS_NAME}",
+        "text-letter-spacing": 0.2,
+        "text-max-width": 5
+      },
+      "paint": {
+        "text-color": "#000",
+        "text-halo-width": 1.5,
+        "text-halo-color": "rgba(255,255,255,0.7)"
+      }
+    },
+    {
       "id": "usgstrails-label",
       "type": "symbol",
       "source": "composite",
@@ -5514,9 +5528,9 @@
       }
     }
   ],
-  "created": "2018-03-14T05:47:02.616Z",
-  "id": "cjeqnyaa605092smfdeabqh66",
-  "modified": "2018-03-21T18:18:54.849Z",
+  "created": "2018-03-23T18:07:11.402Z",
+  "id": "cjf49csew13ey2sp3kdl4fsmz",
+  "modified": "2018-03-26T16:43:52.120Z",
   "owner": "roblabs",
   "visibility": "private",
   "draft": false
