@@ -343,7 +343,7 @@
       "source": "fstopo",
       "minzoom": 11,
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "raster-opacity": {
