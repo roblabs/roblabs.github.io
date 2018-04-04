@@ -369,7 +369,7 @@
       "source-layer": "LANDCOVER_WOODLAND",
       "minzoom": 11,
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-color": {
