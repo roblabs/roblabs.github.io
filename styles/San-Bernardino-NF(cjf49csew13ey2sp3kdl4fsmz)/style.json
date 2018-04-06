@@ -20,7 +20,7 @@
     }
   },
   "center": [
-    -116.660480,
+    -116.66048,
     33.772398
   ],
   "zoom": 10,
@@ -6465,43 +6465,6 @@
       "paint": {}
     },
     {
-      "id": "text-annotation",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "f68e2c7f1e60a8f127a6fc73269ea7cc"
-      },
-      "source": "composite",
-      "source-layer": "FSTopo_Text48_A",
-      "layout": {
-        "text-field": "{TextString}",
-        "text-font": [
-          "Roboto Condensed Italic"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              13,
-              0
-            ],
-            [
-              14,
-              10
-            ],
-            [
-              15,
-              20
-            ]
-          ]
-        },
-        "text-anchor": "bottom-left"
-      },
-      "paint": {
-        "text-halo-color": "#fff",
-        "text-halo-width": 2
-      }
-    },
-    {
       "id": "Gap-tnmderivednames",
       "type": "symbol",
       "metadata": {
@@ -6552,67 +6515,7 @@
         "text-font": [
           "Roboto Condensed Italic"
         ],
-        "visibility": "visible",
-        "symbol-spacing": 250
-      },
-      "paint": {
-        "text-color": "hsl(0, 0%, 0%)",
-        "text-halo-color": "hsl(0, 0%, 100%)",
-        "text-halo-width": 1.25
-      }
-    },
-    {
-      "id": "tnmderivednames",
-      "type": "symbol",
-      "metadata": {
-        "mapbox:group": "f68e2c7f1e60a8f127a6fc73269ea7cc"
-      },
-      "source": "composite",
-      "source-layer": "TNMDerivedNames",
-      "minzoom": 11,
-      "maxzoom": 24,
-      "filter": [
-        "all",
-        [
-          "!=",
-          "ATUR",
-          "Census"
-        ],
-        [
-          "!=",
-          "GAZ_FEATUR",
-          "Census"
-        ],
-        [
-          "!=",
-          "GAZ_FEATUR",
-          "Populated Place"
-        ],
-        [
-          "!=",
-          "GAZ_NAME",
-          "Sierra Nevada"
-        ]
-      ],
-      "layout": {
-        "text-field": "{GAZ_NAME}",
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              7,
-              10
-            ],
-            [
-              14,
-              16
-            ]
-          ]
-        },
-        "text-font": [
-          "Roboto Condensed Italic"
-        ],
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-spacing": 250
       },
       "paint": {
@@ -6679,6 +6582,71 @@
       }
     },
     {
+      "id": "tnmderivednames",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "f68e2c7f1e60a8f127a6fc73269ea7cc"
+      },
+      "source": "composite",
+      "source-layer": "TNMDerivedNames",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "!=",
+          "ATUR",
+          "Census"
+        ],
+        [
+          "!=",
+          "GAZ_FEATUR",
+          "Census"
+        ],
+        [
+          "!=",
+          "GAZ_FEATUR",
+          "Populated Place"
+        ],
+        [
+          "!=",
+          "GAZ_FEATUR",
+          "Valley"
+        ],
+        [
+          "!=",
+          "GAZ_NAME",
+          "Sierra Nevada"
+        ]
+      ],
+      "layout": {
+        "text-field": "{GAZ_NAME}",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              7,
+              10
+            ],
+            [
+              14,
+              16
+            ]
+          ]
+        },
+        "text-font": [
+          "Roboto Condensed Italic"
+        ],
+        "visibility": "visible",
+        "symbol-spacing": 250
+      },
+      "paint": {
+        "text-color": "hsl(0, 0%, 0%)",
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-width": 1.25
+      }
+    },
+    {
       "id": "Summit-tnmderivednames",
       "type": "symbol",
       "metadata": {
@@ -6729,7 +6697,7 @@
         "text-font": [
           "Roboto Condensed Italic"
         ],
-        "visibility": "visible",
+        "visibility": "none",
         "symbol-spacing": 250
       },
       "paint": {
@@ -6772,7 +6740,7 @@
         "text-font": [
           "Roboto Condensed Italic"
         ],
-        "visibility": "visible",
+        "visibility": "none",
         "icon-size": 1.5,
         "text-anchor": "bottom",
         "text-field": "{GAZ_NAME}"
@@ -6824,6 +6792,90 @@
       "paint": {}
     },
     {
+      "id": "red-FSTopo_Text48_A",
+      "type": "symbol",
+      "metadata": {},
+      "source": "composite",
+      "source-layer": "FSTopo_Text48_A",
+      "filter": [
+        "==",
+        "TEXT_COLOR",
+        "RED"
+      ],
+      "layout": {
+        "text-field": "{TextString}",
+        "text-font": [
+          "Roboto Condensed Italic"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              13,
+              14
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              20
+            ]
+          ]
+        },
+        "text-anchor": "bottom-left",
+        "text-allow-overlap": true
+      },
+      "paint": {
+        "text-halo-color": "#fff",
+        "text-halo-width": 2,
+        "text-color": "#f00"
+      }
+    },
+    {
+      "id": "black-FSTopo_Text48_A",
+      "type": "symbol",
+      "metadata": {},
+      "source": "composite",
+      "source-layer": "FSTopo_Text48_A",
+      "filter": [
+        "==",
+        "TEXT_COLOR",
+        "BLACK"
+      ],
+      "layout": {
+        "text-field": "{TextString}",
+        "text-font": [
+          "Roboto Condensed Italic"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              13,
+              14
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              20
+            ]
+          ]
+        },
+        "text-anchor": "bottom-left",
+        "text-allow-overlap": true
+      },
+      "paint": {
+        "text-halo-color": "#fff",
+        "text-halo-width": 2,
+        "text-color": "#000"
+      }
+    },
+    {
       "id": "features.geojson",
       "type": "symbol",
       "source": "composite",
@@ -6842,6 +6894,7 @@
         ]
       ],
       "layout": {
+        "visibility": "visible",
         "text-size": 18,
         "icon-offset": [
           0,
