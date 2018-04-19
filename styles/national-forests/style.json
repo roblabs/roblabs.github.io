@@ -1,30 +1,48 @@
 {
   "version": 8,
-  "id": "0304",
-  "bearing": 0,
+  "name": "San Bernardino NF",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "mapbox:groups": {
+      "8ba98ceb30566121319426628d215811": {
+        "name": "Group-label-nhdflowline",
+        "collapsed": false
+      },
+      "662c7072a83fef93c93d0af7502cc297": {
+        "name": "FSTopo",
+        "collapsed": false
+      },
+      "f68e2c7f1e60a8f127a6fc73269ea7cc": {
+        "name": "TNM Derived Names",
+        "collapsed": false
+      }
+    }
+  },
   "center": [
-    -111.6535,
-    35.16945
+    -116.66048,
+    33.772398
   ],
+  "zoom": 10,
+  "bearing": 0,
   "pitch": 0,
-  "zoom": 11,
-  "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
-  "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
   "sources": {
     "hillshade": {
-      "url": "mapbox://roblabs.hillshade-0304",
+      "url": "mapbox://roblabs.hillshade-san-bernardino-nf",
       "type": "raster",
       "tileSize": 512
     },
     "composite": {
-      "url": "mapbox://roblabs.composite-0304",
+      "url": "mapbox://roblabs.composite-san-bernardino-nf",
       "type": "vector"
     },
     "terrain": {
-      "url": "mapbox://roblabs.terrain-0304",
+      "url": "mapbox://roblabs.terrain-san-bernardino-nf",
       "type": "vector"
     }
   },
+  "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
+  "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -6902,5 +6920,11 @@
         "text-halo-width": 1.25
       }
     }
-  ]
+  ],
+  "created": "2018-03-23T18:07:11.402Z",
+  "id": "cjf49csew13ey2sp3kdl4fsmz",
+  "modified": "2018-04-19T18:13:44.987Z",
+  "owner": "roblabs",
+  "visibility": "private",
+  "draft": false
 }

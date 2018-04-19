@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "id": "0304",
+  "id": "0502",
   "bearing": 0,
   "center": [
     -111.6535,
@@ -12,16 +12,16 @@
   "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
   "sources": {
     "hillshade": {
-      "url": "mapbox://roblabs.hillshade-0304",
+      "url": "mapbox://roblabs.hillshade-0502",
       "type": "raster",
       "tileSize": 512
     },
     "composite": {
-      "url": "mapbox://roblabs.composite-0304",
+      "url": "mapbox://roblabs.composite-0502",
       "type": "vector"
     },
     "terrain": {
-      "url": "mapbox://roblabs.terrain-0304",
+      "url": "mapbox://roblabs.terrain-0502",
       "type": "vector"
     }
   },
