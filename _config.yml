@@ -8,7 +8,6 @@ description: "Creating Innovations in Maps for Android and iOS"
 url: http://RobLabs.com
 permalink: pretty
 relative_permalinks: false
-analytics_account: "UA-12401212-2"
 
 paginate: 10
 paginate_path: "/blog/page:num/"
