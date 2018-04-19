@@ -1,53 +1,30 @@
 {
   "version": 8,
-  "name": "San Bernardino NF",
-  "metadata": {
-    "mapbox:autocomposite": false,
-    "mapbox:type": "template",
-    "mapbox:groups": {
-      "8ba98ceb30566121319426628d215811": {
-        "name": "Group-label-nhdflowline",
-        "collapsed": false
-      },
-      "662c7072a83fef93c93d0af7502cc297": {
-        "name": "FSTopo",
-        "collapsed": false
-      },
-      "f68e2c7f1e60a8f127a6fc73269ea7cc": {
-        "name": "TNM Derived Names",
-        "collapsed": false
-      }
-    }
-  },
-  "center": [
-    -116.66048,
-    33.772398
-  ],
-  "zoom": 10,
+  "id": "0304",
   "bearing": 0,
+  "center": [
+    -111.6535,
+    35.16945
+  ],
   "pitch": 0,
+  "zoom": 11,
+  "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
+  "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
   "sources": {
-    "fstopo": {
-      "url": "mapbox://roblabs.fstopo-san-bernardino-nf",
-      "type": "raster",
-      "tileSize": 512
-    },
     "hillshade": {
-      "url": "mapbox://roblabs.hillshade-san-bernardino-nf",
+      "url": "mapbox://roblabs.hillshade-0304",
       "type": "raster",
       "tileSize": 512
     },
     "composite": {
-      "url": "mapbox://roblabs.composite-san-bernardino-nf",
+      "url": "mapbox://roblabs.composite-0304",
       "type": "vector"
     },
     "terrain": {
-      "url": "mapbox://roblabs.terrain-san-bernardino-nf",
+      "url": "mapbox://roblabs.terrain-0304",
       "type": "vector"
     }
   },
-  "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
-  "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -337,30 +314,7 @@
       "maxzoom": 24,
       "layout": {}
     },
-    {
-      "id": "fstopo",
-      "type": "raster",
-      "source": "fstopo",
-      "minzoom": 11,
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "raster-opacity": {
-          "base": 1,
-          "stops": [
-            [
-              11,
-              0.5
-            ],
-            [
-              14,
-              0.8
-            ]
-          ]
-        }
-      }
-    },
+
     {
       "id": "landcover-woodland",
       "type": "fill",
