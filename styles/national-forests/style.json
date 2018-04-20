@@ -28,16 +28,16 @@
   "pitch": 0,
   "sources": {
     "hillshade": {
-      "url": "mapbox://roblabs.hillshade-san-bernardino-nf",
+      "url": "mapbox://roblabs.hillshade-0512",
       "type": "raster",
       "tileSize": 512
     },
     "composite": {
-      "url": "mapbox://roblabs.composite-san-bernardino-nf",
+      "url": "mapbox://roblabs.composite-0512",
       "type": "vector"
     },
     "terrain": {
-      "url": "mapbox://roblabs.terrain-san-bernardino-nf",
+      "url": "mapbox://roblabs.terrain-0512",
       "type": "vector"
     }
   },
@@ -6836,7 +6836,6 @@
     {
       "id": "Summit-tnmderivednames",
       "type": "symbol",
-      "metadata": {},
       "source": "composite",
       "source-layer": "TNMDerivedNames",
       "minzoom": 7,
@@ -6923,7 +6922,7 @@
   ],
   "created": "2018-03-23T18:07:11.402Z",
   "id": "cjf49csew13ey2sp3kdl4fsmz",
-  "modified": "2018-04-19T18:13:44.987Z",
+  "modified": "2018-04-20T17:06:14.804Z",
   "owner": "roblabs",
   "visibility": "private",
   "draft": false
