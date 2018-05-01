@@ -27,7 +27,9 @@ Mount Whitney is available on the Apple App Store and Google Play Store
 * [Mount Whitney in the Apple App Store][ios]  
 * [Mount Whitney in the Google Play Store][android]
 
-<iframe allowfullscreen="true" width = "100%" height = "800" src="/Mapbox/usfs-ciqk2376r000lb9m98hmyzwr7.html#11/36.5246/-118.1921">
+<iframe allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+  style="height: 75vh; width: 95vw;"  
+  src="/epi-maps.html?t=whitney&Z=16.5&style=whitney&w=-118.625&s=35.625&e=-118.125&n=36.625&authkey=278314#13/36.57773/-118.27953">
   <p>Your browser does not support iframes.</p>
 </iframe>
 

@@ -1,5 +1,5 @@
 function updateStyleTemplates() {
-  SOURCE_STYLE=../fstopo/style.json
+  SOURCE_STYLE=../national-forests/style.json
   SOURCE_TEMPLATE=template.json
 
   # extract the layers array

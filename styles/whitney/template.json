@@ -1,0 +1,28 @@
+{
+  "version": 8,
+  "id": "whitney",
+  "bearing": 0,
+  "center": [
+    -111.6535,
+    35.16945
+  ],
+  "pitch": 0,
+  "zoom": 11,
+  "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
+  "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
+  "sources": {
+    "hillshade": {
+      "url": "mapbox://roblabs.hillshade-whitney",
+      "type": "raster",
+      "tileSize": 512
+    },
+    "composite": {
+      "url": "mapbox://roblabs.composite-whitney",
+      "type": "vector"
+    },
+    "terrain": {
+      "url": "mapbox://roblabs.terrain-whitney",
+      "type": "vector"
+    }
+  }
+}
