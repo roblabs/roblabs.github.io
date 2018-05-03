@@ -114,6 +114,10 @@
         var z = 7;
         var Z = 13.9;
 
+        if(vars.z == undefined) {
+          vars.z = 7;
+        }
+
         w = Number(vars.w);
         s = Number(vars.s);
         e = Number(vars.e);
@@ -121,6 +125,7 @@
 
         style = '/styles/' + vars.style + '/' + 'style.json';
 
+        z = Number(vars.z);
         Z = Number(vars.Z);
 
         console.log(w, s, e, n, style);

@@ -1,0 +1,28 @@
+{
+  "version": 8,
+  "id": "flagstaff",
+  "bearing": 0,
+  "center": [
+    -111.6567,
+    35.19513
+  ],
+  "pitch": 0,
+  "zoom": 11,
+  "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
+  "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
+  "sources": {
+    "hillshade": {
+      "url": "mapbox://roblabs.hillshade-flagstaff",
+      "type": "raster",
+      "tileSize": 512
+    },
+    "composite": {
+      "url": "mapbox://roblabs.composite-flagstaff",
+      "type": "vector"
+    },
+    "terrain": {
+      "url": "mapbox://roblabs.terrain-flagstaff",
+      "type": "vector"
+    }
+  }
+}
