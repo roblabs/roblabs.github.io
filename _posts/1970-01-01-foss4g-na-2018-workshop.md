@@ -3,7 +3,7 @@ layout: post
 title:  "Mobile First Maps by 𝘦π Maps"
 description: ""
 excerpt: "'Mobile First' means that the customer's experience is great once they download the app."
-date:   2018-01-09T00:20:46-08:00
+date:   2018-05-15T01:00:00-08:00
 author: ePi Rational, Inc.
 categories: [foss4g]
 tags: [foss4g]
@@ -12,7 +12,7 @@ permalink: /mobile1st/
 
 ## Presented at FOSS4G North America, St Louis, MO — May 14-16, 2018
 
-![FOSS4G](/assets/img/1970-01-01-foss4g-na-2018-workshop-foss4gna.jpeg)
+<!-- <img alt="" src="/assets/img/1970-01-01-foss4g-na-2018-workshop-foss4gna.jpeg" width="" height="" > -->
 
 ##  Abstract and Description
 
@@ -36,6 +36,7 @@ We use FOSS4G software such as GDAL, QGIS, and several command line tools from M
   * Android — [https://play.google.com/store/search?q=com.roblabs.papermaps&c=apps](https://play.google.com/store/search?q=com.roblabs.papermaps&c=apps)
 * Open Map Tiles
   * open source mapping made for self hosting — [http://openMapTiles.org](http://openMapTiles.org)
+  * Professional Services from Klokantech — [http://openMapTiles.com](http://openMapTiles.com)  
 * Mapbox
   * WebP compression changes for the Mapbox iOS SDK for rendering raster & vector map data — [https://github.com/roblabs/mapbox-gl-native](https://github.com/roblabs/mapbox-gl-native)
   * Tippecanoe, converting to Mapbox Vector Tiles — [https://github.com/mapbox/tippecanoe](https://github.com/mapbox/tippecanoe)
@@ -54,6 +55,12 @@ We use FOSS4G software such as GDAL, QGIS, and several command line tools from M
 *  Tuesday, January 16th, 2018 (12 pm PST / 1 pm MT / 3 pm ET)
 
 * For more information, please see the [National Trails System GIS Network](http://pnts.org/new/national-trails-system-gis-network/)
+
+
+### Presentation
+
+* Link to [slides with animations](/projects/Rob-Chohan-RobLabs.com-mobile1st)
+* Link to [PDF with no animations](https://drive.google.com/file/d/1NgIaqi-aC6QBAuFVc-iOlidIilrSOMw9/view?usp=sharing)
 
 
 ---
