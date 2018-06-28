@@ -1,0 +1,33 @@
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        #map {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+        }
+
+        @media only screen and (min-width: 800px) {
+            /* CSS for devices with size > min-width */
+            #mapsmall {
+              width:300px;
+              height:300px;
+              margin-left:10px;
+              margin-top:10px;
+              border:10px solid gray;
+            }
+
+          @media only screen and (min-width: 1200px) {
+              #mapsmall {
+                width:40%;
+              }
+
+          @media only screen and (min-height: 1200px) {
+              #mapsmall {
+                height:40%;
+              }
+
+        }
