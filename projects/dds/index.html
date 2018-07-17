@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl6e114ae80d3a4a9237794845bc1dea44"/>
+  <meta charset="utf-8">
+  <title>DDS</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css" rel="stylesheet">
+  <meta name="generator" content="Google Web Designer 4.0.1.0625">
+  <style type="text/css" id="gwd-text-style">p {
+    margin: 0px;
+}
+h1 {
+    margin: 0px;
+}
+h2 {
+    margin: 0px;
+}
+h3 {
+    margin: 0px;
+}</style>
+  <style type="text/css">html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+body {
+    background-color: transparent;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    perspective: 1400px;
+    -webkit-perspective: 1400px;
+    -moz-perspective: 1400px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+#map {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+#features {
+    position: absolute;
+    right: 10px;
+    height: 100px;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: "Open Sans", sans-serif;
+    left: 10px;
+    top: 112px;
+    width: 200px;
+}
+#menu {
+    background: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 3px;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: "Open Sans", sans-serif;
+}
+#menu a {
+    font-size: 13px;
+    color: rgb(64, 64, 64);
+    display: block;
+    margin: 0px;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+#menu a:last-child {
+    border: none;
+}
+#menu a:hover {
+    background-color: rgb(248, 248, 248);
+    color: rgb(64, 64, 64);
+}
+#menu a.active {
+    background-color: rgb(56, 135, 190);
+    color: rgb(255, 255, 255);
+}
+#menu a.active:hover {
+    background: rgb(48, 116, 164);
+}</style>
+</head>
+
+<body class="htmlNoPages">
+  <div id="menu"></div>
+  <div id="map"></div>
+  <div id="features"></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGRzc3VwcG9ydCIsImEiOiJjamkwdGI0ZWgxYm9uM3FudGEza3pveWkxIn0.Nzhv1zjVWnXmQOGyLkosxg';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/ddssupport/cjjotxj2j72hl2rnwct5jo7as',
+      zoom: 7,
+      minzoom: 5,
+      center: [-117, 33]
+    });
+
+    // Create a popup, but don't add it to the map yet.
+    var popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+
+
+    map.on('mousemove', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['campgrounds-geocoded', 'marinas-geocoded', 'storage-geocoded']
+      });
+
+      map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+      popup.remove();
+
+      if(features.length) {
+        var feature = features[0];
+
+        var coordinates = feature.geometry.coordinates.slice();
+        var description = feature.properties.Location;
+
+        popup.setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+      }
+
+    });
+
+    map.on('click', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['tl-2017-us-zcta510-boat']
+      });
+
+      var feature = features[0];
+
+      document.getElementById('features').innerHTML =
+        "<strong className='mr3'>" + feature.properties.city + ", " + feature.properties.state + "  " + feature.properties.ZCTA5CE10 + "<br /></strong>" + "<span className='color-gray-light'>Boat = " + feature.properties.boat + "<br /></span>" + "<span className='color-gray-light'>RV   = " + feature.properties.rv;
+
+      console.log(features);
+    });
+
+    var toggleableLayerText = ['Boat', 'RV'];
+
+    for (var i = 0; i < toggleableLayerText.length; i++) {
+      var id = toggleableLayerText[i];
+
+      var link = document.createElement('a');
+      link.href = '#';
+      link.className = 'active';
+      link.textContent = toggleableLayerText[i];
+
+      link.onclick = function(e) {
+        // Valid Layers to search in Mapbox must be either
+        // 'tl-2017-us-zcta510-boat', 'tl-2017-us-zcta510-rv'
+        var clickedLayer = 'tl-2017-us-zcta510-' + this.textContent.toLowerCase();
+        e.preventDefault();
+        e.stopPropagation();
+
+        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+        if (visibility === 'visible') {
+          map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+          this.className = '';
+        } else {
+          this.className = 'active';
+          map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+        }
+      };
+
+      var layers = document.getElementById('menu');
+      layers.appendChild(link);
+    }
+  </script>
+
+
+</body></html>
