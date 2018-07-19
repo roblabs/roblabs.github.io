@@ -75,10 +75,10 @@
     }
   },
   "center": [
-    -117.15544648876454,
-    32.70234923584981
+    -117.1636198171613,
+    32.706170103576895
   ],
-  "zoom": 12.850429918424613,
+  "zoom": 14.851058638741534,
   "bearing": 0,
   "pitch": 0,
   "sources": {
@@ -9402,9 +9402,107 @@
         "Point"
       ],
       "layout": {
-        "icon-image": "bus-15"
+        "icon-image": "bus-15",
+        "text-field": "Waterfront Summer Shuttle",
+        "text-anchor": "bottom",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              12,
+              11.5
+            ],
+            [
+              15,
+              16
+            ]
+          ]
+        },
+        "text-font": [
+          "Open Sans SemiBold Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-justify": "left",
+        "text-offset": [
+          0,
+          -1
+        ]
       },
-      "paint": {}
+      "paint": {
+        "text-halo-width": 2,
+        "text-halo-blur": 1,
+        "text-color": "hsl(35, 100%, 100%)",
+        "text-halo-color": {
+          "base": 1,
+          "stops": [
+            [
+              9,
+              "hsl(0, 0%, 18%)"
+            ],
+            [
+              12,
+              "hsl(0, 2%, 14%)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "comic-con-polygon-label",
+      "type": "symbol",
+      "metadata": {},
+      "source": "composite",
+      "source-layer": "comic-con",
+      "filter": [
+        "==",
+        "$type",
+        "Polygon"
+      ],
+      "layout": {
+        "icon-image": "bicycle-share-15",
+        "text-field": "Dockless Parking",
+        "text-anchor": "bottom",
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              12,
+              11.5
+            ],
+            [
+              15,
+              16
+            ]
+          ]
+        },
+        "text-font": [
+          "Open Sans SemiBold Italic",
+          "Arial Unicode MS Regular"
+        ],
+        "text-justify": "left",
+        "text-offset": [
+          0,
+          -1
+        ]
+      },
+      "paint": {
+        "text-halo-width": 2,
+        "text-halo-blur": 1,
+        "text-color": "hsl(35, 100%, 100%)",
+        "text-halo-color": {
+          "base": 1,
+          "stops": [
+            [
+              9,
+              "hsl(0, 0%, 18%)"
+            ],
+            [
+              12,
+              "hsl(0, 2%, 14%)"
+            ]
+          ]
+        }
+      }
     },
     {
       "id": "place-city-sm",
@@ -10794,7 +10892,7 @@
   ],
   "created": "2018-07-19T05:04:59.849Z",
   "id": "cjjs3dehw22j52rnwdssbc5xy",
-  "modified": "2018-07-19T05:41:42.056Z",
+  "modified": "2018-07-19T06:06:19.411Z",
   "owner": "roblabs",
   "visibility": "private",
   "draft": false
