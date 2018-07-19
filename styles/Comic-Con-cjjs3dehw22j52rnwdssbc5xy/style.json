@@ -62,6 +62,10 @@
         "name": "marine labels",
         "collapsed": true
       },
+      "4eebd3e8d8b0d9a36407c173ec3be483": {
+        "name": "Group",
+        "collapsed": false
+      },
       "1459802941943.712": {
         "name": "country labels",
         "collapsed": true
@@ -75,10 +79,10 @@
     }
   },
   "center": [
-    -117.1636198171613,
-    32.706170103576895
+    -117.17624743846159,
+    32.720438603134
   ],
-  "zoom": 14.851058638741534,
+  "zoom": 14.08308610628759,
   "bearing": 0,
   "pitch": 0,
   "sources": {
@@ -6941,6 +6945,25 @@
       }
     },
     {
+      "id": "comic-con-line",
+      "type": "line",
+      "metadata": {
+        "mapbox:group": "4eebd3e8d8b0d9a36407c173ec3be483"
+      },
+      "source": "composite",
+      "source-layer": "comic-con",
+      "filter": [
+        "==",
+        "$type",
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "hsl(210, 100%, 50%)",
+        "line-width": 4
+      }
+    },
+    {
       "id": "poi-scalerank4-l15",
       "type": "symbol",
       "metadata": {
@@ -8360,9 +8383,13 @@
     {
       "id": "comic-con",
       "type": "fill",
-      "metadata": {},
       "source": "composite",
       "source-layer": "comic-con",
+      "filter": [
+        "==",
+        "$type",
+        "Polygon"
+      ],
       "layout": {
         "visibility": "visible"
       },
@@ -9393,7 +9420,6 @@
     {
       "id": "comic-con-points",
       "type": "symbol",
-      "metadata": {},
       "source": "composite",
       "source-layer": "comic-con",
       "filter": [
@@ -9450,7 +9476,6 @@
     {
       "id": "comic-con-polygon-label",
       "type": "symbol",
-      "metadata": {},
       "source": "composite",
       "source-layer": "comic-con",
       "filter": [
@@ -10690,6 +10715,74 @@
       }
     },
     {
+      "id": "comic-con-line-label",
+      "type": "symbol",
+      "metadata": {},
+      "source": "composite",
+      "source-layer": "comic-con",
+      "filter": [
+        "==",
+        "$type",
+        "LineString"
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "text-font": [
+          "DIN Offc Pro Bold",
+          "Arial Unicode MS Regular"
+        ],
+        "text-field": [
+          "to-string",
+          [
+            "get",
+            "description"
+          ]
+        ]
+      },
+      "paint": {
+        "text-color": "#fff",
+        "text-halo-color": {
+          "base": 1,
+          "stops": [
+            [
+              8,
+              "hsl(0, 1%, 10%)"
+            ],
+            [
+              16,
+              "hsl(0, 2%, 16%)"
+            ]
+          ]
+        },
+        "text-halo-width": {
+          "base": 1,
+          "stops": [
+            [
+              14,
+              1.25
+            ],
+            [
+              15,
+              1.5
+            ]
+          ]
+        },
+        "text-halo-blur": {
+          "base": 1,
+          "stops": [
+            [
+              14,
+              1.25
+            ],
+            [
+              15,
+              1.5
+            ]
+          ]
+        }
+      }
+    },
+    {
       "id": "country-label-sm",
       "type": "symbol",
       "metadata": {
@@ -10892,7 +10985,7 @@
   ],
   "created": "2018-07-19T05:04:59.849Z",
   "id": "cjjs3dehw22j52rnwdssbc5xy",
-  "modified": "2018-07-19T06:06:19.411Z",
+  "modified": "2018-07-19T19:22:47.156Z",
   "owner": "roblabs",
   "visibility": "private",
   "draft": false
