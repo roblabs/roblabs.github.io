@@ -64,10 +64,12 @@ function setHTML(feature) {
     }
 
     if(feature.properties.url) {
-      html += "<br><br><a target=\"_blank\" style=\"color:#F6863A; text-decoration:none;\" href=\"";
+      html += "<br><br><a target=\"_blank\" style=\"color:#f58025; text-decoration:none;\" href=\"";
       html += feature.properties.url;
       html += "\">";
-      html += "<i>Click here for more details</i></a>";
+      html += "<i>";
+      html += feature.properties.url_description;
+      html += "</i></a>";
     }
 
     html += "</div>";
@@ -92,11 +94,11 @@ iata,title,city,state,country,latitude,longitude
 */
 
 var csvString = `\
-project,latitude,longitude,E,N,description,url,image
-Owens River Water Trail Project Start,36.618886,-118.035836,407376 E,4053095 N,along the Owens River,https://friendsoftheinyo.org/owens-river-water-trail-project/,https://friendsoftheinyo.org/wp-content/uploads/2017/09/Lower-Owens-River-1024x362.jpg
-Owens River Water Trail Project End,36.574442,-118.010832,409560 E,4048141 N,Along the Owens River,https://friendsoftheinyo.org/owens-river-water-trail-project/,https://friendsoftheinyo.org/wp-content/uploads/2017/09/Lower-Owens-River-1024x362.jpg
-Racetrack Project,36.693689,-117.570791,449010 E,4061045 N,,https://friendsoftheinyo.org/racetrack-project-recap/,https://friendsoftheinyo.org/wp-content/uploads/2018/03/Racetrack-Playa-Restoration-27-of-109-768x512.jpg
-Sierra National Forest Wilderness Project,37.240911,-118.717510,347660 E,4122980 N,At Golden Trout Lakes in Humphreys Basin,https://friendsoftheinyo.org/event/snf-wilderness-project/,https://friendsoftheinyo.org/wp-content/uploads/2018/01/Fourth-Recess_062015_1.jpg
-Conglomerate Mesa,36.510446,-117.752367,432630 E,4040830 N,,https://friendsoftheinyo.org/drilling-approved-conglomerate-mesa/,
-Owens Lake Bird Festival,36.435038,-117.959487,414000 E,4032630 N,,https://friendsoftheinyo.org/owens-lake-bird-festival/,https://friendsoftheinyo.org/wp-content/uploads/2015/02/FOI_BirdFest_Logo_0118.png
+project,latitude,longitude,E,N,description,url_description,url,image
+Owens River Water Trail Project Start,36.618886,-118.035836,407376 E,4053095 N,along the Owens River,The Owens River Water Trail Project envisions a boater’s paradise along a six-mile stretch of the Lower Owens River outside of Lone Pine.,https://friendsoftheinyo.org/owens-river-water-trail-project/,https://friendsoftheinyo.org/wp-content/uploads/2017/09/Lower-Owens-River-1024x362.jpg
+Owens River Water Trail Project End,36.574442,-118.010832,409560 E,4048141 N,Along the Owens River,The Owens River Water Trail Project envisions a boater’s paradise along a six-mile stretch of the Lower Owens River outside of Lone Pine.,https://friendsoftheinyo.org/owens-river-water-trail-project/,https://friendsoftheinyo.org/wp-content/uploads/2017/09/Lower-Owens-River-1024x362.jpg
+Racetrack Project,36.693689,-117.570791,449010 E,4061045 N,,My first sight of Death Valley’s Racetrack Playa was like a glimpse of another planet.,https://friendsoftheinyo.org/racetrack-project-recap/,https://friendsoftheinyo.org/wp-content/uploads/2018/03/Racetrack-Playa-Restoration-27-of-109-768x512.jpg
+Sierra National Forest Wilderness Project,37.240911,-118.717510,347660 E,4122980 N,At Golden Trout Lakes in Humphreys Basin,Join Friends of the Inyo and the Sierra National Forest for a spectacular five days of stewardship in Humphreys Basin over Piute Pass.,https://friendsoftheinyo.org/event/snf-wilderness-project/,https://friendsoftheinyo.org/wp-content/uploads/2018/01/Fourth-Recess_062015_1.jpg
+Conglomerate Mesa,36.510446,-117.752367,432630 E,4040830 N,,The Bureau of Land Management (BLM) announced a decision allowing exploration for gold at conglomerate mesa.,https://friendsoftheinyo.org/drilling-approved-conglomerate-mesa/,
+Owens Lake Bird Festival,36.435038,-117.959487,414000 E,4032630 N,,"Owens Lake Bird Festival, April 27-29, 2018",https://friendsoftheinyo.org/owens-lake-bird-festival/,https://friendsoftheinyo.org/wp-content/uploads/2015/02/FOI_BirdFest_Logo_0118.png
 `;
