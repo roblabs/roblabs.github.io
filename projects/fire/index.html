@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>United States Active Fire Perimeters</title>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/@observablehq/notebook-inspector@1/dist/notebook-inspector-style.css">
+<link href='https://unpkg.com/mapbox-gl@0.47.0/dist/mapbox-gl.css' rel='stylesheet' />
+<style>
+  #mapContainer {
+  }
+</style>
+<body>
+
+  <div class="wrapper">
+    <div id="mapContainer"></div>
+  </div>
+
+<script type="module">
+
+import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime?module";
+import notebook from "https://api.observablehq.com/@roblabs/united-states-active-fire-perimeters.js?key=113c04e040d8d6e8";
+
+const notebookCellsToRender = {
+  "mapContainer": "#mapContainer"
+};
+
+Runtime.load(notebook, (cell) => {
+
+  console.log(cell.name);
+  const selector = notebookCellsToRender[cell.name];
+
+  if (selector) {
+    return new Inspector(document.querySelector(selector));
+  } else {
+    return true;
+  }
+});
+
+</script>
