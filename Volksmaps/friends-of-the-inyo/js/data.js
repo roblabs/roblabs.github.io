@@ -4,7 +4,7 @@
 // https://www.mapbox.com/mapbox-gl-js/style-spec/
 var style = {
     container: 'map',
-    style: 'mapbox://styles/mapbox/outdoors-v9',
+    style: 'mapbox://styles/roblabs/cjked2uql139q2rqsgrknr81q',
     zoom:  8.0, center: [-118.092631, 36.883175],
     minZoom: 5,
     maxZoom: 15
