@@ -9,7 +9,7 @@ categories: [Mapbox, Paper Maps]
 tags: [Mapbox, Paper Maps]
 permalink: /geopdf/
 redirect_to:
-  - http://roblabs.com/gdal-geopdf
+  - https://www.roblabs.com/gdal-geopdf
 excerpt_img: https://raw.githubusercontent.com/roblabs/gdal-geopdf/master/assets/readme-fstopo-wizard-island.png
 
 ---
