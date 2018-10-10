@@ -88,7 +88,7 @@ The Seven Principles
 [usfs]:  http://data.fs.usda.gov/geodata/rastergateway/states-regions/grid_zoom.php?stateID=ca&gridSrc=32116
 [caltopo]: http://caltopo.com/map.html#ll=36.5785,-118.29075&z=15&b=t
 [ios]:  https://itunes.apple.com/us/app/mt-whitney-ep-maps/id1133292347?mt=8
-[android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.whitney
+[android]:  /android
 
 [tsg]:  http://www.timestampgenerator.com
 

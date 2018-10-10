@@ -115,6 +115,6 @@ Rob Chohan loves maps.  Rob is taking his background in statistics, image proces
 
 
 [ios]:      https://itunes.apple.com/us/developer/epi-rational-inc./id416401310
-[android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.nps.jotr
+[android]:  /android
 
 [tsg]:  http://www.timestampgenerator.com

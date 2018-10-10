@@ -36,7 +36,7 @@ Mount Whitney is available on the Apple App Store and Google Play Store
 * [Mount Whitney PDF][FSTopo]
 
 [ios]:  https://itunes.apple.com/us/app/mt-whitney-ep-maps/id1133292347?mt=8
-[android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.whitney
+[android]:  /android
 
 [tsg]:  http://www.timestampgenerator.com
 

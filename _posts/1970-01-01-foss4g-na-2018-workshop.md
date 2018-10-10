@@ -33,7 +33,7 @@ We use FOSS4G software such as GDAL, QGIS, and several command line tools from M
 
 * Search `epi offline maps`
   * iOS — [https://itunes.apple.com/us/developer/epi-rational-inc./id416401310](https://itunes.apple.com/us/developer/epi-rational-inc./id416401310)
-  * Android — [https://play.google.com/store/search?q=com.roblabs.papermaps&c=apps](https://play.google.com/store/search?q=com.roblabs.papermaps&c=apps)
+  * [Android](/android)
 * Open Map Tiles
   * open source mapping made for self hosting — [http://openMapTiles.org](http://openMapTiles.org)
   * Professional Services from Klokantech — [http://openMapTiles.com](http://openMapTiles.com)  

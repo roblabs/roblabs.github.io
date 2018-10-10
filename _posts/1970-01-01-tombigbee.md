@@ -25,7 +25,7 @@ redirect_from:
 
 
 [ios]:  https://itunes.apple.com/us/app/mt-whitney-ep-maps/id1133292347?mt=8
-[android]:  https://play.google.com/store/apps/details?id=com.roblabs.papermaps.whitney
+[android]:  /android
 
 [tsg]:  http://www.timestampgenerator.com
 
