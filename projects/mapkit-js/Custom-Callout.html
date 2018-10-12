@@ -93,7 +93,7 @@
         mapkit.init({
             authorizationCallback: function(done) {
                 var xhr = new XMLHttpRequest();
-                xhr.open("GET", "/services/jwt");
+                xhr.open("GET", "https://gist.githubusercontent.com/roblabs/aeb0430f29d518c17add2ce8282d20df/raw/ca19880ed04ce8d94d54ed07ff0ff04a326b4c2d/jwt");
                 xhr.addEventListener("load", function() {
                     done(this.responseText);
                 });
