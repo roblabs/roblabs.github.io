@@ -1,5 +1,10 @@
+
+
+echo "updateStyleTemplates ../style.json   # mash template.json and style.json from current folder "; echo
 function updateStyleTemplates() {
-  SOURCE_STYLE=../national-forests/style.json
+  # depends on `prettier` & `json`
+  # SOURCE_STYLE=../national-forests/style.json
+  SOURCE_STYLE=$1
   SOURCE_TEMPLATE=template.json
 
   # extract the layers array
@@ -18,7 +23,7 @@ function updateStyleTemplates() {
     -i layers.json \
     -o out.json
 
-    cat out.json | json -2 > style.json
+    cat out.json | prettier --parser json --print-width 120 > style.json
 
   # clean up
   rm layers.array layers.json out.json

@@ -16,3 +16,7 @@ tmp/
 config
 vendor/
 ssl
+
+
+# styles
+styles/style.json
