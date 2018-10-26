@@ -16,6 +16,7 @@
       "type": "raster",
       "tileSize": 512
     },
+    "ortho": { "url": "mapbox://mapbox.satellite", "type": "raster", "tileSize": 256 },
     "composite": {
       "url": "mapbox://roblabs.composite-whitney",
       "type": "vector"
