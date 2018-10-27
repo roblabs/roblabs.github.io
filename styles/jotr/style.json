@@ -4,7 +4,14 @@
   "center": [-115.895, 33.9],
   "pitch": 0,
   "name": "jotr",
-  "metadata": { "bbox": [-116.6, 33.62, -115.19, 34.18], "VRT": "jotr", "BBOX": "-116.6 33.62 -115.19 34.18" },
+  "metadata": {
+    "minzoom": 7,
+    "maxzoom": 15,
+    "bbox": [-116.6, 33.62, -115.19, 34.18],
+    "VRT": "jotr",
+    "BBOX": "-116.6 33.62 -115.19 34.18",
+    "epimaps": "http://localhost:4000/epi-maps.html?t=jotr&style=jotr&w=-116.6&s=33.62&e=-115.19&n=34.18&z=15&authkey=278314#7/33.9/-115.895"
+  },
   "zoom": 7,
   "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
   "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",

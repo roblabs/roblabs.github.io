@@ -25,14 +25,14 @@ Each Ranger District map is made of several 7.5 minute Forest Service Topo maps.
 
 
 
-* [Trabuco Ranger District](/epi-maps.html?Z=14.9&style=cleveland-cjeqnyaa605092smfdeabqh66&w=-117.7817&s=33.417&e=-117.113&n=33.88&t=Trabuco%20Ranger&authkey=278314/#13/33.51219/-117.37593) - Spans these 7.5 minute quadrangles from the Forest Service
+* [Trabuco Ranger District](/epi-maps.html?z=14.9&style=cleveland-cjeqnyaa605092smfdeabqh66&w=-117.7817&s=33.417&e=-117.113&n=33.88&t=Trabuco%20Ranger&authkey=278314/#13/33.51219/-117.37593) - Spans these 7.5 minute quadrangles from the Forest Service
   * Black Star Canyon, Corona South, Lake Mathews, El Toro, Santiago Peak, Aberhill, Lake Elsinore, Cañada Gobernadora, Sitton Peak, Wildomar, Margarita Peak, Fallbrook
 
-* [Palomar Ranger District](/epi-maps.html?Z=14.9&style=cleveland-cjeqnyaa605092smfdeabqh66&w=-117.053&s=32.91&e=-116.55&n=33.4725&t=Palomar%20Ranger&authkey=278314/#13/33.06633/-116.84486) - Spans these 7.5 minute quadrangles from the Forest Service
+* [Palomar Ranger District](/epi-maps.html?z=14.9&style=cleveland-cjeqnyaa605092smfdeabqh66&w=-117.053&s=32.91&e=-116.55&n=33.4725&t=Palomar%20Ranger&authkey=278314/#13/33.06633/-116.84486) - Spans these 7.5 minute quadrangles from the Forest Service
   * Pechanga, Vail Lake, Aguanga, Pala, Boucher Hill, Palomar Observatory, Warner Springs,  Hot Springs Mountain, Rodriguez Mountain, Mesa Grande, San Pasqual, Ramona, Santa Ysabel, Julian, El Cajon Mountain, Tule Springs, Cuyamaca Peak
 
 
-* [Descanso Ranger District](/epi-maps.html?Z=14.9&style=cleveland-cjeqnyaa605092smfdeabqh66&w=-116.8252&s=32.555&e=-116.375&n=32.963&t=Descanso%20Ranger&authkey=278314/#13/32.83347/-116.74155) - Spans these 7.5 minute quadrangles from the Forest Service
+* [Descanso Ranger District](/epi-maps.html?z=14.9&style=cleveland-cjeqnyaa605092smfdeabqh66&w=-116.8252&s=32.555&e=-116.375&n=32.963&t=Descanso%20Ranger&authkey=278314/#13/32.83347/-116.74155) - Spans these 7.5 minute quadrangles from the Forest Service
   * El Cajon Mountain, Tule Springs, Cuyamaca Peak, Monument Peak, Alpine, Viejas Mountain, Descanso, Mount Laguna, Dulzura, Barrett Lake, Morena Reservoir, Cameron Corners
 
 

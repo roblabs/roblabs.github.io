@@ -111,11 +111,11 @@
         var vars = getUrlVars(); // Could be many vars, but initally we are looking for bbox
 
         var w, s, e, n, mapName, style;
-        var z = 7;
-        var Z = 13.9;
+        var Z = 7;
+        var z = 13.9;
 
-        if(vars.z == undefined) {
-          vars.z = 7;
+        if(vars.Z == undefined) {
+          vars.Z = 7;
         }
 
         w = Number(vars.w);
@@ -156,8 +156,8 @@
                 hash: true,
                 scrollZoom: true,
                 center: center,
-                minZoom: z,
-                maxZoom: Z,
+                minZoom: Z,
+                maxZoom: z,
                 maxBounds: [sw, ne],
                 style: style,
                 pitchWithRotate: false

@@ -5,6 +5,8 @@
   "pitch": 0,
   "name": "jotr",
   "metadata": {
+    "minzoom": 7,
+    "maxzoom": 15,
     "bbox": [-116.6, 33.62, -115.19, 34.18]
   },
   "zoom": 7,

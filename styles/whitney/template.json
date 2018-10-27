@@ -1,12 +1,11 @@
 {
   "version": 8,
   "bearing": 0,
-  "center": [
-    -111.6535,
-    35.16945
-  ],
+  "center": [-111.6535, 35.16945],
   "name": "whitney",
   "metadata": {
+    "minzoom": 7,
+    "maxzoom": 15,
     "bbox": [-118.5, 35.625, -117.875, 36.875]
   },
   "pitch": 0,

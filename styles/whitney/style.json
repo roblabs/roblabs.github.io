@@ -3,7 +3,14 @@
   "bearing": 0,
   "center": [-118.1875, 36.25],
   "name": "whitney",
-  "metadata": { "bbox": [-118.5, 35.625, -117.875, 36.875], "VRT": "whitney", "BBOX": "-118.5 35.625 -117.875 36.875" },
+  "metadata": {
+    "minzoom": 7,
+    "maxzoom": 15,
+    "bbox": [-118.5, 35.625, -117.875, 36.875],
+    "VRT": "whitney",
+    "BBOX": "-118.5 35.625 -117.875 36.875",
+    "epimaps": "http://localhost:4000/epi-maps.html?t=whitney&style=whitney&w=-118.5&s=35.625&e=-117.875&n=36.875&z=15&authkey=278314#11/36.25/-118.1875"
+  },
   "pitch": 0,
   "zoom": 11,
   "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
