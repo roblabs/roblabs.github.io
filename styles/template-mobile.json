@@ -1,0 +1,24 @@
+{
+  "sprite": "asset://sprites/osm-liberty",
+  "glyphs": "asset://glyphs/{fontstack}/{range}.pbf",
+  "sources": {
+    "composite": {
+      "type": "vector",
+      "url": "mbtiles://composite.mbtiles"
+    },
+    "terrain": {
+      "type": "vector",
+      "url": "mbtiles://terrain.mbtiles"
+    },
+    "hillshade": {
+      "tileSize": 512,
+      "type": "raster",
+      "url": "mbtiles://hillshade.mbtiles"
+    },
+    "ortho": {
+      "tileSize": 512,
+      "type": "raster",
+      "url": "mbtiles://ortho.mbtiles"
+    }
+  }
+}

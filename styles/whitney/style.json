@@ -9,7 +9,7 @@
     "bbox": [-118.5, 35.625, -117.875, 36.875],
     "VRT": "whitney",
     "BBOX": "-118.5 35.625 -117.875 36.875",
-    "epimaps": "http://localhost:4000/epi-maps.html?t=whitney&style=whitney&w=-118.5&s=35.625&e=-117.875&n=36.875&z=15&authkey=278314#11/36.25/-118.1875"
+    "epimaps": "https://localhost:4000/epi-maps.html?t=whitney&style=whitney&w=-118.5&s=35.625&e=-117.875&n=36.875&z=15&authkey=278314#11/36.25/-118.1875"
   },
   "pitch": 0,
   "zoom": 11,

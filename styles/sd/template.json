@@ -1,0 +1,35 @@
+{
+  "version": 8,
+  "bearing": 0,
+  "center": [-111.6535, 35.16945],
+  "name": "sd",
+  "metadata": {
+    "minzoom": 7,
+    "maxzoom": 15,
+    "bbox": [-117.905273,32.509762,-115.839844,34.016242]
+  },
+  "pitch": 0,
+  "zoom": 7,
+  "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
+  "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
+  "sources": {
+    "composite": {
+      "url": "mapbox://roblabs.composite-",
+      "type": "vector"
+    },
+    "hillshade": {
+      "url": "mapbox://roblabs.hillshade-",
+      "type": "raster",
+      "tileSize": 512
+    },
+    "ortho": {
+      "url": "mapbox://mapbox.satellite",
+      "type": "raster",
+      "tileSize": 256
+    },
+    "terrain": {
+      "url": "mapbox://roblabs.terrain-",
+      "type": "vector"
+    }
+  }
+}

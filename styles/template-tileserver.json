@@ -1,0 +1,26 @@
+{
+  "sprite": "{styleJsonFolder}/sprites/osm-liberty",
+  "glyphs": "{fontstack}/{range}.pbf",
+  "sources": {
+    "composite": {
+      "type": "vector",
+      "url": "http://10.0.1.11:8081/data/composite.json"
+    },
+    "terrain": {
+      "type": "vector",
+      "url": "http://10.0.1.11:8081/data/terrain.json"
+    },
+    "fstopo": {
+      "type": "raster",
+      "url": "http://10.0.1.11:8081/data/fstopo.json"
+    },
+    "hillshade": {
+      "type": "raster",
+      "url": "http://10.0.1.11:8081/data/hillshade.json"
+    },
+    "ortho": {
+      "type": "raster",
+      "url": "http://10.0.1.11:8081/data/ortho.json"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-echo "updateStyleFromTemplate   #  # mash template.json and style.json from current folder"; echo
+echo "updateStyleFromTemplate   # mash template.json and style.json from current folder"; echo
 function updateStyleFromTemplate() {
   cat template.json | json -e 'this.center=[(this.metadata.bbox[2] - this.metadata.bbox[0]) / 2 + this.metadata.bbox[0], (this.metadata.bbox[3] - this.metadata.bbox[1]) / 2 + this.metadata.bbox[1]]'   | \
 
@@ -9,7 +9,7 @@ function updateStyleFromTemplate() {
                               this.metadata.bbox[2] + " " +
                               this.metadata.bbox[3]'                   | \
 
-  json -e 'this.metadata.epimaps="http://localhost:4000/epi-maps.html?t=" + this.name +
+  json -e 'this.metadata.epimaps="https://localhost:4000/epi-maps.html?t=" + this.name +
                                  "&style=" + this.name +
                                  "&w=" + this.metadata.bbox[0] +
                                  "&s=" + this.metadata.bbox[1] +
@@ -40,5 +40,11 @@ function updateStyleFromTemplate() {
 
   cat tmp.out.json tmp.layers.json | json --merge | json -0 > tmp.merge.json
   cat tmp.merge.json | prettier --parser json --print-width 120 > style.json
-  rm tmp.*
+
+  #  Update other styles for mobile & tile server
+
+  cat style.json ../template-mobile.json     | json --merge | prettier --parser json --print-width 120 > style-mobile.json
+  cat style.json ../template-tileserver.json | json --merge | prettier --parser json --print-width 120 > style-tileserver.json
+
+rm tmp.*
 }
