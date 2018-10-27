@@ -1,17 +1,18 @@
 {
   "version": 8,
-  "id": "jotr",
   "bearing": 0,
-  "center": [-115.8083, 33.8481],
+  "center": [-115.895, 33.9],
   "pitch": 0,
+  "name": "jotr",
+  "metadata": { "bbox": [-116.6, 33.62, -115.19, 34.18], "VRT": "jotr", "BBOX": "-116.6 33.62 -115.19 34.18" },
   "zoom": 7,
   "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
   "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
   "sources": {
-    "hillshade": { "url": "mapbox://roblabs.hillshade-jotr", "type": "raster", "tileSize": 512 },
     "composite": { "url": "mapbox://roblabs.composite-jotr", "type": "vector" },
-    "terrain": { "url": "mapbox://roblabs.terrain-jotr", "type": "vector" },
-    "ortho": { "url": "mapbox://mapbox.satellite", "type": "raster", "tileSize": 256 }
+    "hillshade": { "url": "mapbox://roblabs.hillshade-jotr", "type": "raster", "tileSize": 512 },
+    "ortho": { "url": "mapbox://mapbox.satellite", "type": "raster", "tileSize": 256 },
+    "terrain": { "url": "mapbox://roblabs.terrain-jotr", "type": "vector" }
   },
   "layers": [
     { "id": "background", "type": "background", "paint": { "background-color": "#f8f4f0" } },
@@ -222,7 +223,7 @@
       "source-layer": "NHDFlowline",
       "minzoom": 12,
       "maxzoom": 24,
-      "filter": ["==", "FTYPE", 460],
+      "filter": ["==", "FType", 460],
       "layout": { "visibility": "visible" },
       "paint": { "line-color": "#a0c8f0", "line-dasharray": [20, 4, 2, 4, 2, 4, 2, 4], "line-width": 2 }
     },
@@ -233,7 +234,7 @@
       "source-layer": "NHDFlowline",
       "minzoom": 13,
       "maxzoom": 24,
-      "filter": ["==", "FTYPE", 558],
+      "filter": ["==", "FType", 558],
       "layout": { "visibility": "visible" },
       "paint": { "line-color": "#a0c8f0", "line-width": 2 }
     },
@@ -244,7 +245,7 @@
       "source-layer": "NHDWaterbody",
       "minzoom": 13,
       "maxzoom": 16,
-      "filter": ["any", ["==", "FTYPE", 390], ["==", "FTYPE", 436]],
+      "filter": ["any", ["==", "FType", 390], ["==", "FType", 436]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-color": "#a0c8f0" }
     },
@@ -254,7 +255,7 @@
       "source": "composite",
       "source-layer": "NHDArea",
       "minzoom": 7,
-      "filter": ["==", "FTYPE", 460],
+      "filter": ["==", "FType", 460],
       "layout": { "visibility": "visible" },
       "paint": { "fill-color": "#a0c8f0" }
     },
@@ -266,7 +267,7 @@
       },
       "source": "composite",
       "source-layer": "NHDArea",
-      "filter": ["==", "FTYPE", 484],
+      "filter": ["==", "FType", 484],
       "layout": { "visibility": "visible" },
       "paint": { "fill-color": "rgba(141, 126, 109, 1)", "fill-opacity": 0.1 }
     },
@@ -315,7 +316,7 @@
       "type": "line",
       "source": "composite",
       "source-layer": "GU_Reserve",
-      "minzoom": 7,
+      "minzoom": 9,
       "maxzoom": 24,
       "filter": ["all", ["==", "FType", 675]],
       "layout": { "visibility": "visible" },
@@ -330,7 +331,7 @@
       "type": "line",
       "source": "composite",
       "source-layer": "GU_Reserve",
-      "minzoom": 7,
+      "minzoom": 9,
       "maxzoom": 20,
       "filter": ["all", ["==", "FType", 675]],
       "layout": { "visibility": "visible" },
@@ -348,13 +349,8 @@
       "source-layer": "parkboundary",
       "minzoom": 7,
       "maxzoom": 24,
-      "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "round" },
-      "paint": {
-        "line-color": "rgba(98, 132, 34, 1)",
-        "line-width": { "stops": [[7, 1], [10, 10]] },
-        "line-offset": { "stops": [[7, 1], [10, 5]] },
-        "line-opacity": 0.7
-      }
+      "layout": { "visibility": "visible" },
+      "paint": { "line-color": "rgba(98, 132, 34, 1)", "line-width": 10, "line-offset": 2, "line-opacity": 0.7 }
     },
     {
       "id": "parkboundary",
@@ -2263,7 +2259,7 @@
       "source-layer": "NHDFlowline",
       "minzoom": 12,
       "maxzoom": 24,
-      "filter": ["==", "FTYPE", 460],
+      "filter": ["==", "FType", 460],
       "layout": {
         "text-font": ["Roboto Condensed Italic"],
         "text-size": 16,
@@ -2281,7 +2277,7 @@
       "type": "symbol",
       "source": "composite",
       "source-layer": "NHDFlowline",
-      "filter": ["==", "FTYPE", 558],
+      "filter": ["==", "FType", 558],
       "layout": {
         "text-size": 16,
         "symbol-spacing": 350,
@@ -2300,7 +2296,7 @@
       "type": "symbol",
       "source": "composite",
       "source-layer": "NHDWaterbody",
-      "filter": ["==", "FTYPE", 390],
+      "filter": ["==", "FType", 390],
       "layout": {
         "text-size": { "base": 1, "stops": [[7, 12], [14, 14]] },
         "symbol-spacing": 600,
@@ -2523,7 +2519,7 @@
         "text-ignore-placement": false,
         "text-anchor": "center",
         "text-transform": "none",
-        "text-size": 15,
+        "text-size": 18,
         "text-padding": 100
       },
       "paint": {
@@ -2555,7 +2551,7 @@
         "text-anchor": "center",
         "text-transform": "uppercase",
         "text-size": 24,
-        "text-padding": 200
+        "text-padding": 350
       },
       "paint": {
         "text-color": "hsl(0, 0%, 0%)",

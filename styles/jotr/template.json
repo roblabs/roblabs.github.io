@@ -1,30 +1,33 @@
 {
   "version": 8,
-  "id": "jotr",
   "bearing": 0,
   "center": [-115.8083, 33.8481],
   "pitch": 0,
+  "name": "jotr",
+  "metadata": {
+    "bbox": [-116.6, 33.62, -115.19, 34.18]
+  },
   "zoom": 7,
   "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
   "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
   "sources": {
+    "composite": {
+      "url": "mapbox://roblabs.composite-",
+      "type": "vector"
+    },
     "hillshade": {
-      "url": "mapbox://roblabs.hillshade-jotr",
+      "url": "mapbox://roblabs.hillshade-",
       "type": "raster",
       "tileSize": 512
-    },
-    "composite": {
-      "url": "mapbox://roblabs.composite-jotr",
-      "type": "vector"
-    },
-    "terrain": {
-      "url": "mapbox://roblabs.terrain-jotr",
-      "type": "vector"
     },
     "ortho": {
       "url": "mapbox://mapbox.satellite",
       "type": "raster",
       "tileSize": 256
+    },
+    "terrain": {
+      "url": "mapbox://roblabs.terrain-",
+      "type": "vector"
     }
   }
 }
