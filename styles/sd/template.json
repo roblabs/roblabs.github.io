@@ -13,10 +13,8 @@
   "sprite": "mapbox://sprites/roblabs/cjf49csew13ey2sp3kdl4fsmz",
   "glyphs": "mapbox://fonts/roblabs/{fontstack}/{range}.pbf",
   "sources": {
-    "composite": {
-      "url": "mapbox://roblabs.composite-",
-      "type": "vector"
-    },
+    "mapbox.composite": { "url": "mapbox://mapbox.mapbox-streets-v7", "type": "vector" },
+    "composite": { "url": "mapbox://roblabs.composite-sd", "type": "vector" },
     "hillshade": {
       "url": "mapbox://roblabs.hillshade-",
       "type": "raster",
