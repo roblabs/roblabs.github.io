@@ -164,6 +164,45 @@
             }).addControl(new mapboxgl.NavigationControl(), 'top-left');
 
             map.addControl(new mapboxgl.FullscreenControl(), 'top-left');
+
+            map.on('click', 'label-cellgrid-7.5minute', function (e) {
+              console.log(e);
+              var coordinates = e.features[0].geometry.coordinates.slice();
+              var properties = e.features[0].properties;
+
+              /*
+                properties = {}
+                properties.CELL_NAME = "Tule Springs"
+                properties.prettyFileSize = "63.5 MB"
+                properties.lastUpdated = "date "
+                properties.downloadURL = "https://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/USTopo/PDF/CA/CA_Tule_Springs_20180904_TM_geo.pdf"
+                properties.metaUrl = "https://www.sciencebase.gov/catalog/item/5b9a21b3e4b0d966b4852f9e"
+              */
+              var html  = "<h1><span style=\"color: #1C9900;\">" + properties.CELL_NAME + "</span></h1>";
+                  html += "USGS US Topo 7.5-minute map";
+                  html += "<hr />";
+                  html += "<p><strong>Last Updated:</strong>  " + properties.lastUpdated;
+                  html += "<p><strong>Download Size:</strong>  " + properties.prettyFileSize;
+                  html += "<hr />";
+                  html += "Download this ";
+                  html += properties.prettyFileSize;
+                  html += " Geospatial PDF from";
+                  html += "<a target=\"_blank\" rel=\"nofollow\" href=\"" + properties.downloadURL + "\">";
+                  html += "<pre>prd-tnm.s3.amazonaws.com</pre>";
+                  html += "</a>  <hr />";
+                  html += "<h6>See metadata for " + properties.CELL_NAME + " at ";
+                  html += "<a target=\"_blank\" rel=\"nofollow\" href=\"" + properties.metaUrl + "\">";
+                  html += "<pre>sciencebase.gov</pre>";
+                  html += "</a>";
+
+
+              console.log(coordinates, properties, html);
+
+              new mapboxgl.Popup()
+                  .setLngLat(e.lngLat)
+                  .setHTML(html)
+                  .addTo(map);
+          });
         }
 
         function renderMapboxJS() {

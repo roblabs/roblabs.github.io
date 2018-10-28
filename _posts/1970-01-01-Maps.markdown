@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Maps"
+title:  "USGS US Topo 7.5-minute maps"
 description: ""
-date:   2016-07-15T00:20:46-08:00
+date:   2018-10-27T00:20:46-08:00
 excerpt: "Use the same map — either on mobile, paper or desktop browser"
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps]
@@ -10,7 +10,7 @@ tags: [Mapbox, Paper Maps]
 permalink: /usgs/
 redirect_from:
   - /7.5/
-  - /Maps/
+  - /topo/
 photo_url: https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9SdfN41hSjL2Brz0rXDXh-tkmRcSvRDifFjA=h150
 
 ---
@@ -19,6 +19,53 @@ photo_url: https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9Sdf
 ### A map — one of the ten essentials.
 
 Anyone going to the back country needs a decent map.  Most outdoor stores sell 7.5 minute topographic maps (maps with contours).  But there are great online resources to download and buy topo maps.
+
+-----
+
+#### Download
+
+Instructions
+* Navigate around on the map,
+* Then click on the name of the USGS US Topo 7.5 minute map you wish to download.
+* Example, naviage to downtown San Diego, then click on the text for the "Point Loma" 7.5 minute map.
+
+<iframe allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+  style="height: 75vh; width: 95vw;"  
+  src="/epi-maps.html?t=sd&style=sd&w=-118.905273&s=31.509762&e=-114.839844&n=34.016242&z=15&authkey=278314#10/32.7777/-116.8671">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+-----
+
+#### USFS
+
+The United States Forest Service or [USFS][usfs] has a site for downloading PDFs of their format called "FSTopo GeoPDFs".  These maps can be viewed any usual PDF reader and printed out.
+
+This example of a Geospatial PDF shows the following
+
+* The printed output side
+* The product generation date
+* UTM and latitude/longitude
+* Legend, including adjoining quadrangles
+* Scale and magnetic delcination are also on these maps
+* The Geospatial PDF file size in MB
+
+![usfs-topo.png](../assets/img/usfs-topo.png)
+
+-----
+
+#### USGS
+
+The United States Geologic Survey or [USGS][usgs] has a site that is a map locator and download site.  You can download 7.5 and 15 minute maps  
+
+The USGS Topos have a different features set
+
+* [US-Topo-Map-Symbols](../assets/pdf/US-Topo-Map-Symbols.pdf)
+* A satellite image is included in the Geospatial PDF, making the file slightly larger
+* If you wish to print with out the satellite, then you have to use a GeoPDF plugin to disable the image layer.
+
+![usgs-topo.png](../assets/img/usgs-topo.png)
+
 
 ---
 
@@ -31,44 +78,6 @@ Anyone going to the back country needs a decent map.  Most outdoor stores sell 7
 
 #### CalTopo.com
 [CalTopo.com][caltopo] is a great resource for generating Geospatial PDFs.  You can center the map at your particular latitude/longitude instead of trying to span multiple quadrangles.  Then you get a URL that you can use to download your PDF for printing.
-
------
-
-#### United States Forest Service
-
-The [USFS][usfs] has a site for downloading PDFs of their format called "FSTopo GeoPDFs".  These maps can be viewed any usual PDF reader and printed out.
-
-This example of a GeoPDF shows the following
-
-* The printed output side
-* The product generation date
-* UTM and latitude/longitude
-* Legend, including adjoining quadrangles
-* Scale and magnetic delcination are also on these maps
-* The GeoPDF file size in MB
-
-![usfs-topo.png](../assets/img/usfs-topo.png)
-
------
-
-#### United States Geologic Survey
-
-The [USGS][usgs] has a site that is a map locator and download site.  You can download 7.5 and 15 minute maps  
-
-The USGS Topos have a different features set
-
-* [US-Topo-Map-Symbols](../assets/pdf/US-Topo-Map-Symbols.pdf)
-* A satellite image is included in the GeoPDF, making the file slightly larger
-* If you wish to print with out the satellite, then you have to use a GeoPDF plugin to disable the image layer.
-
-![usgs-topo.png](../assets/img/usgs-topo.png)
-
------
-
-#### Live Online map of select USGS Maps
-<iframe allowfullscreen="true" width = "100%" height = "800" src="https://api.mapbox.com/styles/v1/roblabs/cj83mpdcgauwa2rp408j9px42.html?fresh=true&title=false&access_token=pk.eyJ1Ijoicm9ibGFicyIsImEiOiJwVlg0cnZnIn0.yhekddtKwZohGoORaWjqIw#9.92/33.2028/-116.6595">
-  <p>Your browser does not support iframes.</p>
-</iframe>
 
 
 [mayer]:http://mayer.com
