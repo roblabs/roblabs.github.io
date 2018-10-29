@@ -40,7 +40,7 @@ Instructions
 #### After Downloading
 
 * Most browsers can render this Geospatial PDFs direclty in the browser.  For example, you can open the PDF in Chrome or Firefox.
-* We have a more detail page that describes how to process Geospatial PDFs.  Please those details at [RobLabs.com/gdal-geopdf](http://RobLabs.com/gdal-geopdf)
+* If you are interested in processing Geospatial PDFs, then we recommend the FOSS4G tool [GDAL](http://gdal.org).  Please see those details at [RobLabs.com/gdal-geopdf](http://RobLabs.com/gdal-geopdf)
 * This graphic gives an example of toggling layers in the El Capitan Quadrangle in Yosemite National Park.
 
 ![yose.mov.gif-0.0000-29.9000.gif](/projects/Rob-Chohan-RobLabs.com-mobile1st/assets/FBD371F5-2F79-42AE-BDA9-0787F9455501/assets/yose.mov.gif-0.0000-29.9000.gif)
@@ -65,6 +65,8 @@ The USGS Topos have a different features set
 * If you wish to print with out the satellite, then you have to use a GeoPDF plugin to disable the image layer.
 
 ![usgs-topo.png](../assets/img/usgs-topo.png)
+
+---
 
 #### USFS
 
