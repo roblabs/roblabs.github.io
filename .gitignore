@@ -20,3 +20,6 @@ ssl
 
 # styles
 styles/style.json
+style-mobile.json
+style-tileserver.json
+mapbox-*.json

@@ -164,6 +164,7 @@
             }).addControl(new mapboxgl.NavigationControl(), 'top-left');
 
             map.addControl(new mapboxgl.FullscreenControl(), 'top-left');
+            map.scrollZoom.disable();
 
             map.on('click', 'label-cellgrid-7.5minute', function (e) {
               console.log(e);
