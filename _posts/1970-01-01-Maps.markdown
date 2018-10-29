@@ -25,8 +25,9 @@ Anyone going to the back country needs a decent map.  Most outdoor stores sell 7
 Instructions
 * Navigate to your area of interest by zooming and panning on the map.
 * Then click on the name of the USGS US Topo 7.5 minute map you wish to download.
-* Example, navigate to downtown San Diego, then click on the text for the "Point Loma" 7.5 minute map.
-* You will then be given the choice to download the Geospatial PDF (usually greater than 30 MB), After downloading the Geospatial PDF, you can use [Adobe Acrobat Reader DC](https://get.adobe.com/reader/), to turn on and off the layers.  
+  * For example, navigate to downtown San Diego, then click on the text for the "Point Loma" 7.5 minute map.
+* You will then be given the choice to download the Geospatial PDF (usually greater than 30 MB).
+* After downloading the Geospatial PDF, you can use [Adobe Acrobat Reader DC](https://get.adobe.com/reader/), to turn on and off the layers.  
 
 
 <iframe allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
@@ -40,23 +41,19 @@ Instructions
 #### After Downloading
 
 * Most browsers can render this Geospatial PDFs direclty in the browser.  For example, you can open the PDF in Chrome or Firefox.
-* If you are interested in processing Geospatial PDFs, then we recommend the FOSS4G tool [GDAL](http://gdal.org).  Please see those details at [RobLabs.com/gdal-geopdf](http://RobLabs.com/gdal-geopdf)
-* This graphic gives an example of toggling layers in the El Capitan Quadrangle in Yosemite National Park.
+* If you are interested in processing Geospatial PDFs, then we recommend the FOSS4G tool [GDAL](http://gdal.org).  Please see our technical note on using GDAL to process Geospatial PDFs at [RobLabs.com/gdal-geopdf](http://RobLabs.com/gdal-geopdf)
+* This video gives an example of toggling layers in the El Capitan Quadrangle in Yosemite National Park using Adobe Acrobat Reader DC.
 
 ![yose.mov.gif-0.0000-29.9000.gif](/projects/Rob-Chohan-RobLabs.com-mobile1st/assets/FBD371F5-2F79-42AE-BDA9-0787F9455501/assets/yose.mov.gif-0.0000-29.9000.gif)
 
 ---
-
-##### Geospatial PDF vs. GeoPDF®?
-
-> GeoPDF is a TerraGo Technologies published extension to the Adobe PDF file format. GeoPDF is not a separate format; any GeoPDF conforms to the base PDF specification, and GeoPDF files can be used as plain PDF files.
 
 
 #### USGS
 
 The United States Geologic Survey or [USGS][usgs] has a site that is a map locator and download site.  You can download 7.5 and 15 minute maps  
 
-The USGS Topos have a different features set
+Other useful links at USGS.gov
 
 * [US-Topo-Map-Symbols](../assets/pdf/US-Topo-Map-Symbols.pdf)
 * The [National Map](https://nationalmap.gov), *"National Map is a collaborative effort ... to improve and deliver topographic information for the Nation"*
@@ -94,6 +91,13 @@ This example of a Geospatial PDF shows the following
 
 #### CalTopo.com
 [CalTopo.com][caltopo] is a great resource for generating Geospatial PDFs.  You can center the map at your particular latitude/longitude instead of trying to span multiple quadrangles.  Then you get a URL that you can use to download your PDF for printing.
+
+
+---
+
+#### Geospatial PDF vs. GeoPDF®?
+
+> GeoPDF is a TerraGo Technologies published extension to the Adobe PDF file format. GeoPDF is not a separate format; any GeoPDF conforms to the base PDF specification, and GeoPDF files can be used as plain PDF files.
 
 
 [mayer]:http://mayer.com
