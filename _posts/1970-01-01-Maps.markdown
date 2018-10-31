@@ -40,9 +40,9 @@ Instructions
 
 #### After Downloading
 
-* Most browsers can render this Geospatial PDFs direclty in the browser.  For example, you can open the PDF in Chrome or Firefox.
-* If you are interested in processing Geospatial PDFs, then we recommend the FOSS4G tool [GDAL](http://gdal.org).  Please see our technical note on using GDAL to process Geospatial PDFs at [RobLabs.com/gdal-geopdf](http://RobLabs.com/gdal-geopdf)
-* This video gives an example of toggling layers in the El Capitan Quadrangle in Yosemite National Park using Adobe Acrobat Reader DC.
+* Most browsers can render this Geospatial PDFs directly in the browser.  For example, you can open the PDF in Chrome or Firefox.
+* If you are interested in processing Geospatial PDFs by layer or a bounding box, then we recommend the [FOSS4G](https://wiki.osgeo.org/wiki/FOSS4G) tool called [GDAL](http://gdal.org).  Please see our technical note on using GDAL to process Geospatial PDFs,  [RobLabs.com/gdal-geopdf](http://RobLabs.com/gdal-geopdf).
+* This GIF video gives an example of toggling layers in the El Capitan Quadrangle in Yosemite National Park using Adobe Acrobat Reader DC.
 
 ![yose.mov.gif-0.0000-29.9000.gif](/projects/Rob-Chohan-RobLabs.com-mobile1st/assets/FBD371F5-2F79-42AE-BDA9-0787F9455501/assets/yose.mov.gif-0.0000-29.9000.gif)
 
