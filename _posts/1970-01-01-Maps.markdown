@@ -82,12 +82,6 @@ This example of a Geospatial PDF shows the following
 
 ---
 
-#### Print Shops in San Diego
-
-* [Mayer Reprographics][mayer] in North Park
-* [RB Signs][rbsigns] in Rancho Bernardo
-
----
 
 #### CalTopo.com
 [CalTopo.com][caltopo] is a great resource for generating Geospatial PDFs.  You can center the map at your particular latitude/longitude instead of trying to span multiple quadrangles.  Then you get a URL that you can use to download your PDF for printing.
