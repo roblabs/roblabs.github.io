@@ -4,8 +4,8 @@ twitter_username: e_pi_rational
 github_username:  roblabs
 # global settings
 title: "RobLabs.com"
-description: "Creating Innovations in Maps for Android and iOS"
-url: https://www.roblabs.com
+description: "Creating Innovations in Maps for Print and Mobile"
+url: https://roblabs.com
 permalink: pretty
 relative_permalinks: false
 
@@ -22,6 +22,7 @@ plugins:
   - jekyll-coffeescript
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-github-metadata
 
 sass:
   style: :compressed
