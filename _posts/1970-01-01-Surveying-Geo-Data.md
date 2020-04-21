@@ -36,7 +36,8 @@ Install the command line tool, `exif`, for macOS using `brew`.
 exif -m IMG_0288.jpeg  | grep tude
 ```
 
-> ```North or South Latitude	N
+```
+North or South Latitude	N
 Latitude	32, 44, 51.09
 East or West Longitude	W
 Longitude	116, 39, 57.85
@@ -68,7 +69,7 @@ exif -x $IMG | xml-json $XML_FILTER > exif.json
 
 #### XML Sample
 
-> ```xml
+```xml
 <exif>
 	<Manufacturer>Apple</Manufacturer>
 	<Model>iPhone SE</Model>
@@ -91,7 +92,7 @@ exif -x $IMG | xml-json $XML_FILTER > exif.json
 
 
 #### JSON Sample
-> ```json
+```json
 {
 "North_or_South_Latitude": "N",
 "Latitude": "32, 44, 51.09",
@@ -106,12 +107,6 @@ exif -x $IMG | xml-json $XML_FILTER > exif.json
 "GPS_Date": "2020:04:19"
 }
 ```
-
-
-
-
-
-
 
 ---
 
