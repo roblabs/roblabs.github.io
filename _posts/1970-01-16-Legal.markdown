@@ -6,6 +6,8 @@ date:   2017-01-01T12:20:46-08:00
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
 tags: [Mapbox, Paper Maps]
+redirect_from:
+  - /legal
 permalink: /Legal/
 excerpt: "Our terms found at /Legal"
 ---
@@ -36,6 +38,9 @@ except what you voluntarily provide through RobLabs.com or other direct contact.
 ### License and Terms of Use
 
 * Publisher assumes no liability for safety or condition of roads or trails. Map is not intended for navigational use and is not represented to be correct in every aspect. Consult federal, state, and local laws for current regulations.
+
+* The Map and its underlying geospatial data are intended to depict physical features as they generally appear on the ground and are not intended to be used to determine title, ownership, legal boundaries, legal jurisdiction, including jurisdiction over roads or trails, or access restrictions that may be in place on either public or private land. Obtain permission before entering private lands, and check with appropriate government offices for restrictions that may apply to public lands.
+
 
 * This application and its supporting data are provided as a free service to hikers and bikers. We believe the information, its presentation and the computations based upon it are accurate but they may contain errors. This application and its supporting data are distributed in the hope they will be useful, but are conveyed WITHOUT ANY WARRANTY and without implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
