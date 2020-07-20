@@ -9,6 +9,7 @@ url: https://roblabs.com
 permalink: pretty
 relative_permalinks: false
 
+destination: ./tmp/_site/www
 paginate: 25
 paginate_path: "/blog/page:num/"
 
