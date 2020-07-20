@@ -9,7 +9,7 @@ url: https://roblabs.com
 permalink: pretty
 relative_permalinks: false
 
-paginate: 10
+paginate: 25
 paginate_path: "/blog/page:num/"
 
 # build settings

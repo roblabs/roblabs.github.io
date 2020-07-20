@@ -12,6 +12,7 @@ assets/vendor/bootstrap-sass/assets/javascripts/
 .sass-cache
 .env
 tmp/
+.jekyll-metadata
 
 config
 vendor/
