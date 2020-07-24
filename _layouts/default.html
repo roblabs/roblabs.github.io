@@ -36,6 +36,15 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+    <!-- NaturalAtlas -->
+    <script type="text/javascript">!function(){var t="NaturalAtlas",e=document,a=window,n=void 0,o=a[t]=a[t]||{};o._v||(o._v="0.2");var r=[];o.__onReady=function(){for(;r.length;)r.pop()(o)},o.setVersion=function(t){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;o._v=t,o._o=e},o.setClientKey=function(t){o.__key=t},o.onReady=function(t){if(o.__key){if(!n){n=!0;var a=o._o?"-"+o._o:"",s=o._v+a,i=e.createElement("script");i.setAttribute("data-cfasync","false"),i.charset="utf-8",i.type="text/javascript",i.async=!0,i.src="https://js.naturalatlas.com/v"+s+a+"/naturalatlas.js";var c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(i,c)}o.__loaded&&t(o),r.push(t)}else console.error("[naturalatlas.js] Key must be set with setClientKey() before calling onReady(), onAllReady()")},o.onAllReady=function(t){o.onReady(function(){!function(t){var a=e.readyState;"complete"===a||"interactive"===a?t():e.attachEvent?e.attachEvent("onreadystatechange",function(){"interactive"===e.readyState&&t()}):e.addEventListener&&e.addEventListener("DOMContentLoaded",t)}(t)})}}();</script>
+    <script type="text/javascript">
+    NaturalAtlas.setClientKey('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhay1ja2N6bGx6cTIwMDAwMjNhcXoxcnMxZXhzIiwibmFfYXBwIjoxMDExLCJpYXQiOjE1OTU1NTcyODR9.9Iikuk4so989h4RO8oXkoOL6Mc1D-iQ4YmZWPjOaoAU');
+    NaturalAtlas.onAllReady(function() {
+      NaturalAtlas.initWidgets();
+    });
+    </script>
   </head>
 
   <body>
