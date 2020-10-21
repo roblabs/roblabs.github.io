@@ -54,7 +54,8 @@ Altitude	746.6
 
 * `exif`
 
-> Usage: exif [OPTION...] file
+```bash
+Usage: exif [OPTION...] file
   -v, --version                   Display software version
   -i, --ids                       Show IDs instead of tag names
   -t, --tag=tag                   Select tag
@@ -77,6 +78,7 @@ Altitude	746.6
 Help options:
   -?, --help                      Show this help message
       --usage                     Display brief usage message
+```
 
 ### Convert latitude and longitude to decimal
 
