@@ -14,6 +14,7 @@ Exif is metadata about your camera and position while taking a photo.  The Exif 
 * [Wikipedia](https://en.wikipedia.org/wiki/Exif)
 > **Ex**changeable **i**mage **f**ile format (officially **Exif**) is a standard that specifies the formats for images, sound, and ancillary tags used by digital cameras (including smartphones), scanners and other systems handling image and sound files recorded by digital cameras.
 
+[Show where this image was taken on GeoJSON.io](https://geojson.io/#data=data:application/json,%7B%22type%22%3A%22Feature%22%2C%22geometry%22%3A%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-116.66606944444445%2C32.747525%5D%7D%2C%22properties%22%3A%7B%22Manufacturer%22%3A%22Apple%22%2C%22Model%22%3A%22iPhone%20SE%22%2C%22X-Resolution%22%3A%2272%22%2C%22Y-Resolution%22%3A%2272%22%2C%22Resolution_Unit%22%3A%22Inch%22%2C%22Software%22%3A%2213.4.1%22%2C%22Date_and_Time%22%3A%222020%3A04%3A19%2016%3A22%3A55%22%2C%22Exposure_Time%22%3A%221%2F1451%20sec.%22%2C%22F-Number%22%3A%22f%2F2.2%22%2C%22Exposure_Program%22%3A%22Normal%20program%22%2C%22ISO_Speed_Ratings%22%3A%2225%22%2C%22Exif_Version%22%3A%22Unknown%20Exif%20Version%22%2C%22Date_and_Time__Original_%22%3A%222020%3A04%3A19%2016%3A22%3A55%22%2C%22Date_and_Time__Digitized_%22%3A%222020%3A04%3A19%2016%3A22%3A55%22%2C%22Components_Configuration%22%3A%22Y%20Cb%20Cr%20-%22%2C%22Shutter_Speed%22%3A%2210.50%20EV%20(1%2F1451%20sec.)%22%2C%22Aperture%22%3A%222.28%20EV%20(f%2F2.2)%22%2C%22Brightness%22%3A%229.84%20EV%20(3138.59%20cd%2Fm%5E2)%22%2C%22Exposure_Bias%22%3A%220.00%20EV%22%2C%22Metering_Mode%22%3A%22Pattern%22%2C%22Flash%22%3A%22Flash%20did%20not%20fire%2C%20auto%20mode%22%2C%22Focal_Length%22%3A%224.2%20mm%22%2C%22Subject_Area%22%3A%22Within%20rectangle%20(width%202217%2C%20height%201330)%20around%20(x%2Cy)%20%3D%20(2015%2C1511)%22%2C%22Maker_Note%22%3A%221056%20bytes%20undefined%20data%22%2C%22Sub-second_Time__Original_%22%3A%22286%22%2C%22Sub-second_Time__Digitized_%22%3A%22286%22%2C%22FlashPixVersion%22%3A%22FlashPix%20Version%201.0%22%2C%22Color_Space%22%3A%22sRGB%22%2C%22Pixel_X_Dimension%22%3A%224032%22%2C%22Pixel_Y_Dimension%22%3A%223024%22%2C%22Sensing_Method%22%3A%22One-chip%20color%20area%20sensor%22%2C%22Scene_Type%22%3A%22Directly%20photographed%22%2C%22Exposure_Mode%22%3A%22Auto%20exposure%22%2C%22White_Balance%22%3A%22Auto%20white%20balance%22%2C%22Focal_Length_in_35mm_Film%22%3A%2229%22%2C%22Scene_Capture_Type%22%3A%22Standard%22%2C%22Lens_Specification%22%3A%224.150000%2C%204.150000%2C%202.2%2C%202.2%22%2C%22Lens_Make%22%3A%22Apple%22%2C%22Lens_Model%22%3A%22iPhone%20SE%20back%20camera%204.15mm%20f%2F2.2%22%2C%22North_or_South_Latitude%22%3A%22N%22%2C%22Latitude%22%3A%2232%2C%2044%2C%2051.09%22%2C%22East_or_West_Longitude%22%3A%22W%22%2C%22Longitude%22%3A%22116%2C%2039%2C%2057.85%22%2C%22Altitude_Reference%22%3A%22Sea%20level%22%2C%22Altitude%22%3A%22746.6%22%2C%22Speed_Unit%22%3A%22K%22%2C%22Speed_of_GPS_Receiver%22%3A%22%200%22%2C%22GPS_Image_Direction_Reference%22%3A%22T%22%2C%22GPS_Image_Direction%22%3A%2218.19461%22%2C%22GPS_Date%22%3A%222020%3A04%3A19%22%2C%22GPS_Horizontal_Positioning_Error%22%3A%22%205%22%7D%7D)
 
 <img width="800" alt="exif" src="https://user-images.githubusercontent.com/118112/79913233-23803200-83d8-11ea-8322-8693af2229a5.png">
 
@@ -27,8 +28,13 @@ Install the command line tool, `exif`, for macOS using `brew`.
 
 * [https://formulae.brew.sh/formula/exif#default](https://formulae.brew.sh/formula/exif#default)
 * `brew install exif`
+  * `brew list exif` — for the current installed versions and path
+  * `which exif`
+  * `exif -v` - Display software version
 
 #### Sample Usage
+
+From the command line list the altitude, latitude & longitude from the JPEG file
 
 ```
 # Output in a machine-readable (tab delimited) format
@@ -36,13 +42,41 @@ Install the command line tool, `exif`, for macOS using `brew`.
 exif -m IMG_0288.jpeg  | grep tude
 ```
 
-```
-North or South Latitude	N
+>North or South Latitude	N
 Latitude	32, 44, 51.09
 East or West Longitude	W
 Longitude	116, 39, 57.85
 Altitude Reference	Sea level
 Altitude	746.6
+
+
+#### Online help
+
+* `exif`
+
+> ```Usage: exif [OPTION...] file
+  -v, --version                   Display software version
+  -i, --ids                       Show IDs instead of tag names
+  -t, --tag=tag                   Select tag
+      --ifd=IFD                   Select IFD
+  -l, --list-tags                 List all EXIF tags
+  -|, --show-mnote                Show contents of tag MakerNote
+      --remove                    Remove tag or ifd
+  -s, --show-description          Show description of tag
+  -e, --extract-thumbnail         Extract thumbnail
+  -r, --remove-thumbnail          Remove thumbnail
+  -n, --insert-thumbnail=FILE     Insert FILE as thumbnail
+      --no-fixup                  Do not fix existing tags in files
+  -o, --output=FILE               Write data to FILE
+      --set-value=STRING          Value of tag
+  -c, --create-exif               Create EXIF data if not existing
+  -m, --machine-readable          Output in a machine-readable (tab delimited) format
+  -w, --width=WIDTH               Width of output
+  -x, --xml-output                Output in a XML format
+  -d, --debug                     Show debugging messages
+Help options:
+  -?, --help                      Show this help message
+      --usage                     Display brief usage message
 ```
 
 ### Convert latitude and longitude to decimal
@@ -94,17 +128,39 @@ exif -x $IMG | xml-json $XML_FILTER > exif.json
 #### JSON Sample
 ```json
 {
-"North_or_South_Latitude": "N",
-"Latitude": "32, 44, 51.09",
-"East_or_West_Longitude": "W",
-"Longitude": "116, 39, 57.85",
-"Altitude_Reference": "Sea level",
-"Altitude": "746.6",
-"Speed_Unit": "K",
-"Speed_of_GPS_Receiver": "0",
-"GPS_Image_Direction_Reference": "T",
-"GPS_Image_Direction": "18.19461",
-"GPS_Date": "2020:04:19"
+	"exif": {
+		"Manufacturer": "Apple",
+		"Model": "iPhone SE",
+		"X-Resolution": "72",
+		"Y-Resolution": "72",
+		"Resolution_Unit": "Inch",
+		"Software": "13.4.1",
+		"Date_and_Time": "2020:04:19 16:22:55",
+		"Exposure_Time": "1/1451 sec.",
+		"F-Number": "f/2.2",
+		"Shutter_Speed": "10.50 EV (1/1451 sec.)",
+		"Aperture": "2.28 EV (f/2.2)",
+		"Brightness": "9.84 EV (3138.59 cd/m^2)",
+		"Flash": "Flash did not fire, auto mode",
+		"Focal_Length": "4.2 mm",
+		"Subject_Area": "Within rectangle (width 2217, height 1330) around (x,y) = (2015,1511)",
+		"Maker_Note": "1056 bytes undefined data",
+		"Pixel_X_Dimension": "4032",
+		"Pixel_Y_Dimension": "3024",
+		"Focal_Length_in_35mm_Film": "29",
+
+		"North_or_South_Latitude": "N",
+		"Latitude": "32, 44, 51.09",
+		"East_or_West_Longitude": "W",
+		"Longitude": "116, 39, 57.85",
+		"Altitude_Reference": "Sea level",
+		"Altitude": "746.6",
+		"Speed_Unit": "K",
+		"Speed_of_GPS_Receiver": "0",
+		"GPS_Image_Direction_Reference": "T",
+		"GPS_Image_Direction": "18.19461",
+		"GPS_Date": "2020:04:19"
+	}
 }
 ```
 
@@ -313,3 +369,7 @@ EXIF tags in 'IMG_0288.jpeg':                  0      1    EXIF    GPS  Interop
 0xc4a5 PRINT Image Matching                    -      -      -      -      -   
 0xea1c Padding                                 -      -      -      -      -   
 ```
+
+#### Resources
+
+* [http://viglino.github.io/ol-ext/examples/misc/exif2geojson.html](http://viglino.github.io/ol-ext/examples/misc/exif2geojson.html)
