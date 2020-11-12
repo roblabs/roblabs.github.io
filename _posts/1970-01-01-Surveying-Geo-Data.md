@@ -9,6 +9,11 @@ author: ePi Rational, Inc.
 excerpt_img: "https://user-images.githubusercontent.com/118112/79913233-23803200-83d8-11ea-8322-8693af2229a5.png"
 ---
 
+<!--
+cat exif.json | node index.js  | json > feature.json
+cat exif.json | node index.js > out.txt
+ -->
+
 Exif is metadata about your camera and position while taking a photo.  The Exif specification, [https://www.exif.org/Exif2-2.PDF](https://www.exif.org/Exif2-2.PDF), was originally designed for the metadata around your camera (type, f/stop, manufacturer, whether the flash fired or not).  The Exif specification includes writing of GPS attributes.
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Exif)
@@ -42,13 +47,14 @@ From the command line list the altitude, latitude & longitude from the JPEG file
 exif -m IMG_0288.jpeg  | grep tude
 ```
 
->North or South Latitude	N
+```
+North or South Latitude	N
 Latitude	32, 44, 51.09
 East or West Longitude	W
 Longitude	116, 39, 57.85
 Altitude Reference	Sea level
 Altitude	746.6
-
+```
 
 #### Online help
 
