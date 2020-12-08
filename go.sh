@@ -6,13 +6,16 @@ docker-compose up
 # bundle exec jekyll serve
 # bundle exec jekyll serve --ssl-key ssl/localhost.key --ssl-cert ssl/localhost.crt
 
+# be sure to clean up any old `_site`
+rm -rf tmp_site
 
-export JEKYLL_VERSION=latest
+#export JEKYLL_VERSION=jekyll/jekyll:latest  # d11121e6548e
+export JEKYLL_VERSION=8e011d7b15e0
 docker run --rm \
  --volume="$PWD:/srv/jekyll" \
- -it jekyll/jekyll:$JEKYLL_VERSION \
- jekyll build
+ -it $JEKYLL_VERSION \
+ jekyll serve --watch --incremental
+ #jekyll build
  # jekyll serve #       --ssl-key ssl/localhost.key --ssl-cert ssl/localhost.crt
-
 
 #  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
