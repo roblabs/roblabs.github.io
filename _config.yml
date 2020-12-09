@@ -2,6 +2,8 @@ title: Rob | Labs
 email: web@Rob|Labs.com
 twitter_username: e_pi_rational
 github_username:  roblabs
+github: [metadata]
+
 # global settings
 title: "RobLabs.com"
 description: "Creating Innovations in Maps for Print and Mobile"
@@ -14,8 +16,17 @@ paginate: 25
 paginate_path: "/blog/page:num/"
 
 # build settings
-exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json"]
-markdown: kramdown
+exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "go.sh", ".DS_Store", "ssl"]
+
+markdown: CommonMarkGhPages
+# commonmark:
+#   options: ["SMART", "FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "table"]  # Valid extensions: table, strikethrough, autolink, tagfilter
+
+# markdown: kramdown
+# kramdown:
+#   parse_block_html: true
+
 plugins:
   - jekyll-avatar
   - jekyll-redirect-from
