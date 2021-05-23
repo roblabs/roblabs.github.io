@@ -1,0 +1,51 @@
+id,name,apple,google,lon,lat,auid
+1,Battle Mountain Trail,"https://maps.apple.com/?ll=33.04639945976484,-117.06616156310764&q=Battle%20Mountain%20Trail","https://www.google.com/maps/place/33.04639945976484,-117.06616156310764",-117.066162,33.046399,
+2,Bernardo Mountain,"https://maps.apple.com/?ll=33.06627271794851,-117.06823599672813&q=Bernardo%20Mountain","https://www.google.com/maps/place/33.06627271794851,-117.06823599672813",-117.068236,33.066273,
+3,Black Canyon,"https://maps.apple.com/?ll=33.124106759478806,-116.80194041351876&q=Black%20Canyon","https://www.google.com/maps/place/33.124106759478806,-116.80194041351876",-116.80194,33.124107,
+4,Blue Sky Reserve to Lake Ramona,"https://maps.apple.com/?ll=33.01748458947847,-117.02476434204942&q=Blue%20Sky%20Reserve%20to%20Lake%20Ramona","https://www.google.com/maps/place/33.01748458947847,-117.02476434204942",-117.024764,33.017485,
+5,Boden Canyon,"https://maps.apple.com/?ll=33.10513056302119,-116.85855309010778&q=Boden%20Canyon","https://www.google.com/maps/place/33.10513056302119,-116.85855309010778",-116.858553,33.105131,
+6,Buena Vista Park Loop,"https://maps.apple.com/?ll=33.157162348005016,-117.24674846357149&q=Buena%20Vista%20Park%20Loop","https://www.google.com/maps/place/33.157162348005016,-117.24674846357149",-117.246748,33.157162,
+7,Caballo Trail to Stanley Peak,"https://maps.apple.com/?ll=33.1592838,-117.0323578&q=Caballo%20Trail%20to%20Stanley%20Peak","https://www.google.com/maps/place/33.1592838,-117.0323578",-117.032358,33.159284,
+8,Cedar Creek Falls,https://maps.apple.com/?auid=5504072868711465542,"https://www.google.com/maps/place/32.99529428495009,-116.75625877002942",-116.756259,32.995294,5504072868711465542
+9,Clevenger Canyon North,"https://maps.apple.com/?ll=33.0846596,-116.9160533&q=Clevenger%20Canyon%20North","https://www.google.com/maps/place/33.0846596,-116.9160533",-116.916053,33.08466,
+10,Clevenger Canyon South,"https://maps.apple.com/?ll=33.0848006,-116.921781&q=Clevenger%20Canyon%20South","https://www.google.com/maps/place/33.0848006,-116.921781",-116.921781,33.084801,
+11,Coast to Crest San Pasqual Valley,"https://maps.apple.com/?ll=33.07748331438401,-116.9874932338994&q=Coast%20to%20Crest%20San%20Pasqual%20Valley","https://www.google.com/maps/place/33.07748331438401,-116.9874932338994",-116.987493,33.077483,
+12,Daley Ranch - Boulder Loop,"https://maps.apple.com/?ll=33.1660296,-117.0525383&q=Daley%20Ranch%20-%20Boulder%20Loop","https://www.google.com/maps/place/33.1660296,-117.0525383",-117.052538,33.16603,
+13,Daley Ranch - Cougar Pass Trail Head,https://maps.apple.com/?auid=11351273751054012505,"https://www.google.com/maps/place/33.20965331233889,-117.08652377128601",-117.086524,33.209653,11351273751054012505
+14,Daley Ranch - Ranch House,"https://maps.apple.com/?ll=33.1666884821354,-117.05222577690495&q=Daley%20Ranch%20-%20Ranch%20House","https://www.google.com/maps/place/33.1666884821354,-117.05222577690495",-117.052226,33.166688,
+15,Del Dios Highlands Preserve Trail,"https://maps.apple.com/?ll=33.084715,-117.119996&q=Del%20Dios%20Highlands%20Preserve%20Trail","https://www.google.com/maps/place/33.084715,-117.119996",-117.119996,33.084715,
+16,Double Peak Trail,"https://maps.apple.com/?ll=33.12492405490576,-117.17853321440595&q=Double%20Peak%20Trail","https://www.google.com/maps/place/33.12492405490576,-117.17853321440595",-117.178533,33.124924,
+17,Elfin Forest Recreational Reserve,https://maps.apple.com/?auid=4554615278053050699,"https://www.google.com/maps/place/33.08675947722494,-117.1456503868103",-117.14565,33.086759,4554615278053050699
+18,Ellie Lane Trail,https://maps.apple.com/?auid=9505313737666878366,"https://www.google.com/maps/place/32.98765732146445,-116.97677850723267",-116.976779,32.987657,9505313737666878366
+19,Fry Koegel Trail,"https://maps.apple.com/?ll=33.011469,-116.954654&q=Fry%20Koegel%20Trail","https://www.google.com/maps/place/33.011469,-116.954654",-116.954654,33.011469,
+20,Hellers Bend Preserve,"https://maps.apple.com/?ll=33.31511889674685,-117.23411811404628&q=Hellers%20Bend%20Preserve","https://www.google.com/maps/place/33.31511889674685,-117.23411811404628",-117.234118,33.315119,
+21,Highland Valley Trail,https://maps.apple.com/?auid=16365244034924928268,"https://www.google.com/maps/place/33.052464,-117.0657",-117.0657,33.052464,16365244034924928268
+22,Inaja Trail,"https://maps.apple.com/?ll=33.09840412901673,-116.66488101845755&q=Inaja%20Trail","https://www.google.com/maps/place/33.09840412901673,-116.66488101845755",-116.664881,33.098404,
+23,Iron Mountain Trail,https://maps.apple.com/?auid=6566101934350929308,"https://www.google.com/maps/place/32.978282,-116.972595",-116.972595,32.978282,6566101934350929308
+24,Lake Hodges - North Shore,"https://maps.apple.com/?ll=33.06283778223582,-117.11994159441899&q=Lake%20Hodges%20-%20North%20Shore","https://www.google.com/maps/place/33.06283778223582,-117.11994159441899",-117.119942,33.062838,
+25,Lusardi Loop Trail,https://maps.apple.com/?auid=11843003727474568838,"https://www.google.com/maps/place/33.004462,-117.163739",-117.163739,33.004462,11843003727474568838
+26,Los Jilgueros,"https://maps.apple.com/?ll=33.353678337245924,-117.24535847109847&q=Los%20Jilgueros","https://www.google.com/maps/place/33.353678337245924,-117.24535847109847",-117.245358,33.353678,
+27,Love Valley,"https://maps.apple.com/?ll=33.264057199185444,-116.77389639048505&q=Love%20Valley","https://www.google.com/maps/place/33.264057199185444,-116.77389639048505",-116.773896,33.264057,
+28,Lower Doan Valley and French Valley,"https://maps.apple.com/?ll=33.341965670570715,-116.90131774718267&q=Lower%20Doan%20Valley%20and%20French%20Valley","https://www.google.com/maps/place/33.341965670570715,-116.90131774718267",-116.901318,33.341966,
+29,Monserate Mountain Trail,https://maps.apple.com/?auid=1945840914501037067,"https://www.google.com/maps/place/33.366059,-117.158852",-117.158852,33.366059,1945840914501037067
+30,Mt Gower Trail,"https://maps.apple.com/?ll=33.02650016330168,-116.79271260068359&q=Mt%20Gower%20Trail","https://www.google.com/maps/place/33.02650016330168,-116.79271260068359",-116.792713,33.0265,
+31,Mule Deer Trail to Denk Mountain,"https://maps.apple.com/?ll=33.08838385430518,-117.22373727187212&q=Mule%20Deer%20Trail%20to%20Denk%20Mountain","https://www.google.com/maps/place/33.08838385430518,-117.22373727187212",-117.223737,33.088384,
+32,Mule Hill Trail,"https://maps.apple.com/?ll=33.067628476399776,-117.06568569690269&q=Mule%20Hill%20Trail","https://www.google.com/maps/place/33.067628476399776,-117.06568569690269",-117.065686,33.067628,
+33,Observatory Trail Overloop,"https://maps.apple.com/?ll=33.344809164698304,-116.87157865146013&q=Observatory%20Trail%20Overloop","https://www.google.com/maps/place/33.344809164698304,-116.87157865146013",-116.871579,33.344809,
+34,Pamo Valley,"https://maps.apple.com/?ll=33.10439356455478,-116.85680414084447&q=Pamo%20Valley","https://www.google.com/maps/place/33.10439356455478,-116.85680414084447",-116.856804,33.104394,
+35,Paradise Mountain Trail,"https://maps.apple.com/?ll=33.21658697675208,-116.9341893750136&q=Paradise%20Mountain%20Trail","https://www.google.com/maps/place/33.21658697675208,-116.9341893750136",-116.934189,33.216587,
+36,Piedras Pintadas Trailhed,https://maps.apple.com/?auid=16356544923531200903,"https://www.google.com/maps/place/33.051587,-117.076771",-117.076771,33.051587,16356544923531200903
+37,Questhaven Road Nature Trail,"https://maps.apple.com/?ll=33.07986944465701,-117.16570964907655&q=Questhaven%20Road%20Nature%20Trail","https://www.google.com/maps/place/33.07986944465701,-117.16570964907655",-117.16571,33.079869,
+38,Rancho Gaujome Adobe,https://maps.apple.com/?auid=1494030983962083328,"https://www.google.com/maps/place/33.233398,-117.254078",-117.254078,33.233398,1494030983962083328
+39,Raptor Ridge,https://maps.apple.com/?auid=10801179241501875318,"https://www.google.com/maps/place/33.06227,-117.030144",-117.030144,33.06227,10801179241501875318
+40,Santa Fe Valley Trail,https://maps.apple.com/?auid=3660295012283377982,"https://www.google.com/maps/place/33.039892,-117.156813",-117.156813,33.039892,3660295012283377982
+41,Santa Margarita County Preserve,https://maps.apple.com/?auid=12098543904699548467,"https://www.google.com/maps/place/33.41323,-117.241544",-117.241544,33.41323,12098543904699548467
+42,Santa Ysabel Open Space Preserve East,"https://maps.apple.com/?ll=33.12693483093901,-116.67854263106088&q=Santa%20Ysabel%20Open%20Space%20Preserve%20East","https://www.google.com/maps/place/33.12693483093901,-116.67854263106088",-116.678543,33.126935,
+43,Santa Ysabel Open Space Preserve West,https://maps.apple.com/?auid=2115420227603427949,"https://www.google.com/maps/place/33.102635,-116.696105",-116.696105,33.102635,2115420227603427949
+44,Sycamore Canyon Preserve,"https://maps.apple.com/?ll=32.94085258882723,-116.98058761522034&q=Sycamore%20Canyon%20Preserve","https://www.google.com/maps/place/32.94085258882723,-116.98058761522034",-116.980588,32.940853,
+45,Tooth Rock Trail,"https://maps.apple.com/?ll=32.97540959632033,-117.0154420054487&q=Tooth%20Rock%20Trail","https://www.google.com/maps/place/32.97540959632033,-117.0154420054487",-117.015442,32.97541,
+46,Twin Peaks Trail,"https://maps.apple.com/?ll=32.98098219264712,-117.05129571897166&q=Twin%20Peaks%20Trail","https://www.google.com/maps/place/32.98098219264712,-117.05129571897166",-117.051296,32.980982,
+47,Van Damm Mountain,"https://maps.apple.com/?ll=32.96682834934771,-117.08084829959506&q=Van%20Damm%20Mountain","https://www.google.com/maps/place/32.96682834934771,-117.08084829959506",-117.080848,32.966828,
+48,Vista Conservancy Nature Trail,https://maps.apple.com/?auid=14724012751092236915,"https://www.google.com/maps/place/33.208861,-117.228487",-117.228487,33.208861,14724012751092236915
+49,West Side Road,"https://maps.apple.com/?ll=33.00110636400261,-116.75453965485872&q=West%20Side%20Road","https://www.google.com/maps/place/33.00110636400261,-116.75453965485872",-116.75454,33.001106,
+50,Wilderness Gardens Preserve,https://maps.apple.com/?auid=11582247172563097173,"https://www.google.com/maps/place/33.346368,-117.026255",-117.026255,33.346368,11582247172563097173
