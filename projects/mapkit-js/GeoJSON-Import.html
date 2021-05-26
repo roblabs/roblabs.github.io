@@ -23,7 +23,7 @@
 
         #map {
             width: 100%;
-
+            max-width: 600px;
             height: 600px;
         }
 
@@ -130,7 +130,7 @@
         mapkit.init({
             authorizationCallback: function(done) {
                 var xhr = new XMLHttpRequest();
-                xhr.open("GET", "https://gist.githubusercontent.com/roblabs/c3074d0ce2e40239e6d43cb5cdf9c400/raw/f251e4066d83b2f486a92ccf51d6141d88cd0151/applemaps.jwt");
+                xhr.open("GET", "/services/jwt");
                 xhr.addEventListener("load", function() {
                     done(this.responseText);
                 });
@@ -138,9 +138,9 @@
             }
         });
         var map = new mapkit.Map("map", {
-            // isRotationEnabled: false,
-            // isZoomEnabled: false,
-            // showsZoomControl: false
+            isRotationEnabled: false,
+            isZoomEnabled: false,
+            showsZoomControl: false
         });
 
         // Setup the UI to show a popup when a state is selected.
