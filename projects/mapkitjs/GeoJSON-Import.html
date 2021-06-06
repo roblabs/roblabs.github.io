@@ -173,12 +173,7 @@
         addLegend();
 
         // Import GeoJSON data with the shape of the states and their population.
-        // mapkit.importGeoJSON("states.json", {
-        // mapkit.importGeoJSON("contour.geojson", {
-        mapkit.importGeoJSON("river.json", {
-        // mapkit.importGeoJSON("48400-wash.geojson", {
-        // mapkit.importGeoJSON("lowercolorado.TNMDerivedNames.geojson", {
-
+        mapkit.importGeoJSON("states.json", {
 
             // Some states are represented as MultiPolygons; we transform them into
             // a single PolygonOverlay by concatenating the lists of lists of points.
