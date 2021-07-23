@@ -31,10 +31,10 @@ id,name,apple,google,lon,lat,auid
 30,Mt Gower Trail,"https://maps.apple.com/?ll=33.02650016330168,-116.79271260068359&q=Mt%20Gower%20Trail","https://www.google.com/maps/place/33.02650016330168,-116.79271260068359",-116.792713,33.0265,
 31,Mule Deer Trail to Denk Mountain,"https://maps.apple.com/?ll=33.08838385430518,-117.22373727187212&q=Mule%20Deer%20Trail%20to%20Denk%20Mountain","https://www.google.com/maps/place/33.08838385430518,-117.22373727187212",-117.223737,33.088384,
 32,Mule Hill Trail,"https://maps.apple.com/?ll=33.067628476399776,-117.06568569690269&q=Mule%20Hill%20Trail","https://www.google.com/maps/place/33.067628476399776,-117.06568569690269",-117.065686,33.067628,
-33,Observatory Trail Overloop,"https://maps.apple.com/?ll=33.344809164698304,-116.87157865146013&q=Observatory%20Trail%20Overloop","https://www.google.com/maps/place/33.344809164698304,-116.87157865146013",-116.871579,33.344809,
+33,Observatory Trail Overlook,"https://maps.apple.com/?ll=33.344809164698304,-116.87157865146013&q=Observatory%20Trail%20Overlook","https://www.google.com/maps/place/33.344809164698304,-116.87157865146013",-116.871579,33.344809,
 34,Pamo Valley,"https://maps.apple.com/?ll=33.10439356455478,-116.85680414084447&q=Pamo%20Valley","https://www.google.com/maps/place/33.10439356455478,-116.85680414084447",-116.856804,33.104394,
 35,Paradise Mountain Trail,"https://maps.apple.com/?ll=33.21658697675208,-116.9341893750136&q=Paradise%20Mountain%20Trail","https://www.google.com/maps/place/33.21658697675208,-116.9341893750136",-116.934189,33.216587,
-36,Piedras Pintadas Trailhed,https://maps.apple.com/?auid=16356544923531200903,"https://www.google.com/maps/place/33.051587,-117.076771",-117.076771,33.051587,16356544923531200903
+36,Piedras Pintadas Trailhead,https://maps.apple.com/?auid=16356544923531200903,"https://www.google.com/maps/place/33.051587,-117.076771",-117.076771,33.051587,16356544923531200903
 37,Questhaven Road Nature Trail,"https://maps.apple.com/?ll=33.07986944465701,-117.16570964907655&q=Questhaven%20Road%20Nature%20Trail","https://www.google.com/maps/place/33.07986944465701,-117.16570964907655",-117.16571,33.079869,
 38,Rancho Gaujome Adobe,https://maps.apple.com/?auid=1494030983962083328,"https://www.google.com/maps/place/33.233398,-117.254078",-117.254078,33.233398,1494030983962083328
 39,Raptor Ridge,https://maps.apple.com/?auid=10801179241501875318,"https://www.google.com/maps/place/33.06227,-117.030144",-117.030144,33.06227,10801179241501875318
