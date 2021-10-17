@@ -9,6 +9,9 @@ mapkit.build
 mapkit.version
 # "5.61.1"
 
+mapkit.language
+# "en"
+
 mapkit.FeatureVisibility
 # { Adaptive: "adaptive", Hidden: "hidden", Visible: "visible" }
 
