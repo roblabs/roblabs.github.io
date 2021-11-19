@@ -26,6 +26,24 @@ mapkit.Map.MapTypes
 
 mapkit.Map.Distances
 # { Adaptive: "adaptive", Metric: "metric", Imperial: "imperial" }
+
+mapkit.maps[0].center
+# { latitude: 37.788706013265816, longitude: -122.45377750000002 }
+
+mapkit.maps[0].region
+# { latitudeDelta: 0.6511658054971932, longitudeDelta: 1.039581298828125 }
+
+mapkit.maps[0].rotation
+# 10
+
+mapkit.maps[0].cameraDistance
+# 78967.63006909048
+
+mapkit.maps[0].cameraZoomRange
+# { _minCameraDistance: 0, _maxCameraDistance: Infinity }
+
+mapkit.maps[0].mapType
+# "standard", "hybrid", "satellite"
 ```
 
 ---
