@@ -25,18 +25,21 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- Open  Meta Tags  https://www.opengraph.xyz -->
-    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:site_name" content="RobLabs.com">
+    <meta property="og:title" content="{{ page.title }} — {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:image" content="{{ page.excerpt_img }}">
-    <meta property="og:image:alt" content="{{ page.image_alt }}">
+    <meta property="og:image:alt" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="RobLabs.com">
-    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:domain" content="{{ site.url }}" />
+    <meta name="twitter:site" content="{{ site.twitter.site }}" />
+    <meta name="twitter:creator" content="{{ site.twitter.creator }}" />
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="twitter:title" content="{{ page.title }} — {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:image" content="{{ page.excerpt_img }}">
 
