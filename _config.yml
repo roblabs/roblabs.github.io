@@ -10,7 +10,7 @@ github: [metadata]
 
 # global settings
 title: "RobLabs.com"
-description: "Map innovations for Web, Print and Mobile"
+description: "Map innovations for Web, Print and Mobile."
 url: https://roblabs.com
 permalink: pretty
 relative_permalinks: false
