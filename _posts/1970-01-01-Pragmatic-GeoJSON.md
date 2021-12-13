@@ -4,11 +4,9 @@ title:  "Pragmatic GeoJSON"
 description: ""
 date:   2016-12-08T00:00:00-08:00
 author: roblabs
-categories: [geojson]
+categories: ["command line cartography"]
 tags: [geojson]
-
 excerpt: "Learn GeoJSON by visualizing your data"
-file_under: "command line cartography"
 youtube: NYqCUVDlq9E
 excerpt_img: "/assets/img/Pragmatic-GeoJSON-10sec-480.gif"
 excerpt_img_comment: "gifify Pragmatic-GeoJSON.mov -o Pragmatic-GeoJSON-10sec-480.gif --from 76 --to 86 --resize 480:-1 --speed 2"
