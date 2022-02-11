@@ -14,7 +14,7 @@ cat exif.json | node index.js  | json > feature.json
 cat exif.json | node index.js > out.txt
  -->
 
-Exif is metadata about your camera and position while taking a photo.  The Exif specification, [https://www.exif.org/Exif2-2.PDF](https://www.exif.org/Exif2-2.PDF), was originally designed for the metadata around your camera (type, f/stop, manufacturer, whether the flash fired or not).  The Exif specification includes writing of GPS attributes.
+Exif is metadata about your camera and position while taking a photo.  The Exif specification, [Exif2-2.PDF](https://www.exif.org/Exif2-2.PDF), was originally designed for the metadata around your camera (type, f/stop, manufacturer, whether the flash fired or not).  The Exif specification includes writing of GPS attributes.
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Exif)
 > **Ex**changeable **i**mage **f**ile format (officially **Exif**) is a standard that specifies the formats for images, sound, and ancillary tags used by digital cameras (including smartphones), scanners and other systems handling image and sound files recorded by digital cameras.
