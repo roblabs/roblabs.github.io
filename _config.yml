@@ -22,14 +22,14 @@ paginate_path: "/blog/page:num/"
 # build settings
 exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "go.sh", ".DS_Store", "ssl"]
 
-markdown: CommonMarkGhPages
-commonmark:
-  options: ["UNSAFE", "SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
-
 # markdown: kramdown
-# kramdown:
-#   parse_block_html: true
+# commonmark:
+#   options: ["UNSAFE", "SMART", "FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+
+markdown: kramdown
+kramdown:
+  parse_block_html: true
 
 plugins:
   - jekyll-avatar
