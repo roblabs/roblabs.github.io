@@ -23,9 +23,9 @@ paginate_path: "/blog/page:num/"
 exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "go.sh", ".DS_Store", "ssl"]
 
 markdown: CommonMarkGhPages
-# commonmark:
-#   options: ["SMART", "FOOTNOTES"]
-#   extensions: ["strikethrough", "autolink", "table"]  # Valid extensions: table, strikethrough, autolink, tagfilter
+commonmark:
+  options: ["UNSAFE", "SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
 # markdown: kramdown
 # kramdown:
