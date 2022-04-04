@@ -23,9 +23,12 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+    <!-- Promoting Apps with Smart App Banners - https://developer.apple.com/documentation/webkit/promoting_apps_with_smart_app_banners -->
+    {% if page.apple_itunes_app %}<meta name="apple-itunes-app" content="app-id={{page.apple_itunes_app}}">{% endif %}
+
     <!-- Open  Meta Tags  https://www.opengraph.xyz -->
     <meta property="og:site_name" content="RobLabs.com">
-    <meta property="og:title" content="{{ page.title }}, {{ page.date | date: "%b %-d, %Y" }} — {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:title" content="{{ page.title }}{% if page.excerpt %} — {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
