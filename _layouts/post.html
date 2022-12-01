@@ -12,10 +12,9 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}
       {% if page.author %} • <a href="/#social" target="_blank">{{ site.twitter.creator }}</a>{% endif %}
-      {% if page.tags %} • <i>{{ page.tags }}</i> {% endif %}
       • File under — <span style="font-size:10px; font-family: 'Roboto Mono';">{{ page.categories }}</span>
     </p>
-    <img style="max-height: 256px; max-width: 256px;" src="{{ page.excerpt_img }}" >
+    <img style="max-height: 315px; " src="{{ page.excerpt_img }}" >
   </header>
 
   {% if page.youtube %}
