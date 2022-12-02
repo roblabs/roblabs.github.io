@@ -8,6 +8,7 @@ mapkit.build
 
 mapkit.version
 # "5.61.1"
+# "5.75.4"
 
 mapkit.language
 # "en"

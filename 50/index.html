@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+
+    <title>WBC 50 Hikes Challenge</title>
+    <meta name="description" content="This #mapsForNonProfits was custom built for the Sierra Club San Diego. The North County Group is highlighting their 50 Hike Challenge.">
+    <meta property="og:title" content="WBC 50 Hikes Challenge">
+    <meta property="og:site_name" content="RobLabs.com">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://roblabs.com/50/">
+    <meta property="og:description" content="This #mapsForNonProfits was custom built for the Sierra Club San Diego. The North County Group is highlighting their 50 Hike Challenge.">
+    <meta property="og:image" content="/50/og-graph-1.jpg">
+    <meta property="og:image" content="/50/og-graph-2.jpg">
+    <meta property="og:image:alt" content="Map of the 50 Hikes for the WBC Challenge">
+    <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Montserrat">     <!-- https://fonts.google.com/specimen/Montserrat -->
+
+    <style>
+      html, body, #map {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      a:link, a:visited {
+          color: #00bfff;  /* DeepSkyBlue */
+          outline: none;
+          text-decoration: none;
+          padding: 2px;
+          font-size: 12px;
+      }
+
+      .landmark {
+          width: 250px;
+          padding: 7px 0 0 0;
+          background: rgba(247, 247, 247, 0.75);
+          border-radius: 5px;
+          box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.29);
+          font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+          -webkit-transform-origin: 0 10px;
+          transform-origin: 0 10px;
+      }
+
+      .landmark img {
+        width: 12px;
+        height: 12px;
+        padding: 5px;
+      }
+
+      .landmark h1 {
+          margin-top: 0;
+          padding: 5px 15px;
+          background: #00bfff;
+          color: rgba(255, 255, 255, 0.9); /* white with a slight opacity */
+          font-size: 16px;
+          font-weight: 300;
+      }
+
+      .landmark section {
+          padding: 0 15px 5px;
+          font-size: 14px;
+      }
+
+      .landmark map-links {
+          font-size: 12px;
+      }
+
+      .landmark section p {
+          margin: 5px 0;
+      }
+
+      .landmark:after {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: -13px;
+          width: 0;
+          height: 0;
+          margin-bottom: -13px;
+          border-right: 13px solid #00bfff;
+          border-top: 13px solid rgba(0, 0, 0, 0);
+          border-bottom: 13px solid rgba(0, 0, 0, 0);
+      }
+
+      @-webkit-keyframes scale-and-fadein {
+          0% {
+              -webkit-transform: scale(0.2);
+              opacity: 0;
+          }
+
+          100% {
+              -webkit-transform: scale(1);
+              opacity: 1;
+          }
+      }
+
+      @keyframes scale-and-fadein {
+          0% {
+              transform: scale(0.2);
+              opacity: 0;
+          }
+
+          100% {
+              transform: scale(1);
+              opacity: 1;
+          }
+      }
+    </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+<script>
+mapkit.init({
+    authorizationCallback: function(done) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/services/jwt");
+        xhr.addEventListener("load", function() {
+            done(this.responseText);
+        });
+        xhr.send();
+    }
+});
+
+var wbc50 = [];
+wbc50.push( { coordinate: new mapkit.Coordinate(33.046399, -117.066162), id: "1", name: "Battle Mountain Trail", auid: "", apple: "https://maps.apple.com/?ll=33.04639945976484,-117.06616156310764&q=Battle%20Mountain%20Trail", google: "https://www.google.com/maps/place/33.04639945976484,-117.06616156310764", city: "San Diego", zip: "92128", distance: "0.5", elevation: "265", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.066273, -117.068236), id: "2", name: "Bernardo Mountain", auid: "", apple: "https://maps.apple.com/?ll=33.06627271794851,-117.06823599672813&q=Bernardo%20Mountain", google: "https://www.google.com/maps/place/33.06627271794851,-117.06823599672813", city: "San Diego", zip: "92029", distance: "7.1", elevation: "872", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.124107, -116.80194), id: "3", name: "Black Canyon", auid: "", apple: "https://maps.apple.com/?ll=33.124106759478806,-116.80194041351876&q=Black%20Canyon", google: "https://www.google.com/maps/place/33.124106759478806,-116.80194041351876", city: "Ramona", zip: "92065", distance: "2", elevation: "200", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.017485, -117.024764), id: "4", name: "Blue Sky Reserve to Lake Ramona", auid: "", apple: "https://maps.apple.com/?ll=33.01748458947847,-117.02476434204942&q=Blue%20Sky%20Reserve%20to%20Lake%20Ramona", google: "https://www.google.com/maps/place/33.01748458947847,-117.02476434204942", city: "Poway", zip: "92064", distance: "5.8", elevation: "1236", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.105131, -116.858553), id: "5", name: "Boden Canyon", auid: "", apple: "https://maps.apple.com/?ll=33.10513056302119,-116.85855309010778&q=Boden%20Canyon", google: "https://www.google.com/maps/place/33.10513056302119,-116.85855309010778", city: "Ramona", zip: "92065", distance: "6.6", elevation: "340", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.157162, -117.246748), id: "6", name: "Buena Vista Park Loop", auid: "", apple: "https://maps.apple.com/?ll=33.157162348005016,-117.24674846357149&q=Buena%20Vista%20Park%20Loop", google: "https://www.google.com/maps/place/33.157162348005016,-117.24674846357149", city: "Vista", zip: "92081", distance: "1.3", elevation: "137", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.159284, -117.032358), id: "7", name: "Caballo Trail to Stanley Peak", auid: "", apple: "https://maps.apple.com/?ll=33.1592838,-117.0323578&q=Caballo%20Trail%20to%20Stanley%20Peak", google: "https://www.google.com/maps/place/33.1592838,-117.0323578", city: "Escondido", zip: "92027", distance: "7.4", elevation: "1364", comments: "Refer to Daley Ranch maps for trail options"} )
+wbc50.push( { coordinate: new mapkit.Coordinate(32.995294, -116.756259), id: "8", name: "Cedar Creek Falls", auid: "5504072868711465542", apple: "https://maps.apple.com/?auid=5504072868711465542", google: "https://www.google.com/maps/place/32.99529428495009,-116.75625877002942", city: "Ramona", zip: "92065", distance: "5.6", elevation: "1049", comments: "Requires permit, not to be done in summer or hot part of the day."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.08466, -116.916053), id: "9", name: "Clevenger Canyon North", auid: "", apple: "https://maps.apple.com/?ll=33.0846596,-116.9160533&q=Clevenger%20Canyon%20North", google: "https://www.google.com/maps/place/33.0846596,-116.9160533", city: "Escondido", zip: "92025", distance: "4.1", elevation: "1345", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.084801, -116.921781), id: "10", name: "Clevenger Canyon South", auid: "", apple: "https://maps.apple.com/?ll=33.0848006,-116.921781&q=Clevenger%20Canyon%20South", google: "https://www.google.com/maps/place/33.0848006,-116.921781", city: "Escondido", zip: "92025", distance: "4", elevation: "1167", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.077483, -116.987493), id: "11", name: "Coast to Crest San Pasqual Valley", auid: "", apple: "https://maps.apple.com/?ll=33.07748331438401,-116.9874932338994&q=Coast%20to%20Crest%20San%20Pasqual%20Valley", google: "https://www.google.com/maps/place/33.07748331438401,-116.9874932338994", city: "Escondido", zip: "92065", distance: "5", elevation: "200", comments: "Head west towards Raptor's Ridge"} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.16603, -117.052538), id: "12", name: "Daley Ranch - Boulder Loop", auid: "", apple: "https://maps.apple.com/?ll=33.1660296,-117.0525383&q=Daley%20Ranch%20-%20Boulder%20Loop", google: "https://www.google.com/maps/place/33.1660296,-117.0525383", city: "Escondido", zip: "92027", distance: "4", elevation: "708", comments: "Refer to Daley Ranch maps for trail options"} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.209653, -117.086524), id: "13", name: "Daley Ranch - Englemann Oak Trail", auid: "11351273751054012505", apple: "https://maps.apple.com/?auid=11351273751054012505", google: "https://www.google.com/maps/place/33.20965331233889,-117.08652377128601", city: "Escondido", zip: "92027", distance: "4.7", elevation: "945", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.166688, -117.052226), id: "14", name: "Daley Ranch - Ranch House", auid: "", apple: "https://maps.apple.com/?ll=33.1666884821354,-117.05222577690495&q=Daley%20Ranch%20-%20Ranch%20House", google: "https://www.google.com/maps/place/33.1666884821354,-117.05222577690495", city: "Escondido", zip: "92027", distance: "2.2", elevation: "210", comments: "Trail consists of asphalt trail to ranch house."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.084715, -117.119996), id: "15", name: "Del Dios Highlands Preserve Trail", auid: "", apple: "https://maps.apple.com/?ll=33.084715,-117.119996&q=Del%20Dios%20Highlands%20Preserve%20Trail", google: "https://www.google.com/maps/place/33.084715,-117.119996", city: "Escondido", zip: "92029", distance: "6.5", elevation: "1672", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.124924, -117.178533), id: "16", name: "Double Peak Trail", auid: "", apple: "https://maps.apple.com/?ll=33.12492405490576,-117.17853321440595&q=Double%20Peak%20Trail", google: "https://www.google.com/maps/place/33.12492405490576,-117.17853321440595", city: "San Marcos", zip: "92078", distance: "4.3", elevation: "1023", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.086759, -117.14565), id: "17", name: "Elfin Forest Recreational Reserve", auid: "4554615278053050699", apple: "https://maps.apple.com/?auid=4554615278053050699", google: "https://www.google.com/maps/place/33.08675947722494,-117.1456503868103", city: "Escondido", zip: "92029", distance: "3", elevation: "1000", comments: "Add to the hike with any number of trails at the Olivenhain Reservoir."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(32.987657, -116.976779), id: "18", name: "Ellie Lane Trail", auid: "9505313737666878366", apple: "https://maps.apple.com/?auid=9505313737666878366", google: "https://www.google.com/maps/place/32.98765732146445,-116.97677850723267", city: "Poway", zip: "92064", distance: "4.8", elevation: "800", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.011469, -116.954654), id: "19", name: "Fry Koegel Trail", auid: "", apple: "https://maps.apple.com/?ll=33.011469,-116.954654&q=Fry%20Koegel%20Trail", google: "https://www.google.com/maps/place/33.011469,-116.954654", city: "Poway", zip: "92064", distance: "7", elevation: "1624", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.315119, -117.234118), id: "20", name: "Hellers Bend Preserve", auid: "", apple: "https://maps.apple.com/?ll=33.31511889674685,-117.23411811404628&q=Hellers%20Bend%20Preserve", google: "https://www.google.com/maps/place/33.31511889674685,-117.23411811404628", city: "Fallbrook", zip: "92028", distance: "1.9", elevation: "597", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.052464, -117.0657), id: "21", name: "Highland Valley Trail", auid: "16365244034924928268", apple: "https://maps.apple.com/?auid=16365244034924928268", google: "https://www.google.com/maps/place/33.052464,-117.0657", city: "San Diego", zip: "92128", distance: "3.7", elevation: "232", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.098404, -116.664881), id: "22", name: "Inaja Trail", auid: "", apple: "https://maps.apple.com/?ll=33.09840412901673,-116.66488101845755&q=Inaja%20Trail", google: "https://www.google.com/maps/place/33.09840412901673,-116.66488101845755", city: "Santa Ysabel", zip: "92070", distance: "0.5", elevation: "72", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(32.978282, -116.972595), id: "23", name: "Iron Mountain Trail", auid: "6566101934350929308", apple: "https://maps.apple.com/?auid=6566101934350929308", google: "https://www.google.com/maps/place/32.978282,-116.972595", city: "Poway", zip: "92064", distance: "5.2", elevation: "1102", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.062838, -117.119942), id: "24", name: "Lake Hodges - North Shore", auid: "", apple: "https://maps.apple.com/?ll=33.06283778223582,-117.11994159441899&q=Lake%20Hodges%20-%20North%20Shore", google: "https://www.google.com/maps/place/33.06283778223582,-117.11994159441899", city: "Escondido", zip: "92029", distance: "4.6", elevation: "167", comments: "Head west towards the dam."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.004462, -117.163739), id: "25", name: "Lusardi Loop Trail", auid: "11843003727474568838", apple: "https://maps.apple.com/?auid=11843003727474568838", google: "https://www.google.com/maps/place/33.004462,-117.163739", city: "San Diego", zip: "92127", distance: "9.2", elevation: "1115", comments: "Multiple options for elevation and distance."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.353678, -117.245358), id: "26", name: "Los Jilgueros", auid: "", apple: "https://maps.apple.com/?ll=33.353678337245924,-117.24535847109847&q=Los%20Jilgueros", google: "https://www.google.com/maps/place/33.353678337245924,-117.24535847109847", city: "Fallbrook", zip: "92028", distance: "1.2", elevation: "62", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.264057, -116.773896), id: "27", name: "Love Valley", auid: "", apple: "https://maps.apple.com/?ll=33.264057199185444,-116.77389639048505&q=Love%20Valley", google: "https://www.google.com/maps/place/33.264057199185444,-116.77389639048505", city: "county", zip: "92070", distance: "3", elevation: "396", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.341966, -116.901318), id: "28", name: "Lower Doan Valley and French Valley", auid: "", apple: "https://maps.apple.com/?ll=33.341965670570715,-116.90131774718267&q=Lower%20Doan%20Valley%20and%20French%20Valley", google: "https://www.google.com/maps/place/33.341965670570715,-116.90131774718267", city: "Palomar", zip: "92061", distance: "4", elevation: "450", comments: "Multiple trails to choose within State Park."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.366059, -117.158852), id: "29", name: "Monserate Mountain Trail", auid: "1945840914501037067", apple: "https://maps.apple.com/?auid=1945840914501037067", google: "https://www.google.com/maps/place/33.366059,-117.158852", city: "Fallbrook", zip: "92028", distance: "4.1", elevation: "1381", comments: "Try the whole loop including past the water tower."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.0265, -116.792713), id: "30", name: "Mt Gower Trail", auid: "", apple: "https://maps.apple.com/?ll=33.02650016330168,-116.79271260068359&q=Mt%20Gower%20Trail", google: "https://www.google.com/maps/place/33.02650016330168,-116.79271260068359", city: "Ramona", zip: "92065", distance: "9", elevation: "2178", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.088384, -117.223737), id: "31", name: "Mule Deer Trail to Denk Mountain", auid: "", apple: "https://maps.apple.com/?ll=33.08838385430518,-117.22373727187212&q=Mule%20Deer%20Trail%20to%20Denk%20Mountain", google: "https://www.google.com/maps/place/33.08838385430518,-117.22373727187212", city: "San Marcos", zip: "92078", distance: "4.5", elevation: "790", comments: "Multiple starting points and trails in this area."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.067628, -117.065686), id: "32", name: "Mule Hill Trail", auid: "", apple: "https://maps.apple.com/?ll=33.067628476399776,-117.06568569690269&q=Mule%20Hill%20Trail", google: "https://www.google.com/maps/place/33.067628476399776,-117.06568569690269", city: "Escondido", zip: "92025", distance: "6.3", elevation: "131", comments: "Trail heads east from parking lot"} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.344809, -116.871579), id: "33", name: "Observatory Trail Overlook", auid: "", apple: "https://maps.apple.com/?ll=33.344809164698304,-116.87157865146013&q=Observatory%20Trail%20Overlook", google: "https://www.google.com/maps/place/33.344809164698304,-116.87157865146013", city: "Palomar", zip: "92060", distance: "5", elevation: "1000", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.104394, -116.856804), id: "34", name: "Pamo Valley", auid: "", apple: "https://maps.apple.com/?ll=33.10439356455478,-116.85680414084447&q=Pamo%20Valley", google: "https://www.google.com/maps/place/33.10439356455478,-116.85680414084447", city: "Ramona", zip: "92065", distance: "6.6", elevation: "450", comments: "Head north along Pamo Road"} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.216587, -116.934189), id: "35", name: "Paradise Mountain Trail", auid: "", apple: "https://maps.apple.com/?ll=33.21658697675208,-116.9341893750136&q=Paradise%20Mountain%20Trail", google: "https://www.google.com/maps/place/33.21658697675208,-116.9341893750136", city: "Valley Center", zip: "92082", distance: "8.2", elevation: "1860", comments: "Do not hike in the summer months."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.051587, -117.076771), id: "36", name: "Piedras Pintadas Trailhead", auid: "16356544923531200903", apple: "https://maps.apple.com/?auid=16356544923531200903", google: "https://www.google.com/maps/place/33.051587,-117.076771", city: "San Diego", zip: "92127", distance: "3.7", elevation: "295", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.079869, -117.16571), id: "37", name: "Questhaven Road Nature Trail", auid: "", apple: "https://maps.apple.com/?ll=33.07986944465701,-117.16570964907655&q=Questhaven%20Road%20Nature%20Trail", google: "https://www.google.com/maps/place/33.07986944465701,-117.16570964907655", city: "Escondido", zip: "92029", distance: "2.7", elevation: "485", comments: "Multiple trails to choose."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.233398, -117.254078), id: "38", name: "Rancho Guajome Adobe", auid: "1494030983962083328", apple: "https://maps.apple.com/?auid=1494030983962083328", google: "https://www.google.com/maps/place/33.233398,-117.254078", city: "Vista", zip: "92083", distance: "2", elevation: "122", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.06227, -117.030144), id: "39", name: "Raptor Ridge", auid: "10801179241501875318", apple: "https://maps.apple.com/?auid=10801179241501875318", google: "https://www.google.com/maps/place/33.06227,-117.030144", city: "Escondido", zip: "92025", distance: "4.6", elevation: "419", comments: "Trailhead is across Highland Valley Road, heading northeast"} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.039892, -117.156813), id: "40", name: "Santa Fe Valley Trail", auid: "3660295012283377982", apple: "https://maps.apple.com/?auid=3660295012283377982", google: "https://www.google.com/maps/place/33.039892,-117.156813", city: "San Diego", zip: "92127", distance: "4.4", elevation: "439", comments: "Head west to the utility tower."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.41323, -117.241544), id: "41", name: "Santa Margarita River Trail Preserve", auid: "12098543904699548467", apple: "https://maps.apple.com/?auid=12098543904699548467", google: "https://www.google.com/maps/place/33.41323,-117.241544", city: "Fallbrook", zip: "92028", distance: "5.2", elevation: "534", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.126935, -116.678543), id: "42", name: "Santa Ysabel Open Space Preserve East", auid: "", apple: "https://maps.apple.com/?ll=33.12693483093901,-116.67854263106088&q=Santa%20Ysabel%20Open%20Space%20Preserve%20East", google: "https://www.google.com/maps/place/33.12693483093901,-116.67854263106088", city: "Santa Ysabel", zip: "92070", distance: "4.2", elevation: "950", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.102635, -116.696105), id: "43", name: "Santa Ysabel Open Space Preserve West", auid: "2115420227603427949", apple: "https://maps.apple.com/?auid=2115420227603427949", google: "https://www.google.com/maps/place/33.102635,-116.696105", city: "Santa Ysabel", zip: "92065", distance: "5.5", elevation: "1350", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(32.940853, -116.980588), id: "44", name: "Sycamore Canyon Preserve", auid: "", apple: "https://maps.apple.com/?ll=32.94085258882723,-116.98058761522034&q=Sycamore%20Canyon%20Preserve", google: "https://www.google.com/maps/place/32.94085258882723,-116.98058761522034", city: "Poway", zip: "92064", distance: "6.5", elevation: "994", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.016206, -117.023662), id: "45", name: "Blue Sky to Lake Poway", auid: "", apple: "https://maps.apple.com/?ll=33.016206,-117.023662&q=Blue%20Sky%20to%20Lake%20Poway", google: "https://www.google.com/maps/place/33.016206,-117.023662", city: "Poway", zip: "92064", distance: "5.5", elevation: "459", comments: "Same trailhead to either Lake Poway or Lake Ramona."} )
+wbc50.push( { coordinate: new mapkit.Coordinate(32.980982, -117.051296), id: "46", name: "Twin Peaks Trail", auid: "", apple: "https://maps.apple.com/?ll=32.98098219264712,-117.05129571897166&q=Twin%20Peaks%20Trail", google: "https://www.google.com/maps/place/32.98098219264712,-117.05129571897166", city: "Poway", zip: "92064", distance: "1.6", elevation: "597", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(32.966828, -117.080848), id: "47", name: "Van Damm Mountain", auid: "", apple: "https://maps.apple.com/?ll=32.96682834934771,-117.08084829959506&q=Van%20Damm%20Mountain", google: "https://www.google.com/maps/place/32.96682834934771,-117.08084829959506", city: "Poway", zip: "92064", distance: "2.7", elevation: "823", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.205605, -117.235638), id: "48", name: "Vista Conservancy Nature Trail", auid: "2442890436011332124", apple: "https://maps.apple.com/&ll=33.205605,-117.235638&q=Vista%20Conservancy%20Trail", google: "https://www.google.com/maps/place/33.205605,-117.235638", city: "Vista", zip: "92081", distance: "1.5", elevation: "100", comments: ""} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.001106, -116.75454), id: "49", name: "West Side Road", auid: "", apple: "https://maps.apple.com/?ll=33.00110636400261,-116.75453965485872&q=West%20Side%20Road", google: "https://www.google.com/maps/place/33.00110636400261,-116.75453965485872", city: "Ramona", zip: "92065", distance: "4.5", elevation: "859", comments: "Not recommended during summer months"} )
+wbc50.push( { coordinate: new mapkit.Coordinate(33.346368, -117.026255), id: "50", name: "Wilderness Gardens Preserve", auid: "11582247172563097173", apple: "https://maps.apple.com/?auid=11582247172563097173", google: "https://www.google.com/maps/place/33.346368,-117.026255", city: "Pala", zip: "92059", distance: "3.4", elevation: "282", comments: ""} )
+
+
+// Landmark annotation callout delegate
+var CALLOUT_OFFSET = new DOMPoint(-148, -78);
+var landmarkAnnotationCallout = {
+    calloutElementForAnnotation: function(annotation) {
+        return calloutForLandmarkAnnotation(annotation);
+    },
+
+    calloutAnchorOffsetForAnnotation: function(annotation, element) {
+        return CALLOUT_OFFSET;
+    },
+
+    calloutAppearanceAnimationForAnnotation: function(annotation) {
+        return ".4s cubic-bezier(0.4, 0, 0, 1.5) 0s 1 normal scale-and-fadein";
+    }
+};
+
+// Landmarks annotations
+var annotations = wbc50.map(function(landmark) {
+    var annotation = new mapkit.MarkerAnnotation(landmark.coordinate, {
+        callout: landmarkAnnotationCallout,
+        color: "#f4a46088"  /* SandyBrown with a slight opacity */
+    });
+    annotation.title = landmark.id;
+    annotation.landmark = landmark;
+    return annotation;
+});
+
+var map = new mapkit.Map("map", {
+        isRotationEnabled: true,
+        isZoomEnabled: true,
+        showsMapTypeControl: true,
+        showsZoomControl: true
+    });
+map.showsScale   = mapkit.FeatureVisibility.Visible;
+map.showsCompass = mapkit.FeatureVisibility.Visible;
+
+var region = new mapkit.CoordinateRegion(
+                 new mapkit.Coordinate(33.06695, -117.06414),  // centered near Mule Hill
+                 new mapkit.CoordinateSpan(1.0, 1.5)
+             );
+map.region = region;
+map.cameraBoundary = region;
+map.cameraZoomRange = new mapkit.CameraZoomRange(25, 150000);
+
+map.showItems(annotations);
+
+// Landmark annotation custom callout
+function calloutForLandmarkAnnotation(annotation) {
+    var div = document.createElement("div");
+    div.className = "landmark";
+
+    var title = div.appendChild(document.createElement("h1"));
+    var elevation = parseInt(annotation.landmark.elevation).toLocaleString();
+    title.textContent = annotation.landmark.id + ". " + annotation.landmark.name + " — " + annotation.landmark.distance + " mi" + " · " + elevation + "'";
+
+    var section = div.appendChild(document.createElement("section"));
+
+    var comments = section.appendChild(document.createElement("p"));
+    comments.className = "comments";
+    comments.textContent = annotation.landmark.comments
+
+    var link = section.appendChild(document.createElement("p"));
+    link.className = "map-links";
+
+    // Weather.gov from NOAA
+    var imgN = link.appendChild(document.createElement("img"));
+    imgN.src = "/50/NOAA_logo.svg"
+    var a = link.appendChild(document.createElement("a"));
+    a.href = "https://forecast.weather.gov/MapClick.php"
+               + "?lon=" + annotation.landmark.coordinate.longitude
+               + "&lat=" + annotation.landmark.coordinate.latitude;
+    a.setAttribute('target', '_blank');
+    a.append(imgN, "Weather.gov ");
+
+    // Apple Maps text
+    var imgA = link.appendChild(document.createElement("img"));
+    imgA.src = "/50/AppleMaps_logo.svg"
+    var a = link.appendChild(document.createElement("a"));
+    a.href = annotation.landmark.apple;
+    a.append(imgA, " Apple");
+
+    // Google Maps
+    var imgG = link.appendChild(document.createElement("img"));
+    imgG.src = "/50/Google_Maps_icon_%282020%29.svg"
+    var a = link.appendChild(document.createElement("a"));
+    a.href = annotation.landmark.google;
+    a.setAttribute('target', '_blank');
+    a.append(imgG, "Google");
+
+    return div;
+}
+
+// https://developer.apple.com/documentation/mapkitjs/mapkit/map/handling_map_events
+map.addEventListener("configuration-change", function(event) {console.log(event.status);});
+map.addEventListener("map-type-change", function(event)      {console.log(event.target.mapType);});
+map.addEventListener("zoom-end", function(event)             {console.log("cameraDistance = " + mapkit.maps[0].cameraDistance);});
+map.addEventListener("region-change-end", function(event)    {
+  console.log("minCameraDistance Distance max = " + mapkit.maps[0].cameraZoomRange._minCameraDistance,
+                                    mapkit.maps[0].cameraDistance.toFixed(3),
+                                    mapkit.maps[0].cameraZoomRange._maxCameraDistance
+                                  );
+
+  var visibleMapRect = mapkit.maps[0].visibleMapRect
+  var visibleAnnotations = mapkit.maps[0].annotationsInMapRect( visibleMapRect );
+  console.log(visibleMapRect);
+  console.log(visibleAnnotations);
+
+  var annotations = wbc50.map(function(landmark) {
+      var annotation = new mapkit.MarkerAnnotation(landmark.coordinate, {
+          callout: landmarkAnnotationCallout,
+          color: "#f4a46088"  /* SandyBrown with a slight opacity */
+      });
+      annotation.title = landmark.name;
+      annotation.landmark = landmark;
+      return annotation;
+  });
+
+});
+</script>
+</body>
+</html>

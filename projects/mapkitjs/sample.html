@@ -6,10 +6,7 @@
 <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 
 <style>
-#map {
-    width: 100%;
-    height: 600px;
-}
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
 
 </head>
@@ -18,7 +15,7 @@
 <div id="map"></div>
 
 <script>
-const tokenID = "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZLR0dHM0w1QlgifQ.eyJpc3MiOiJKN1YzNVc3RVM4IiwiaWF0IjoxNTgwNTA2MTM5LCJleHAiOjE2MTE4Nzg0MDB9.6FPr5ieocKuIEgttoqM5gSnnftsdJBqqUUFQgjtGE4RQt6LyKaPmjvTHHYIhQpDUrrtPgduWC961j4yn4yFJsQ";
+const tokenID = "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZLR0dHM0w1QlgifQ.eyJpc3MiOiJKN1YzNVc3RVM4IiwiaWF0IjoxNjU1NDc3MDE3LCJleHAiOjE2ODU1Nzc2MDB9.s2YjtTHVkk_wrXhGwlR9CTkOs1T4bUda-rYsdcGd-VqrSMTchvwi2vSAPoyMPkh4n_VaBZb0R0CNp2NhuWMOtQ";
 
 mapkit.init({
     authorizationCallback: function(done) {
