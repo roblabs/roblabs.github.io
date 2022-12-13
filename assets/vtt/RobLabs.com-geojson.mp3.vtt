@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:01.629 --> 00:00:10.109
+GeoJSON.io was developed by Mapbox and is "a quick, simple tool for creating, viewing, and sharing spatial data.
+
+00:00:10.109 --> 00:00:18.214
+It is a perfect way to visualize, test or learn how GeoJSON data is created, formatted, styled or inspected.
+
+00:00:18.214 --> 00:00:23.632
+We have made updates to GeoJSON.io with Mapbox styles from the Public Domain.
+
+00:00:23.632 --> 00:00:27.674
+Say you want to visualize this GeoJSON from Joshua Tree.
+
+00:00:27.674 --> 00:00:32.417
+You can open a version of GeoJSON.io with Public Domain Styles.
+
+00:00:32.417 --> 00:00:37.859
+Once you have opened the app, then paste your GeoJSON URL by tapping
+Meta, New Window.
+
+00:00:37.859 --> 00:00:41.802
+This will open a new browser tab with your GeoJSON data.
+
+00:00:41.802 --> 00:00:47.428
+Then you can use the usual tools such as inspecting geometries or view GeoJSON properties in a table.
+
+ffmpeg -y -i ../RobLabs.com-geojson.720.mov -i RobLabs.com-geojson.mp3.vtt -c copy -c:s mov_text -map 0:a -metadata:s:a:0 language="eng" vttout.mp4
