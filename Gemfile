@@ -17,3 +17,5 @@ group :development, :test do
   gem 'pry'
   gem 'rubocop'
 end
+
+gem "webrick", "~> 1.7"

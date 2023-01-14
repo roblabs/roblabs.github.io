@@ -15,12 +15,17 @@ url: https://roblabs.com
 permalink: pretty
 relative_permalinks: false
 
+# Build settings
+# remote_theme: jekyll/minima
+remote_theme: benbalter/retlab
+# theme: retlab
+
 destination: ./tmp/_site/www
 paginate: 25
 paginate_path: "/blog/page:num/"
 
 # build settings
-exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "go.sh", ".DS_Store", "ssl"]
+exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "go.sh", ".DS_Store", "ssl", ".ruby-version"]
 
 # markdown: kramdown
 # commonmark:
