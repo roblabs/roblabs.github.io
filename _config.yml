@@ -16,9 +16,8 @@ permalink: pretty
 relative_permalinks: false
 
 # Build settings
-# remote_theme: jekyll/minima
 remote_theme: benbalter/retlab
-# theme: retlab
+# theme: minima
 
 destination: ./tmp/_site/www
 paginate: 25
@@ -44,6 +43,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-github-metadata
+  - jekyll-remote-theme
 
 sass:
   style: :compressed

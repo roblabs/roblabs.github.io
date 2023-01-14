@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'github-pages'
+gem "jekyll-remote-theme"
 gem 'rake'
 gem 'jekyll-avatar'
 gem 'jekyll-github-metadata'  # https://jekyll.github.io/github-metadata/
