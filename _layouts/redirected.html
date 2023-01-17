@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="canonical" href="{{ page.redirected.url }}"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="{{ page.redirected.timeout }};url={{ page.redirected.url }}" />
+
+<meta property="og:site_name" content="{{ site.url }}">
+<meta property="og:title" content="{{ page.title }}{% if page.excerpt %} — {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image:width" content="{{ page.og.width }}">
+<meta property="og:image:height" content="{{ page.og.height }}">
+<meta property="og:image" content="{{ page.excerpt_img }}">
+<meta property="og:image:alt" content="{{ page.excerpt_img }}">
+
+</head>
+<body>
+    <h1>Redirecting...</h1>
+      <a href="{{ page.redirected.url }}">
+        Click here if you are not redirected to {{ page.title }}.<a>
+      <script>location='{{ page.redirected.url }}'</script>
+</body>
+</html>
+
