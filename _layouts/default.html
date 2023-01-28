@@ -14,7 +14,6 @@
     <!-- Promoting Apps with Smart App Banners - https://developer.apple.com/documentation/webkit/promoting_apps_with_smart_app_banners -->
     {% if page.apple-itunes-app.app-id %}<meta name="apple-itunes-app" content="app-id={{page.apple-itunes-app.app-id}}, app-argument={{page.apple-itunes-app.app-argument}}">{% endif %}
 
-    <!-- Open  Meta Tags  https://www.opengraph.xyz -->
     <!-- Open Graph Meta Tags https://ogp.me -->
     <meta property="og:site_name" content="RobLabs.com">
     <meta property="og:title" content="{{ page.title }}{% if page.excerpt %} — {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
@@ -53,13 +52,12 @@
       <div class="navbar">
           <div class="container">
               <a href="/">
-                <img src="/assets/img/epi-maps-logo.png" style="height: 128px; width: 128px; border-radius:22px; overflow: hidden;">
+                <img src="/assets/img/epi-maps-logo.png" style="height: 64px; width: 64px; border-radius:5px; overflow: hidden;">
               </a>
               <ul>
                 <li><a href="/#social">Social &rarr;</a></li>
-                <li><a href="/#more-than-just-code">Maps &rarr;</a></li>
+                <!-- <li><a href="/#more-than-just-code">Maps &rarr;</a></li> -->
                 <li><a href="/blog">Blog &rarr;</a></li>
-                <li><a href="/#contact-a-human">Contact</a></li>
               </ul>
           </div>
       </div>
