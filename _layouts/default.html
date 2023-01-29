@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang }}">
 <!-- Powered by Jekyll v{{ jekyll.version }} & GitHub Pages ~ Generated {{ site.time | date: "%Y-%m-%d %H:%M:%S %Z" }}
 {% comment %}
 // GitHub Pages
@@ -15,16 +15,16 @@
     {% if page.apple-itunes-app.app-id %}<meta name="apple-itunes-app" content="app-id={{page.apple-itunes-app.app-id}}, app-argument={{page.apple-itunes-app.app-argument}}">{% endif %}
 
     <!-- Open Graph Meta Tags https://ogp.me -->
-    <meta property="og:site_name" content="RobLabs.com">
+    <meta property="og:site_name" content="{{ site.og.site_name }}">
     <meta property="og:title" content="{{ page.title }}{% if page.excerpt %} — {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{{ site.og.type }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:image" content="{{ page.excerpt_img }}">
     <meta property="og:image:alt" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- Other Meta Tags -->
-    <meta name="author" content="{{ site.twitter.creator }}" />
+    <meta name="author" content="{{ site.author }}" />
 
     <!-- Twitter Meta Tags -->
     <!-- https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started -->
@@ -33,7 +33,7 @@
     <meta name="twitter:site" content="{{ site.twitter.site }}" />
     <meta name="twitter:creator" content="{{ site.twitter.creator }}" />
 
-    <meta charset="utf-8">
+    <meta charset="{{ site.encoding }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="ZydN2Jjj0J2FVvhrmEI-J6spiui2a8mNt0vKiCynfzg" />
@@ -52,8 +52,8 @@
       <div class="navbar">
           <div class="container">
               <a href="/">
-                <img src="/assets/img/epi-maps-logo.png" style="height: 64px; width: 64px; border-radius:5px; overflow: hidden;">
-              </a>
+                {% if page.excerpt_img %}<img src="{{ page.excerpt_img }}" style="width: 31.8%; border-radius:5px; overflow: hidden;">
+                {% else %}<img src="/assets/img/epi-maps-logo.png" style="height: 64px; width: 64px; border-radius:5px; overflow: hidden;">{% endif %}</a>
               <ul>
                 <li><a href="/#social">Social &rarr;</a></li>
                 <!-- <li><a href="/#more-than-just-code">Maps &rarr;</a></li> -->

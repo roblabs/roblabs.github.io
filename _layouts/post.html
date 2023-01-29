@@ -9,12 +9,11 @@ layout: default
 <div class="post" style="margin-left: 20px;margin-right: 20px;">
 
   <header class="post-header">
-    <h2 class="post-title">{{ page.title }}</h1>
+    <h3 class="post-title">{{ page.title }}</h3>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}
-      {% if page.author %} • <a href="/#social" target="_blank">{{ site.twitter.creator }}</a>{% endif %}
-      • File under — <span style="font-size:10px; font-family: 'Roboto Mono';">{{ page.categories }}</span>
+      {% if page.author %} • <a href="/#social" target="_blank">{{ site.author }}</a>{% endif %}
+      • File under — <span style="font-size:10px; font-family: 'Roboto Mono';">{% for category in page.categories %}{{ category }}, {% endfor %}</span>
     </p>
-    <img style="max-height: 315px; " src="{{ page.excerpt_img }}" >
   </header>
 
   {% if page.youtube %}

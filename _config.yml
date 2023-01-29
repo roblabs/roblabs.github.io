@@ -1,11 +1,16 @@
 title: "RobLabs.com"
 description: "Map product research for Web, Print and Mobile."
-url: https://roblabs.com
+author: "@RobLabs"
+url: https://RobLabs.com
 permalink: pretty           # https://jekyllrb.com/docs/permalinks/
 lang: en-US
 remote_theme: benbalter/retlab    # https://github.com/benbalter/retlab
 
 # Open Graph
+# https://ogp.me
+og:
+  site_name: RobLabs.com
+  type: website
 twitter:
   site: "@RobLabs"
   creator: "@RobLabs"
@@ -62,5 +67,5 @@ plugins:
 
 # https://jekyllrb.com/docs/configuration/options/#serve-command-options
 livereload: true
-livereload_min_delay: 6
-livereload_max_delay: 10
+livereload_min_delay: 2
+livereload_max_delay: 5

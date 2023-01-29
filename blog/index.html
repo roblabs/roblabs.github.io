@@ -9,7 +9,7 @@ title: Blog
     <section class="index">
         <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
         <div>
-            <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
+            <h3 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h3>
             <p>
               <b><time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time></b>
                 {% if post.excerpt %}  &mdash;  {{ post.excerpt }}
@@ -17,7 +17,7 @@ title: Blog
             </p>
             {% if post.excerpt_img %}
               <a href="{{ post.url }}" rel="prefetch">
-                <img src="{{ post.excerpt_img }}" style="max-height: 500px; max-width: 500px;">
+                <img src="{{ post.excerpt_img }}" alt=".{{ post.excerpt }}" style="max-height: 500px; max-width: 500px;">
               </a>
             {% endif %}
         </div>
