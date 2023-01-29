@@ -10,9 +10,16 @@ layout: default
 
   <header class="post-header">
     <h3 class="post-title">{{ page.title }}</h3>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}
-      {% if page.author %} • <a href="/#social" target="_blank">{{ site.author }}</a>{% endif %}
-      • File under — <span style="font-size:10px; font-family: 'Roboto Mono';">
+    <h4> By {% if page.author %} <a href="/#social" target="_blank">{{ site.author }}</a>{% endif %}</h4>
+    <p class="post-meta"><b>{{ page.date | date: "%b %-d, %Y" }}</b>
+<!-- bulletdelimiter: {{ bulletdelimiter }} -->
+      {% assign bulletdelimiter = " • " %}
+      {{ bulletdelimiter }}
+<!-- tagdelimiter: {{ tagdelimiter }} -->
+      {% assign tagdelimiter = "&nbsp;" %}
+      {% for tag in page.tags %}{{ tag }}{% if tag != page.tag.last %}{{ tagdelimiter }}{% endif %}
+      {%endfor %}
+      {{ bulletdelimiter }}File under — <span style="font-size:10px; font-family: 'Roboto Mono';">
         {% assign delimiter = "," %}
         {% for category in page.categories %}{{ category }}{% if category != page.categories.last %}{{ delimiter }}{% endif %}{% endfor %}</span>
     </p>

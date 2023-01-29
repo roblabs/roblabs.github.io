@@ -13,7 +13,11 @@ comment:  "Where /blog is defined"
             <h3 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h3>
             <p>
               <b><time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time></b>
-<!--  tag delimters-->
+              &nbsp;
+<!-- bulletdelimiter: {{ bulletdelimiter }} -->
+            {% assign bulletdelimiter = " • &nbsp;" %}
+            {{ bulletdelimiter }}
+<!-- tagdelimiter: {{ tagdelimiter }} -->
               {% assign tagdelimiter = "&nbsp; " %}
               {% for tag in post.tags %}{{ tag }}{% if tag != page.tag.last %}{{ tagdelimiter }}{% endif %}
               {%endfor %}</span>
