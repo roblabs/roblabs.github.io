@@ -52,7 +52,7 @@
       <div class="navbar">
           <div class="container">
                 {% if page.excerpt_img %}<img src="{{ page.excerpt_img }}" style="width: 61.8%; border-radius:5px; overflow: hidden;">
-                {% else %}<img src="https://avatars.githubusercontent.com/u/118112?v=4" style="height: 64px; width: 64px; border-radius:5px; overflow: hidden;">{% endif %}
+                {% else %}<img src="{{ site.githubmetadata.avatar }}" style="height: 64px; width: 64px; border-radius:5px; overflow: hidden;">{% endif %}
               <ul>
                 <li><a href="/#social">Social &rarr;</a></li>
                 <li><a href="/blog">Blog &rarr;</a></li>

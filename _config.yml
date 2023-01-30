@@ -6,6 +6,11 @@ permalink: pretty           # https://jekyllrb.com/docs/permalinks/
 lang: en-US
 remote_theme: benbalter/retlab    # https://github.com/benbalter/retlab
 
+githubmetadata:
+  repo: roblabs
+  id: 118112
+  avatar: https://avatars.githubusercontent.com/u/118112
+
 # Open Graph
 # https://ogp.me
 og:
@@ -36,8 +41,11 @@ nav_pages:
 # Pages to include in footer navigation
 footer_pages:
 
+# Front Matter
 # https://jekyllrb.com/docs/front-matter/
-# Front matter defaults
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+# Add front matter to static files
+#   https://jekyllrb.com/docs/static-files/#add-front-matter-to-static-files
 defaults:
   -
     scope:
@@ -45,14 +53,18 @@ defaults:
       type: "posts"
     values:
       layout: post
-      comments: true
+      tags: [🐶]
   -
     scope:
       path: ""
       type: "pages"
     values:
       layout: page
-      comments: false
+      tags: [🐶]
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 # https://jekyllrb.com/docs/plugins/
 plugins:

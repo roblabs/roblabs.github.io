@@ -5,7 +5,7 @@ description: ""
 date:   2020-07-11T01:37:00-08:00
 author: ePi Rational, Inc.
 categories: [htmc]
-tags: [sailing]
+tags: [🗺️, 🧭, 📍]
 permalink: /685/horseshoe
 excerpt: "Horseshoe Meadows ... Over 10,000 feet"
 excerpt_img: "/assets/img/horseshoe-fstopo.png"
