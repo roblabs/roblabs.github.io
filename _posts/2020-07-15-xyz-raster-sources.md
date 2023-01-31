@@ -8,8 +8,8 @@ categories: [QGIS, GeoJSON.io]
 permalink: /xyz/
 redirect_to: "https://RobLabs.com/xyz-raster-sources"
 tags: [🗺️, "raster"]
-# og:
-#   width: 375
-#   height: 842
-# excerpt_img: https://repository-images.githubusercontent.com/585346053/d60e0053-90c1-405f-aa06-da400d7a2e30
+og:
+  width: 644
+  height: 496
+excerpt_img: https://user-images.githubusercontent.com/118112/89742168-624ffb80-da4c-11ea-9a9f-8a8e6ce786b0.gif
 ---
