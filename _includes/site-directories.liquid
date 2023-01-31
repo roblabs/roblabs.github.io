@@ -1,0 +1,20 @@
+{% comment %} 
+---
+file: _includes/site-directories.liquid
+usage: {% include site-directories.liquid %}
+language: markdown
+tags: [💦, 💧, 🌊]
+---
+{% endcomment %}
+
+{% for file in site.static_files %}
+  {% if file.extname == ".html" %}
+    {% if file.path contains "kit" %}
+* [{{ file.path }}]({{ file.path }})
+  * {{ file.modified_time }}
+  * {{ file.name }}
+  * {{ file.basename }}
+  * {{ file.extname }}
+    {% endif %}
+  {% endif %}
+{% endfor %}

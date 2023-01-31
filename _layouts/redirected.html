@@ -3,7 +3,7 @@
 <head>
 <link rel="canonical" href="{{ page.redirected.url }}"/>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="refresh" content="{{ page.redirected.timeout }};url={{ page.redirected.url }}" />
+<meta http-equiv="refresh" content="{{ page.redirected.timeout }};url={{ page.redirected.url }}" /> <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-http-equiv -->
 
 <meta property="og:site_name" content="{{ site.url }}">
 <meta property="og:title" content="{{ page.title }}{% if page.excerpt %} — {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
