@@ -6,7 +6,7 @@ excerpt: "'Mobile First' means that the customer's experience is great once they
 date:   2018-05-15T01:00:00-08:00
 author: ePi Rational, Inc.
 categories: [foss4g]
-tags: [foss4g]
+tags: [🎙️,🗺️]
 permalink: /mobile1st/
 ---
 

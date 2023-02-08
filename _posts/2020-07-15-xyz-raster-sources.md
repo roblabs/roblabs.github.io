@@ -4,10 +4,10 @@ title:  XYZ Raster Sources
 excerpt: "A collection of `xyz` raster sources for use in QGIS, MapLibre, or Mapbox Styles."
 date:   2023-01-04T00:20:46-08:00
 author: ePi Rational, Inc.
-categories: [QGIS, GeoJSON.io]
+categories: [QGIS, GeoJSON.io, raster]
 permalink: /xyz/
 redirect_to: "https://RobLabs.com/xyz-raster-sources"
-tags: [🗺️, "raster"]
+tags: [🗺️]
 og:
   width: 644
   height: 496

@@ -5,7 +5,6 @@ description: "foss4g 2017"
 date:   2017-10-20T12:20:46-08:00
 author: Rob Labs
 categories: [Mapbox, Paper Maps]
-tags: [Mapbox, Paper Maps]
 permalink: /osm-random-walk/
 excerpt: "A Random Walk with OpenStreetMap"
 #excerpt_img:

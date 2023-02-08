@@ -6,7 +6,6 @@ description: ""
 excerpt: "Online Web Map of the Cleveland National Forest"
 date:   2018-03-13T12:20:46-08:00
 categories: [Mapbox, Paper Maps,]
-tags: [Mapbox, Paper Maps]
 permalink: /cleveland/
 redirect_from:
   - /descanso

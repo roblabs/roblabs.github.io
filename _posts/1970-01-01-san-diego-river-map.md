@@ -5,7 +5,6 @@ description: ""
 date:   2017-01-01T12:20:46-08:00
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
-tags: [Mapbox, Paper Maps]
 permalink: /san-diego-river/map/
 ---
 

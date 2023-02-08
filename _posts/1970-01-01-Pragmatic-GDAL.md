@@ -5,7 +5,7 @@ description: ""
 date:   2016-12-15T00:00:00-08:00
 author: roblabs
 categories: ["command line cartography"]
-tags: [gdal]
+tags: [🗺️]
 excerpt: "Learn Geospatial data formats with GDAL"
 youtube: uM8RQIJmfOk
 excerpt_img: "/assets/img/Pragmatic-GDAL-1080.gif"

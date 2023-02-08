@@ -5,8 +5,8 @@ author: eπ Maps
 description: ""
 excerpt: "Use the same map — either on mobile, paper or desktop browser"
 date:   2017-09-01T00:20:46-08:00
-categories: [Mapbox, Paper Maps]
-tags: [Mapbox, Paper Maps]
+categories: [Mapbox, Paper Maps, USFS]
+tags: [🗺️]
 permalink: /Allegheny/
 redirect_from:
   - /allegheny

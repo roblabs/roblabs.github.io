@@ -5,7 +5,6 @@ description: ""
 date:   2018-11-08T12:20:46-08:00
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
-tags: [Mapbox, Paper Maps]
 excerpt: "Apple Guide for Joshua Tree"
 permalink: /jotr/guide
 redirect_to:

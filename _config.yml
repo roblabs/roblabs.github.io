@@ -53,6 +53,7 @@ defaults:
       type: "posts"
     values:
       layout: post
+      author: "@RobLabs"
       tags: [🐶]
   -
     scope:
@@ -60,13 +61,20 @@ defaults:
       type: "pages"
     values:
       layout: page
+      author: "@RobLabs"
       tags: [🐶]
   - scope:
       path: "assets/img"
     values:
       image: true
+  - scope:
+      path: "_includes/*.liquid"
+    values:
+      liquid: true
 
 # https://jekyllrb.com/docs/plugins/
+# GitHub Pages uses the following dependencies and versions:
+#   https://pages.github.com/versions/
 plugins:
   - jekyll-avatar           # https://github.com/jekyll/jekyll-avatar
   - jekyll-redirect-from    # https://github.com/jekyll/jekyll-redirect-from

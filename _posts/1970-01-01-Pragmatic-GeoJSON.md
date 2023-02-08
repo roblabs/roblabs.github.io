@@ -5,7 +5,7 @@ description: ""
 date:   2016-12-08T00:00:00-08:00
 author: roblabs
 categories: ["command line cartography"]
-tags: [geojson]
+tags: [📍]
 excerpt: "Learn GeoJSON by visualizing your data"
 youtube: NYqCUVDlq9E
 excerpt_img: "/assets/img/Pragmatic-GeoJSON-10sec-480.gif"

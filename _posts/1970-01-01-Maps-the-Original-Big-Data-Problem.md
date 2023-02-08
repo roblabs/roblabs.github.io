@@ -5,7 +5,7 @@ description: ""
 date:   2017-01-17T02:30:00-08:00
 author: RobLabs
 categories: [talk, android]
-tags: [talk, android]
+tags: [🎙️,🤖]
 excerpt: "Talk presented for the San Diego Android Meetup"
 excerpt_img: "/assets/img/Architecture-for-Mobile-Maps.png"
 permalink: /talk/Jan-17-2017-SD-Android

@@ -6,7 +6,6 @@ excerpt: "Microblog on how the news industry creates maps for both print and onl
 date:   2017-01-01T00:20:46-08:00
 author: ePi Rational, Inc.
 categories: [awesome]
-tags: [Mapbox, Paper Maps, awesome]
 permalink: /papermaps/
 redirect_from:
   - /printmaps

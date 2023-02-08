@@ -5,7 +5,6 @@ description: ""
 date:   2016-07-12T12:20:46-08:00
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps,]
-tags: [Mapbox, Paper Maps]
 permalink: /mare-island-preserve/map/
 ---
 

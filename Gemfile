@@ -19,4 +19,4 @@ group :development, :test do
   gem 'rubocop'
 end
 
-gem "webrick", "~> 1.7"
+gem "webrick"

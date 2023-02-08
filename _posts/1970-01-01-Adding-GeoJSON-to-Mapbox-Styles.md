@@ -5,7 +5,7 @@ description: ""
 date:   2016-12-13T00:00:00-08:00
 author: roblabs
 categories: [mapbox]
-tags: [mapbox]
+tags: [🗺️]
 
 excerpt: "Add your own geo data to your Mapbox Style"
 youtube: 98qZUAeaMmc

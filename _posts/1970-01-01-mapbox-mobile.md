@@ -5,7 +5,6 @@ description: "HSDNC Boundaries Map"
 date:   2017-04-22T12:20:46-08:00
 author: ePi Rational, Inc.
 categories: [Mapbox, Paper Maps]
-tags: [Mapbox, Paper Maps]
 permalink: /mapbox-mobile/
 excerpt: "Mapbox SDKs for mobile development"
 #photo_url: https://lh3.googleusercontent.com/odKEVavm2A89NahAqcKWfRTksrGtVJO9SdfN41hSjL2Brz0rXDXh-tkmRcSvRDifFjA=h150

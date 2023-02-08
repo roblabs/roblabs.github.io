@@ -5,7 +5,7 @@ description: ""
 date:   2016-12-12T00:00:00-08:00
 author: roblabs
 categories: [mapbox]
-tags: [mapbox]
+tags: [🗺️]
 
 excerpt: "An introduction to the Mapbox styles — Outdoors, Light & Dark, Streets and Satellite."
 youtube: jA6tlDn3Fpo
