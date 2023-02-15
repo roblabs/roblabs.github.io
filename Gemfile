@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-
+gem 'jekyll'
 gem 'github-pages'
 gem "jekyll-remote-theme"
 gem 'rake'
 gem 'jekyll-avatar'
-gem 'jekyll-github-metadata'  # https://jekyll.github.io/github-metadata/
+gem 'jekyll-github-metadata'
 
 group :jekyll_plugins do
   gem 'jekyll-commonmark-ghpages' # Fetching jekyll-commonmark-ghpages 0.1.5
