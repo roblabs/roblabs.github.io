@@ -1,3 +1,24 @@
+        # sh go.sh                                                              😎 /Users/roblabs/Documents/github/roblabs/roblabs.github.io 
+        # Configuration file: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/_config.yml
+        # To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+        #             Source: /Users/roblabs/Documents/github/roblabs/roblabs.github.io
+        #        Destination: ./tmp/_site/www
+        #  Incremental build: enabled
+        #       Generating... 
+        #       Remote Theme: Using theme benbalter/retlab
+        #                     done in 9.268 seconds.
+        #  Auto-regeneration: enabled for '/Users/roblabs/Documents/github/roblabs/roblabs.github.io'
+        #     Server address: https://127.0.0.1:4000
+        #   Server running... press ctrl-c to stop.
+        #         ** ERROR: directory is already being watched! **
+
+        #         Directory: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/assets/vendor/bootstrap-sass/assets
+
+        #         is already being watched through: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/assets/vendor/bootstrap-sass/assets
+
+        #         MORE INFO: https://github.com/guard/listen/blob/master/README.md
+        #       Regenerating: 80 file(s) changed at 2023-01-28 09:17:04
+
 # Use `go.sh` for jekyll debugging and testing
 # Use `go-serve.sh` for static site serving after jekyll builds
 
@@ -10,21 +31,26 @@ rm -rf tmp/_site
 # https://kristofclaes.github.io/2016/06/19/running-jekyll-locally-with-docker/
 # docker compose up # Docker Compose is now in the Docker CLI, try `docker compose up`
 
-# brew install rbenv ruby-builder
+# brew install rbenv ruby-build
 # echo 'eval "$(~/.rbenv/bin/rbenv init - zsh)"' >> ~/.zshrc
 # rbenv install -l
-# rbenv install 3.1.2
-#   Installed ruby-3.1.2 to /Users/roblabs/.rbenv/versions/3.1.2
-# rbenv local 3.1.2
+# rbenv install 2.7.7
+# #  Installed ruby-3.1.2 to /Users/roblabs/.rbenv/versions/3.1.2
+# rbenv local 2.7.7
 # rbenv version
-# cat .ruby-version
-#   3.1.2
-#
+
 # bundle check
 # bundle install
+#  gem update
 
-# bundle exec jekyll serve --incremental
-bundle exec jekyll serve --ssl-key ssl/localhost.key --ssl-cert ssl/localhost.crt
+bundle exec jekyll doctor
+bundle exec jekyll serve -h
+bundle exec jekyll serve \
+  --incremental \
+  --host oldsanjuan.local \
+  --livereload --trace \
+  --ssl-cert ssl/localhost+4.pem \
+  --ssl-key  ssl/localhost+4-key.pem
 
 
 # export JEKYLL_VERSION=jekyll/jekyll:latest  # 76e17ded11d1
