@@ -106,7 +106,7 @@ JSON.stringify(mapkit.maps[0].annotationsInMapRect( mapkit.maps[0].visibleMapRec
   * Use the `language` constructor at `init()`
 * https://developer.apple.com/documentation/mapkitjs/mapkit/2974045-init
 
-```JavaScript
+```javascript
 mapkit.init({
     authorizationCallback: function(done) {
         done("your-token-string");
@@ -200,7 +200,7 @@ A “loupe” is used to demonstrate draggable annotations. This example shows h
 
 The “loupe” is fairly straightforward, as it disables most of the controls.
 
-```JavaScript
+```javascript
 // Initialize the loupe based on the marker's location on the map
 var zoomedMap = new mapkit.Map("loupe", {
     isScrollEnabled: false,
