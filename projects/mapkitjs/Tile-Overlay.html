@@ -146,9 +146,10 @@
         map.showItems(annotations);
 
         // https://developer.apple.com/documentation/mapkitjs/mapkit/tileoverlay/2974035-mapkit_tileoverlay
-        var customOverlay = new mapkit.TileOverlay("https://tile.openstreetmap.org/{z}/{x}/{y}.png");
+        const openstreetmap = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        var customOverlay = new mapkit.TileOverlay(openstreetmap);
 
-        // https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions\
+        // https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions
         customOverlay.minimumZ = 2;
         customOverlay.maximumZ = 16;
         customOverlay.opacity = 1.0;

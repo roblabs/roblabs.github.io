@@ -1,3 +1,4 @@
+clear
         # sh go.sh                                                              😎 /Users/roblabs/Documents/github/roblabs/roblabs.github.io 
         # Configuration file: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/_config.yml
         # To use retry middleware with Faraday v2.0+, install `faraday-retry` gem

@@ -1,3 +1,31 @@
+---
+
+---
+
+<!-- 
+* https://maps.developer.apple.com/sample-code 
+Annotations & Reverse Geocoding
+demonstrates adding/removing annotations, using the Reverse Geocoding API to find place data.
+
+Callout Accessory Views
+demonstrates displaying additional customized elements within a callout.
+
+Animated Polyline Overlays
+demonstrates animating an overlay property in a request animation frame loop. -->
+
+# MapKit JS
+
+* [Add Annotations](/projects/mapkitjs/Add-Annotations.html){:target="_blank"} demonstrates adding a basic annotation.
+* [Annotations With a Custom Callout](/projects/mapkitjs/Custom-Callout.html){:target="_blank"} demonstrates how to add custom styles to annotation callouts.
+* [Draggable Annotations](/projects/mapkitjs/Draggable-Annotations.html){:target="_blank"} demonstrates a draggable annotation with an updated overview map.
+* [Embedded Map](/projects/mapkitjs/Embed.html){:target="_blank"} demonstrates simply displaying a map with minimal code.
+* [US Population By State Overlays](/projects/mapkitjs/GeoJSON-Import.html){:target="_blank"} demonstrates displaying, transforming, and interacting with GeoJSON-based map overlays.
+* [Region and Zoom Limits](/projects/mapkitjs/Region-and-Zoom-Limits.html){:target="_blank"} demonstrates limiting a map's viewport's zoom levels and latitude/longitude constraints.
+* [Tile Overlay](/projects/mapkitjs/Tile-Overlay.html){:target="_blank"} demonstrates adding external raster tiles.
+
+* [MapKit JS Sample Code from apple.com](https://developer.apple.com/forums/thread/704954)
+* Embed interactive Apple Maps on your website, annotate points of interest, and perform georelated searches with [MapKit JS at apple.com](https://developer.apple.com/documentation/MapKitJS)
+
 ## MapKit JS from the Console
 
 Show JavaScript Console, then use these commands.
@@ -5,10 +33,12 @@ Show JavaScript Console, then use these commands.
 ```bash
 mapkit.build
 # "21.16-138"
+# "23.08-258"
 
 mapkit.version
 # "5.61.1"
 # "5.75.4"
+# "5.75.57"
 
 mapkit.language
 # "en"
@@ -45,6 +75,27 @@ mapkit.maps[0].cameraZoomRange
 
 mapkit.maps[0].mapType
 # "standard", "hybrid", "satellite"
+
+JSON.stringify(mapkit.maps[0].visibleMapRect)
+# {"origin":{"x":0.24169921875,"y":0.260009765625},"size":{"width":0.5166015625,"height":0.47998046875}}
+
+JSON.stringify(mapkit.maps[0].annotationsInMapRect( mapkit.maps[0].visibleMapRect ))
+# [
+# {"landmark":{"coordinate":{"latitude":37.7951315,"longitude":-122.402986},
+#   "title":"Transamerica Pyramid","phone":"+1-415-983-5420","url":"http://www.transamericapyramidcenter.com/"}},
+# {"landmark":{"coordinate":{"latitude":37.7954201,"longitude":-122.39352},
+#   "title":"Ferry Building","phone":"+1 (415) 983-8030","url":"http://www.ferrybuildingmarketplace.com"}},
+# {"landmark":{"coordinate":{"latitude":37.8083396,"longitude":-122.415727},
+#   "title":"Fisherman's Wharf","phone":"+1 (415) 673-3530","url":"http://visitfishermanswharf.com"}},
+# {"landmark":{"coordinate":{"latitude":37.7552305,"longitude":-122.452624},
+#   "title":"Sutro Tower","phone":"+1 (415) 681-8850","url":"http://www.sutrotower.com"}},
+# {"landmark":{"coordinate":{"latitude":37.779267,"longitude":-122.419269},
+#   "title":"City Hall","phone":"+1 (415) 701-2311","url":"http://sfgsa.org/index.aspx?page=1085"}},
+# {"landmark":{"coordinate":{"latitude":37.8184493,"longitude":-122.478409},
+#   "title":"Golden Gate Bridge","phone":"+1 (415) 921-5858","url":"http://www.goldengatebridge.org"}},
+# {"landmark":{"coordinate":{"latitude":37.7785538,"longitude":-122.514035},
+#   "title":"Cliff House","phone":"+1 (415) 386-3330","url":"http://www.cliffhouse.com/"}}
+#   ]
 ```
 
 ---
