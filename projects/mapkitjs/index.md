@@ -13,7 +13,7 @@ demonstrates displaying additional customized elements within a callout.
 Animated Polyline Overlays
 demonstrates animating an overlay property in a request animation frame loop. -->
 
-# MapKit JS
+## MapKit JS
 
 * [Add Annotations](/projects/mapkitjs/Add-Annotations.html){:target="_blank"} demonstrates adding a basic annotation.
 * [Annotations With a Custom Callout](/projects/mapkitjs/Custom-Callout.html){:target="_blank"} demonstrates how to add custom styles to annotation callouts.
@@ -26,7 +26,13 @@ demonstrates animating an overlay property in a request animation frame loop. --
 * [MapKit JS Sample Code from apple.com](https://developer.apple.com/forums/thread/704954)
 * Embed interactive Apple Maps on your website, annotate points of interest, and perform georelated searches with [MapKit JS at apple.com](https://developer.apple.com/documentation/MapKitJS)
 
-## MapKit JS from the Console
+### TileOverlay Demos
+
+* [OpenStreetMap](/projects/mapkitjs/minimal){:target="_blank"}
+* [Butte 1940](/projects/mapkitjs/butte){:target="_blank"}
+* [Boston 1995](/projects/mapkitjs/boston1995){:target="_blank"}
+
+### MapKit JS from the Console
 
 Show JavaScript Console, then use these commands.
 

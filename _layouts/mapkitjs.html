@@ -1,0 +1,230 @@
+---
+layout: mapkitjs
+---
+<!DOCTYPE html>
+<!-- Proudly powered by Jekyll v{{ jekyll.version }} & GitHub Pages ~ Generated {{ site.time }} id={{page.id}} categories={{page.categories}} tags={{page.tags}}  -->
+<head>
+	<script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+</head>
+<body>
+<div id="map"></div>
+
+<input id="slider" type="range" min="0" max="1" step="0.1" value="{{ page.opacity }}"
+	oninput="customOverlayOptions.opacity=parseFloat(this.value)" />
+
+<script>
+	// https://developer.apple.com/documentation/mapkitjs/mapkit/2974045-init
+	mapkit.init({
+		language: "{{ page.language }}",
+		authorizationCallback: function (done) {
+			var xhr = new XMLHttpRequest();
+			xhr.open("GET", "/services/jwt");
+			xhr.addEventListener("load", function () {
+				done(this.responseText);
+			});
+			xhr.send();
+		}
+	});
+
+	const center = new mapkit.Coordinate( {{ page.center.latitude }}, {{ page.center.longitude }}),
+	span = new mapkit.CoordinateSpan( {{ page.span.latitudeDelta }}, {{ page.span.longitudeDelta }} ),
+	region = new mapkit.CoordinateRegion(center, span);
+
+	// compute empirically via the event "region-change-end"
+	var mapRect = new mapkit.MapRect(
+		{{ page.origin.x }},
+		{{ page.origin.y }},
+		{{ page.size.width }},
+		{{ page.size.height }},
+	);
+
+	// https://developer.apple.com/documentation/mapkitjs/map
+	var map = new mapkit.Map("map", {
+		visibleMapRect: mapRect,
+		mapType: mapkit.Map.MapTypes.{{ page.mapType }},
+		// rotation: {{ page.rotation }},
+		// showsMapTypeControl: {{ page.showsMapTypeControl }},
+		// isZoomEnabled: {{ page.isZoomEnabled }},
+		// showsZoomControl: {{ page.showsZoomControl }},
+	});
+
+
+	// https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions
+	const urlTemplate = "{{ page.urlTemplate }}";
+
+	// https://developer.apple.com/documentation/mapkitjs/mapkit/tileoverlay/
+	var customOverlayOptions = new mapkit.TileOverlay(urlTemplate);
+
+	customOverlayOptions.minimumZ = {{ page.minimumZ }};
+	customOverlayOptions.maximumZ = {{ page.maximumZ }};
+	customOverlayOptions.opacity = {{ page.opacity }};
+	customOverlayOptions.data = {
+		lang: mapkit.language,
+	};
+	map.addTileOverlay(customOverlayOptions);
+	
+	{% if jekyll.environment == "development" %}
+	map._allowWheelToZoom = true
+	map._showsDefaultTiles = true
+	map._showsTileInfo = true
+	// Hidden API Zone
+	// map._impl.minZoomLevel = {{ page.minimumZ }}
+	// map._impl.maxZoomLevel = {{ page.maximumZ }}
+	// map._impl.zoomLevel = 15
+	{% endif %}
+
+	// https://developer.apple.com/documentation/mapkitjs/mapkit/map/handling_map_events
+	map.addEventListener("configuration-change", function (event) { console.log("configuration-change"); });
+	map.addEventListener("map-type-change", function (event) { console.log(event.target.mapType); });
+	map.addEventListener("zoom-end", function (event) { console.log("zoom-end"); });
+	map.addEventListener("region-change-end", function (event) {
+		mapType = event.target.mapType
+		mapTypeCapitalized = mapType.charAt(0).toUpperCase() + mapType.slice(1)
+		zoom = altitude2zoom(map.cameraDistance).toFixed(2)
+		latitude = map.region.center.latitude.toFixed(4)
+		longitude = map.region.center.longitude.toFixed(4)
+		
+		console.log(`
+# #${zoom}/${latitude}/${longitude}
+zoom: ${zoom}
+center:
+  latitude: ${latitude}
+  longitude: ${longitude}
+mapType: ${mapTypeCapitalized}
+urlTemplate: {{ page.urlTemplate }}
+minimumZ: {{ page.minimumZ }}
+maximumZ: {{ page.maximumZ }}
+opacity: {{ page.opacity }}
+cameraDistance: ${map.cameraDistance.toFixed(2)}
+origin: 
+  x: ${map.visibleMapRect.origin.x.toFixed(5)}
+  y: ${map.visibleMapRect.origin.y.toFixed(5)}
+size:
+  width:  ${map.visibleMapRect.size.width.toFixed(10)}
+  height: ${map.visibleMapRect.size.height.toFixed(10)}
+span:
+  latitudeDelta: ${map.region.span.latitudeDelta.toFixed(8)}
+  longitudeDelta: ${map.region.span.longitudeDelta.toFixed(8)}
+`);
+	});
+
+	// functions
+
+	function zoom2altitude(level) {
+		level -= 1
+		altitude = Math.pow(2, 25 - level)
+		return altitude
+	}
+
+	function altitude2zoom(altitude) {
+		zoom = 25.0 - Math.log2(altitude) + 1
+		return zoom
+	}
+
+	function zoomPlus() {
+		altitude = map.cameraDistance
+		zoom = 25.0 - Math.log2(altitude)
+		zoom += 1.0
+		altitude -= Math.pow(2, 25.0 - zoom)
+		map.cameraDistance = altitude
+	}
+
+	function zoomMinus() {
+		altitude = map.cameraDistance
+		zoom = 25.0 - Math.log2(altitude)
+		zoom -= 1.0
+		altitude += Math.pow(2, 25 - zoom)
+		map.cameraDistance = altitude
+	}
+</script>
+<style>
+	#map {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 99%;
+	height: 99%;
+	}
+
+	#slider {
+		position: absolute;
+		top: 17px;
+		right: 77px;
+		z-index: 5;
+	}
+
+	a:link,
+	a:visited {
+		color: #2aaef5;
+		outline: none;
+		text-decoration: none;
+	}
+
+	.landmark {
+		width: 250px;
+		padding: 7px 0 0 0;
+		background: rgba(247, 247, 247, 0.75);
+		border-radius: 5px;
+		box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.29);
+		font-family: Helvetica, Arial, sans-serif;
+		-webkit-transform-origin: 0 10px;
+		transform-origin: 0 10px;
+	}
+
+	.landmark h1 {
+		margin-top: 0;
+		padding: 5px 15px;
+		background: #2aaef5;
+		color: rgba(255, 255, 255, 0.9);
+		font-size: 16px;
+		font-weight: 300;
+	}
+
+	.landmark section {
+		padding: 0 15px 5px;
+		font-size: 14px;
+	}
+
+	.landmark section p {
+		margin: 5px 0;
+	}
+
+	.landmark:after {
+		content: "";
+		position: absolute;
+		top: 7px;
+		left: -13px;
+		width: 0;
+		height: 0;
+		margin-bottom: -13px;
+		border-right: 13px solid #2aaef5;
+		border-top: 13px solid rgba(0, 0, 0, 0);
+		border-bottom: 13px solid rgba(0, 0, 0, 0);
+	}
+
+	@-webkit-keyframes scale-and-fadein {
+		0% {
+			-webkit-transform: scale(0.2);
+			opacity: 0;
+		}
+
+		100% {
+			-webkit-transform: scale(1);
+			opacity: 1;
+		}
+	}
+
+	@keyframes scale-and-fadein {
+		0% {
+			transform: scale(0.2);
+			opacity: 0;
+		}
+
+		100% {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+</style>
+</body>
+</html>

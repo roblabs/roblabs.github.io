@@ -68,6 +68,15 @@ page.tags: {{ page.tags }}
                 <li><a href="/#social">Social &rarr;</a></li>
                 <li><a href="/blog">Blog &rarr;</a></li>
                 <li><a href="/tags">Tags &rarr;</a></li>
+                {% if jekyll.environment == "development" %}
+                <br>
+                <li><a target="_blank" href="/projects/mapkitjs/">MapKit JS tests</a></li>
+                <li><a target="_blank" href="/projects/mapkitjs/Tile-Overlay">MapKit JS Tile-Overlay</a></li>
+                <li><a target="_blank" href="/projects/mapkitjs/minimal">MapKit JS minimal</a></li>
+                <li><a target="_blank" href="/projects/mapkitjs/minimal-with-iframe">MapKit JS minimal with iframe</a></li>
+                <li><a target="_blank" href="/projects/mapkitjs/butte">MapKit JS butte</a></li>
+                <li><a target="_blank" href="/projects/mapkitjs/boston1995">Boston 1995</a></li>
+                {% endif %}
               </ul>
           </div>
       </div>
