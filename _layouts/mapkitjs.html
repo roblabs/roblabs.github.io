@@ -2,7 +2,7 @@
 layout: mapkitjs
 ---
 <!DOCTYPE html>
-<!-- Proudly powered by Jekyll v{{ jekyll.version }} & GitHub Pages ~ Generated {{ site.time }} id={{page.id}} categories={{page.categories}} tags={{page.tags}}  -->
+<!-- Jekyll v{{ jekyll.version }} & GitHub Pages ~ Generated {{ site.time }} id={{page.id}} categories={{page.categories}} tags={{page.tags}}  -->
 <head>
 	<script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 </head>
@@ -13,6 +13,9 @@ layout: mapkitjs
 	oninput="customOverlayOptions.opacity=parseFloat(this.value)" />
 
 <script>
+	var mapState = 2
+	window.onhashchange = updateHash
+
 	// https://developer.apple.com/documentation/mapkitjs/mapkit/2974045-init
 	mapkit.init({
 		language: "{{ page.language }}",
@@ -28,7 +31,8 @@ layout: mapkitjs
 
 	const center = new mapkit.Coordinate( {{ page.center.latitude }}, {{ page.center.longitude }}),
 	span = new mapkit.CoordinateSpan( {{ page.span.latitudeDelta }}, {{ page.span.longitudeDelta }} ),
-	region = new mapkit.CoordinateRegion(center, span);
+	region = new mapkit.CoordinateRegion(center, span),
+	cameraDistance = {{ page.cameraDistance }} 
 
 	// compute empirically via the event "region-change-end"
 	var mapRect = new mapkit.MapRect(
@@ -40,15 +44,27 @@ layout: mapkitjs
 
 	// https://developer.apple.com/documentation/mapkitjs/map
 	var map = new mapkit.Map("map", {
-		visibleMapRect: mapRect,
+		// visibleMapRect: mapRect,
+		region: region,
 		mapType: mapkit.Map.MapTypes.{{ page.mapType }},
 		// rotation: {{ page.rotation }},
 		// showsMapTypeControl: {{ page.showsMapTypeControl }},
 		// isZoomEnabled: {{ page.isZoomEnabled }},
-		// showsZoomControl: {{ page.showsZoomControl }},
+		// showsZoomControl: {{ page.showsZoomControl }}
 	});
 
+	// Always show the compass, regardless of the map state. 
+	map.showsCompass = mapkit.FeatureVisibility.Visible;
+	map.showsScale   = mapkit.FeatureVisibility.Visible;
 
+	// Set camera bounds based on Zoom range
+	//   Note:  minimum camera distance is related to the maximum zoom
+	//          maximum camera distance is related to the minimum zoom
+	const minCameraDistance = zoom2altitude( {{ page.maximumZ }} )
+    const maxCameraDistance = Infinity// zoom2altitude( {{ page.minimumZ }} )
+	map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
+	map.minCameraDistance = minCameraDistance
+	
 	// https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions
 	const urlTemplate = "{{ page.urlTemplate }}";
 
@@ -62,6 +78,10 @@ layout: mapkitjs
 		lang: mapkit.language,
 	};
 	map.addTileOverlay(customOverlayOptions);
+
+	if(location.hash != "") {
+		_updateMapFromHashEdit()
+	}
 	
 	{% if jekyll.environment == "development" %}
 	map._allowWheelToZoom = true
@@ -74,28 +94,101 @@ layout: mapkitjs
 	{% endif %}
 
 	// https://developer.apple.com/documentation/mapkitjs/mapkit/map/handling_map_events
-	map.addEventListener("configuration-change", function (event) { console.log("configuration-change"); });
-	map.addEventListener("map-type-change", function (event) { console.log(event.target.mapType); });
-	map.addEventListener("zoom-end", function (event) { console.log("zoom-end"); });
+	// https://developer.apple.com/documentation/mapkitjs/mapkit/handling_initialization_events
+	map.addEventListener("configuration-change", function (event) { console.log(event.status); });
+	map.addEventListener("domEvents", function (event) { console.log(event); });
+	map.addEventListener("pointOnPage", function (event) { console.log(`📍 pointOnPage ${event}`); });
+	map.addEventListener("map-type-change", function (event) { console.log(`🗺️ map-type-change ${event.target.mapType}`); });
+	map.addEventListener("zoom-end", function (event) { console.log("🔎 zoom-end"); });
 	map.addEventListener("region-change-end", function (event) {
-		mapType = event.target.mapType
-		mapTypeCapitalized = mapType.charAt(0).toUpperCase() + mapType.slice(1)
-		zoom = altitude2zoom(map.cameraDistance).toFixed(2)
+		console.log("event 🚚 region-change-end")
+
+		updateMapEvent()
+	});
+
+	// functions
+
+	async function updateMapEvent() {
+		console.log(`event 🗺️ B: mapState: ${mapState}`)
+
+		switch (mapState) {
+			case 0:
+				// Map is done moving or initializing and is ready
+				_updateHashFromMapMove()
+				break;
+			case 1:
+				// Map is moving
+				mapState = 0
+				_updateHashFromMapMove()
+				break;
+			case 2:
+				// TODO:  this seems to be the only event firing, so handle zoom levels, but do it once
+				await map.setCameraDistanceAnimated(cameraDistance)
+				mapState = 1
+				break;
+			default:
+				break;
+		}
+		console.log(`event 🗺️ A mapState: ${mapState}`)
+	}
+
+	function updateHash() {
+		console.log(`event  # B mapState: ${mapState}`)
+		_updateMapFromHashEdit()
+		console.log(`event  # A mapState: ${mapState}`)
+	}
+
+	async function _updateMapFromHashEdit() {
+		hash = location.hash.replace('#', '').split('/')
+		console.log(`_updateMapFromHashEdit: ${hash}`)
+
+		hashCameraDistance = zoom2altitude(parseFloat(hash[0]))
+		hashLatitude = parseFloat(hash[1])
+		hashLongitude = parseFloat(hash[2])
+
+		map.setCenterAnimated(new mapkit.Coordinate(hashLatitude, hashLongitude), false)
+		await map.setCameraDistanceAnimated(hashCameraDistance)
+		console.log(`_updateMapFromHashEdit: await is complete`)
+	}
+
+	// // blocking https://stackoverflow.com/q/13233914
+	function _updateHashFromMapMove() {
+		mapState = 1
+
+		zoom = Math.ceil(altitude2zoom(map.cameraDistance))
 		latitude = map.region.center.latitude.toFixed(4)
 		longitude = map.region.center.longitude.toFixed(4)
-		
+		hash = `${zoom}/${latitude}/${longitude}`
+
+		console.log(`_updateHashFromMapMove: ${hash}`)
+
+		history.replaceState(null, "", `#${hash}`);
+
+		logHash()
+	}
+
+	function logHash() {
+		zoom = Math.ceil(altitude2zoom(map.cameraDistance))
+		latitude = map.region.center.latitude.toFixed(4)
+		longitude = map.region.center.longitude.toFixed(4)
+		hash = `${zoom}/${latitude}/${longitude}`
+
+		mapType = map.mapType
+		mapTypeCapitalized = mapType.charAt(0).toUpperCase() + mapType.slice(1)
+
 		console.log(`
-# #${zoom}/${latitude}/${longitude}
+#${hash}
 zoom: ${zoom}
+minimumZ: {{ page.minimumZ }}
+maximumZ: {{ page.maximumZ }}
+cameraDistance: ${map.cameraDistance.toFixed(0) / 2.0}
+# cameraZoomRange: [${map.cameraZoomRange.minCameraDistance}, ${map.cameraZoomRange.maxCameraDistance}]
 center:
   latitude: ${latitude}
   longitude: ${longitude}
 mapType: ${mapTypeCapitalized}
 urlTemplate: {{ page.urlTemplate }}
-minimumZ: {{ page.minimumZ }}
-maximumZ: {{ page.maximumZ }}
 opacity: {{ page.opacity }}
-cameraDistance: ${map.cameraDistance.toFixed(2)}
 origin: 
   x: ${map.visibleMapRect.origin.x.toFixed(5)}
   y: ${map.visibleMapRect.origin.y.toFixed(5)}
@@ -106,9 +199,7 @@ span:
   latitudeDelta: ${map.region.span.latitudeDelta.toFixed(8)}
   longitudeDelta: ${map.region.span.longitudeDelta.toFixed(8)}
 `);
-	});
-
-	// functions
+	}
 
 	function zoom2altitude(level) {
 		level -= 1

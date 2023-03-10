@@ -30,78 +30,78 @@ demonstrates animating an overlay property in a request animation frame loop. --
 
 * [OpenStreetMap](/projects/mapkitjs/minimal){:target="_blank"}
 * [Butte 1940](/projects/mapkitjs/butte){:target="_blank"}
-* [Boston 1995](/projects/mapkitjs/boston1995){:target="_blank"}
+<!-- * [Boston 1995](/projects/mapkitjs/boston1995){:target="_blank"} -->
 
 ### MapKit JS from the Console
 
 Show JavaScript Console, then use these commands.
 
-```bash
+```javascript
 mapkit.build
-# "21.16-138"
-# "23.08-258"
+// "21.16-138"
+// "23.08-258"
 
 mapkit.version
-# "5.61.1"
-# "5.75.4"
-# "5.75.57"
+// "5.61.1"
+// "5.75.4"
+// "5.75.57"
 
 mapkit.language
-# "en"
+// "en"
 
 mapkit.FeatureVisibility
-# { Adaptive: "adaptive", Hidden: "hidden", Visible: "visible" }
+// { Adaptive: "adaptive", Hidden: "hidden", Visible: "visible" }
 
 mapkit.PointOfInterestCategory
-# { Airport: "Airport", AmusementPark: "AmusementPark", Aquarium: "Aquarium", ATM: "ATM", Bakery: "Bakery", Bank: "Bank", Beach: "Beach", Brewery: "Brewery", Cafe: "Cafe", Campground: "Campground", … }
+// { Airport: "Airport", AmusementPark: "AmusementPark", Aquarium: "Aquarium", ATM: "ATM", Bakery: "Bakery", Bank: "Bank", Beach: "Beach", Brewery: "Brewery", Cafe: "Cafe", Campground: "Campground", … }
 
 mapkit.Map.ColorSchemes
-# { Dark: "dark", Light: "light" }
+// { Dark: "dark", Light: "light" }
 
 mapkit.Map.MapTypes
- # { Satellite: "satellite", Hybrid: "hybrid", MutedStandard: "mutedStandard", Standard: "standard" }
+// { Satellite: "satellite", Hybrid: "hybrid", MutedStandard: "mutedStandard", Standard: "standard" }
 
 mapkit.Map.Distances
-# { Adaptive: "adaptive", Metric: "metric", Imperial: "imperial" }
+// { Adaptive: "adaptive", Metric: "metric", Imperial: "imperial" }
 
 mapkit.maps[0].center
-# { latitude: 37.788706013265816, longitude: -122.45377750000002 }
+// { latitude: 37.788706013265816, longitude: -122.45377750000002 }
 
 mapkit.maps[0].region
-# { latitudeDelta: 0.6511658054971932, longitudeDelta: 1.039581298828125 }
+// { latitudeDelta: 0.6511658054971932, longitudeDelta: 1.039581298828125 }
 
 mapkit.maps[0].rotation
-# 10
+// 10
 
 mapkit.maps[0].cameraDistance
-# 78967.63006909048
+// 78967.63006909048
 
 mapkit.maps[0].cameraZoomRange
-# { _minCameraDistance: 0, _maxCameraDistance: Infinity }
+// { _minCameraDistance: 0, _maxCameraDistance: Infinity }
 
 mapkit.maps[0].mapType
-# "standard", "hybrid", "satellite"
+// "standard", "hybrid", "satellite"
 
 JSON.stringify(mapkit.maps[0].visibleMapRect)
-# {"origin":{"x":0.24169921875,"y":0.260009765625},"size":{"width":0.5166015625,"height":0.47998046875}}
+// {"origin":{"x":0.24169921875,"y":0.260009765625},"size":{"width":0.5166015625,"height":0.47998046875}}
 
 JSON.stringify(mapkit.maps[0].annotationsInMapRect( mapkit.maps[0].visibleMapRect ))
-# [
-# {"landmark":{"coordinate":{"latitude":37.7951315,"longitude":-122.402986},
-#   "title":"Transamerica Pyramid","phone":"+1-415-983-5420","url":"http://www.transamericapyramidcenter.com/"}},
-# {"landmark":{"coordinate":{"latitude":37.7954201,"longitude":-122.39352},
-#   "title":"Ferry Building","phone":"+1 (415) 983-8030","url":"http://www.ferrybuildingmarketplace.com"}},
-# {"landmark":{"coordinate":{"latitude":37.8083396,"longitude":-122.415727},
-#   "title":"Fisherman's Wharf","phone":"+1 (415) 673-3530","url":"http://visitfishermanswharf.com"}},
-# {"landmark":{"coordinate":{"latitude":37.7552305,"longitude":-122.452624},
-#   "title":"Sutro Tower","phone":"+1 (415) 681-8850","url":"http://www.sutrotower.com"}},
-# {"landmark":{"coordinate":{"latitude":37.779267,"longitude":-122.419269},
-#   "title":"City Hall","phone":"+1 (415) 701-2311","url":"http://sfgsa.org/index.aspx?page=1085"}},
-# {"landmark":{"coordinate":{"latitude":37.8184493,"longitude":-122.478409},
-#   "title":"Golden Gate Bridge","phone":"+1 (415) 921-5858","url":"http://www.goldengatebridge.org"}},
-# {"landmark":{"coordinate":{"latitude":37.7785538,"longitude":-122.514035},
-#   "title":"Cliff House","phone":"+1 (415) 386-3330","url":"http://www.cliffhouse.com/"}}
-#   ]
+// [
+// {"landmark":{"coordinate":{"latitude":37.7951315,"longitude":-122.402986},
+//   "title":"Transamerica Pyramid","phone":"+1-415-983-5420","url":"http://www.transamericapyramidcenter.com/"}},
+// {"landmark":{"coordinate":{"latitude":37.7954201,"longitude":-122.39352},
+//   "title":"Ferry Building","phone":"+1 (415) 983-8030","url":"http://www.ferrybuildingmarketplace.com"}},
+// {"landmark":{"coordinate":{"latitude":37.8083396,"longitude":-122.415727},
+//   "title":"Fisherman's Wharf","phone":"+1 (415) 673-3530","url":"http://visitfishermanswharf.com"}},
+// {"landmark":{"coordinate":{"latitude":37.7552305,"longitude":-122.452624},
+//   "title":"Sutro Tower","phone":"+1 (415) 681-8850","url":"http://www.sutrotower.com"}},
+// {"landmark":{"coordinate":{"latitude":37.779267,"longitude":-122.419269},
+//   "title":"City Hall","phone":"+1 (415) 701-2311","url":"http://sfgsa.org/index.aspx?page=1085"}},
+// {"landmark":{"coordinate":{"latitude":37.8184493,"longitude":-122.478409},
+//   "title":"Golden Gate Bridge","phone":"+1 (415) 921-5858","url":"http://www.goldengatebridge.org"}},
+// {"landmark":{"coordinate":{"latitude":37.7785538,"longitude":-122.514035},
+//   "title":"Cliff House","phone":"+1 (415) 386-3330","url":"http://www.cliffhouse.com/"}}
+//   ]
 ```
 
 ---
