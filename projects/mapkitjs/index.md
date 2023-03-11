@@ -1,5 +1,5 @@
 ---
-
+# permalink: /projects/mapkitjs/
 ---
 
 <!-- 

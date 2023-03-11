@@ -7,9 +7,9 @@ center:
   latitude: 46.0260
   longitude: -112.5218
 mapType: Hybrid
-urlTemplate: https://s3-us-west-2.amazonaws.com/com.roblabs.yellow-dog/maptiler/butte/{z}/{x}/{y}.png
-minimumZ: 9
-maximumZ: 15
+urlTemplate: https://s3.us-west-2.amazonaws.com/com.roblabs.yellow-dog/maptiler/butte-1940/{z}/{x}/{y}.png
+minimumZ: 12
+maximumZ: 16
 opacity: 0.5
 cameraDistance: 6229.73
 origin: 
