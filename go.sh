@@ -33,7 +33,8 @@ rm -rf tmp/_site
 # docker compose up # Docker Compose is now in the Docker CLI, try `docker compose up`
 
 # brew install rbenv ruby-build
-# echo 'eval "$(~/.rbenv/bin/rbenv init - zsh)"' >> ~/.zshrc
+# echo 'eval "$(~/.rbenv/bin/rbenv init - zsh)"' >> ~/.zshrc      $(: # x86)
+# echo 'eval "$(/opt/homebrew/bin/rbenv init - zsh)"' >> ~/.zshrc $(: # arm64)
 # rbenv install -l
 # rbenv install 2.7.7
 # #  Installed ruby-3.1.2 to /Users/roblabs/.rbenv/versions/3.1.2
@@ -44,14 +45,24 @@ rm -rf tmp/_site
 # bundle install
 #  gem update
 
+# Mar 2023
+# there is some issue with livereload on the port:4000
+# Let the jekyll serve command just build the site,
+#   but run ssl in tmp/_site/www to serve & test
+
 bundle exec jekyll doctor
 bundle exec jekyll serve -h
 bundle exec jekyll serve \
-  --incremental \
   --host oldsanjuan.local \
-  --livereload --trace \
+  --incremental \
+  --trace \
   --ssl-cert ssl/localhost+4.pem \
   --ssl-key  ssl/localhost+4-key.pem
+  
+  # --livereload 
+    
+  # --ssl-cert ssl/localhost.crt \
+  # --ssl-key ssl/localhost.key 
 
 
 # export JEKYLL_VERSION=jekyll/jekyll:latest  # 76e17ded11d1
