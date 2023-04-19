@@ -23,7 +23,7 @@ twitter:
 # https://jekyllrb.com/docs/configuration/options/#global-configuration
 destination: ./tmp/_site/www
 encoding: UTF-8
-exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "go.sh", ".DS_Store", "ssl", ".ruby-version"]
+exclude: ["tmp", "script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "go.sh", ".DS_Store", "ssl", ".ruby-version"]
 timezone: America/Los_Angeles
 
 # https://jekyllrb.com/docs/configuration/markdown/#kramdown

@@ -1,24 +1,24 @@
 clear
-        # sh go.sh                                                              😎 /Users/roblabs/Documents/github/roblabs/roblabs.github.io 
-        # Configuration file: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/_config.yml
-        # To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
-        #             Source: /Users/roblabs/Documents/github/roblabs/roblabs.github.io
-        #        Destination: ./tmp/_site/www
-        #  Incremental build: enabled
-        #       Generating... 
-        #       Remote Theme: Using theme benbalter/retlab
-        #                     done in 9.268 seconds.
-        #  Auto-regeneration: enabled for '/Users/roblabs/Documents/github/roblabs/roblabs.github.io'
-        #     Server address: https://127.0.0.1:4000
-        #   Server running... press ctrl-c to stop.
-        #         ** ERROR: directory is already being watched! **
+# sh go.sh
+# Configuration file: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/_config.yml
+# To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+#             Source: /Users/roblabs/Documents/github/roblabs/roblabs.github.io
+#        Destination: ./tmp/_site/www
+#  Incremental build: enabled
+#       Generating... 
+#       Remote Theme: Using theme benbalter/retlab
+#                     done in 9.268 seconds.
+#  Auto-regeneration: enabled for '/Users/roblabs/Documents/github/roblabs/roblabs.github.io'
+#     Server address: https://127.0.0.1:4000
+#   Server running... press ctrl-c to stop.
+#         ** ERROR: directory is already being watched! **
 
-        #         Directory: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/assets/vendor/bootstrap-sass/assets
+#         Directory: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/assets/vendor/bootstrap-sass/assets
 
-        #         is already being watched through: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/assets/vendor/bootstrap-sass/assets
+#         is already being watched through: /Users/roblabs/Documents/github/roblabs/roblabs.github.io/assets/vendor/bootstrap-sass/assets
 
-        #         MORE INFO: https://github.com/guard/listen/blob/master/README.md
-        #       Regenerating: 80 file(s) changed at 2023-01-28 09:17:04
+#         MORE INFO: https://github.com/guard/listen/blob/master/README.md
+#       Regenerating: 80 file(s) changed at 2023-01-28 09:17:04
 
 # Use `go.sh` for jekyll debugging and testing
 # Use `go-serve.sh` for static site serving after jekyll builds
@@ -41,9 +41,10 @@ rm -rf tmp/_site
 # rbenv local 2.7.7
 # rbenv version
 
-# bundle check
+# bundle config path
 # bundle install
-#  gem update
+# bundle check
+# gem update
 
 # Mar 2023
 # there is some issue with livereload on the port:4000
@@ -53,7 +54,7 @@ rm -rf tmp/_site
 bundle exec jekyll doctor
 bundle exec jekyll serve -h
 bundle exec jekyll serve \
-  --host oldsanjuan.local \
+  --host $(hostname) \
   --incremental \
   --trace \
   --ssl-cert ssl/localhost+4.pem \

@@ -1,6 +1,7 @@
+# [GitHub Dependency versions]: https://pages.github.com/versions "Dependency versions that GitHub Pages uses"
 source 'https://rubygems.org'
-gem 'jekyll'
-gem 'github-pages'
+gem "jekyll", "3.9.3"   # https://rubygems.org/gems/jekyll
+gem 'github-pages' # , '~> 228'
 gem "jekyll-remote-theme"
 gem 'rake'
 gem 'jekyll-avatar'
