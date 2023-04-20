@@ -25,7 +25,7 @@ components:
 * 2010 aerial imagery captured on Jul 13, 2010.
 * 2022 aerial imagery captured in the summer of 2022.
 
-{% include image-gallery.html %}
+{% include image-gallery.liquid %}
 
 ---
 
