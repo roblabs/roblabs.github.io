@@ -57,8 +57,11 @@ bundle exec jekyll serve \
   --host $(hostname) \
   --incremental \
   --trace \
-  --ssl-cert ssl/localhost+4.pem \
-  --ssl-key  ssl/localhost+4-key.pem
+  --ssl-cert ssl/localhost.crt \
+  --ssl-key ssl/localhost.key 
+
+  # --ssl-cert ssl/$(hostname)+4.pem \
+  # --ssl-key  ssl/$(hostname)+4-key.pem
   
   # --livereload 
     
