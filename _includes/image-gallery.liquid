@@ -1,0 +1,22 @@
+{% comment %} Copyright (c) 2020 Usecue BV.  © 2023 ePi Rational, Inc. {% endcomment %}
+{% comment %} SPDX-License-Identifier: MIT {% endcomment %}
+{% comment %} includes content from https://github.com/jhvanderschee/jekyllcodex and https://jekyllcodex.org/without-plugins {% endcomment %}
+<script type="text/javascript" src="/assets/js/lightbox.js"></script>
+<link rel="stylesheet" href="/assets/css/lightbox.css">
+
+<div>
+<style>
+    .image-gallery {overflow: auto; margin-left: -1%!important;}
+    .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
+    .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
+    .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
+    .image-gallery li a img {width: 61.8%; display: block;}
+</style>
+</div>
+
+<div markdown="0">
+<ul class="image-gallery">
+  {% for components in page.components %}
+<li><a href="{{ components.image.URL }}" title="{{ components.image.caption }}"><img src="{{ components.image.URL }}" alt="{{ components.image.caption }}"/><span>{{ components.image.caption }}</span></a></li>
+  {% endfor %}</ul>
+</div>
