@@ -61,7 +61,7 @@ page.tags: {{ page.tags }}
           <div class="container">
                 {% if page.excerpt_img %}
                 <a target="_blank" href="{{ page.excerpt_img }}">
-                  <img src="{{ page.excerpt_img }}" alt="{{ page.description }}" style="width: 61.8%; border-radius:5px; overflow: hidden;">
+                  <img src="{{ page.excerpt_img }}" alt="{{ page.description }}" style="width: 31.8%; border-radius:5px; overflow: hidden;">
                 </a>
                 {% else %}<img src="{{ site.githubmetadata.avatar }}" style="height: 64px; width: 64px; border-radius:5px; overflow: hidden;">{% endif %}
               <ul>
@@ -85,6 +85,7 @@ page.tags: {{ page.tags }}
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
+        <hr/>
       </div>
     </div>
 
