@@ -53,13 +53,15 @@ layout: mapkitjs
 	// Always show the compass, regardless of the map state. 
 	map.showsCompass = mapkit.FeatureVisibility.Visible;
 	map.showsScale   = mapkit.FeatureVisibility.Visible;
+	map._allowWheelToZoom = true;
 
+	/// https://developer.apple.com/documentation/mapkitjs/mapkit.camerazoomrange
 	// Set camera bounds based on Zoom range
 	//   Note:  minimum camera distance is related to the maximum zoom
 	//          maximum camera distance is related to the minimum zoom
 	const minCameraDistance = zoom2altitude( {{ page.maximumZ }} )
     const maxCameraDistance = zoom2altitude( {{ page.minimumZ }} )
-	map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
+	// map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
 	map.minCameraDistance = minCameraDistance
 	
 	// https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions
@@ -75,8 +77,6 @@ layout: mapkitjs
 		lang: mapkit.language,
 	};
 	map.addTileOverlay(customOverlayOptions);
-
-	map._allowWheelToZoom = true
 
 	if(location.hash != "") {
 		_updateMapFromHashEdit()
