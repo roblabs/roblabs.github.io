@@ -1,4 +1,7 @@
 ---
+# file: projects/mapkitjs/butte.md
+# URL:  https://roblabs.com/projects/mapkitjs/butte/
+# Layout path:  _layouts/mapkitjs.html
 layout: mapkitjs
 
 #13/46.0119/-112.5193

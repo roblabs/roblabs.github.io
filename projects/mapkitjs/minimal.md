@@ -1,4 +1,7 @@
 ---
+# file: projects/mapkitjs/minimal.md
+# URL:  https://roblabs.com/projects/mapkitjs/minimal/
+# Layout path:  _layouts/mapkitjs.html
 layout: mapkitjs
 
  #Controlling the visible portion of the map

@@ -1,4 +1,7 @@
 ---
+# file: projects/mapkitjs/boston1995.md
+# URL:  https://roblabs.com/projects/mapkitjs/boston1995/
+# Layout path:  _layouts/mapkitjs.html
 layout: mapkitjs
 
 # #16.04/42.3562/-71.0505

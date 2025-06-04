@@ -1,4 +1,7 @@
 ---
+# file: projects/mapkitjs/lebanon1911.md
+# URL:  https://roblabs.com/projects/mapkitjs/lebanon1911/
+# Layout path:  _layouts/mapkitjs.html
 layout: mapkitjs
 
 #14/44.5327/-122.8909
