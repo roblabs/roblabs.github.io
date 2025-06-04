@@ -4,7 +4,7 @@
 # Layout path:  _layouts/mapkitjs.html
 layout: mapkitjs
 
- #Controlling the visible portion of the map
+# Controlling the visible portion of the map
 # The visible area of the map, in map units.
 #   The default value is `new mapkit.MapRect(0, 0, 1, 1)`
 #   https://developer.apple.com/documentation/mapkitjs/mapkit/maprect/2973964-mapkit_maprect

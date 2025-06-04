@@ -20,12 +20,9 @@ layout: mapkitjs
 	mapkit.init({
 		language: "{{ page.language }}",
 		authorizationCallback: function (done) {
-			var xhr = new XMLHttpRequest();
-			xhr.open("GET", "/services/jwt");
-			xhr.addEventListener("load", function () {
-				done(this.responseText);
-			});
-			xhr.send();
+			fetch("/services/jwt")
+				.then(res => res.text())
+				.then(done);
 		}
 	});
 
@@ -61,7 +58,7 @@ layout: mapkitjs
 	//   Note:  minimum camera distance is related to the maximum zoom
 	//          maximum camera distance is related to the minimum zoom
 	const minCameraDistance = zoom2altitude( {{ page.maximumZ }} )
-    const maxCameraDistance = Infinity// zoom2altitude( {{ page.minimumZ }} )
+    const maxCameraDistance = zoom2altitude( {{ page.minimumZ }} )
 	map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
 	map.minCameraDistance = minCameraDistance
 	
@@ -79,12 +76,13 @@ layout: mapkitjs
 	};
 	map.addTileOverlay(customOverlayOptions);
 
+	map._allowWheelToZoom = true
+
 	if(location.hash != "") {
 		_updateMapFromHashEdit()
 	}
 	
 	{% if jekyll.environment == "development" %}
-	map._allowWheelToZoom = true
 	map._showsDefaultTiles = true
 	map._showsTileInfo = true
 	// Hidden API Zone
