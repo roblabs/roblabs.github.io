@@ -181,7 +181,8 @@ zoom: ${zoom}
 minimumZ: {{ page.minimumZ }}
 maximumZ: {{ page.maximumZ }}
 cameraDistance: ${map.cameraDistance.toFixed(0) / 2.0}
-# cameraZoomRange: [${map.cameraZoomRange.minCameraDistance}, ${map.cameraZoomRange.maxCameraDistance}]
+# cameraZoomRange: [${map.minCameraDistance}, ${map.maxCameraDistance}]
+map.cameraZoomRange = new mapkit.CameraZoomRange(${map.minCameraDistance}, ${map.maxCameraDistance})
 center:
   latitude: ${latitude}
   longitude: ${longitude}
