@@ -61,7 +61,6 @@ layout: mapkitjs
 	//          maximum camera distance is related to the minimum zoom
 	const minCameraDistance = zoom2altitude( {{ page.maximumZ }} )
     const maxCameraDistance = zoom2altitude( {{ page.minimumZ }} )
-	// map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
 	map.minCameraDistance = minCameraDistance
 	map.maxCameraDistance = maxCameraDistance
 	
@@ -78,6 +77,8 @@ layout: mapkitjs
 		lang: mapkit.language,
 	};
 	map.addTileOverlay(customOverlayOptions);
+
+	map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
 
 	if(location.hash != "") {
 		_updateMapFromHashEdit()
