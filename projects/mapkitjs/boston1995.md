@@ -9,7 +9,7 @@ zoom: 16.04
 center:
   latitude: 42.3562
   longitude: -71.0505
-mapType: Standard
+mapType: Hybrid
 urlTemplate: https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/BW_Orthos_Tile_Package/MapServer/tile/{z}/{y}/{x}
 minimumZ: 8
 maximumZ: 18

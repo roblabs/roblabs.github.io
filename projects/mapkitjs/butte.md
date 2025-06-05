@@ -6,7 +6,7 @@ layout: mapkitjs
 
 #13/46.0119/-112.5193
 zoom: 13
-minimumZ: 9
+minimumZ: 11
 maximumZ: 14
 cameraDistance: 2395.5
 center:

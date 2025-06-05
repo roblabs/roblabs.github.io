@@ -103,12 +103,7 @@ layout: mapkitjs
 	}
 	
 	{% if jekyll.environment == "development" %}
-	map._showsDefaultTiles = true
-	map._showsTileInfo = true
-	// Hidden API Zone
-	// map._impl.minZoomLevel = {{ page.minimumZ }}
-	// map._impl.maxZoomLevel = {{ page.maximumZ }}
-	// map._impl.zoomLevel = 15
+	dev()	
 	{% endif %}
 
 	// https://developer.apple.com/documentation/mapkitjs/mapkit/map/handling_map_events
@@ -125,6 +120,14 @@ layout: mapkitjs
 	});
 
 	// functions
+
+	/**
+	 * Development mode
+	 */
+	function dev() {
+			map._showsTileInfo = true
+			console.log(`( ${map._impl.minZoomLevel}, ${map._impl.maxZoomLevel} )`)
+	}
 
 	async function updateMapEvent() {
 		console.log(`event 🗺️ B: mapState: ${mapState}`)
@@ -200,7 +203,8 @@ zoom: ${zoom}
 minimumZ: {{ page.minimumZ }}
 maximumZ: {{ page.maximumZ }}
 cameraDistance: ${map.cameraDistance.toFixed(0) / 2.0}
-map.cameraZoomRange = new mapkit.CameraZoomRange(${map.minCameraDistance}, ${map.maxCameraDistance})
+# map._impl: (${map._impl.minZoomLevel}, ${map._impl.maxZoomLevel})
+# map.cameraZoomRange = new mapkit.CameraZoomRange(${map.minCameraDistance}, ${map.maxCameraDistance})
 center:
   latitude: ${latitude}
   longitude: ${longitude}
