@@ -12,7 +12,7 @@ center:
 mapType: Standard
 urlTemplate: https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/BW_Orthos_Tile_Package/MapServer/tile/{z}/{y}/{x}
 minimumZ: 8
-maximumZ: 19
+maximumZ: 18
 opacity: 0.75
 cameraDistance: 998.32
 origin: 

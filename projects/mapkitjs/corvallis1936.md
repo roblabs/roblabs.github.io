@@ -11,8 +11,8 @@ center:
   longitude: -123.28549
 mapType: Hybrid
 urlTemplate: https://raspy-firefly-e8ae.roblabs.workers.dev/corvallis1936/{z}/{x}/{y}.png
-minimumZ: 8
-maximumZ: 19
+minimumZ: 9
+maximumZ: 17
 opacity: 0.75
 cameraDistance: 998.32
 origin: 
