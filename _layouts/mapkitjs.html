@@ -87,6 +87,8 @@ layout: mapkitjs
 		console.error(error);
 	}
 
+	// MARK:  Filtering
+	map.pointOfInterestFilter = mapkit.PointOfInterestFilter.excludingAllCategories
 
 	if(location.hash != "") {
 		_updateMapFromHashEdit()
