@@ -4,17 +4,17 @@
 # Layout path:  _layouts/mapkitjs.html
 layout: mapkitjs
 
-# 13.58/44.56293/-123.28549
-zoom: 13.58
+#14/44.5621/-123.2836
+zoom: 14
 center:
-  latitude: 44.56293
-  longitude: -123.28549
+  latitude: 44.5621
+  longitude: -123.2836
 mapType: Hybrid
 urlTemplate: https://raspy-firefly-e8ae.roblabs.workers.dev/corvallis1936/{z}/{x}/{y}.png
 minimumZ: 9
 maximumZ: 17
-opacity: 0.75
-cameraDistance: 998.32
+opacity: 1.0
+cameraDistance: 2457
 origin: 
   x: 0.30262
   y: 0.36987

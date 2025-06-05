@@ -80,8 +80,10 @@ layout: mapkitjs
 
 	// TODO:  understand why this is failing
 	try {
+		console.log("minCameraDistance, maxCameraDistance", minCameraDistance, maxCameraDistance)
 		map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
 	} catch (error) {
+		// TypeError: [MapKit] The `scaleFactor` parameter passed to `MapRect.scale()` is not a number.
 		console.error(error);
 	}
 
@@ -188,14 +190,14 @@ zoom: ${zoom}
 minimumZ: {{ page.minimumZ }}
 maximumZ: {{ page.maximumZ }}
 cameraDistance: ${map.cameraDistance.toFixed(0) / 2.0}
-# cameraZoomRange: [${map.minCameraDistance}, ${map.maxCameraDistance}]
 map.cameraZoomRange = new mapkit.CameraZoomRange(${map.minCameraDistance}, ${map.maxCameraDistance})
+JSON.stringify(${mapkit.maps[0].cameraZoomRange})
 center:
   latitude: ${latitude}
   longitude: ${longitude}
 mapType: ${mapTypeCapitalized}
 urlTemplate: {{ page.urlTemplate }}
-opacity: {{ page.opacity }}
+opacity: ${document.getElementById("slider").valueAsNumber}
 origin: 
   x: ${map.visibleMapRect.origin.x.toFixed(5)}
   y: ${map.visibleMapRect.origin.y.toFixed(5)}

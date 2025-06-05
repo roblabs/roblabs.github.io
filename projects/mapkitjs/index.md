@@ -184,7 +184,7 @@ var CITIES = {
 
 ---
 
-### Embed<sup>1</sup>[<sup>1</sup>][1]
+### Embed[<sup>1</sup>][1]
 
 Create an embedded map in an element on the page.
 
