@@ -31,7 +31,8 @@ demonstrates animating an overlay property in a request animation frame loop. --
 * [OpenStreetMap](/projects/mapkitjs/minimal){:target="_blank"}
 * [Butte 1940](/projects/mapkitjs/butte){:target="_blank"}
 * [Lebanon 1911](/projects/mapkitjs/lebanon1911){:target="_blank"}
-<!-- * [Boston 1995](/projects/mapkitjs/boston1995){:target="_blank"} -->
+* [Boston 1995](/projects/mapkitjs/boston1995){:target="_blank"}
+* [Corvallis 1936](/projects/mapkitjs/corvallis1936){:target="_blank"}
 
 ### MapKit JS from the Console
 

@@ -15,7 +15,7 @@ center:
   longitude: -112.5193
 mapType: Hybrid
 urlTemplate: https://s3-us-west-2.amazonaws.com/com.roblabs.yellow-dog/maptiler/butte/{z}/{x}/{y}.png
-opacity: 0.5
+opacity: 0.75
 origin: 
   x: 0.18720
   y: 0.35557

@@ -15,7 +15,7 @@ center:
   longitude: -122.8909
 mapType: Hybrid
 urlTemplate: https://s3.us-west-2.amazonaws.com/com.roblabs.yellow-dog/maptiler/97355/{z}/{x}/{y}.png
-opacity: 0.5
+opacity: 0.75
 origin: 
   x: 0.15851
   y: 0.36148

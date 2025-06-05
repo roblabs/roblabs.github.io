@@ -101,7 +101,7 @@ language: es-ES
 urlTemplate: https://tile.openstreetmap.org/{z}/{x}/{y}.png?scale={scale}
 minimumZ: 0
 maximumZ: 15
-opacity: 0.5
+opacity: 0.75
 
 # https://developer.apple.com/documentation/mapkitjs/tileoverlay/2974034-data
 # example of custom data to pass to the urlTemplate
