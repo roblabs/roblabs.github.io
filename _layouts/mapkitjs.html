@@ -63,6 +63,7 @@ layout: mapkitjs
     const maxCameraDistance = zoom2altitude( {{ page.minimumZ }} )
 	// map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
 	map.minCameraDistance = minCameraDistance
+	map.maxCameraDistance = maxCameraDistance
 	
 	// https://developer.apple.com/documentation/mapkitjs/tileoverlayconstructoroptions
 	const urlTemplate = "{{ page.urlTemplate }}";
