@@ -78,7 +78,13 @@ layout: mapkitjs
 	};
 	map.addTileOverlay(customOverlayOptions);
 
-	map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
+	// TODO:  understand why this is failing
+	try {
+		map.cameraZoomRange = new mapkit.CameraZoomRange(minCameraDistance, maxCameraDistance)
+	} catch (error) {
+		console.error(error);
+	}
+
 
 	if(location.hash != "") {
 		_updateMapFromHashEdit()
