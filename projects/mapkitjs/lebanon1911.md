@@ -8,14 +8,13 @@ layout: mapkitjs
 zoom: 14
 minimumZ: 11
 maximumZ: 16
-cameraDistance: 3082.5
-# cameraZoomRange: [2048, Infinity]
+cameraDistance: 4916
 center:
-  latitude: 44.5327
-  longitude: -122.8909
+  latitude: 44.5380
+  longitude: -122.9059
 mapType: Hybrid
 urlTemplate: https://s3.us-west-2.amazonaws.com/com.roblabs.yellow-dog/maptiler/97355/{z}/{x}/{y}.png
-opacity: 0.75
+opacity: 1
 origin: 
   x: 0.15851
   y: 0.36148

@@ -8,11 +8,10 @@ layout: mapkitjs
 zoom: 13
 minimumZ: 9
 maximumZ: 14
-cameraDistance: 6007.5
-# cameraZoomRange: [2048, Infinity]
+cameraDistance: 2395.5
 center:
-  latitude: 46.0119
-  longitude: -112.5193
+  latitude: 46.0171
+  longitude: -112.5129
 mapType: Hybrid
 urlTemplate: https://s3-us-west-2.amazonaws.com/com.roblabs.yellow-dog/maptiler/butte/{z}/{x}/{y}.png
 opacity: 0.75
