@@ -1,4 +1,5 @@
 ---
+# file: projects/mapkitjs/index.md
 # permalink: /projects/mapkitjs/
 ---
 
@@ -15,6 +16,8 @@ demonstrates animating an overlay property in a request animation frame loop. --
 
 ## MapKit JS
 
+### Samples from [developer.apple.com/maps/web](https://developer.apple.com/maps/web/)
+
 * [Add Annotations](/projects/mapkitjs/Add-Annotations.html){:target="_blank"} demonstrates adding a basic annotation.
 * [Annotations With a Custom Callout](/projects/mapkitjs/Custom-Callout.html){:target="_blank"} demonstrates how to add custom styles to annotation callouts.
 * [Draggable Annotations](/projects/mapkitjs/Draggable-Annotations.html){:target="_blank"} demonstrates a draggable annotation with an updated overview map.
@@ -25,6 +28,19 @@ demonstrates animating an overlay property in a request animation frame loop. --
 
 * [MapKit JS Sample Code from apple.com](https://developer.apple.com/forums/thread/704954)
 * Embed interactive Apple Maps on your website, annotate points of interest, and perform georelated searches with [MapKit JS at apple.com](https://developer.apple.com/documentation/MapKitJS)
+
+### Samples from April 2022:  "*MapKit JS sample code is now available at <https://maps.developer.apple.com/sample-code>*"
+
+* [Embedded map] Display a map with minimal code.
+* [Annotations and Reverse Geocoding] Add and remove annotations using the Reverse Geocoding API to find place data.
+* [Annotations With a Custom Callout] Add custom styles to annotation callouts.
+* [Overlays of Population by U.S. State](/projects/mapkitjs/sample-code/overlays-of-population-by-u-s-state.html) Display, transform, and interact with GeoJSON-based map overlays.
+* [Callout Accessory Views](/projects/mapkitjs/sample-code/callout-accessory-views.html)  Display additional customized elements within a callout.
+* [Region and Zoom Limits] Limit a map viewport's zoom level, and constraints of its latitude and longitude.
+* [Animated Polyline Overlays](/projects/mapkitjs/sample-code/animated-polyline-overlays.html) Animate an overlay property in a request animation frame loop.
+* [Displaying Place Data by Place ID](/projects/mapkitjs/sample-code/displaying-place-data-by-place-id.html) Find place data with a Place ID lookup and display the data multiple ways.
+* [Search Filtering](/projects/mapkitjs/sample-code/search-filtering.html) Search for address components (like cities) and limit search results to only reside in a particular region.
+* [Interactive Look Around](/projects/mapkitjs/sample-code/interactive-look-around.html)  Display an interactive Look Around.
 
 ### TileOverlay Demos
 
@@ -222,3 +238,5 @@ var zoomedMap = new mapkit.Map("loupe", {
 
 
 [1]: https://developer.apple.com/maps/web
+
+[MapKit JS]: https://developer.apple.com/documentation/MapKitJS "Embed interactive Apple Maps on your website, annotate points of interest, and perform georelated searches."

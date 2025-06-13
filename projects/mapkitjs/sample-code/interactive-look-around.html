@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <style>
+        #container {
+            height: 600px;
+        }
+    </style>
+
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js" crossorigin async data-callback="initMapKit"
+        data-libraries="services,look-around" 
+        data-tokenlocalhost="ey"
+        data-token="eyJraWQiOiJSUTc5SDlCOE5VIiwidHlwIjoiSldUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJKN1YzNVc3RVM4IiwiaWF0IjoxNzQ5NzQ4NjM1LCJleHAiOjE3NTA0MDI3OTl9.Aajrww4bCejBzv-VIrrmGF7oPMWOXEVCb_iZWSBEPRiTJTYtZyXK2laOca4CcCUtwgiPTkrlh_wG4GfCsW4foA" >
+        </script>
+
+    <script type="module">
+        // Wait for MapKit JS to be ready to use.
+        const setupMapKitJs = async () => {
+            // If MapKit JS is not yet loaded...
+            if (!window.mapkit || window.mapkit.loadedLibraries.length === 0) {
+                // ...await <script>'s data-callback (window.initMapKit).
+                await new Promise(resolve => { window.initMapKit = resolve });
+                // Clean up.
+                delete window.initMapKit;
+            }
+        };
+
+        /**
+         * Script Entry Point
+         */
+        const main = async () => {
+            await setupMapKitJs();
+
+            const placeLookup = new mapkit.PlaceLookup();
+            const place = await new Promise(
+                resolve => placeLookup.getPlace(
+                    // The PlaceID that represents Cherry Hill Fountain, Central Park, New York, NY
+                    "IBE1F65094A7A13B1",
+                    (error, result) => resolve(result)
+                )
+            );
+
+            // Create an interactive look around view.
+            const lookAround = new mapkit.LookAround(
+                document.getElementById("container"),
+                place,
+                {
+                    // Allow users to expand the view.
+                    showsDialogControl: true
+                }
+            );
+        };
+
+        main();
+
+    </script>
+</head>
+
+<body>
+    <div id="container"></div>
+</body>
+
+</html>
