@@ -1,0 +1,316 @@
+/**
+*  Publish Foundation theme
+*  Copyright (c) John Sundell 2019
+*  MIT license, see LICENSE file for details
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: Helvetica, Arial;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    text-align: left;
+}
+
+header {
+    background-color: #eee;
+}
+
+header .wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .site-name {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: bold;
+}
+
+.ImageImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.item-image-link {
+    display: block;
+    margin-bottom: 15px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 7px;
+    line-height: 1.5em;
+}
+
+nav li a.selected {
+    text-decoration: underline;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: inherit;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.home-page {
+    padding-top: 12px;
+    padding-bottom: 24px;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3 {
+    line-height: 1.2;
+}
+
+.home-hero {
+    padding: clamp(32px, 7vw, 72px);
+    border-radius: 18px;
+    background: #edf4f1;
+}
+
+.home-hero h1 {
+    max-width: 720px;
+    margin: 0;
+    font-size: clamp(2.2rem, 6vw, 4.2rem);
+}
+
+.home-section {
+    padding: 34px 0;
+}
+
+.home-section h2 {
+    margin: 0 0 20px;
+}
+
+.home-social-links,
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    list-style: none;
+}
+
+.home-social-links li,
+.home-feature {
+    min-width: 0;
+    padding: 18px;
+    border: 1px solid #dfe5e2;
+    border-radius: 12px;
+    background: #fafcfb;
+}
+
+.home-social-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 36px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-social-links a:hover,
+.home-social-links a:focus-visible {
+    text-decoration: underline;
+}
+
+.home-social-links img {
+    display: block;
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.home-feature h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.home-feature p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.home-page hr {
+    border: 0;
+    border-top: 1px solid #dfe5e2;
+}
+
+.item-list > li {
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.item-list > li:last-child {
+    margin-bottom: 0;
+}
+
+.item-list {
+    list-style: none;
+}
+
+.item-list h1 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.item-list p {
+    margin-bottom: 0;
+}
+
+.item-list .dateclass {
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.tag-list {
+    margin-bottom: 15px;
+}
+
+.tag-list li,
+.tag {
+    display: inline-block;
+    background-color: #000;
+    color: #ddd;
+    padding: 4px 6px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.tag-list a,
+.tag a {
+    text-decoration: none;
+}
+
+.item-page .tag-list {
+    display: inline-block;
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+.item-title {
+    margin-bottom: 24px;
+}
+
+.content img,
+.content svg,
+.content video,
+.content iframe {
+    max-width: 100%;
+}
+
+.content img,
+.content video {
+    height: auto;
+}
+
+.content iframe {
+    display: block;
+}
+
+.browse-all {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.all-tags li {
+    font-size: 1.4em;
+    margin-right: 10px;
+    padding: 6px 10px;
+}
+
+footer {
+    color: #8a8a8a;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+    }
+
+    body,
+    header .site-name {
+        color: #ddd;
+    }
+
+    .item-list > li {
+        background-color: #333;
+    }
+
+    .item-list .dateclass {
+        color: #aaa;
+    }
+
+    .home-hero {
+        background: #293630;
+    }
+
+    .home-social-links li,
+    .home-feature {
+        border-color: #444;
+        background: #2b2b2b;
+    }
+
+    .home-page hr {
+        border-top-color: #444;
+    }
+
+    header {
+        background-color: #000;
+    }
+}
+
+@media(max-width: 600px) {
+    .wrapper {
+        padding: 40px 20px;
+    }
+}

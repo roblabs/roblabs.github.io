@@ -1,0 +1,500 @@
+/*
+ Carousel - CSS-first.
+
+ The carousel works with zero JavaScript: the track is a native CSS scroll-snap
+ container, so it can be swiped on a touch screen and scrolled with a trackpad
+ or the shift+wheel combination.
+
+ carousel.js is an optional progressive enhancement. It adds the previous/next
+ buttons and the position indicator, which stay hidden until the script marks
+ the carousel as enhanced. The script never writes a width, a height or a
+ style - every dimension of the carousel is set by the stylesheet below, so a
+ site can restyle it without changing any Swift.
+
+ Two things are configured with data attributes on the .carousel element:
+
+   data-layout    "single" (default) - one slide fills the carousel
+                  "peek"            - a strip of slides, the next one peeking in
+
+   data-indicator "dots" (default)      - a row of small dots
+                  "numbers"            - a row of numbered steps
+                  "breadcrumb"         - 1 › 2 › 3 › 4 › 5
+                  "counter"            - a plain "2 of 5" counter
+
+   data-controls "bottom" (default) - the previous/next buttons sit in a row
+                                       underneath the image
+                  "top"               - the same row, above the image
+                  "overlay"           - the previous/next buttons sit on top
+                                       of the image, vertically centred on it
+                  "centered"          - underneath the image, grouped together
+                                       in the horizontal centre
+                  "inline"            - underneath the image, immediately
+                                       either side of the position indicator
+
+ The sizing is controlled by the custom properties in the SIZING section below.
+ Set them wherever the carousel is styled:
+
+   :root        { --carousel-height: 20rem; }         every carousel
+   .post-gallery { --carousel-height: 32rem; }        one carousel
+   .carousel[data-layout="peek"] { --carousel-gap: 2rem; }
+*/
+
+/* ==========================================================================
+   SIZING
+
+   Every dimension of the carousel is set here. The custom properties below
+   hold the defaults, and can be overridden anywhere - on :root, on a wrapper
+   class, or on the .carousel element itself.
+
+   --carousel-height         The height of each image. See the note below.
+   --carousel-caption-size   The font size of the caption under each image.
+   --carousel-gutter         The padding at each end of the track, and around
+                             each image in the single layout.
+   --carousel-gap            The gap between slides. Only used by the peek
+                             layout.
+   --carousel-radius         The corner radius of each image.
+   --carousel-indicator-gap  The gap between the steps of the indicator.
+   --carousel-button-size    The width and height of the previous/next
+                             buttons.
+   --carousel-dot-size       The diameter of the dots.
+   --carousel-step-size      The diameter of the numbered steps.
+   ========================================================================== */
+
+:root {
+    /* The height of each image.
+
+       It is set here so that both layouts use the same height. The
+       per-layout fallbacks further down - 10rem for the single layout and
+       18rem for the strip layout - only come into play if this line is
+       removed, which is how the two layouts can be given different heights. */
+    --carousel-height: 28rem;
+
+    /* The font size of the caption under each image. */
+    --carousel-caption-size: 1rem; /* 0.875rem; */
+
+    /* The padding at each end of the track, and around each image in the
+       single layout. */
+    --carousel-gutter: 1.5rem;
+
+    /* The gap between slides. Only used by the peek layout. */
+    --carousel-gap: 1rem;
+
+    /* The corner radius of each image. */
+    --carousel-radius: 0.75rem;
+
+    /* The gap between the steps of the indicator. */
+    --carousel-indicator-gap: 0.4rem;
+
+    /* The width and height of the previous/next buttons. */
+    --carousel-button-size: 2.25rem;
+
+    /* The diameter of the dots. */
+    --carousel-dot-size: 0.5rem;
+
+    /* The diameter of the numbered steps. */
+    --carousel-step-size: 1.75rem;
+}
+
+/* The caption under each image. Its size is a custom property so that it can
+   be matched to the rest of the carousel. */
+.carousel__caption {
+    margin: 0.5rem 0 0;
+    font-size: var(--carousel-caption-size, 0.875rem);
+    text-align: center;
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   STRUCTURE
+   ========================================================================== */
+
+.carousel {
+    position: relative;
+}
+
+/* data-controls="top" moves the whole controls bar above the image. The
+   controls follow the viewport in the markup, so only the visual order
+   changes, with a flex column. */
+.carousel[data-controls="top"] {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel[data-controls="top"] .carousel__controls {
+    order: -1;
+}
+
+.carousel[data-enhanced][data-controls="top"] .carousel__controls {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+/* The caption moves above its image as well, so the controls, the caption and
+   the image read from the top down. */
+.carousel[data-controls="top"] .carousel__slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel[data-controls="top"] .carousel__caption {
+    order: -1;
+    margin: 0 0 0.5rem;
+}
+
+/* The viewport is the scroll container. The controls are a sibling of it, so
+   that they stay in place while the track scrolls. */
+.carousel__viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel__viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__track {
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================================================================
+   LAYOUT: ONE SLIDE AT A TIME
+   ========================================================================== */
+
+.carousel[data-layout="single"] .carousel__track {
+    gap: 0;
+}
+
+.carousel[data-layout="single"] .carousel__slide {
+    /* Each slide is exactly as wide as the carousel, so only one is visible.
+       The gutter is padding on the slide itself, which keeps the slide's
+       border box the same width as the carousel. */
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding-inline: var(--carousel-gutter, 1.5rem);
+    scroll-snap-align: start;
+    margin: 0;
+}
+/*  28rem */
+.carousel[data-layout="single"] .carousel__slide img {
+    /* Fill the slide, but never crop the image. */
+    width: 100%;
+    height: var(--carousel-height, 10rem);
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   LAYOUT: A STRIP OF SLIDES
+   ========================================================================== */
+
+.carousel[data-layout="peek"] .carousel__viewport {
+    scroll-padding-inline: var(--carousel-gutter, 1.5rem);
+}
+
+.carousel[data-layout="peek"] .carousel__track {
+    gap: var(--carousel-gap, 1rem);
+    padding-inline: var(--carousel-gutter, 1.5rem);
+}
+
+.carousel[data-layout="peek"] .carousel__slide {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin: 0;
+}
+
+.carousel[data-layout="peek"] .carousel__slide img {
+    height: var(--carousel-height, 18rem);
+    width: auto;
+}
+
+/* ==========================================================================
+   SLIDE STYLING
+   ========================================================================== */
+
+.carousel__slide img {
+    display: block;
+    max-width: 100%;
+    border-radius: var(--carousel-radius, 0.75rem);
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+/* ==========================================================================
+   CONTROLS
+   ========================================================================== */
+
+/* The controls are hidden until carousel.js upgrades the carousel. */
+.carousel__controls {
+    display: none;
+}
+
+/* The controls are laid out as a grid so that each placement can position the
+   three parts - the previous button, the status and the next button  - 
+   independently of each other. The default is a row: the buttons at either end
+   and the status in the middle. */
+.carousel[data-enhanced] .carousel__controls {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.carousel[data-enhanced] .carousel__button--previous {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+}
+
+.carousel[data-enhanced] .carousel__status {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.carousel[data-enhanced] .carousel__button--next {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.carousel__status {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.carousel__button {
+    appearance: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    color: inherit;
+    border-radius: 999px;
+    width: var(--carousel-button-size, 2.25rem);
+    height: var(--carousel-button-size, 2.25rem);
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.carousel__button[disabled] {
+    opacity: 0.3;
+    cursor: default;
+}
+
+/* --- Controls: centred under the image ---------------------------------- */
+
+/* The two buttons are grouped together in the horizontal centre, on a row of
+   their own underneath the position indicator. The grid has two columns - one
+   for each button - and is centred as a whole, so the pair ends up in the
+   middle of the carousel rather than at its edges. */
+.carousel[data-controls="centered"] .carousel__controls {
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.carousel[data-controls="centered"] .carousel__status {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.carousel[data-controls="centered"] .carousel__button--previous {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+}
+
+.carousel[data-controls="centered"] .carousel__button--next {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+}
+
+/* --- Controls: either side of the indicator ----------------------------- */
+
+/* The buttons sit immediately either side of the position indicator, and the
+   three of them are centred as a group. */
+.carousel[data-controls="inline"] .carousel__controls {
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.carousel[data-controls="inline"] .carousel__button--previous {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.carousel[data-controls="inline"] .carousel__status {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.carousel[data-controls="inline"] .carousel__button--next {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+}
+
+/* --- Controls on top of the image -------------------------------------- */
+
+/* With data-controls="overlay" the buttons are taken out of the flow and
+   positioned against the .carousel element, which is the nearest positioned
+   ancestor. The image starts at the top of the carousel, so the middle of the
+   image is half of --carousel-height down from the top. The buttons are then
+   shifted back by half their own height, which centres them on that point.
+
+   The buttons line up with the edges of the slide rather than of the painted
+   image, because CSS cannot know the aspect ratio of the image. In the peek
+   layout the image fills its own box, so the two are the same. */
+.carousel[data-controls="overlay"] .carousel__controls {
+    /* Only the indicators are left in the flow, so centre them. */
+    display: flex;
+    justify-content: center;
+}
+
+.carousel[data-controls="overlay"] .carousel__button {
+    position: absolute;
+    top: calc(var(--carousel-height, 28rem) / 2);
+    transform: translateY(-50%);
+    /* The buttons sit over a picture, so they need a background of their own
+       to stay legible whatever the picture looks like. A site can restyle
+       this. */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.carousel[data-layout="peek"][data-controls="overlay"] .carousel__button {
+    top: calc(var(--carousel-height, 18rem) / 2);
+}
+
+.carousel[data-controls="overlay"] .carousel__button--previous {
+    left: var(--carousel-gutter, 1.5rem);
+}
+
+.carousel[data-controls="overlay"] .carousel__button--next {
+    right: var(--carousel-gutter, 1.5rem);
+}
+
+/* ==========================================================================
+   INDICATORS
+   ========================================================================== */
+
+.carousel__indicators {
+    display: flex;
+    align-items: center;
+    gap: var(--carousel-indicator-gap, 0.4rem);
+    /* The numbers in the numbered and breadcrumb indicators are generated by
+       CSS, so the markup stays the same for every indicator style. */
+    counter-reset: carousel-step;
+}
+
+.carousel__indicator {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    line-height: 1;
+    cursor: pointer;
+    counter-increment: carousel-step;
+}
+
+/* --- Dots ------------------------------------------------------------- */
+
+.carousel[data-indicator="dots"] .carousel__indicator::after {
+    content: "";
+    display: block;
+    width: var(--carousel-dot-size, 0.5rem);
+    height: var(--carousel-dot-size, 0.5rem);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.carousel[data-indicator="dots"] .carousel__indicator[aria-current="true"]::after {
+    background-color: currentColor;
+}
+
+/* --- Numbered steps --------------------------------------------------- */
+
+.carousel[data-indicator="numbers"] .carousel__indicator::after {
+    content: counter(carousel-step);
+    display: grid;
+    place-items: center;
+    width: var(--carousel-step-size, 1.75rem);
+    height: var(--carousel-step-size, 1.75rem);
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 0.875rem;
+}
+
+.carousel[data-indicator="numbers"] .carousel__indicator[aria-current="true"]::after {
+    border-color: currentColor;
+    font-weight: 700;
+}
+
+/* --- Breadcrumb: 1 › 2 › 3 › 4 › 5 ------------------------------------ */
+
+.carousel[data-indicator="breadcrumb"] .carousel__indicator::after {
+    content: counter(carousel-step) " ›";
+    font-size: 0.875rem;
+    opacity: 0.5;
+}
+
+.carousel[data-indicator="breadcrumb"] .carousel__indicator:last-child::after {
+    content: counter(carousel-step);
+}
+
+.carousel[data-indicator="breadcrumb"] .carousel__indicator[aria-current="true"]::after {
+    opacity: 1;
+    font-weight: 700;
+}
+
+/* --- Counter: a plain "2 of 5" ----------------------------------------- */
+
+.carousel__counter {
+    display: none;
+    font-size: 0.875rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.carousel[data-indicator="counter"] .carousel__counter {
+    display: inline;
+}
+
+.carousel[data-indicator="counter"] .carousel__indicators {
+    display: none;
+}
+
+/* ==========================================================================
+   MOTION PREFERENCES
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel__viewport {
+        scroll-behavior: auto;
+    }
+}
+
+/* ==========================================================================
+   FRAME SLIDES (a page in an iframe, such as a live map)
+   ========================================================================== */
+
+/* A swipe on a frame moves the carousel unless the block says `interactive=1`, which lets the page take the touch. */
+.carousel__slide iframe {
+    display: block;
+    width: 100%;
+    height: var(--carousel-frame-height, 24rem);
+    border: 0;
+    border-radius: var(--carousel-radius, 0.75rem);
+}
+
+.carousel:not([data-interactive="true"]) .carousel__slide iframe {
+    pointer-events: none;
+}

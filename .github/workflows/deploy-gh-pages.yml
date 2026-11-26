@@ -1,0 +1,99 @@
+name: Deploy GitHub Pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Prepare and inspect the gh-pages snapshot without pushing
+        required: true
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Validate token and prepare gh-pages snapshot
+        shell: bash
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          if [[ ! -d Output ]]; then
+            echo "Output directory not found." >&2
+            exit 1
+          fi
+          if [[ ! -f services/jwt ]]; then
+            echo "Production token not found: services/jwt" >&2
+            exit 1
+          fi
+
+          mkdir -p Output/services
+          install -m 600 services/jwt Output/services/jwt
+
+          python3 - <<'PY'
+          import base64
+          import binascii
+          import json
+          from pathlib import Path
+          import sys
+
+          token_path = Path("Output/services/jwt")
+          try:
+              token = token_path.read_text(encoding="utf-8").strip()
+              parts = token.split(".")
+              if len(parts) != 3:
+                  raise ValueError("not a compact JWT")
+              payload = parts[1]
+              payload += "=" * (-len(payload) % 4)
+              claims = json.loads(base64.urlsafe_b64decode(payload))
+              origin = claims.get("origin") if isinstance(claims, dict) else None
+          except (OSError, UnicodeError, ValueError, binascii.Error) as error:
+              print(f"Could not inspect {token_path}: {error}", file=sys.stderr)
+              sys.exit(1)
+
+          if origin != "roblabs.com":
+              print(
+                  f"Refusing deployment: {token_path} origin must be 'roblabs.com', "
+                  f"got {origin!r}.",
+                  file=sys.stderr,
+              )
+              sys.exit(1)
+
+          print(f"Verified {token_path} origin: {origin}")
+          PY
+
+          temp_root="$(mktemp -d "${RUNNER_TEMP}/gh-pages.XXXXXX")"
+          trap 'rm -rf -- "$temp_root"' EXIT
+          deploy_dir="$temp_root/site"
+          mkdir -p "$deploy_dir"
+          cp -R Output/. "$deploy_dir/"
+          find "$deploy_dir" -type f -name .DS_Store -delete
+
+          git init --quiet "$deploy_dir"
+          git -C "$deploy_dir" config user.name "$GITHUB_ACTOR"
+          git -C "$deploy_dir" config user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+          git -C "$deploy_dir" add --all
+          git -C "$deploy_dir" commit --quiet --allow-empty -m "Publish Output to gh-pages"
+
+          echo "Prepared Output/ for ${GITHUB_REPOSITORY}:gh-pages"
+          echo "Files in the deployment commit:"
+          git -C "$deploy_dir" ls-tree -r --name-only HEAD
+
+          if [[ "$DRY_RUN" == "true" ]]; then
+            echo "Dry run only. Nothing was pushed."
+            exit 0
+          fi
+
+          gh auth setup-git
+          git -C "$deploy_dir" push --force \
+            "https://github.com/${GITHUB_REPOSITORY}.git" \
+            "HEAD:refs/heads/gh-pages"

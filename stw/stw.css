@@ -1,0 +1,58 @@
+/* stw.css
+   Copyright © 2026 ePi Rational, Inc.  All rights reserved.
+   SPDX-License-Identifier: MIT */
+
+html, body { margin: 0; height: 100%; color-scheme: light dark; }
+#map { width: 100%; height: 100%; position: relative; }
+#error { position: absolute; top: 8px; left: 8px; margin: 0; padding: 8px; background: #fff; color: #b00020; font: 14px system-ui; }
+@media (prefers-color-scheme: dark) {
+    body { background: #000; }
+    #error { background: #1c1c1e; color: #ff6b81; }
+}
+
+/* White text with a black halo, like HaloText in the app. stw-geojson.js sets --stw-text, --stw-halo and --stw-halo-width from `text-color`, `text-halo-color` and `text-halo-width`. */
+.stw-caption, .stw-callout__label, .stw-line-label {
+    --w: var(--stw-halo-width, 1px);
+    --h: var(--stw-halo, #000);
+    color: var(--stw-text, #fff);
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    text-shadow: calc(-1 * var(--w)) calc(-1 * var(--w)) 0 var(--h), var(--w) calc(-1 * var(--w)) 0 var(--h), calc(-1 * var(--w)) var(--w) 0 var(--h), var(--w) var(--w) 0 var(--h), 0 0 calc(3 * var(--w)) var(--h);
+}
+/* bottom: the Apple Maps logo and Legal link sit about 10px above the map's edge and are about 16px tall; the caption clears them by the same 10px. */
+.stw-caption { position: absolute; left: 8px; bottom: 36px; padding: 3px; pointer-events: none; z-index: 1; }
+
+.stw-callout { position: relative; width: 8px; height: 8px; }
+.stw-callout__dot { position: absolute; inset: 0; border-radius: 50%; background: var(--stw-dot); border: 1px solid #fff; }
+.stw-callout__line {
+    position: absolute; left: 50%; top: calc(50% - var(--stw-line-width) / 2);
+    width: var(--stw-length); height: var(--stw-line-width);
+    transform-origin: 0 50%; transform: rotate(var(--stw-angle));
+    background: var(--stw-line); opacity: var(--stw-line-opacity);
+}
+.stw-callout__label {
+    position: absolute; left: calc(50% + var(--stw-end-x)); top: calc(50% + var(--stw-end-y));
+    transform: translate(var(--stw-tx), var(--stw-ty)); white-space: nowrap;
+}
+.stw-line-label { position: relative; width: 8px; height: 8px; }
+.stw-line-label__text { position: absolute; left: 50%; top: 50%; white-space: nowrap; pointer-events: none; text-align: center; }
+
+/* The full screen button. MapKit JS 6 draws its map type switcher as a circle 9px from the top right corner, 36px across
+   (44px on a touch screen), so the button is the same size, 9px to its left; it takes the corner when the switcher is hidden.
+   Light and dark colors follow the switcher. */
+.stw-fullscreen-button {
+    --stw-size: 36px;
+    position: absolute; top: 9px; right: calc(9px + var(--stw-size) + 9px); z-index: 2; width: var(--stw-size); height: var(--stw-size);
+    padding: 0; border: 0; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+    color: #6e7479; background: rgba(255, 255, 255, 0.72); box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.14);
+    -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+}
+.stw-fullscreen-button--alone { right: 9px; }
+@media (pointer: coarse) { .stw-fullscreen-button { --stw-size: 44px; } }
+.stw-fullscreen-button:hover { background: rgba(255, 255, 255, 0.9); }
+.stw-fullscreen-button svg { width: 70%; height: 70%; }
+@media (prefers-color-scheme: dark) {
+    .stw-fullscreen-button { color: #a3a7b3; background: rgba(28, 30, 40, 0.72); box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.2); }
+    .stw-fullscreen-button:hover { background: rgba(28, 30, 40, 0.9); }
+}

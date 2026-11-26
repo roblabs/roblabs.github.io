@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- index.html
+     Copyright © 2026 ePi Rational, Inc.  All rights reserved.
+     SPDX-License-Identifier: MIT
+
+     The embed page: <iframe src="index.html?src=https://example.com/map.geojson"></iframe>
+     Query: src (GeoJSON URL), token (token URL, default tokens/token.txt), scale=0, rotate=0, maptype=0 (hide that control), fullscreen=0 (hide the full screen button),
+     interactive=0 (no scrolling, zooming or rotating, and no map type switcher, compass or zoom buttons; the full screen button stays), capture=1 (no caption or full screen button; sets data-stw-ready on <html> when the map has settled, for picture capture). -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Share the World map</title>
+    <link rel="stylesheet" href="stw.css">
+</head>
+<body>
+    <div id="map" role="img" aria-label="Map of the GeoJSON"></div>
+    <p id="error" hidden></p>
+    <script src="https://cdn.apple-mapkit.com/mk/6.x.x/mapkit.js" crossorigin async></script>
+    <script src="stw-style.js"></script>
+    <script src="stw-geojson.js"></script>
+    <script>
+        const params = new URLSearchParams(location.search);
+        const src = params.get("src") || "fixtures/nps-road-alerts.YOSE.geojson";
+        const token = params.get("token") || "tokens/token.txt";
+        function start() {
+            STWGeoJSON.show(document.getElementById("map"), src, token).catch(function (error) {
+                const message = document.getElementById("error");
+                message.textContent = "Could not show " + src + ": " + error.message;
+                message.hidden = false;
+            });
+        }
+        // Development only: `just dev` writes debug/DEBUG-token.js (the token's claims, no token). Production hosts never request it.
+        if (/\.local$|^localhost$|^127\./.test(location.hostname)) {
+            const debug = document.createElement("script");
+            debug.src = "debug/DEBUG-token.js";
+            debug.onload = function () { console.info("[stw] mapkittoken --inspect:", window.STW_TOKEN_DEBUG); };
+            document.head.appendChild(debug);
+        }
+        if (window.mapkit) start(); else document.querySelector("script[src*=mapkit]").addEventListener("load", start);
+    </script>
+</body>
+</html>
